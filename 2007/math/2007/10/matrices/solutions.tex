@@ -1,0 +1,308 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\raggedbottom
+\setlength{\parindent}{0pt}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{CBSE Maths Questions 2007}
+\author{Priyanka - EE21MTECH12002}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all python codes from 
+\begin{lstlisting}
+https://github.com/PeriPriyanka/cbsemathsquestions/2007/10/matrices/codes/solutions
+\end{lstlisting}
+%
+Get latex-tikz codes from 
+%
+\begin{lstlisting}
+https://github.com/PeriPriyanka/cbsemathsquestions/2007/10/matrices/solutions
+\end{lstlisting}
+
+\begin{enumerate}
+
+\item (CBSE 2007-Question 2)
+solve the values of x and y.
+\begin{align}
+&x+\displaystyle\frac{6}{y}=6 & \\ 
+&3x-\displaystyle\frac{8}{y}=5&
+\end{align}
+\solution Consider the equations  given in the problem statement.
+\begin{align}
+&x+\displaystyle\frac{6}{y}=6 \label{eq:0.0.3} &\\
+&3x-\displaystyle\frac{8}{y}=5 \label{eq:0.0.4} &
+\end{align}
+The solution can be found by solving the above system of linear equations.\\ 
+System of linear equations are defined as 
+\begin{align}
+\vec{Ax=B}\label{eq:0.0.5}
+\end{align}
+From the equations \eqref{eq:0.0.3} and \eqref{eq:0.0.4}, 
+\begin{align}
+&\vec{A}= \myvec{1 &6\\3  & -8}&\\
+\medskip
+&\vec{x}= \myvec{ x\\ \displaystyle\frac{1}{y}}&\\
+\medskip
+&\vec{B}= \myvec{6\\5} & 
+\end{align} 
+Substituting the values of $\vec{A}$, $\vec{x}$ and $\vec{B}$ in the equation \eqref{eq:0.0.5}
+We get,
+\begin{align}
+\myvec{1&6\\3&-8} \myvec{x\\\displaystyle\frac{1}{y}}= \myvec{6\\5}
+\end{align}
+Considering the augmented matrix 
+ \begin{align}
+  &\myvec{1&6&6\\3&-8&5}&\\ 
+& \xleftrightarrow[]{ R_2 \leftarrow R_2 - 3R_1}
+  \myvec{1&6&6\\0&-26&-13}&\\
+  & \xleftrightarrow[]{ R_1 \leftarrow 13R_1 + 3R_2}
+  \myvec{13&0&39\\0&-26&-13}&\\
+   & \xleftrightarrow[]{ R_1 \leftarrow R_1/3,R_2 \leftarrow R_2/-26}
+  \myvec{1&0&3\\0&1&0.5}&
+ \end{align}
+ \begin{align}
+&\myvec{1&0\\0&1} \myvec{x\\\displaystyle\frac{1}{y}}= \myvec{0\\0.5}& \label{eq:0.0.14}
+\medskip
+\end{align}
+From the above equation \eqref{eq:0.0.14} we get,
+\begin{align}
+&x=3&\\
+&y=2&
+\end{align}
+Therefore, x=3 and y= 2 are solutions to the given equations.
+\bigskip
+\item (CBSE 2007-Question 3)
+solve the values of x and y
+\begin{align}
+\displaystyle\frac{x+1}{2}+\displaystyle\frac{y-1}{3}=8\\
+\displaystyle\frac{x-1}{3}+\displaystyle\frac{y+1}{2}=9\end{align}
+
+\solution Consider the equations given in the problem statement.
+\begin{align}
+\displaystyle\frac{x+1}{2}+\displaystyle\frac{y-1}{3}=8\\
+\displaystyle\frac{x-1}{3}+\displaystyle\frac{y+1}{2}=9
+\end{align}
+The above equations can be rearranged as the following equations
+\begin{align}
+3x+2y=47 \label{eq:0.0.21}\\
+2x+3y=53 \label{eq:0.0.22}
+\end{align}
+The solution can be found by solving the above system of linear equations.\\ 
+System of linear equations are defined as 
+\begin{align}
+\vec{Ax=B} \label{eq:0.0.23}
+\end{align}
+From the equations \eqref{eq:0.0.21} and \eqref{eq:0.0.22}, 
+\begin{align}
+&\vec{A}= \myvec{3 &2\\2 & 3}&\\
+\medskip
+&\vec{x}= \myvec{ x\\ y}&\\
+\medskip
+&\vec{B}= \myvec{47\\53}&  
+\end{align} 
+Substituting the values of $\vec{A}$, $\vec{x}$ and $\vec{B}$ in the equation \eqref{eq:0.0.23}
+We get,
+\begin{align}
+&\myvec{3&2\\2&3} \myvec{x\\y}= \myvec{47\\53}&
+\end{align}
+Considering the augmented matrix 
+ \begin{align}
+& \myvec{3&2&47\\2&3&53}&
+ \\
+&\xleftrightarrow[]{ R_2 \leftarrow 3R_2 - 2R_1}
+ \myvec{3&2&47\\0&5&65}&\\
+ &\xleftrightarrow[]{ R_1 \leftarrow 5R_1 - 2R_2}
+ \myvec{15&0&105\\0&5&65}&\\
+ &\xleftrightarrow[]{ R_1 \leftarrow R_1/15,R_2\leftarrow R_2/5}
+ \myvec{1&0&7\\0&1&13}&
+ \end{align}
+ \begin{align}
+&\myvec{1&0\\0&1} \myvec{x\\y}= \myvec{7\\13}& \label{eq:0.0.32}
+\medskip
+\end{align}
+By solving equation \eqref{eq:0.0.32} we get,
+\begin{align}
+&x=7&\\
+&y= 13&
+\end{align}
+Therefore, x=7 and y= 13 are solutions to the given equations. 
+\bigskip
+\item (CBSE 2007-Question 21) Show that the points given below are vertices of an isosceles right angle triangle.
+\begin{align}
+\myvec{7\\10}, \myvec{-2\\5} \text{and} \myvec{3\\-4}
+\end{align}
+
+\solution Consider the given points as vectors,
+\begin{align}
+&\vec{A}= \myvec{7\\10}&\\
+&\vec{B}=\myvec{-2\\5}&\\
+&\vec{C}=\myvec{3\\-4}&
+\end{align}
+For a triangle to be an isosceles, any two sides of the triangle should be equal.
+For finding a triangle to be isosceles and right angle, we consider,
+\begin{align}
+&\vec{A-B}= \myvec{7\\10} - \myvec{-2\\5} = \myvec{9\\5}&\\
+&\vec{B-C}= \myvec{-2\\5} - \myvec{3\\-4} = \myvec{-5 \\ 9}&\\
+&\vec{C-A}=  \myvec{3\\-4} - \myvec{7\\10} = \myvec{-4\\ -14}&
+\end{align}
+\begin{align}
+&\vec{(A-B)}^T\vec{(B-C)} = \myvec{9&5}\myvec{-5\\9} &\\&= -45+45 = 0 \label{eq:0.0.43}&\\
+& \vec{(C-A)}^T\vec{(A-B)} = \myvec{-4&-14}\myvec{9\\5}&\\& = -36-70 = -106 \label{eq:0.0.45}&\\
+ &\vec{(B-C)}^T\vec{(C-A)} = \myvec{-5&9}\myvec{-4\\-14}&\\& = 20-126 = -106 \label{eq:0.0.47}&
+\end{align}
+From the equation \eqref{eq:0.0.43} \begin{align} \vec{A-B} \perp \vec{B-C}\end{align} Therefore $\measuredangle{B} = 90\degree$.
+From the equations \eqref{eq:0.0.45} and \eqref{eq:0.0.47} $\measuredangle{CAB}=\measuredangle{BCA}$.
+Therefore, $\triangle{ABC}$ is an isosceles right angle triangle with sides AB=BC and right angle at B.
+\bigskip
+\item (CBSE 2007-Question 22) In what ratio does the line \begin{align} \myvec{1&-1}\vec{x}=2 \label{eq:0.0.49}\end{align} divides the line segment joining \begin{align}\myvec{3 \\-1} \text{and} \myvec{8\\9} \label{eq:0.0.50}\end{align}
+
+\solution Consider the line \begin{align} \vec{n}^T\vec{x}=c \end{align} divides the line segment $\vec{A}$ and $\vec{B} $ in $k:1$ ratio.
+$\vec{p} $ is point of intersection of two lines.\\ 
+From the section formula we can write,
+\begin{align}
+&\vec{p} = \displaystyle\frac{1}{k+1}\left[\vec{A}+ k\vec{B}\right]&\\
+ \end{align}
+The point $\vec{p}$ passes through the line $\vec{n}^T\vec{x}=c$, therefore,
+\begin{align}
+&\vec{n}^T\vec{p}=c&\\
+&\vec{n}^T\left(\displaystyle\frac{\vec{A}+k\vec{B}}{k+1} \right)=c&
+\end{align}
+Solving for k, we get,
+\begin{align}
+&k=\displaystyle\frac{c-\vec{n}^T\vec{A}}{\vec{n}^T\vec{B}-c} \label{eq:0.0.56} &
+\end{align}
+From the equations \eqref{eq:0.0.49} and \eqref{eq:0.0.50},
+\begin{align}
+& \vec{n}^T = \myvec{1&-1}&\\
+& \vec{A} = \myvec{3 \\-1}&\\
+& \vec{B} = \myvec{8\\9}
+\end{align}
+Substituting the above values in the equation \eqref{eq:0.0.56}, we get,
+\begin{align}
+& k = \displaystyle\frac{2-\myvec{1&-1}\myvec{3\\-1}}{\myvec{1&-1}\myvec{8\\9} - 2}&\\
+&k = \displaystyle\frac{2}{3}
+\end{align}
+Therefore, the line \begin{align} \myvec{1&-1}\vec{x}=2 \end{align} divides the line segment joining \begin{align}\myvec{3 \\-1} \text{and} \myvec{8\\9} \end{align} in 2:3 ratio.
+\end{enumerate}
+\end{document}
