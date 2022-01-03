@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.12.29)  3 JAN 2022 12:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.12.29)  3 JAN 2022 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**"Maths_2009(question paper).tex"
+(./Maths_2009(question paper).tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18>
 (/usr/share/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
@@ -346,81 +346,55 @@ See the caption package documentation for explanation.
 \c@lotdepth=\count282
 \sf@top=\skip59
 \sf@bottom=\skip60
-) (/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
-Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-
-(/usr/share/texmf-dist/tex/latex/tools/array.sty
-Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen180
-\ar@mcellbox=\box51
-\extrarowheight=\dimen181
-\NC@list=\toks28
-\extratabsurround=\skip61
-\backup@length=\skip62
-\ar@cellbox=\box52
-)
-\TX@col@width=\dimen182
-\TX@old@table=\dimen183
-\TX@old@col=\dimen184
-\TX@target=\dimen185
-\TX@delta=\dimen186
-\TX@cols=\count283
-\TX@ftn=\toks29
-)
-(/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+) (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip63
-\LTright=\skip64
-\LTpre=\skip65
-\LTpost=\skip66
-\LTchunksize=\count284
-\LTcapwidth=\dimen187
-\LT@head=\box53
-\LT@firsthead=\box54
-\LT@foot=\box55
-\LT@lastfoot=\box56
-\LT@cols=\count285
-\LT@rows=\count286
-\c@LT@tables=\count287
-\c@LT@chunks=\count288
-\LT@p@ftn=\toks30
+\LTleft=\skip61
+\LTright=\skip62
+\LTpre=\skip63
+\LTpost=\skip64
+\LTchunksize=\count283
+\LTcapwidth=\dimen180
+\LT@head=\box51
+\LT@firsthead=\box52
+\LT@foot=\box53
+\LT@lastfoot=\box54
+\LT@cols=\count284
+\LT@rows=\count285
+\c@LT@tables=\count286
+\c@LT@chunks=\count287
+\LT@p@ftn=\toks28
 )
 (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip67
-\multirow@cntb=\count289
-\multirow@dima=\skip68
-\bigstrutjot=\dimen188
-)
-(/usr/share/texmf-dist/tex/latex/tfrupee/tfrupee.sty
-Package: tfrupee 2010/12/15 LaTeX Support for the TechFat Rupee symbols by Tech
-Fat (http://techfat.blogspot.com/2010/07/new-open-source-india-rupee-font.html)
-. Adapted for use with TeX by Palle Jorgensen, hamselv(a)pallej.dk
+\multirow@colwidth=\skip65
+\multirow@cntb=\count288
+\multirow@dima=\skip66
+\bigstrutjot=\dimen181
 )
 (/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip69
-\enit@outerparindent=\dimen189
-\enit@toks=\toks31
-\enit@inbox=\box57
-\enit@count@id=\count290
-\enitdp@description=\count291
+\labelindent=\skip67
+\enit@outerparindent=\dimen182
+\enit@toks=\toks29
+\enit@inbox=\box55
+\enit@count@id=\count289
+\enitdp@description=\count290
 )
 (/usr/share/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2021/03/18 v1.25 mathematical typesetting tools
 
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count292
-\calc@Bcount=\count293
-\calc@Adimen=\dimen190
-\calc@Bdimen=\dimen191
-\calc@Askip=\skip70
-\calc@Bskip=\skip71
+\calc@Acount=\count291
+\calc@Bcount=\count292
+\calc@Adimen=\dimen183
+\calc@Bdimen=\dimen184
+\calc@Askip=\skip68
+\calc@Bskip=\skip69
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count294
-\calc@Cskip=\skip72
+\calc@Ccount=\count293
+\calc@Cskip=\skip70
 )
 (/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
@@ -429,17 +403,17 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count295
-\l_MT_multwidth_dim=\dimen192
-\origjot=\skip73
-\l_MT_shortvdotswithinadjustabove_dim=\dimen193
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen194
-\l_MT_above_intertext_sep=\dimen195
-\l_MT_below_intertext_sep=\dimen196
-\l_MT_above_shortintertext_sep=\dimen197
-\l_MT_below_shortintertext_sep=\dimen198
-\xmathstrut@box=\box58
-\xmathstrut@dim=\dimen199
+\g_MT_multlinerow_int=\count294
+\l_MT_multwidth_dim=\dimen185
+\origjot=\skip71
+\l_MT_shortvdotswithinadjustabove_dim=\dimen186
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen187
+\l_MT_above_intertext_sep=\dimen188
+\l_MT_below_intertext_sep=\dimen189
+\l_MT_above_shortintertext_sep=\dimen190
+\l_MT_below_shortintertext_sep=\dimen191
+\xmathstrut@box=\box56
+\xmathstrut@dim=\dimen192
 )
 (/usr/share/texmf-dist/tex/latex/steinmetz/steinmetz.sty
 Package: steinmetz 2009/06/14 v1.0 Steinmetz symbol for electrotechnics
@@ -463,33 +437,33 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-\pIIe@GRAPH=\toks32
-\@arclen=\dimen256
-\@arcrad=\dimen257
-\pIIe@tempdima=\dimen258
-\pIIe@tempdimb=\dimen259
-\pIIe@tempdimc=\dimen260
-\pIIe@tempdimd=\dimen261
-\pIIe@tempdime=\dimen262
-\pIIe@tempdimf=\dimen263
+\pIIe@GRAPH=\toks30
+\@arclen=\dimen193
+\@arcrad=\dimen194
+\pIIe@tempdima=\dimen195
+\pIIe@tempdimb=\dimen196
+\pIIe@tempdimc=\dimen197
+\pIIe@tempdimd=\dimen198
+\pIIe@tempdime=\dimen199
+\pIIe@tempdimf=\dimen256
 )
-\stm@phasebox=\box59
-\stm@phasedp=\skip74
-\stm@phaseht=\skip75
-\stm@phasetot=\skip76
-\stm@phasewd=\skip77
+\stm@phasebox=\box57
+\stm@phasedp=\skip72
+\stm@phaseht=\skip73
+\stm@phasetot=\skip74
+\stm@phasewd=\skip75
 )
 (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks33
-\pgfutil@tempdima=\dimen264
-\pgfutil@tempdimb=\dimen265
+\pgfutil@everybye=\toks31
+\pgfutil@tempdima=\dimen257
+\pgfutil@tempdimb=\dimen258
 
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex))
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box60
+\pgfutil@abb=\box58
 )
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -509,40 +483,40 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 )
-\Gin@req@height=\dimen266
-\Gin@req@width=\dimen267
+\Gin@req@height=\dimen259
+\Gin@req@width=\dimen260
 )
 (/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
 
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks34
-\pgfkeys@temptoks=\toks35
+\pgfkeys@pathtoks=\toks32
+\pgfkeys@temptoks=\toks33
 
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks36
+\pgfkeys@tmptoks=\toks34
 ))
-\pgf@x=\dimen268
-\pgf@y=\dimen269
-\pgf@xa=\dimen270
-\pgf@ya=\dimen271
-\pgf@xb=\dimen272
-\pgf@yb=\dimen273
-\pgf@xc=\dimen274
-\pgf@yc=\dimen275
-\pgf@xd=\dimen276
-\pgf@yd=\dimen277
+\pgf@x=\dimen261
+\pgf@y=\dimen262
+\pgf@xa=\dimen263
+\pgf@ya=\dimen264
+\pgf@xb=\dimen265
+\pgf@yb=\dimen266
+\pgf@xc=\dimen267
+\pgf@yc=\dimen268
+\pgf@xd=\dimen269
+\pgf@yd=\dimen270
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count296
-\c@pgf@countb=\count297
-\c@pgf@countc=\count298
-\c@pgf@countd=\count299
-\t@pgf@toka=\toks37
-\t@pgf@tokb=\toks38
-\t@pgf@tokc=\toks39
-\pgf@sys@id@count=\count300
+\c@pgf@counta=\count295
+\c@pgf@countb=\count296
+\c@pgf@countc=\count297
+\c@pgf@countd=\count298
+\t@pgf@toka=\toks35
+\t@pgf@tokb=\toks36
+\t@pgf@tokc=\toks37
+\pgf@sys@id@count=\count299
 
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
@@ -557,8 +531,8 @@ File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfsyssoftpath@smallbuffer@items=\count301
-\pgfsyssoftpath@bigbuffer@items=\count302
+\pgfsyssoftpath@smallbuffer@items=\count300
+\pgfsyssoftpath@bigbuffer@items=\count301
 )
 (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
@@ -587,12 +561,12 @@ Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen278
-\pgfmath@count=\count303
-\pgfmath@box=\box61
-\pgfmath@toks=\toks40
-\pgfmath@stack@operand=\toks41
-\pgfmath@stack@operation=\toks42
+\pgfmath@dimen=\dimen271
+\pgfmath@count=\count302
+\pgfmath@box=\box59
+\pgfmath@toks=\toks38
+\pgfmath@stack@operand=\toks39
+\pgfmath@stack@operation=\toks40
 )
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
@@ -605,51 +579,51 @@ x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
 .code.tex))) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count304
+\c@pgfmathroundto@lastzeros=\count303
 )) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@picminx=\dimen279
-\pgf@picmaxx=\dimen280
-\pgf@picminy=\dimen281
-\pgf@picmaxy=\dimen282
-\pgf@pathminx=\dimen283
-\pgf@pathmaxx=\dimen284
-\pgf@pathminy=\dimen285
-\pgf@pathmaxy=\dimen286
-\pgf@xx=\dimen287
-\pgf@xy=\dimen288
-\pgf@yx=\dimen289
-\pgf@yy=\dimen290
-\pgf@zx=\dimen291
-\pgf@zy=\dimen292
+\pgf@picminx=\dimen272
+\pgf@picmaxx=\dimen273
+\pgf@picminy=\dimen274
+\pgf@picmaxy=\dimen275
+\pgf@pathminx=\dimen276
+\pgf@pathmaxx=\dimen277
+\pgf@pathminy=\dimen278
+\pgf@pathmaxy=\dimen279
+\pgf@xx=\dimen280
+\pgf@xy=\dimen281
+\pgf@yx=\dimen282
+\pgf@yy=\dimen283
+\pgf@zx=\dimen284
+\pgf@zy=\dimen285
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@path@lastx=\dimen293
-\pgf@path@lasty=\dimen294
+\pgf@path@lastx=\dimen286
+\pgf@path@lasty=\dimen287
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@shorten@end@additional=\dimen295
-\pgf@shorten@start@additional=\dimen296
+\pgf@shorten@end@additional=\dimen288
+\pgf@shorten@start@additional=\dimen289
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfpic=\box62
-\pgf@hbox=\box63
-\pgf@layerbox@main=\box64
-\pgf@picture@serial@count=\count305
+\pgfpic=\box60
+\pgf@hbox=\box61
+\pgf@layerbox@main=\box62
+\pgf@picture@serial@count=\count304
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgflinewidth=\dimen297
+\pgflinewidth=\dimen290
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
 ex
 File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@pt@x=\dimen298
-\pgf@pt@y=\dimen299
-\pgf@pt@temp=\dimen300
+\pgf@pt@x=\dimen291
+\pgf@pt@y=\dimen292
+\pgf@pt@temp=\dimen293
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
@@ -661,20 +635,20 @@ x
 File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfarrowsep=\dimen301
+\pgfarrowsep=\dimen294
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@max=\dimen302
-\pgf@sys@shading@range@num=\count306
-\pgf@shadingcount=\count307
+\pgf@max=\dimen295
+\pgf@sys@shading@range@num=\count305
+\pgf@shadingcount=\count306
 )
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfexternal@startupbox=\box65
+\pgfexternal@startupbox=\box63
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
@@ -689,15 +663,15 @@ File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfnodeparttextbox=\box66
+\pgfnodeparttextbox=\box64
 )
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@nodesepstart=\dimen303
-\pgf@nodesepend=\dimen304
+\pgf@nodesepstart=\dimen296
+\pgf@nodesepend=\dimen297
 )
 (/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
@@ -711,10 +685,10 @@ Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
 Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
 
 (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen305
-\pgffor@skip=\dimen306
-\pgffor@stack=\toks43
-\pgffor@toks=\toks44
+\pgffor@iter=\dimen298
+\pgffor@skip=\dimen299
+\pgffor@stack=\toks41
+\pgffor@toks=\toks42
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
@@ -722,32 +696,32 @@ Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
 x
 File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@plot@mark@count=\count308
-\pgfplotmarksize=\dimen307
+\pgf@plot@mark@count=\count307
+\pgfplotmarksize=\dimen300
 )
-\tikz@lastx=\dimen308
-\tikz@lasty=\dimen309
-\tikz@lastxsaved=\dimen310
-\tikz@lastysaved=\dimen311
-\tikz@lastmovetox=\dimen312
-\tikz@lastmovetoy=\dimen313
-\tikzleveldistance=\dimen314
-\tikzsiblingdistance=\dimen315
-\tikz@figbox=\box67
-\tikz@figbox@bg=\box68
-\tikz@tempbox=\box69
-\tikz@tempbox@bg=\box70
-\tikztreelevel=\count309
-\tikznumberofchildren=\count310
-\tikznumberofcurrentchild=\count311
-\tikz@fig@count=\count312
+\tikz@lastx=\dimen301
+\tikz@lasty=\dimen302
+\tikz@lastxsaved=\dimen303
+\tikz@lastysaved=\dimen304
+\tikz@lastmovetox=\dimen305
+\tikz@lastmovetoy=\dimen306
+\tikzleveldistance=\dimen307
+\tikzsiblingdistance=\dimen308
+\tikz@figbox=\box65
+\tikz@figbox@bg=\box66
+\tikz@tempbox=\box67
+\tikz@tempbox@bg=\box68
+\tikztreelevel=\count308
+\tikznumberofchildren=\count309
+\tikznumberofcurrentchild=\count310
+\tikz@fig@count=\count311
  (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfmatrixcurrentrow=\count313
-\pgfmatrixcurrentcolumn=\count314
-\pgf@matrix@numberofcolumns=\count315
+\pgfmatrixcurrentrow=\count312
+\pgfmatrixcurrentcolumn=\count313
+\pgf@matrix@numberofcolumns=\count314
 )
-\tikz@expandcount=\count316
+\tikz@expandcount=\count315
 
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 topaths.code.tex
@@ -762,10 +736,10 @@ File: tikzlibrarycalc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfarrowinset=\dimen316
-\pgfarrowlength=\dimen317
-\pgfarrowwidth=\dimen318
-\pgfarrowlinewidth=\dimen319
+\pgfarrowinset=\dimen309
+\pgfarrowlength=\dimen310
+\pgfarrowwidth=\dimen311
+\pgfarrowlinewidth=\dimen312
 )
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 bending.code.tex
@@ -777,36 +751,36 @@ File: pgfmodulebending.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulenonlineartransformation
 s.code.tex
 File: pgfmodulenonlineartransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgftransformnonlinearflatness=\dimen320
+\pgftransformnonlinearflatness=\dimen313
 )
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibrarycurvilinear.code.tex
 File: pgflibrarycurvilinear.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@curvilinear@time@a=\dimen321
-\pgf@curvilinear@length@a=\dimen322
-\pgf@curvilinear@length@b=\dimen323
-\pgf@curvilinear@length@c=\dimen324
-\pgf@curvilinear@length@d=\dimen325
+\pgf@curvilinear@time@a=\dimen314
+\pgf@curvilinear@length@a=\dimen315
+\pgf@curvilinear@length@b=\dimen316
+\pgf@curvilinear@length@c=\dimen317
+\pgf@curvilinear@length@d=\dimen318
 )
-\pgf@arrows@the@rigidity=\dimen326
+\pgf@arrows@the@rigidity=\dimen319
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 fpu.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex))
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
-\pgf@circ@count@a=\count317
-\pgf@circ@count@b=\count318
-\pgf@circ@count@c=\count319
-\pgf@circ@res@up=\dimen327
-\pgf@circ@res@down=\dimen328
-\pgf@circ@res@zero=\dimen329
-\pgf@circ@res@left=\dimen330
-\pgf@circ@res@right=\dimen331
-\pgf@circ@res@other=\dimen332
-\pgf@circ@res@step=\dimen333
-\pgf@circ@res@temp=\dimen334
-\pgf@circ@Rlen=\dimen335
-\pgf@circ@scaled@Rlen=\dimen336
-\pgfstartlinewidth=\dimen337
+\pgf@circ@count@a=\count316
+\pgf@circ@count@b=\count317
+\pgf@circ@count@c=\count318
+\pgf@circ@res@up=\dimen320
+\pgf@circ@res@down=\dimen321
+\pgf@circ@res@zero=\dimen322
+\pgf@circ@res@left=\dimen323
+\pgf@circ@res@right=\dimen324
+\pgf@circ@res@other=\dimen325
+\pgf@circ@res@step=\dimen326
+\pgf@circ@res@temp=\dimen327
+\pgf@circ@Rlen=\dimen328
+\pgf@circ@scaled@Rlen=\dimen329
+\pgfstartlinewidth=\dimen330
 )
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex)
@@ -814,21 +788,26 @@ fpu.code.tex
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirctripoles.tex
-\pgf@circ@res@count=\count320
+\pgf@circ@res@count=\count319
 )
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircquadpoles.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircmultipoles.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex
-\pgfcirc@labelshift=\dimen338
+\pgfcirc@labelshift=\dimen331
 )
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex)
 (/usr/share/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex))
 (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks45
-\verbatim@line=\toks46
+\every@verbatim=\toks43
+\verbatim@line=\toks44
 \verbatim@in@stream=\read3
+)
+(/usr/share/texmf-dist/tex/latex/tfrupee/tfrupee.sty
+Package: tfrupee 2010/12/15 LaTeX Support for the TechFat Rupee symbols by Tech
+Fat (http://techfat.blogspot.com/2010/07/new-open-source-india-rupee-font.html)
+. Adapted for use with TeX by Palle Jorgensen, hamselv(a)pallej.dk
 )
 (/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
@@ -871,9 +850,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 (/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen339
-\Hy@linkcounter=\count321
-\Hy@pagecounter=\count322
+\@linkdim=\dimen332
+\Hy@linkcounter=\count320
+\Hy@pagecounter=\count321
 
 (/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
@@ -890,7 +869,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count323
+\Hy@SavedSpaceFactor=\count322
 
 (/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
@@ -905,14 +884,14 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count324
+\c@Hy@tempcnt=\count323
 
 (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen340
+\XeTeXLinkMargin=\dimen333
 
 (/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -921,9 +900,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count325
-\Field@Width=\dimen341
-\Fld@charsize=\dimen342
+\Fld@menulength=\count324
+\Field@Width=\dimen334
+\Fld@charsize=\dimen335
 Package hyperref Info: Hyper figures OFF on input line 6075.
 Package hyperref Info: Link nesting OFF on input line 6080.
 Package hyperref Info: Hyper index ON on input line 6083.
@@ -939,9 +918,9 @@ Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
 )
-\Hy@abspage=\count326
-\c@Item=\count327
-\c@Hfootnote=\count328
+\Hy@abspage=\count325
+\c@Item=\count326
+\c@Hfootnote=\count327
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -953,8 +932,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count329
-\c@bookmark@seq@number=\count330
+\Fld@listcount=\count328
+\c@bookmark@seq@number=\count329
 
 (/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -965,7 +944,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip78
+\Hy@SectionHShift=\skip76
 )
 (/usr/share/texmf-dist/tex/latex/tkz-euclide/tkz-euclide.sty
 2020/03/18 3.06c tkz-euclide.sty
@@ -984,7 +963,7 @@ File: tikzlibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\arrowsize=\dimen343
+\arrowsize=\dimen336
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 babel.code.tex
@@ -993,16 +972,16 @@ File: tikzlibrarybabel.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 decorations.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen344
-\pgfdecoratedremainingdistance=\dimen345
-\pgfdecoratedinputsegmentcompleteddistance=\dimen346
-\pgfdecoratedinputsegmentremainingdistance=\dimen347
-\pgf@decorate@distancetomove=\dimen348
-\pgf@decorate@repeatstate=\count331
-\pgfdecorationsegmentamplitude=\dimen349
-\pgfdecorationsegmentlength=\dimen350
+\pgfdecoratedcompleteddistance=\dimen337
+\pgfdecoratedremainingdistance=\dimen338
+\pgfdecoratedinputsegmentcompleteddistance=\dimen339
+\pgfdecoratedinputsegmentremainingdistance=\dimen340
+\pgf@decorate@distancetomove=\dimen341
+\pgf@decorate@repeatstate=\count330
+\pgfdecorationsegmentamplitude=\dimen342
+\pgfdecorationsegmentlength=\dimen343
 )
-\tikz@lib@dec@box=\box71
+\tikz@lib@dec@box=\box69
 )
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 decorations.markings.code.tex
@@ -1020,9 +999,9 @@ ons.shapes.code.tex))
 decorations.text.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
 ons.text.code.tex
-\pgf@lib@dec@text@box=\box72
+\pgf@lib@dec@text@box=\box70
 )
-\tikz@lib@dec@te@box=\box73
+\tikz@lib@dec@te@box=\box71
 )
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 decorations.pathmorphing.code.tex
@@ -1032,7 +1011,7 @@ ons.pathmorphing.code.tex))
 intersections.code.tex
 (/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryintersections.code.t
 ex
-\pgf@intersect@solutions=\count332
+\pgf@intersect@solutions=\count331
 ))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 patterns.code.tex
@@ -1080,23 +1059,34 @@ through.code.tex
 File: tikzlibrarythrough.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ) (/usr/share/texmf-dist/tex/latex/numprint/numprint.sty
 Package: numprint 2012/08/20 v1.39 Print numbers (HH)
-\c@nprt@mantissa@digitsbefore=\count333
-\c@nprt@mantissa@digitsafter=\count334
-\c@nprt@exponent@digitsbefore=\count335
-\c@nprt@exponent@digitsafter=\count336
+
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen344
+\ar@mcellbox=\box72
+\extrarowheight=\dimen345
+\NC@list=\toks45
+\extratabsurround=\skip77
+\backup@length=\skip78
+\ar@cellbox=\box73
+)
+\c@nprt@mantissa@digitsbefore=\count332
+\c@nprt@mantissa@digitsafter=\count333
+\c@nprt@exponent@digitsbefore=\count334
+\c@nprt@exponent@digitsafter=\count335
 \nprt@digitwidth=\skip79
 \nprt@sepwidth=\skip80
 \nprt@decimalwidth=\skip81
 \nprt@blockwidth=\skip82
-\nprt@digittoks=\toks47
-\nprt@pretoks=\toks48
-\nprt@posttoks=\toks49
-\nprt@thisdigit=\count337
-\nprt@curpos=\count338
-\nprt@rndpos=\count339
-\c@nprt@digitsfirstblock=\count340
-\c@nprt@blockcnt=\count341
-\c@nprt@cntprint=\count342
+\nprt@digittoks=\toks46
+\nprt@pretoks=\toks47
+\nprt@posttoks=\toks48
+\nprt@thisdigit=\count336
+\nprt@curpos=\count337
+\nprt@rndpos=\count338
+\c@nprt@digitsfirstblock=\count339
+\c@nprt@blockcnt=\count340
+\c@nprt@cntprint=\count341
 
 No configuration file `numprint.cfg' found.)
 (/usr/share/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
@@ -1105,7 +1095,7 @@ Package: expl3 2021-02-18 L3 programming layer (loader)
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count343
+\l__color_backend_stack_int=\count342
 \l__pdf_internal_box=\box74
 ))
 Package: xfp 2021-03-12 L3 Floating point unit
@@ -1122,19 +1112,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/share/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count344
+\actioncount=\count343
 )
 (/usr/share/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count345
-\FP@xia=\count346
-\FP@xib=\count347
-\FP@xfa=\count348
-\FP@xfb=\count349
-\FP@rega=\count350
-\FP@regb=\count351
-\FP@regs=\count352
-\FP@times=\count353
+\FP@xs=\count344
+\FP@xia=\count345
+\FP@xib=\count346
+\FP@xfa=\count347
+\FP@xfb=\count348
+\FP@rega=\count349
+\FP@regb=\count350
+\FP@regs=\count351
+\FP@times=\count352
 )
 (/usr/share/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -1153,7 +1143,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/share/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count354
+\FPseed=\count353
 )
 (/usr/share/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -1164,26 +1154,26 @@ Package: fp-upn 1996/10/21
 (/usr/share/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 ))
-\tkzRadius=\dimen351
-\tkzLength=\dimen352
-\tkz@radi=\dimen353
-\tkz@ax=\dimen354
-\tkz@ay=\dimen355
-\tkz@bx=\dimen356
-\tkz@by=\dimen357
-\tkz@cx=\dimen358
-\tkz@cy=\dimen359
-\tkz@dx=\dimen360
-\tkz@dy=\dimen361
-\tkz@tax=\dimen362
-\tkz@tay=\dimen363
-\tkz@tbx=\dimen364
-\tkz@tby=\dimen365
-\tkz@tcx=\dimen366
-\tkz@tcy=\dimen367
-\tkz@tdx=\dimen368
-\tkz@tdy=\dimen369
-\tkz@cntmk=\count355
+\tkzRadius=\dimen346
+\tkzLength=\dimen347
+\tkz@radi=\dimen348
+\tkz@ax=\dimen349
+\tkz@ay=\dimen350
+\tkz@bx=\dimen351
+\tkz@by=\dimen352
+\tkz@cx=\dimen353
+\tkz@cy=\dimen354
+\tkz@dx=\dimen355
+\tkz@dy=\dimen356
+\tkz@tax=\dimen357
+\tkz@tay=\dimen358
+\tkz@tbx=\dimen359
+\tkz@tby=\dimen360
+\tkz@tcx=\dimen361
+\tkz@tcy=\dimen362
+\tkz@tdx=\dimen363
+\tkz@tdy=\dimen364
+\tkz@cntmk=\count354
 
 Local configuration file tkz-base.cfg found and used
 (/usr/share/texmf-dist/tex/latex/tkz-base/tkz-base.cfg
@@ -1225,8 +1215,8 @@ File: tkz-tool-arith.tex tkz-tool-arith 3.02 c
 2020/03/18 3.06c tkz-tools-angles.tex
 ) (/usr/share/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-angles.tex
 2020/03/18 3.06c tkz-tool-eu-angles.tex
-\tkz@arcsize=\dimen370
-\tkz@fillsize=\dimen371
+\tkz@arcsize=\dimen365
+\tkz@fillsize=\dimen366
 ) (/usr/share/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-arcs.tex
 2020/03/23 3.06c tkz-obj-eu-arcs.tex
 ) (/usr/share/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-compass.tex
@@ -1260,34 +1250,30 @@ File: tkz-tool-arith.tex tkz-tool-arith 3.02 c
 2020/03/18 3.06c tkz-obj-eu-show.tex
 ) (/usr/share/texmf-dist/tex/latex/tkz-euclide/tkz-obj-eu-triangles.tex
 2020/03/18 3.06c tkz-obj-eu-triangles.tex
-)) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks50
-\inpenc@posthook=\toks51
-)
+))
 (/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
 math.code.tex
-\tikz@math@for@depth=\count356
-\tikz@math@dimen=\dimen372
-\tikz@math@toks=\toks52
+\tikz@math@for@depth=\count355
+\tikz@math@dimen=\dimen367
+\tikz@math@toks=\toks49
 ) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count357
+\lst@mode=\count356
 \lst@gtempboxa=\box75
-\lst@token=\toks53
-\lst@length=\count358
-\lst@currlwidth=\dimen373
-\lst@column=\count359
-\lst@pos=\count360
-\lst@lostspace=\dimen374
-\lst@width=\dimen375
-\lst@newlines=\count361
-\lst@lineno=\count362
-\lst@maxwidth=\dimen376
+\lst@token=\toks50
+\lst@length=\count357
+\lst@currlwidth=\dimen368
+\lst@column=\count358
+\lst@pos=\count359
+\lst@lostspace=\dimen369
+\lst@width=\dimen370
+\lst@newlines=\count360
+\lst@lineno=\count361
+\lst@maxwidth=\dimen371
 
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count363
-\lst@skipnumbers=\count364
+\c@lstnumber=\count362
+\lst@skipnumbers=\count363
 \lst@framebox=\box76
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
@@ -1306,28 +1292,28 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 (/usr/share/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count365
+\c@tracingmulticols=\count364
 
 
 Package multicol Warning: May not work with the twocolumn option on input line 
 141.
 
 \mult@box=\box77
-\multicol@leftmargin=\dimen377
-\c@unbalance=\count366
-\c@collectmore=\count367
-\doublecol@number=\count368
-\multicoltolerance=\count369
-\multicolpretolerance=\count370
-\full@width=\dimen378
-\page@free=\dimen379
-\premulticols=\dimen380
-\postmulticols=\dimen381
+\multicol@leftmargin=\dimen372
+\c@unbalance=\count365
+\c@collectmore=\count366
+\doublecol@number=\count367
+\multicoltolerance=\count368
+\multicolpretolerance=\count369
+\full@width=\dimen373
+\page@free=\dimen374
+\premulticols=\dimen375
+\postmulticols=\dimen376
 \multicolsep=\skip83
 \multicolbaselineskip=\skip84
 \partial@page=\box78
 \last@line=\box79
-\maxbalancingoverflow=\dimen382
+\maxbalancingoverflow=\dimen377
 \mult@rightbox=\box80
 \mult@grightbox=\box81
 \mult@gfirstbox=\box82
@@ -1369,116 +1355,121 @@ Package multicol Warning: May not work with the twocolumn option on input line
 \@tempa=\box118
 \@tempa=\box119
 \@tempa=\box120
-\c@minrows=\count371
-\c@columnbadness=\count372
-\c@finalcolumnbadness=\count373
-\last@try=\dimen383
-\multicolovershoot=\dimen384
-\multicolundershoot=\dimen385
+\c@minrows=\count370
+\c@columnbadness=\count371
+\c@finalcolumnbadness=\count372
+\last@try=\dimen378
+\multicolovershoot=\dimen379
+\multicolundershoot=\dimen380
 \mult@nat@firstbox=\box121
 \colbreak@box=\box122
-\mc@col@check@num=\count374
+\mc@col@check@num=\count373
 ) (/usr/share/texmf-dist/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2018/04/09 v1.1a change counter resetting
 Package chngcntr Info: \counterwithout already defined.
 (chngcntr)             Quitting chngcntr on input line 21.
 )
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks51
+\inpenc@posthook=\toks52
+)
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 6
-8.
+6.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (./main.aux)
-\openout1 = `main.aux'.
+)
+No file "Maths_2009(question paper)".aux.
+\openout1 = `"Maths_2009(question paper).aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 68.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 66.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
-68.
-
+66.
 (/usr/share/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 66.
 LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 
-68.
+66.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 66.
 LaTeX Font Info:    Trying to load font information for OMX+txex on input line 
-68.
+66.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 66.
 LaTeX Font Info:    Trying to load font information for U+txexa on input line 6
-8.
+6.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <6> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <6> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <8> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <8> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <9> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <9> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <10> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <10> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <12> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <14> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <14> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <20> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <20> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <22> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <22> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <24> not available
-(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
-(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 68.
+(Font)              Font shape `OT1/txr/bx/it' tried instead on input line 66.
 
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 68.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 68.
+LaTeX Info: Redefining \celsius on input line 66.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 66.
 
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 68.
-Package gensymb Info: Using \Omega for \ohm on input line 68.
+LaTeX Info: Redefining \ohm on input line 66.
+Package gensymb Info: Using \Omega for \ohm on input line 66.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -1494,17 +1485,17 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count375
-\scratchdimen=\dimen386
+\scratchcounter=\count374
+\scratchdimen=\dimen381
 \scratchbox=\box123
-\nofMPsegments=\count376
-\nofMParguments=\count377
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count378
-\MPscratchDim=\dimen387
-\MPnumerator=\count379
-\makeMPintoPDFobject=\count380
-\everyMPtoPDFconversion=\toks55
+\nofMPsegments=\count375
+\nofMParguments=\count376
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count377
+\MPscratchDim=\dimen382
+\MPnumerator=\count378
+\makeMPintoPDFobject=\count379
+\everyMPtoPDFconversion=\toks54
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1514,7 +1505,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 68.
+Package hyperref Info: Link coloring OFF on input line 66.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1525,188 +1516,109 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count381
+\c@section@level=\count380
 )
-LaTeX Info: Redefining \ref on input line 68.
-LaTeX Info: Redefining \pageref on input line 68.
-LaTeX Info: Redefining \nameref on input line 68.
-
-(./main.out) (./main.out)
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
 \@outlinefile=\write4
-\openout4 = `main.out'.
+\openout4 = `"Maths_2009(question paper).out"'.
 
-\c@lstlisting=\count382
-\c@theorem=\count383
-\c@problem=\count384
-\c@proposition=\count385
-\c@lemma=\count386
-\c@example=\count387
-\c@rem=\count388
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
-3.
- (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
+\c@lstlisting=\count381
+\c@theorem=\count382
+\c@problem=\count383
+\c@proposition=\count384
+\c@lemma=\count385
+\c@example=\count386
+\c@rem=\count387
+LaTeX Font Info:    Font shape `OT1/txr/b/sc' in size <12> not available
+(Font)              Font shape `OT1/txr/bx/sc' tried instead on input line 140.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
 43.
-
-(/usr/share/texmf-dist/tex/latex/txfonts/utxmia.fd
-File: utxmia.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
-43.
-
-(/usr/share/texmf-dist/tex/latex/txfonts/utxsya.fd
-File: utxsya.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
-43.
-
-(/usr/share/texmf-dist/tex/latex/txfonts/utxsyb.fd
-File: utxsyb.fd 2000/12/15 v3.1
-)
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
-43.
-
-(/usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd
-File: utxsyc.fd 2000/12/15 v3.1
+(/usr/share/texmf-dist/tex/latex/txfonts/ts1txr.fd
+File: ts1txr.fd 2000/12/15 v3.1
 )
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 14
+4.
+(/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
 44.
-(/usr/share/texmf-dist/tex/latex/txfonts/ts1txr.fd
-File: ts1txr.fd 2000/12/15 v3.1
+
+(/usr/share/texmf-dist/tex/latex/txfonts/utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
+44.
+
+(/usr/share/texmf-dist/tex/latex/txfonts/utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
+44.
+
+(/usr/share/texmf-dist/tex/latex/txfonts/utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
+44.
+
+(/usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
 )
 Underfull \hbox (badness 10000) in paragraph at lines 144--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
  []
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 152.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 172.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 172.
-
-<1.png, id=47, 553.06625pt x 420.57124pt>
-File: 1.png Graphic file (type png)
-<use 1.png>
-Package pdftex.def Info: 1.png  used on input line 192.
-(pdftex.def)             Requested size: 142.26378pt x 108.17798pt.
-<2.png, id=48, 327.2225pt x 326.21875pt>
-File: 2.png Graphic file (type png)
-<use 2.png>
-Package pdftex.def Info: 2.png  used on input line 197.
-(pdftex.def)             Requested size: 142.26378pt x 141.82436pt.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
- <./1.png (PNG copy)>]
-<3.png, id=79, 162.6075pt x 146.5475pt>
-File: 3.png Graphic file (type png)
-<use 3.png>
-Package pdftex.def Info: 3.png  used on input line 202.
-(pdftex.def)             Requested size: 142.26378pt x 128.22202pt.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 209.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 209.
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 212.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 219.
+LaTeX Warning: File `image1.png' not found on input line 160.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 219.
+! Package pdftex.def Error: File `image1.png' not found: using draft setting.
 
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160     \includegraphics[width=5cm]{image1.png}
+                                                 
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.160     \includegraphics[width=5cm]{image1.png}
+                                                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 224.
-
-
-Underfull \hbox (badness 3312) in paragraph at lines 223--226
-\OT1/txr/m/n/12 If $[] \OML/txmi/m/it/12 ^^R \OT1/txr/m/n/12 + [] \OML/txmi/m/i
-t/12 ^^R \OT1/txr/m/n/12 = [] [] \OML/txmi/m/it/12 ^^R$\OT1/txr/m/n/12 , show t
-hat
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 227--241
-
- []
-
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 243.
-
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 2
-47.
-
-
-LaTeX Warning: Command \textperiodcentered invalid in math mode on input line 2
-47.
-
-Missing character: There is no · in font txr!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 251.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 251.
-
-Missing character: There is no ° in font txr!
-[2 <./2.png (PNG copy)> <./3.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 303--305
-
- []
-
-[3] (./main.aux)
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0645633F84BB5A8718173B03F822CFAE;352.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 44657 strings out of 478994
- 991944 string characters out of 5864750
- 1519737 words of memory out of 5000000
- 61277 multiletter control sequences out of 15000+600000
- 465335 words of font info for 154 fonts, out of 8000000 for 9000
+ 44543 strings out of 478994
+ 991158 string characters out of 5864750
+ 1502356 words of memory out of 5000000
+ 61225 multiletter control sequences out of 15000+600000
+ 455605 words of font info for 138 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 102i,10n,111p,408b,1010s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/txfonts/rtxb.pfb></usr/share/texmf-dist/fonts/type1/public/txfo
-nts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/
-share/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texmf-dist/fo
-nts/type1/public/tfrupee/tfrupee.pfb></usr/share/texmf-dist/fonts/type1/public/
-txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></
-usr/share/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texmf-dis
-t/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times
-/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (3 pages, 201583 bytes).
-PDF statistics:
- 162 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 102i,5n,111p,432b,1010s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
