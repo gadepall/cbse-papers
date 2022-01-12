@@ -1,0 +1,187 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage[cmex10]{amsmath}
+\usepackage{amsthm}
+\usepackage[export]{adjustbox}
+\usepackage{bm}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{listings}
+\usepackage{color}                                            %%
+\usepackage{array}                                            %%
+\usepackage{longtable}                                        %%
+\usepackage{calc}                                             %%
+\usepackage{multirow}                                         %%
+\usepackage{hhline}                                           %%
+\usepackage{ifthen}                                           %%
+\usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{tfrupee}
+% \usepackage{enumerate}
+\DeclareMathOperator*{\Res}{Res}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+\newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{#1}}}}
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}  %%
+
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{
+	12th CBSE MATHEMATICS
+}
+\author{ 2012-13
+	\thanks{}
+	
+}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\section{Section A}
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item If the binary operation $*$ on the set $Z$ of integers is defined by $a*b=a+b-5$, then write the identity element for the operation $*$ in $Z$.\\
+\item Write the values of $\cot(tan^{-1}a+\cos^{-1}a)$ \\
+\item If $A$ is a square matrix such that $A^2 = A$, then write the value of $(I+A)^2-3A$\\
+\item If $x \begin{bmatrix} 2 \\ 3 \end{bmatrix}	+ y \begin{bmatrix} -1 \\ 1 \end{bmatrix} = \begin{bmatrix} 10 \\ 5 \end{bmatrix}$, write the value of $x$.\\	
+\item Write the following determinant : $\begin{vmatrix} 102 & 18 & 36 \\ 1 & 3 & 4\\ 17 & 3 & 6 \end{vmatrix}$\\
+\\
+\item If $\int(\frac{x-1}{x^2})e^{x}dx= f(x)e^{x}+c$, then write the value of $f(x)$\\
+\item If $\int_{a}^{0}3x^{2}dx=8$, write the value of $'a'$.\\
+\item Write the value of $(\hat{i} \ $x$ \ \hat{j}).\hat{k}+(\hat{j} \ $x$ \ \hat{k}).\hat{i}$ \\
+\item Write the value of the area of the parallelogram determined by the vectors $2\hat{i}$ and $3\hat{j}$\\
+\item Write the direction cosines of a line parallel to z-axis\\
+\end{enumerate}
+\section{Section B}
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item If  $f(x) = \frac{4x+3}{6x-4}$, x $\neq \frac{2}{3}$, show that $fof(x) = x$ all $x \neq \frac{2}{3}$. What is the inverse of f? \\
+\item Prove that: \\
+ $\sin^{-1}(\frac{63}{65})=\sin^{-1}(\frac{5}{13})+\cos^{-1}(\frac{3}{5})$
+ \begin{align}
+    \centering \vec{OR}\nonumber
+\end{align}
+Solve for x:\\
+$2 \tan^{-1}(\sin x)=\tan^{-1}(2 \sec x), x \neq \frac{\pi}{2}$\\
+\item Using properties of determinants, prove that\\ $\begin{vmatrix} a & a+b & a+b+c \\ 2a & 3a+2b & 4a+3b+2c \\ 3a & 6a+3b & 10a+6b+3c \end{vmatrix}= a^{3}$\\
+\item If $x^{m} \ y^{n}=(x+y)^{m+n},$ prove that $\frac{dy}{dx}=\frac{y}{x}$\\
+\item If $y = e^{a \cos^{-1}x}, -1 \leq x < 1,$ show that \\ $(1-x^{2})\frac{d^{2}y}{dx^{2}}- x \frac{dy}{dx}-a^{2}y=0$ \\
+\begin{align}
+    \centering \vec{OR}\nonumber
+\end{align}
+If $x\sqrt{1+y}+y\sqrt{1+x}=0$,$-1 < x < 1$,$x \neq y$, then prove that \\ $\frac{dy}{dx}=-\frac{1}{(1+x^{2})}$\\
+\item Show that $y = \log(1+x)-\frac{2x}{2+x}$,$x>-1$, is an increasing function of $x$ throughout its domain.\\
+\begin{align}
+    \centering \vec{OR}\nonumber
+\end{align}
+\item Find the equation of the normal at the point $(am^{2}, am^{3})$ for the curve $ay^{2} = x^{3}$ \\
+\item Evaluate\\
+$\int x^{2}tan^{-1}x\ dx$
+\begin{align}
+    \centering \vec{OR}\nonumber
+\end{align}
+Evaluate \\
+$\int \frac{3x-1}{(x+2)^{2}}dx$ \\
+\item Solve the following differential equation : \\
+$[\frac{e^{-2\sqrt{x}}}{\sqrt{x}}-\frac{y}{\sqrt{x}}]\frac{dx}{dy}= 1$, $x\neq 0$\\
+\item Solve the following differential equation : \\
+$3\ e^{x}\tan y \ dx + (2-e^{x})\sec^{2}y\ dy =0$, given that when $x=0$, $y=\frac{\pi}{4}$\\
+\item If $\overrightarrow{\alpha} = 3\hat{i}+ 4\hat{j}+5\hat{k}$ and $\overrightarrow{\beta}=2\hat{i}+\hat{j}-4\hat{k}$, then express $\overrightarrow{\beta}$ in the form $\overrightarrow{\beta}=\overrightarrow{\beta_1}+\overrightarrow{\beta_2}$, where $\overrightarrow{\beta_1}$ is parallel of $\overrightarrow{\alpha}$ and $\overrightarrow{\beta_2}$ is perpendicular to $\overrightarrow{\alpha}$.\\
+\item Find the vector and cartesian equations of the line passing through the point $P(1,\ 2,\ 3)$ and parallel to the planes $\overrightarrow{r}$. $(\hat{i}-\hat{j}+2\hat{k}=5$ and $\overrightarrow{r}$ . $(3\hat{i}+\hat{j}+\hat{k})=6$.\\
+\item A pair of dice is thrown 4 times. If getting a doublet is considered a success, find the probability distribution of the number of successes and hence find its mean.\\ 
+\end{enumerate}
+\section{Section C}
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item Using matrices, solve the following system of equations:\\
+$x-y+z=4;\ 2x+y-3z=0; \ x+y+z=2 $
+\begin{align}
+    \centering \vec{OR}\nonumber
+\end{align}
+If $A^{-1}=\begin{bmatrix}3&-1&1\\-15&-6&-5\\5&-2&2\end{bmatrix}$ and $B=\begin{bmatrix}1&2&-1\\-1&3&0\\0&-2&1\end{bmatrix}$, find $(AB)^{-1}$.\\
+\item Show that the altitude of the right circular cone of maximum volume that can be inscribed in a sphere of radius is $\frac{4R}{3}$.\\
+\item Find the area of the region in the first quadrant enclosed by x-axis, the line $x = \sqrt{3}\ y$ and the circle $x^{2}+y^{2}=4$. \\
+\item Evaluate:\\
+$\int_{1}^{3}(x^{2}+x)dx$ as a limit of a sum.
+\begin{align}
+    \centering \vec{OR}\nonumber
+\end{align}
+Evaluate: \\
+$\int_{0}^{\pi/4}\frac{\cos^{2}}{\cos^{2}x+4\sin^{2}x}dx$\\
+\item Find the vector equation of the plane passing through the points (2, 1, -1) and (-1, 3, 4) and perpendicular to the plane $x-2y+4z=10$. Also show that the plane thus obtained contains the lines $\overrightarrow{r}=\hat{i}+3\hat{j}+4\hat{k}+\lambda(3\hat{i}-2\hat{j}-5\hat{k}).$\\
+\item A company produces soft drinks that has a contract which requires that a minimum of 80 units of the chemical A and 60 units of the chemical B go into each bottle of the drink. The chemicals are available in prepared mix packets from two different suppliers. Supplier S had a packet of mix of 4 units of A and 2 units of B that costs $\rupee 10$. The supplier T has a packet of mix of 1 unit of A and 1 unit of B that costs $\rupee 4$. How many packets of mixes from S and T should the company purchase to honour the contract requirement and yet minimize cost ? Make a LPP and solve graphically.\\
+\item In a certain college, $4\%$ of boys and $1\%$ of girls are taller than 1.75 metres. Furthermore, $60\%$ of the students in the college are girls. A student is selected at random from the college and is found to be taller than 1.75 metres. Find the probability that the selected student is a girl.
+ \end{enumerate}
+\end{document}
