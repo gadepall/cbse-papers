@@ -1,0 +1,332 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\usepackage{lipsum} 
+\usepackage{amsmath}
+\usepackage[export]{adjustbox}
+\usepackage{bm}
+\usepackage{longtable}
+\usepackage[shortlabels]{enumitem}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{listings}
+\usepackage{color}                                            %%
+\usepackage{array}
+\usepackage{calc}       %%
+\usepackage{multirow}                                         %%
+\usepackage{hhline}                                           %%
+\usepackage{ifthen}                                           %%
+\usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{tfrupee}
+% \usepackage{enumerate}
+\DeclareMathOperator*{\Res}{Res}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+\newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{#1}}}}
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}  %%
+\usepackage{graphicx}
+\graphicspath{ {./} }
+\usepackage{multicol}
+\usepackage{enumitem}
+\setlength{\columnsep}{1cm}
+\title{10th CBSE MATHEMATICS}
+\author{2020-21}
+\begin{document}
+
+\maketitle
+\newpage
+\bigskip
+\section{Section A}
+\begin{enumerate}[label=1.\arabic*]
+
+\item The value(s) of k for which the quadratic equation $2x^2 + kx + 2 = 0$ has equal roots, is\\
+\begin{enumerate}[(a)]
+    \item $4$\\
+    \item $\pm 4$\\
+    \item $- 4$\\
+    \item $0$\\
+\end{enumerate}
+
+\item Which of the following is not an A.P. ?\\
+\begin{enumerate}[(a)]
+    \item $-1.2, 0.8, 2.8...$\\
+    \item $3, 3 + \sqrt{2}, 3 + 2\sqrt{2},3 + 3\sqrt{2}...$\\ 
+    \item $\frac{4}{3}, \frac{7}{3}, \frac{9}{3}. \frac{12}{3}...$\\
+    \item $\frac{-1}{5}, \frac{-2}{5}, \frac{-3}{5}$\\
+\end{enumerate}
+
+\item The radius of a sphere (in cm), whose volume is $12\pi cm^3$, is\\
+\begin{enumerate}[(a)]
+    \item $3$\\
+    \item $3 \sqrt{2}$\\ 
+    \item $3^\frac{2}{3}$\\
+    \item $3^\frac{1}{3}$\\
+\end{enumerate}
+
+\item The distance between the points (m , -n) and (-m , n) is\\
+\begin{enumerate}[(a)]
+    \item $\sqrt{m^2 + n^2}$\\
+    \item $m + n$\\ 
+    \item $2\sqrt{m^2 + n^2}$\\
+    \item $\sqrt{2m^2 + 2n^2}$\\
+\end{enumerate}
+
+\item In Fig $\ref{Fig1}$ ,from an external point P, two tangents $\Vec{PQ}$ and $\Vec{PR}$ are drawn to a circle of radius 4cm with center O. If $\angle{QPR} = 90^\circ$, then length of $\Vec{PQ}$ is\\
+\begin{enumerate}[(a)]
+    \item $3$\\
+    \item $4$\\ 
+    \item $2$\\
+    \item $2\sqrt{2}$\\
+\end{enumerate}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\columnwidth,center]{Fig1.png}
+	\caption{}
+	\label{Fig1}
+ \end{figure}
+ 
+ \item On dividing a polynomial p$\myvec{x}$ by $x^2 - 4$, the quotient and remainder are found to be x and 3 respectively. The polynomial p$\myvec{x}$\\
+ \begin{enumerate}[(a)]
+    \item $3$\\
+    \item $4$\\ 
+    \item $2$\\
+    \item $2\sqrt{2}$\\
+\end{enumerate}
+
+\item In Fig $\ref{Fig2}$ ,$DE \parallel BC$. If $\frac{AD}{DB} = \frac{3}{2}$ and $AE = 2.7cm$, then $EC$ is equal to \\
+\begin{enumerate}[(a)]
+    \item $2.0 cm$\\
+    \item $1.8 cm$\\ 
+    \item $4.0 cm$\\
+    \item $2.7 cm$\\
+\end{enumerate}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\columnwidth,center]{Fig2.png}
+	\caption{}
+	\label{Fig2}
+ \end{figure}
+ 
+\item \begin{enumerate}[a)]
+\item The point on the x axis which is equidistant from $\myvec{-4,0}$ and $\myvec{10,0}$\\
+\begin{enumerate}[(a)]
+\item $\myvec{7,0}$\\
+\item $\myvec{5,0}$\\ 
+\item $\myvec{0,0}$\\
+\item $\myvec{3,0}$\\
+\end{enumerate}
+
+\item The center of a circle whose end points of a diameter are $\myvec{-6, 3}$ and $\myvec{6,4}$ is
+\begin{enumerate}[(a)]
+\item $\myvec{8,-1}$\\
+\item $\myvec{4,7}$\\ 
+\item $\myvec{0,\frac{7}{2}}$\\
+\item $\myvec{4,\frac{7}{2}}$\\
+\end{enumerate}
+\end{enumerate}
+
+\item The pair of linear equations,\\
+$\frac{3x}{2} + \frac{5y}{3}$ and\\
+$9x + 10y = 14$ is\\
+\begin{enumerate}[(a)]
+\item consistent\\
+\item inconsistent\\ 
+\item consistent with one solution\\
+\item consistent with many solutions\\
+\end{enumerate}
+
+\item In Fig $\ref{Fig3}$, $\myvec{PQ}$ is tangent to the circle with center at O, at the point B. If $\angle{AOB} = 100^\circ$, then $\angle{ABP}$ is equal to\\
+\begin{enumerate}[(a)]
+\item $50^\circ$\\
+\item $40^\circ$\\ 
+\item $60^\circ$\\
+\item $80^\circ$\\
+\end{enumerate}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\columnwidth,center]{Fig3.png}
+	\caption{}
+	\label{Fig3}
+ \end{figure}
+ \end{enumerate}
+\begin{enumerate}[label=2.\arabic*]
+\item What is the simplest form of $\frac{1 + \tan^2 A}{1 + \cot^2 A}$\\
+\item If the probablity of an event E happening is 0.023, then $P\myvec{\Vec{E}}$\\
+\item All concentric circles are \rule{1.5cm}{0.15mm} to each other\\
+
+\item The probability of an event that is sure to happen is, \rule{1.5cm}{0.15mm}\\
+
+\item AOBC is a rectangle whose 3 vertices are $A = \myvec{0,-3}$, $O = \myvec{0,0}$ and $B = \myvec{4,0}$. The length of the diagonal is \rule{1.5cm}{0.15mm}\\
+
+\item Write the value of $sin^2 30^\circ + cos^2 60^\circ$\\
+
+\item \begin{enumerate}[a)]
+    \item Form a quadratic polynomial, the sum and product of whose zeros are $\myvec{-3}$ and $2$ respectively.\\
+    \item Can $\myvec{x^2 - 1}$ be a remainder while dividing $x^4 - 3x^2 + 5x - 9$ by $\myvec{x^2 + 3}$? Justify the reasons.\\
+\end{enumerate}
+
+\item Find the sum of the first 100 natural numbers.\\
+
+\item The LCM of 2 numbers is 182 and their HCF is 13. If one of the numbers is 26.\\
+
+\item In Fig $\ref{Fig4}$ the angle of elevation from the top of a tower from a point C on the ground, which is 30m away from the foot of the tower is $30^\circ$. Find the height of the tower.\\
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\columnwidth,center]{Fig4.png}
+	\caption{}
+	\label{Fig4}
+ \end{figure}
+\end{enumerate}
+
+
+\section{Section B}
+\begin{enumerate}[label=3.\arabic*]
+    \item A cone and a cylinder have the same radii, but the height of the cone is 3 times that of the cylinder. Find the ratio of their volumes\\
+    
+    \item \begin{enumerate} 
+    \item In Fig $\ref{Fig5}$, a quadrilateral ABCD is drawn to circumscribe a circle. Prove that $\vec{AB} + \vec{CD} = \vec{BC} + \vec{AD}$.\\
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.5\columnwidth,center]{Fig5.png}
+    	\caption{}
+    	\label{Fig5}
+     \end{figure}
+     \vspace{5cm}\\
+     \item In Fig $\ref{Fig6}$, find the perimeter of $\triangle ABC$ if $\vec{AP} = 12cm$\\
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.5\columnwidth,center]{Fig6.png}
+    	\caption{}
+    	\label{Fig6}
+     \end{figure}
+     \end{enumerate}
+      
+     \item Find the mode of the following distribution:\\
+     \vspace{2mm}\\
+     \scalebox{0.7}{
+     \begin{tabular}{|l|c|c|c|c|c|c|}
+        \hline
+        Marks & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60  \\
+        \hline
+        Number of Students  & 4 & 6 & 7 & 12 & 5 & 6\\
+        \hline
+     \end{tabular}
+     }
+     \vspace{2mm}
+     
+    \item In Fig $\ref{Fig7}$ if $\vec{PQ} \parallel \vec{BC}$ and $\vec{PR} \parallel \vec{CD}$, prove that $\frac{QB}{AQ} = \frac{DR}{AR}$.\\
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.5\columnwidth,center]{Fig7.png}
+    	\caption{}
+    	\label{Fig7}
+     \end{figure}
+    
+    \item 
+    \begin{enumerate}[a)]
+        \item Show that $5 + 2\sqrt{7}$ is an irrational number, where $\sqrt{7}$ is given to be an irrational number.\\
+        \item Check whether $12^n$ can end with the digit 0 for any natural number n.\\
+    \end{enumerate}
+    
+    \item If A, B and C are interior angles of $\triangle ABC$, then show that\\
+    $\cos \myvec{\frac{B + C}{2}} = \sin \myvec{\frac{A}{2}}$.\\
+\section{Section C}
+    \item Prove that:\\
+    $\myvec{\sin^4 - \cos^4 + 1} \csc^2\theta = 2$\\
+    
+    \item Find the sum:\\
+    $\myvec{-5} + \myvec{-8} + \myvec{-11} + ... + \myvec{-230}$\\
+    
+    \item 
+    \begin{enumerate}
+    \item Construct a $\triangle ABC$ with sides $\vec{BC}=6cm$, $\vec{AB} = 5cm$ and $\angle{ABC} = 60^\circ$. Then construct a triangle whose sides are $\frac{3}{4}$ of the corresponding sides of $\triangle ABC$.\\
+    
+    \item Draw a circle of radius $3.5 cm$. Take a point P outside the circle at a distance of $7 cm$ from the centre of the circle and construct a pair of tangents to the circle from that point. \\
+    \end{enumerate}
+    
+    \item In Fig $\ref{Fig8}$, ABCD is a parallelogram. A semicircle with centre O and the diameter AB has been drawn and it passes through D. If $\Vec{AB} = 12$ and $\Vec{OD} \perp \Vec{AB}$, then find the area of the shaded region. Use $\myvec{\pi = 3.14}$\\
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.5\columnwidth,center]{Fig8.png}
+    	\caption{}
+    	\label{Fig8}
+     \end{figure} 
+\end{enumerate}
+\begin{enumerate}[label=4.\arabic*]
+    \item A game in a booth at a Diwali Fair involves using a spinner first. Then, if the spinner stops on an even number, the player is allowed to pick a marble from a bag. The spinner and the marbles in the bag are represented in Fig $\ref{Fig9}$.\\
+    Prizes are given, when a black marble is picked. Shweta plays the game once.
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.5\columnwidth,center]{Fig9.png}
+	    \caption{}
+	    \label{Fig9}
+    \end{figure} 
+    \begin{enumerate}[i)]
+        \item What is the probability that she will be allowed to pick a marble from the bag?\\
+        \item Suppose she is allowed to pick a marble from the bag, what is the probability of getting a prize, when it is given that the bag contains 20 balls out of which 6 are black?\\
+    \end{enumerate}
+    \item \begin{enumerate}
+        \item A fraction becomes $\frac{1}{3}$ when 1 is subtracted from the numerator and it becomes $\frac{1}{4}$ when 8 added to its denominator. Find the fraction.\\
+        \item The present age of a father is three years more than three times the age of his son. Three years hence the father's age will be 10 years more than twice the age of the son. Determine their present ages.\\
+    \end{enumerate} 
+    \item \begin{enumerate}
+        \item Find the ratio in which the y-axis divides the line segment joining the points $\myvec{6, -4}$ and $\myvec{-2, -7}$. Also find the point of intersection\\
+        \item Show that the points $\myvec{7, 10}$, $\myvec{-2,5}$ and $\myvec{3, -4}$ and vertices of an isosceles right triangle.
+    \end{enumerate}
+    \item Use Euclid Division Lemma to show that the square of any positive integer is either in the form $3q$ or $3q + 1$ for some integer q.\\
+\section{Section D}
+    \item \begin{enumerate}[a)]
+        \item Sum of the areas of two squares is $544 m^2$. If the difference of their perimeters is $32m$, find the sides of the two squares.\\
+        \item A motorboat whose speed is 18 kmph in still water takes 1 hour more to go 24 km upstream than to return downstream than to return downstream to the same spot. Find the speed of the stream.\\
+    \end{enumerate}
+    \item \begin{enumerate}
+        \item For the following data, draw a 'less than' ogive and hence find the median of the distribution.\\
+     \vspace{2mm}\\
+     \scalebox{0.6}{
+    \begin{tabular}{|l|c|c|c|c|c|c|c|}
+        \hline
+        Age & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60 & 60-70  \\
+        \hline
+        Number of people & 5 & 15 & 20 & 25 & 15 & 11 & 9\\
+        \hline
+    \end{tabular}
+    }
+    \vspace{2mm}\\
+    \item The distribution given below shows the number of wickets taken by bowlers in one-day cricket matches. Find the mean and the median of the number of wickets. Find the mean and the median of the number of wickets taken.\\
+     \vspace{2mm}\\
+     \scalebox{0.6}{
+    \begin{tabular}{|l|c|c|c|c|c|c|c|}
+        \hline
+        Number of wickets & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60 & 60-70  \\
+        \hline
+        Number of bowlers & 5 & 15 & 20 & 25 & 15 & 11 & 9\\
+        \hline
+    \end{tabular}
+    }    
+    \vspace{2mm}\\
+    \end{enumerate}
+    \item A statue $1.6m$ tall, stands on the top of a pedestal. From a point on the ground,  the angle of elevation of the top of the statue is $60^\circ$ and from the same point the angle of elevation of the top of the pedestal is $45^\circ$. Find the height of the pedestal.Use$\myvec{\sqrt{3} = 1.73}$\\
+    
+    \item \begin{enumerate}
+        \item  Obtain other zeros of the polynomial\\
+    $p \myvec{x} = 2x^4 - x^3 - 11x^2 + 5x + 5$\\
+    if the two of its zeros are $\sqrt{5}$ and $- \sqrt{5}$\\
+        \item What minimum must be added to $2x^3 - 3x^2 + 6x + 7$ so that the resulting polynomial will be divisible by $x^2 - 4x + 8$ ?\\
+    \end{enumerate}
+    
+    \item In a cylindrical vessel of radius 10cm, containing some water, 9000 small spherical balls are dropped which are completely immersed in water which raises the water level. If each spherical ball is of radius 0.5 cm then find the rise in the level of water in the vessel.\\
+    
+    \item If a line is drawn parallel to one side of a triangle to intersect the other two sides at distinct points, prove that the other two sides are divided in the same ratio.\\
+    
+\end{enumerate}
+\end{document}
