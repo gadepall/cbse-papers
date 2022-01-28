@@ -1,52 +1,3 @@
-%\documentclass[journal,12pt,twocolumn]{IEEEtran}
-%\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
-%\usepackage{lipsum} 
-%\usepackage{amsmath}
-%\usepackage[export]{adjustbox}
-%\usepackage{bm}
-%\usepackage{longtable}
-%\usepackage[shortlabels]{enumitem}
-%\usepackage{amssymb}
-%\usepackage{mathtools}
-%\usepackage[breaklinks=true]{hyperref}
-%\usepackage{listings}
-%\usepackage{color}                                            %%
-%\usepackage{array}
-%\usepackage{calc}       %%
-%\usepackage{multirow}                                         %%
-%\usepackage{hhline}                                           %%
-%\usepackage{ifthen}                                           %%
-%\usepackage{lscape}     
-%\usepackage{multicol}
-%\usepackage{tfrupee}
-%% \usepackage{enumerate}
-%\DeclareMathOperator*{\Res}{Res}
-%\renewcommand\thesection{\arabic{section}}
-%\renewcommand\thesubsection{\thesection.\arabic{subsection}}
-%\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
-%\renewcommand\thesectiondis{\arabic{section}}
-%\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
-%\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
-%\newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{#1}}}}
-%\hyphenation{op-tical net-works semi-conduc-tor}
-%\def\inputGnumericTable{}  %%
-%\usepackage{graphicx}
-%\graphicspath{ {./} }
-%\usepackage{multicol}
-%\usepackage{enumitem}
-%\setlength{\columnsep}{1cm}
-%\title{10th CBSE MATHEMATICS}
-%\author{2020-21}
-%\begin{document}
-%
-%\maketitle
-%\newpage
-%\bigskip
-
-
-
-
-
 \let\negmedspace\undefined
 \let\negthickspace\undefined
 %\RequirePackage{amsmath}
@@ -350,46 +301,117 @@ This manual provides an introduction to vectors and their properties,  based on 
 \section{Section A}
 \begin{enumerate}[label=1.\arabic*]
 
-\item The value(s) of k for which the quadratic equation $2x^2 + kx + 2 = 0$ has equal roots, is\\
+\item The value(s) of k for which the quadratic equation $2x^2 + kx + 2 = 0$ has equal roots, is
 \begin{enumerate}
-    \item $4$\\
-    \item $\pm 4$\\
-    \item $- 4$\\
-    \item $0$\\
+    \item $4$
+    \item $\pm 4$
+    \item $- 4$\
+    \item $0$
 \end{enumerate}
+\solution 
+A quadratic equation 
+		\begin{align}
+			ax^2+bx + c  &= 0
+		\end{align}
+		has equal roots only if 
+ the discriminant
+		\begin{align}
+			b^2 - 4a c  = 0
+		\end{align}
+		Substituting
+		\begin{align}
+			a = 2, b = k, c &= 2,
+			\\
+\implies 			k^2 - 4 &= 0
+			\\
+			\text{or, }k = \pm 4
+		\end{align}
 
-\item Which of the following is not an A.P. ?\\
+\item Which of the following is not an A.P. ?
 \begin{enumerate}
-    \item $-1.2, 0.8, 2.8...$\\
-    \item $3, 3 + \sqrt{2}, 3 + 2\sqrt{2},3 + 3\sqrt{2}...$\\ 
-    \item $\frac{4}{3}, \frac{7}{3}, \frac{9}{3}. \frac{12}{3}...$\\
-    \item $\frac{-1}{5}, \frac{-2}{5}, \frac{-3}{5}$\\
+    \item $-1.2, 0.8, 2.8...$
+    \item $3, 3 + \sqrt{2}, 3 + 2\sqrt{2},3 + 3\sqrt{2}...$
+    \item $\frac{4}{3}, \frac{7}{3}, \frac{9}{3}, \frac{12}{3}...$
+    \item $\frac{-1}{5}, \frac{-2}{5}, \frac{-3}{5}$
 \end{enumerate}
+\solution $a_0, a_1, a_2$ can be terms of an AP only if 
+		\begin{align}
+	a_1 - 	a_0 = a_2 - 2a_1
+		\end{align}
+		Considering each of the above cases, 
+		\begin{enumerate}
+			\item 
+				\begin{align}
+					2.8 - 1.2 = 1.6 = 2(0.8)
+				\end{align}
+				Hence, the given terms are in A.P.
+			\item 
+				\begin{align}
+					3 + \sqrt{2} - 3 = \sqrt{2} \\
+					3 + 2\sqrt{2} - \brak{3+ \sqrt{2}}= \sqrt{2} \\
+					3 + 3\sqrt{2} - \brak{3+ 2\sqrt{2}}= \sqrt{2} 
+				\end{align}
+				Hence, the given terms are in A.P.
+    \item 
+	    \begin{align}
+		    \frac{7}{3} -   \frac{4}{3} &= 1
+		    \\
+		     \frac{9}{3}-\frac{7}{3} &= \frac{2}{3}
+		     \\
+		    \frac{12}{3}-\frac{9}{3} &= 1
+	    \end{align}
+				Hence, the given terms are not in A.P.
+				\end{enumerate}
 
-\item The radius of a sphere (in cm), whose volume is $12\pi cm^3$, is\\
+\item The radius of a sphere (in cm), whose volume is $12\pi cm^3$, is
 \begin{enumerate}
-    \item $3$\\
-    \item $3 \sqrt{2}$\\ 
-    \item $3^\frac{2}{3}$\\
-    \item $3^\frac{1}{3}$\\
+    \item $3$
+    \item $3 \sqrt{2}$
+    \item $3^\frac{2}{3}$
+    \item $3^\frac{1}{3}$
 \end{enumerate}
+\solution 
+The volume of a sphere, given the radius $r$, is given by
+\begin{align}
+	V = \frac{4}{3}\pi r^3
+\end{align}
 
-\item The distance between the points (m , -n) and (-m , n) is\\
+\item The distance between the points (m , -n) and (-m , n) is
 \begin{enumerate}
-    \item $\sqrt{m^2 + n^2}$\\
-    \item $m + n$\\ 
-    \item $2\sqrt{m^2 + n^2}$\\
-    \item $\sqrt{2m^2 + 2n^2}$\\
+    \item $\sqrt{m^2 + n^2}$
+    \item $m + n$
+    \item $2\sqrt{m^2 + n^2}$
+    \item $\sqrt{2m^2 + 2n^2}$
 \end{enumerate}
+		\solution Letting 
+		\begin{align}
+			\vec{A} &= \myvec{m \\ -n}, \vec{B}=\myvec{-m \\ n}
+			\\
+			\vec{A}-\vec{B} &= 2\myvec{m \\ -n}
+		\end{align}
+Using the definition   of the norm in \eqref{eq:norm2d},
+		\begin{align}
+\norm{\vec{A}-\vec{B}} &=2\norm{\myvec{m \\ -n}}
+			\\
+			&=2 \sqrt{\myvec{m & -n}\myvec{m \\ -n}} 
+\\
+			&			= 2 \sqrt{m^2+n^2}
+		\end{align}
 
-\item In Fig $\ref{Fig1}$ ,from an external point P, two tangents $\Vec{PQ}$ and $\Vec{PR}$ are drawn to a circle of radius 4cm with center O. If $\angle{QPR} = 90^\circ$, then length of $\Vec{PQ}$ is\\
+\item In Fig. $\ref{Fig1}$ ,from an external point P, two tangents $\Vec{PQ}$ and $\Vec{PR}$ are drawn to a circle of radius 4cm with center O. If $\angle{QPR} = 90\degree$, then length of $\Vec{PQ}$ is
 \begin{enumerate}
-    \item $3$\\
-    \item $4$\\ 
-    \item $2$\\
-    \item $2\sqrt{2}$\\
+    \item $3$
+    \item $4$
+    \item $2$
+    \item $2\sqrt{2}$
 \end{enumerate}
-
+\solution In general, for a circle with radus $r$ and $\angle{QPR} = \theta$, 
+\begin{align}
+	PQ &= r \cot \frac{\theta}{2}
+	\\
+	&= 4 \cot 45 \degree = 4
+\end{align}
+upon substituting numerical values.
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.5\columnwidth]{Fig1.png}
@@ -397,21 +419,38 @@ This manual provides an introduction to vectors and their properties,  based on 
 	\label{Fig1}
  \end{figure}
  
- \item On dividing a polynomial p$\myvec{x}$ by $x^2 - 4$, the quotient and remainder are found to be x and 3 respectively. The polynomial p$\myvec{x}$\\
+ \item On dividing a polynomial p$\myvec{x}$ by $x^2 - 4$, the quotient and remainder are found to be x and 3 respectively. The polynomial p$\myvec{x}$
  \begin{enumerate}
-    \item $3$\\
-    \item $4$\\ 
-    \item $2$\\
-    \item $2\sqrt{2}$\\
+    \item $3$
+    \item $4$
+    \item $2$
+    \item $2\sqrt{2}$
 \end{enumerate}
-
-\item In Fig $\ref{Fig2}$ ,$DE \parallel BC$. If $\frac{AD}{DB} = \frac{3}{2}$ and $AE = 2.7cm$, then $EC$ is equal to \\
+\solution In general, the polynomial
+\begin{align}
+	p(x) &= d(x)q(x) + r(x)
+	\\
+	&= \brak{x^2-4}x +3
+	\\
+	&= x^3 - 4x + 3
+\end{align}
+\item In Fig $\ref{Fig2}$ ,$DE \parallel BC$. If $\frac{AD}{DB} = \frac{3}{2}$ and $AE = 2.7cm$, then $EC$ is equal to 
 \begin{enumerate}
-    \item $2.0 cm$\\
-    \item $1.8 cm$\\ 
-    \item $4.0 cm$\\
-    \item $2.7 cm$\\
+    \item $2.0 cm$
+    \item $1.8 cm$
+    \item $4.0 cm$
+    \item $2.7 cm$
 \end{enumerate}
+\solution Since 
+\begin{align}
+	\frac{AD}{DB}  &= 
+	\frac{AE}{EC}
+	\\
+	\implies \frac{3}{2}&= \frac{2.7}{EC}
+	\\
+	\text{or, }
+	EC & = 1.8
+\end{align}
 
 \begin{figure}[h!]
     \centering
@@ -423,19 +462,59 @@ This manual provides an introduction to vectors and their properties,  based on 
 \item \begin{enumerate}
 \item The point on the x axis which is equidistant from $\myvec{-4,0}$ and $\myvec{10,0}$\\
 \begin{enumerate}
-\item $\myvec{7,0}$\\
-\item $\myvec{5,0}$\\ 
-\item $\myvec{0,0}$\\
-\item $\myvec{3,0}$\\
+\item $\myvec{7,0}$
+\item $\myvec{5,0}$
+\item $\myvec{0,0}$
+\item $\myvec{3,0}$
 \end{enumerate}
+\solution 
+		Letting the given points be $\vec{A},\vec{B}$. 
+		\begin{align}
+	\because  \vec{A}-\vec{B} &= \myvec{ -4 \\ 0}-\myvec{10 \\ 0}
+	  \\
+	  &= \myvec{ -14 \\ 0},
+	  \\
+			\text{and }	   \frac{\norm{\vec{A}}^2 - \norm{\vec{B}}^2}{2} &= -42,
+  \end{align}
+  \eqref{eq:norm2d_equidist}, can be expressed as 
+  \begin{align}
+	  \myvec{ -14 & 0}\vec{x} 
+	  &=  42
+	  \\
+	  \implies 
+	  \myvec{ -14 & 0}\myvec{x \\ 0} 
+	  &=  -42
+	  \\
+	  \text{or, } x =3 
+  \end{align}
+  Hence, the desired point is $\myvec{ 3 \\ 0}$.
 
 \item The center of a circle whose end points of a diameter are $\myvec{-6, 3}$ and $\myvec{6,4}$ is
 \begin{enumerate}
-\item $\myvec{8,-1}$\\
-\item $\myvec{4,7}$\\ 
-\item $\myvec{0,\frac{7}{2}}$\\
-\item $\myvec{4,\frac{7}{2}}$\\
+\item $\myvec{8,-1}$
+\item $\myvec{4,7}$
+\item $\myvec{0,\frac{7}{2}}$
+\item $\myvec{4,\frac{7}{2}}$
 \end{enumerate}
+		\solution 
+Using section formula, 
+	  from \eqref{eq:section_formula},
+		the desired point is given by 
+  \begin{align}
+	  \vec{O}&= \frac{\vec{B}+ \vec{A}}{2}
+	  \\
+	  &= \frac{1}{2}\sbrak{\myvec{ -6 \\ 3}+\myvec{6 \\ 4}}
+	  \\
+	  &=\frac{1}{2}\myvec{0 \\ 7}
+  \end{align}
+    See Fig. 
+	  \ref{fig:cbse-10-3.pdf}
+%  \begin{figure}
+%	  \centering 
+%	  \includegraphics[width=\columnwidth]{figs/cbse-10-3.pdf}
+%	  \caption{}
+%	  \label{fig:cbse-10-3.pdf}
+%	  \end{figure}
 \end{enumerate}
 
 \item The pair of linear equations,
@@ -478,12 +557,12 @@ This manual provides an introduction to vectors and their properties,  based on 
 	\end{align}
 From the above, it is obvious that the rank of the coefficient matrix is not equal to the rank of the augmented matrix.  Hence, the system is inconsistent.	
 
-\item In Fig $\ref{Fig3}$, $\myvec{PQ}$ is tangent to the circle with center at O, at the point B. If $\angle{AOB} = 100^\circ$, then $\angle{ABP}$ is equal to\\
+\item In Fig $\ref{Fig3}$, $\myvec{PQ}$ is tangent to the circle with center at O, at the point B. If $\angle{AOB} = 100\degree$, then $\angle{ABP}$ is equal to\\
 \begin{enumerate}
-\item $50^\circ$\\
-\item $40^\circ$\\ 
-\item $60^\circ$\\
-\item $80^\circ$\\
+\item $50\degree$\\
+\item $40\degree$\\ 
+\item $60\degree$\\
+\item $80\degree$\\
 \end{enumerate}
 
 \begin{figure}[h!]
@@ -501,8 +580,17 @@ From the above, it is obvious that the rank of the coefficient matrix is not equ
 \item The probability of an event that is sure to happen is, \rule{1.5cm}{0.15mm}\\
 
 \item AOBC is a rectangle whose 3 vertices are $A = \myvec{0,-3}$, $O = \myvec{0,0}$ and $B = \myvec{4,0}$. The length of the diagonal is \rule{1.5cm}{0.15mm}\\
+\solution
+In general, if three vertices of a rectangle are given, the adjacent sides need to be identified first to identify the opposite vertices.  For example, in the given problem,  
+  \begin{align}
+	  \brak{\vec{A}-\vec{O}}^{\top}\brak{\vec{B}-\vec{O}} &= 0	 
+	  \\
+	  \implies \angle AOB &= 90\degree
+  \end{align}
+  and $AB$ is the diagonal.
+This condition needs to be checked before proceeding to find the length of the diagonal.
 
-\item Write the value of $sin^2 30^\circ + cos^2 60^\circ$\\
+\item Write the value of $sin^2 30\degree + cos^2 60\degree$\\
 
 \item \begin{enumerate}
     \item Form a quadratic polynomial, the sum and product of whose zeros are $\myvec{-3}$ and $2$ respectively.\\
@@ -513,7 +601,7 @@ From the above, it is obvious that the rank of the coefficient matrix is not equ
 
 \item The LCM of 2 numbers is 182 and their HCF is 13. If one of the numbers is 26.\\
 
-\item In Fig $\ref{Fig4}$ the angle of elevation from the top of a tower from a point C on the ground, which is 30m away from the foot of the tower is $30^\circ$. Find the height of the tower.\\
+\item In Fig $\ref{Fig4}$ the angle of elevation from the top of a tower from a point C on the ground, which is 30m away from the foot of the tower is $30\degree$. Find the height of the tower.\\
 
 \begin{figure}[h!]
     \centering
@@ -584,7 +672,7 @@ From the above, it is obvious that the rank of the coefficient matrix is not equ
     
     \item 
     \begin{enumerate}
-    \item Construct a $\triangle ABC$ with sides $\vec{BC}=6cm$, $\vec{AB} = 5cm$ and $\angle{ABC} = 60^\circ$. Then construct a triangle whose sides are $\frac{3}{4}$ of the corresponding sides of $\triangle ABC$.\\
+    \item Construct a $\triangle ABC$ with sides $\vec{BC}=6cm$, $\vec{AB} = 5cm$ and $\angle{ABC} = 60\degree$. Then construct a triangle whose sides are $\frac{3}{4}$ of the corresponding sides of $\triangle ABC$.\\
     
     \item Draw a circle of radius $3.5 cm$. Take a point P outside the circle at a distance of $7 cm$ from the centre of the circle and construct a pair of tangents to the circle from that point. \\
     \end{enumerate}
@@ -616,8 +704,59 @@ From the above, it is obvious that the rank of the coefficient matrix is not equ
     \end{enumerate} 
     \item \begin{enumerate}
         \item Find the ratio in which the y-axis divides the line segment joining the points $\myvec{6, -4}$ and $\myvec{-2, -7}$. Also find the point of intersection\\
+\solution  In general, letting the given points be $\vec{A}, \vec{B}$, 
+		\begin{align}
+			\vec{P} &= \frac{k\vec{B}+ \vec{A} }{k+1}
+			\label{eq:cbse-10-5-section}
+		\end{align}
+		Since the point lies on the $y$-axis, 
+		\begin{align}
+			\vec{e}_1^{\top}\vec{P} &= 0
+			\\
+			\implies k\vec{e}_1^{\top}\vec{B}+ \vec{e}_1^{\top}\vec{A} &=0
+			\\
+			\text{or, } k &=- \frac{\vec{e}_1^{\top}\vec{A}}{\vec{e}_1^{\top}\vec{B}}
+		\end{align}
+Substituting in 			\eqref{eq:cbse-10-5-section} and simplifying, 
+		\begin{align}
+			\vec{P} &= \frac{\brak{\vec{e}_1^{\top}\vec{B}}\vec{A}- \brak{\vec{e}_1^{\top}\vec{A}}\vec{B} }{\brak{\vec{e}_1^{\top}\vec{B}}-\brak{\vec{e}_1^{\top}\vec{A}}}
+		\end{align}
         \item Show that the points $\myvec{7, 10}$, $\myvec{-2,5}$ and $\myvec{3, -4}$ and vertices of an isosceles right triangle.
-    \end{enumerate}
+		\\
+		\solution Let the given points be $\vec{A}, \vec{B}, \vec{C}$ respectively. 
+			 Then, the direction vectors of $AB, BC$ and $CA$ are
+		\begin{align}
+			\vec{A} -\vec{B}&= \myvec{7 \\ 10} -\myvec{-2 \\ 5} = \myvec{9 \\ 5}
+			\\
+			\vec{B} -\vec{C}&=  -\myvec{-2 \\ 5}-\myvec{3 \\ -4} = \myvec{-5 \\ 9}
+			\\
+			\vec{C} -\vec{A}&= \myvec{3 \\ -4} -\myvec{7 \\ 10} = \myvec{-4 \\ -14}
+		\end{align}
+		From the above,  we find that 
+		\begin{align}
+			\brak{\vec{A} -\vec{B}}^{\top}\brak{\vec{B} -\vec{C}}&=  \myvec{9 & 5}\myvec{-5 \\ 9}
+			\\
+			&=0
+			\\
+			\brak{\vec{B} -\vec{C}}^{\top}\brak{\vec{C} -\vec{A}}&=  \myvec{-5 & 9}\myvec{-4 \\ -14}
+\\
+			&=-106
+			\\
+			\brak{\vec{C} -\vec{A}}^{\top}\brak{\vec{A} -\vec{B}}&=  \myvec{-4 & -14}\myvec{9 \\ 5}
+\\
+			&=-106
+		\end{align}
+		From  the above equations, 
+    \eqref{eq:angle2d} and 
+    \eqref{eq:angle2d_orth},
+		\begin{align}
+			\brak{\vec{A} -\vec{B}}\perp \brak{\vec{B} -\vec{C}}
+			\\
+			\angle BCA = 
+			\angle CAB  
+		\end{align}
+		Thus, the triangle is right angled and isosceles.
+   \end{enumerate}
     \item Use Euclid Division Lemma to show that the square of any positive integer is either in the form $3q$ or $3q + 1$ for some integer q.\\
 \section{Section D}
     \item \begin{enumerate}
@@ -650,7 +789,7 @@ From the above, it is obvious that the rank of the coefficient matrix is not equ
     }    
     \vspace{2mm}\\
     \end{enumerate}
-    \item A statue $1.6m$ tall, stands on the top of a pedestal. From a point on the ground,  the angle of elevation of the top of the statue is $60^\circ$ and from the same point the angle of elevation of the top of the pedestal is $45^\circ$. Find the height of the pedestal.Use$\myvec{\sqrt{3} = 1.73}$\\
+    \item A statue $1.6m$ tall, stands on the top of a pedestal. From a point on the ground,  the angle of elevation of the top of the statue is $60\degree$ and from the same point the angle of elevation of the top of the pedestal is $45\degree$. Find the height of the pedestal.Use$\myvec{\sqrt{3} = 1.73}$\\
     
     \item \begin{enumerate}
         \item  Obtain other zeros of the polynomial\\
