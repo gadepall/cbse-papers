@@ -460,33 +460,26 @@ upon substituting numerical values.
  \end{figure}
  
 \item \begin{enumerate}
-\item The point on the x axis which is equidistant from $\myvec{-4,0}$ and $\myvec{10,0}$\\
+\item The point on the x axis which is equidistant from $\myvec{-4 \\ 0}$ and $\myvec{10\\0}$\\
 \begin{enumerate}
 \item $\myvec{7,0}$
 \item $\myvec{5,0}$
 \item $\myvec{0,0}$
 \item $\myvec{3,0}$
 \end{enumerate}
-\solution 
-		Letting the given points be $\vec{A},\vec{B}$. 
-		\begin{align}
-	\because  \vec{A}-\vec{B} &= \myvec{ -4 \\ 0}-\myvec{10 \\ 0}
-	  \\
-	  &= \myvec{ -14 \\ 0},
-	  \\
-			\text{and }	   \frac{\norm{\vec{A}}^2 - \norm{\vec{B}}^2}{2} &= -42,
-  \end{align}
-  \eqref{eq:norm2d_equidist}, can be expressed as 
+\solution If $\vec{x}$ lies on the  $x$-axis and is  equidistant from the points $\vec{A}$ and $\vec{B}$, 
   \begin{align}
-	  \myvec{ -14 & 0}\vec{x} 
-	  &=  42
-	  \\
-	  \implies 
-	  \myvec{ -14 & 0}\myvec{x \\ 0} 
-	  &=  -42
-	  \\
-	  \text{or, } x =3 
+	  \vec{x} &=
+	   x\vec{e}_1
   \end{align}
+  where 
+  \begin{align}
+	  x &=\frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
+}
+	  &= 3
+	  \label{eq:cbse_10_x}
+  \end{align}
+upon   substituting numerical values. 
   Hence, the desired point is $\myvec{ 3 \\ 0}$.
 
 \item The center of a circle whose end points of a diameter are $\myvec{-6, 3}$ and $\myvec{6,4}$ is
@@ -498,7 +491,6 @@ upon substituting numerical values.
 \end{enumerate}
 		\solution 
 Using section formula, 
-	  from \eqref{eq:section_formula},
 		the desired point is given by 
   \begin{align}
 	  \vec{O}&= \frac{\vec{B}+ \vec{A}}{2}
@@ -507,8 +499,8 @@ Using section formula,
 	  \\
 	  &=\frac{1}{2}\myvec{0 \\ 7}
   \end{align}
-    See Fig. 
-	  \ref{fig:cbse-10-3.pdf}
+%    See Fig. 
+%	  \ref{fig:cbse-10-3.pdf}
 %  \begin{figure}
 %	  \centering 
 %	  \includegraphics[width=\columnwidth]{figs/cbse-10-3.pdf}
@@ -557,12 +549,12 @@ Using section formula,
 	\end{align}
 From the above, it is obvious that the rank of the coefficient matrix is not equal to the rank of the augmented matrix.  Hence, the system is inconsistent.	
 
-\item In Fig $\ref{Fig3}$, $\myvec{PQ}$ is tangent to the circle with center at O, at the point B. If $\angle{AOB} = 100\degree$, then $\angle{ABP}$ is equal to\\
+\item In Fig $\ref{Fig3}$, $\myvec{PQ}$ is tangent to the circle with center at O, at the point B. If $\angle{AOB} = 100\degree$, then $\angle{ABP}$ is equal to
 \begin{enumerate}
-\item $50\degree$\\
-\item $40\degree$\\ 
-\item $60\degree$\\
-\item $80\degree$\\
+\item $50\degree$
+\item $40\degree$
+\item $60\degree$
+\item $80\degree$
 \end{enumerate}
 
 \begin{figure}[h!]
@@ -571,37 +563,88 @@ From the above, it is obvious that the rank of the coefficient matrix is not equ
 	\caption{}
 	\label{Fig3}
  \end{figure}
+ \solution  In general,
+	\begin{align}
+		\angle{ABP} &= \frac{1}{2} \angle{AOB} 
+		\\
+		&= 50 \degree
+	\end{align}
+
  \end{enumerate}
 \begin{enumerate}[label=2.\arabic*]
 \item What is the simplest form of $\frac{1 + \tan^2 A}{1 + \cot^2 A}$\\
-\item If the probablity of an event E happening is 0.023, then $P\myvec{\Vec{E}}$\\
+	\solution
+		\begin{align}
+			\frac{1 + \tan^2 A}{1 + \cot^2 A} 
+			&=\frac{1 + \tan^2 A}{1 + \frac{1}{\tan^2 A}} 
+			\\
+			&=\tan^2 A
+		\end{align}
+	\item If the probablity of an event E happening is 0.023, then $P\brak{\bar{E}} = $\\
 \item All concentric circles are \rule{1.5cm}{0.15mm} to each other\\
 
 \item The probability of an event that is sure to happen is, \rule{1.5cm}{0.15mm}\\
 
 \item AOBC is a rectangle whose 3 vertices are $A = \myvec{0,-3}$, $O = \myvec{0,0}$ and $B = \myvec{4,0}$. The length of the diagonal is \rule{1.5cm}{0.15mm}\\
 \solution
-In general, if three vertices of a rectangle are given, the adjacent sides need to be identified first to identify the opposite vertices.  For example, in the given problem,  
+The length of the diagonal is  
   \begin{align}
-	  \brak{\vec{A}-\vec{O}}^{\top}\brak{\vec{B}-\vec{O}} &= 0	 
-	  \\
-	  \implies \angle AOB &= 90\degree
+	  \norm{\vec{A}-\vec{B}} = \sqrt{3^2+4^2} = 5
   \end{align}
-  and $AB$ is the diagonal.
-This condition needs to be checked before proceeding to find the length of the diagonal.
 
-\item Write the value of $sin^2 30\degree + cos^2 60\degree$\\
+\item Write the value of $\sin^2 30\degree + \cos^2 60\degree$\\
+	\solution Since 
+  \begin{align}
+	  \cos 60\degree &= \sin 30\degree, 
+	  \\
+	  \sin^2 30\degree + \cos^2 60\degree &= 
+2\sin^2 30\degree 
+\\
+	  &=1
+  \end{align}
+
 
 \item \begin{enumerate}
     \item Form a quadratic polynomial, the sum and product of whose zeros are $\myvec{-3}$ and $2$ respectively.\\
-    \item Can $\myvec{x^2 - 1}$ be a remainder while dividing $x^4 - 3x^2 + 5x - 9$ by $\myvec{x^2 + 3}$? Justify the reasons.\\
+	    \solution  The desired quadratic polynomial is 
+  \begin{align}
+	  \brak{x+3}\brak{x-2} = x^2-x-6
+  \end{align}
+    \item Can $\myvec{x^2 - 1}$ be a remainder while dividing $x^4 - 3x^2 + 5x - 9$ by $\myvec{x^2 + 3}$? ustify the reasons.\\
+	    \solution  If the given statement be true, 
+  \begin{align}
+	  \frac{x^4 - 3x^2 + 5x - 9}{x^2 + 3} &= q(x) +\frac{ x^2 - 1}{x^2+3}
+	  \\
+	  &= q(x) +\frac{ x^2 +3 - 4}{x^2+3}
+	  \\
+	  &=q(x) + 1 - \frac{4}{x^2+3} 
+  \end{align}
+  which implies that the remainder is -4 resulting in a contradiction.  Hence, the given statement is not true.
 \end{enumerate}
 
 \item Find the sum of the first 100 natural numbers.\\
-
-\item The LCM of 2 numbers is 182 and their HCF is 13. If one of the numbers is 26.\\
-
+	\solution The sum of the first $n$ natural number is 
+  \begin{align}
+	  \frac{n\brak{n+1}}{2}
+  \end{align}
+Sustituting $n = 100$ in the above, the desired sum is 
+  \begin{align}
+50 \times 51 = 2550	
+  \end{align}
+\item The LCM of 2 numbers is 182 and their HCF is 13. If one of the numbers is 26, find the other.\\
+\solution The desired number is obtained as
+  \begin{align}
+	  \frac{182 \times 13}{26} = 91
+  \end{align}
 \item In Fig $\ref{Fig4}$ the angle of elevation from the top of a tower from a point C on the ground, which is 30m away from the foot of the tower is $30\degree$. Find the height of the tower.\\
+	\solution In general, the height is given by 
+  \begin{align}
+	  h &= d \tan \theta
+	  \\
+	  &= 30 \tan 30 \degree = 30 \frac{1}{\sqrt{3}}
+	  \\
+	  &= 10 \sqrt{3}
+  \end{align}
 
 \begin{figure}[h!]
     \centering
@@ -615,16 +658,27 @@ This condition needs to be checked before proceeding to find the length of the d
 \section{Section B}
 \begin{enumerate}[label=3.\arabic*]
     \item A cone and a cylinder have the same radii, but the height of the cone is 3 times that of the cylinder. Find the ratio of their volumes\\
-    
+   \solution Let $h_i, V_i, i = 1,2$ be the respective heights and volumes of the cone and the cylinder. 
+   Then 
+  \begin{align}
+	  V_1 &= \frac{1}{3} \pi r^2 h_1
+	  \\
+	  V_2 &=  \pi r^2 h_2
+	  \\
+	  \implies \frac{V_}1{V_2} &= \frac{h_1}{3h_2}
+	  \\
+	  &= 1
+  \end{align}
+  $\because h_1 = 3h_2$.
     \item \begin{enumerate} 
     \item In Fig $\ref{Fig5}$, a quadrilateral ABCD is drawn to circumscribe a circle. Prove that $\vec{AB} + \vec{CD} = \vec{BC} + \vec{AD}$.\\
+	    \solution 
     \begin{figure}[h!]
         \centering
         \includegraphics[width=0.5\columnwidth]{Fig5.png}
     	\caption{}
     	\label{Fig5}
      \end{figure}
-     \vspace{5cm}\\
      \item In Fig $\ref{Fig6}$, find the perimeter of $\triangle ABC$ if $\vec{AP} = 12cm$\\
     \begin{figure}[h!]
         \centering
