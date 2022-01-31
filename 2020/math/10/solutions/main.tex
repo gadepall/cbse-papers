@@ -1043,16 +1043,33 @@ Substituting in 			\eqref{eq:cbse-10-5-section} and simplifying,
 			    \vec{x} &= \vec{A} + \lambda \vec{m}
 		    \end{align}
 			    Substituting the above in \eqref{eq:cbse-2020-circ}, 
-		    \begin{align}
+		    \begin{multline}
 			    \brak{ \vec{A} + \lambda \vec{m}}^{\top}
 			    \brak{ \vec{A} + \lambda \vec{m}}
 			    = r^2
 			    \\
 			    \implies \lambda^2\norm{\vec{m}}^2+ 2 \lambda \vec{m}^{\top}\vec{A}
 			    +\norm{\vec{A}}^2 - r^2 = 0
-			    \\
-			    \text{or, }\lambda = \frac{-\vec{m}^{\top}\vec{A}\pm \sqrt{\brak{\vec{m}^{\top}\vec{A}}^2 -\norm{\vec{m}}^2\brak{\norm{\vec{A}}^2 - r^2 }}}{\norm{\vec{m}}^2}
+		    \end{multline}
+		    yielding 
+		    {\small
+		    \begin{align}
+			    \label{eq:cbse-2020-circ_lam}
+		\lambda = \frac{-\vec{m}^{\top}\vec{A}\pm \sqrt{\brak{\vec{m}^{\top}\vec{A}}^2 -\norm{\vec{m}}^2\brak{\norm{\vec{A}}^2 - r^2 }}}{\norm{\vec{m}}^2}
 		    \end{align}
+		    }
+		    For this problem, the numerical values are
+		    \begin{align}
+			    \vec{n} = \myvec{1 \\ -1}, c = 8, 
+		\vec{n} = \myvec{1 \\ 1}, 
+			     \vec{A} = \myvec{8 \\ 0},  r^2 = 544
+		    \end{align}
+		    Substituting the above in 
+			    \eqref{eq:cbse-2020-circ_lam}, 
+		    \begin{align}
+			    \lambda &= \frac{-8 \pm \sqrt{64 + 1088}}{2}
+		    \end{align}
+		    
         \item A motorboat whose speed is 18 kmph in still water takes 1 hour more to go 24 km upstream than to return downstream than to return downstream to the same spot. Find the speed of the stream.\\
     \end{enumerate}
     \item \begin{enumerate}
