@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.19)  29 JAN 2022 17:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.19)  31 JAN 2022 06:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -903,19 +903,20 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 304.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 304.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+LaTeX Warning: Reference `eq:norm2d' on page 1 undefined on input line 392.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-
-LaTeX Warning: Reference `eq:norm2d' on page 2 undefined on input line 392.
-
-<Fig1.png, id=81, 142.25778pt x 213.00632pt>
+<Fig1.png, id=72, 142.25778pt x 213.00632pt>
 File: Fig1.png Graphic file (type png)
 <use Fig1.png>
 Package pdftex.def Info: Fig1.png  used on input line 417.
 (pdftex.def)             Requested size: 126.0pt x 188.67145pt.
-<Fig2.png, id=84, 264.73642pt x 133.88968pt>
+<Fig2.png, id=75, 264.73642pt x 133.88968pt>
 File: Fig2.png Graphic file (type png)
 <use Fig2.png>
 Package pdftex.def Info: Fig2.png  used on input line 457.
@@ -926,11 +927,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 463--465
  []
 
 [2 <./Fig1.png> <./Fig2.png>]
-<Fig3.png, id=133, 276.9082pt x 168.12285pt>
+<Fig3.png, id=122, 276.9082pt x 168.12285pt>
 File: Fig3.png Graphic file (type png)
 <use Fig3.png>
 Package pdftex.def Info: Fig3.png  used on input line 562.
 (pdftex.def)             Requested size: 126.0pt x 76.49857pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 583--584
 
@@ -947,148 +952,117 @@ Underfull \hbox (badness 10000) in paragraph at lines 586--587
  []
 
 [3 <./Fig3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 625--626
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 627--628
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 629--630
-
- []
-
-<Fig4.png, id=182, 174.20874pt x 120.19643pt>
+<Fig4.png, id=171, 174.20874pt x 120.19643pt>
 File: Fig4.png Graphic file (type png)
 <use Fig4.png>
-Package pdftex.def Info: Fig4.png  used on input line 633.
+Package pdftex.def Info: Fig4.png  used on input line 651.
 (pdftex.def)             Requested size: 126.0pt x 86.93567pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 642--643
-
- []
-
-<Fig5.png, id=184, 167.3621pt x 110.30684pt>
-File: Fig5.png Graphic file (type png)
-<use Fig5.png>
-Package pdftex.def Info: Fig5.png  used on input line 648.
-(pdftex.def)             Requested size: 126.0pt x 83.04634pt.
-
-Underfull \hbox (badness 4872) in paragraph at lines 645--653
-[]\OT1/ptm/m/n/12 In Fig $[][][]$, a quadri-lat-eral ABCD is
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 645--653
-
- []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Fig6.png, id=186, 159.75473pt x 108.78537pt>
+<Fig5.png, id=173, 167.3621pt x 110.30684pt>
+File: Fig5.png Graphic file (type png)
+<use Fig5.png>
+Package pdftex.def Info: Fig5.png  used on input line 678.
+(pdftex.def)             Requested size: 126.0pt x 83.04634pt.
+
+LaTeX Warning: Reference `Fig6' on page 4 undefined on input line 682.
+
+<Fig6.png, id=174, 159.75473pt x 108.78537pt>
 File: Fig6.png Graphic file (type png)
 <use Fig6.png>
-Package pdftex.def Info: Fig6.png  used on input line 656.
+Package pdftex.def Info: Fig6.png  used on input line 685.
 (pdftex.def)             Requested size: 126.0pt x 85.80171pt.
 
-Overfull \hbox (21.64357pt too wide) in paragraph at lines 662--674
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (21.64357pt too wide) in paragraph at lines 691--703
 []
  []
 
-<Fig7.png, id=188, 301.25179pt x 209.20264pt>
+
+LaTeX Warning: Reference `Fig7' on page 4 undefined on input line 704.
+
+<Fig7.png, id=175, 301.25179pt x 209.20264pt>
 File: Fig7.png Graphic file (type png)
 <use Fig7.png>
-Package pdftex.def Info: Fig7.png  used on input line 678.
+Package pdftex.def Info: Fig7.png  used on input line 707.
 (pdftex.def)             Requested size: 126.0pt x 87.4974pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 1521) in paragraph at lines 685--686
+Underfull \hbox (badness 1521) in paragraph at lines 714--715
 \OT1/ptm/m/n/12 where $[]$ is given to be an ir-ra-tional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 685--686
+Underfull \hbox (badness 10000) in paragraph at lines 714--715
+
+ []
+
+[4 <./Fig4.png> <./Fig5.png>]
+
+LaTeX Warning: Reference `eq:cbse-2020-10-tri' on page 5 undefined on input lin
+e 746.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 749--751
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--687
+Underfull \hbox (badness 10000) in paragraph at lines 752--754
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 689--691
-
- []
-
-[4 <./Fig4.png> <./Fig5.png> <./Fig6.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 692--694
+Underfull \hbox (badness 10000) in paragraph at lines 757--758
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 695--697
+Underfull \hbox (badness 10000) in paragraph at lines 759--760
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--701
+LaTeX Warning: Reference `Fig8' on page 5 undefined on input line 762.
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 702--703
-
- []
-
-<Fig8.png, id=218, 343.85306pt x 160.51547pt>
+<Fig8.png, id=207, 343.85306pt x 160.51547pt>
 File: Fig8.png Graphic file (type png)
 <use Fig8.png>
-Package pdftex.def Info: Fig8.png  used on input line 708.
+Package pdftex.def Info: Fig8.png  used on input line 765.
 (pdftex.def)             Requested size: 126.0pt x 58.81665pt.
-<Fig9.png, id=220, 454.92064pt x 183.33759pt>
+
+LaTeX Warning: Reference `Fig9' on page 5 undefined on input line 771.
+
+<Fig9.png, id=208, 454.92064pt x 183.33759pt>
 File: Fig9.png Graphic file (type png)
 <use Fig9.png>
-Package pdftex.def Info: Fig9.png  used on input line 718.
+Package pdftex.def Info: Fig9.png  used on input line 775.
 (pdftex.def)             Requested size: 126.0pt x 50.77747pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 723--724
+Underfull \hbox (badness 10000) in paragraph at lines 780--781
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 724--725
+Underfull \hbox (badness 10000) in paragraph at lines 781--782
+
+ []
+
+[5 <./Fig6.png> <./Fig7.png> <./Fig8.png> <./Fig9.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 784--785
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 727--728
-
- []
-
-
-Underfull \hbox (badness 3557) in paragraph at lines 728--729
+Underfull \hbox (badness 3557) in paragraph at lines 785--786
 []\OT1/ptm/m/n/12 The present age of a fa-ther is three
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 728--729
-
- []
-
-[5 <./Fig7.png> <./Fig8.png> <./Fig9.png>]
-
-LaTeX Warning: Reference `eq:angle2d' on page 6 undefined on input line 775.
-
-
-LaTeX Warning: Reference `eq:angle2d_orth' on page 6 undefined on input line 77
-6.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 785--786
@@ -1096,102 +1070,122 @@ Underfull \hbox (badness 10000) in paragraph at lines 785--786
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 788--789
+LaTeX Warning: Reference `eq:cbse-10-5-section' on page 6 undefined on input li
+ne 802.
+
+
+LaTeX Warning: Reference `eq:angle2d' on page 6 undefined on input line 832.
+
+
+LaTeX Warning: Reference `eq:angle2d_orth' on page 6 undefined on input line 83
+3.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 842--843
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 789--790
+Underfull \hbox (badness 10000) in paragraph at lines 845--846
 
  []
 
 
-Overfull \hbox (16.61243pt too wide) in paragraph at lines 792--804
+Underfull \hbox (badness 10000) in paragraph at lines 846--847
+
+ []
+
+
+Overfull \hbox (16.61243pt too wide) in paragraph at lines 849--861
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--804
+Underfull \hbox (badness 10000) in paragraph at lines 849--861
 
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 804--816
+Underfull \hbox (badness 1389) in paragraph at lines 861--873
 []\OT1/ptm/m/n/12 The dis-tri-bu-tion given be-low shows the
  []
 
 
-Overfull \hbox (20.03238pt too wide) in paragraph at lines 804--816
+Overfull \hbox (20.03238pt too wide) in paragraph at lines 861--873
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--816
+Underfull \hbox (badness 10000) in paragraph at lines 861--873
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 874--875
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 817--818
+Underfull \hbox (badness 10000) in paragraph at lines 877--880
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 820--823
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 823--824
+Underfull \hbox (badness 10000) in paragraph at lines 880--881
 []\OT1/ptm/m/n/12 What min-i-mum must be added to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 823--824
+Underfull \hbox (badness 10000) in paragraph at lines 880--881
 
  []
 
 
-Underfull \hbox (badness 4416) in paragraph at lines 826--827
+Underfull \hbox (badness 4416) in paragraph at lines 883--884
 []\OT1/ptm/m/n/12 In a cylin-dri-cal ves-sel of ra-dius 10cm,
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 826--827
+Underfull \hbox (badness 4940) in paragraph at lines 883--884
 \OT1/ptm/m/n/12 balls are dropped which are com-pletely
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 826--827
+Underfull \hbox (badness 10000) in paragraph at lines 883--884
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 828--829
+Underfull \hbox (badness 10000) in paragraph at lines 885--886
 
  []
 
+[7
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-(./main.aux)
+] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 318A0EAA72705C63555A68C195DDB6D4;364.
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: BE422FBE30165F8DF756FBCC95593152;182
+(rerunfilecheck)             After:  318A0EAA72705C63555A68C195DDB6D4;364.
  ) 
 Here is how much of TeX's memory you used:
- 23844 strings out of 478353
- 433173 string characters out of 5854635
- 737229 words of memory out of 5000000
- 41353 multiletter control sequences out of 15000+600000
+ 23861 strings out of 478353
+ 433424 string characters out of 5854635
+ 740075 words of memory out of 5000000
+ 41352 multiletter control sequences out of 15000+600000
  444466 words of font info for 115 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 100i,18n,104p,496b,687s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 100i,18n,104p,496b,713s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
@@ -1204,10 +1198,10 @@ cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
 e/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type
 1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb
 >
-Output written on main.pdf (6 pages, 593454 bytes).
+Output written on main.pdf (7 pages, 597674 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 196 named destinations out of 1000 (max. 500000)
- 90 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 390 PDF objects out of 1000 (max. 8388607)
+ 333 compressed objects within 4 object streams
+ 214 named destinations out of 1000 (max. 500000)
+ 74 words of extra memory for PDF output out of 10000 (max. 10000000)
 

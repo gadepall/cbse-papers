@@ -665,7 +665,7 @@ Sustituting $n = 100$ in the above, the desired sum is
 	  \\
 	  V_2 &=  \pi r^2 h_2
 	  \\
-	  \implies \frac{V_}1{V_2} &= \frac{h_1}{3h_2}
+	  \implies \frac{V_1}{V_2} &= \frac{h_1}{3h_2}
 	  \\
 	  &= 1
   \end{align}
@@ -713,10 +713,38 @@ Sustituting $n = 100$ in the above, the desired sum is
     \begin{enumerate}
         \item Show that $5 + 2\sqrt{7}$ is an irrational number, where $\sqrt{7}$ is given to be an irrational number.\\
         \item Check whether $12^n$ can end with the digit 0 for any natural number n.\\
+		\solution  If $12^n$ ends with the digit 0, 
+		    \begin{align}
+			    12^{n} \equiv 0 {\pmod{10}}
+		    \end{align}
+		    However, 
+		    \begin{align}
+			    12^{n} \not\equiv 0 {\pmod{10}}
+		    \end{align}
+
+
+		    it should be divisible by 10.  12 is not divisible by 10, neither is $12^2$.  Let us assume that $12^{n-1}$ is not divisible by 12.  Then, 
+		    \begin{align}
+			    12^{n} = 12.12^{n-1}
+		    \end{align}
+		    Since neither 12 nor $12^{n-1}$ are divisible by 10, $12^{n}$ is also not divisible by $n$.
     \end{enumerate}
     
-    \item If A, B and C are interior angles of $\triangle ABC$, then show that\\
-    $\cos \myvec{\frac{B + C}{2}} = \sin \myvec{\frac{A}{2}}$.\\
+    \item If A, B and C are interior angles of $\triangle ABC$, then show that
+		    \begin{align}
+			    \label{eq:cbse-2020-10-tri}
+    \cos \myvec{\frac{B + C}{2}} = \sin \myvec{\frac{A}{2}}
+		    \end{align}
+		    \solution In a triangle,
+		    \begin{align}
+			    A+B+C &= 180\degree
+			    \\
+			    \implies \myvec{\frac{B + C}{2}} &= 90\degree-\frac{A}{2}
+			    \\
+			    \text{or, }    \cos \myvec{\frac{B + C}{2}} = \sin \myvec{90\degree -\frac{A}{2}}
+		    \end{align}
+			    yielding \eqref{eq:cbse-2020-10-tri}.
+
 \section{Section C}
     \item Prove that:\\
     $\myvec{\sin^4 - \cos^4 + 1} \csc^2\theta = 2$\\
