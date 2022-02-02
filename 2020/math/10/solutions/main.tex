@@ -6,6 +6,7 @@
 % \usepackage{setspace}
  \usepackage{gensymb}
 %\doublespacing
+ \usepackage{polynom}
 %\singlespacing
 %\usepackage{silence}
 %Disable all warnings issued by latex starting with "You have..."
@@ -1142,15 +1143,58 @@ Substituting in 			\eqref{eq:cbse-10-5-section} and simplifying,
 
     
     \item \begin{enumerate}
-        \item  Obtain other zeros of the polynomial\\
-    $p \myvec{x} = 2x^4 - x^3 - 11x^2 + 5x + 5$\\
+        \item  Obtain other zeros of the polynomial
+		\begin{align}
+			\label{cbse-2020-10-poly1}
+p \myvec{x} = 2x^4 - x^3 - 11x^2 + 5x + 5
+		\end{align}
     if the two of its zeros are $\sqrt{5}$ and $- \sqrt{5}$\\
+    \solution The given polynomial can be expressed as
+		\begin{align}
+			p \myvec{x} 
+			&= \brak{x - \sqrt{5}}\brak{x + \sqrt{5}}\brak{ax^2 + bx + c }
+			\\
+			&= \brak{x^2 - 5}\brak{ax^2 + bx + c }
+			\\
+			&= ax^4 +bx^3 +\brak{c-5a}x^2 -5bx -5c
+		\end{align}
+			Comparing the above with \eqref{cbse-2020-10-poly1}, 
+		\begin{align}
+			a = 2, b = c = -1
+		\end{align}
+		Thus we need to find the zeros of the polynomial 
+		\begin{align}
+			2x^2 -x -1 &= 0
+			\\
+			\implies x = 1, -\frac{1}{2}
+		\end{align}
         \item What minimum must be added to $2x^3 - 3x^2 + 6x + 7$ so that the resulting polynomial will be divisible by $x^2 - 4x + 8$ ?\\
+		\solution  From the following division,
+
+\polylongdiv[style=A]{2x^3 - 3x^2 + 6x + 7}{x^2 - 4x + 8}
+
+
+it is obvious that $33-10x$ needs to be added.
     \end{enumerate}
     
     \item In a cylindrical vessel of radius 10cm, containing some water, 9000 small spherical balls are dropped which are completely immersed in water which raises the water level. If each spherical ball is of radius 0.5 cm then find the rise in the level of water in the vessel.\\
+	    \solution The various parameters considered in this problem are listed in Table 
+\eqref{table:table1}. 
+
+\begin{table}[ht!]
+	\input{tables/cbse-2020-table.tex}
+\caption{}
+\label{table:table1}	
+\end{table}
+From the given information, the volume of all the balls will be equal the increase in the volume of water in the vessel.  Thus, 
+\begin{align}
+	N \times \frac{4}{3}\pi r^3 &= \pi R^2 h
+	\\
+	\implies  h &=  \frac{4r^3}{3R^2}N
+	\\
+	&= 15
+\end{align}
     
     \item If a line is drawn parallel to one side of a triangle to intersect the other two sides at distinct points, prove that the other two sides are divided in the same ratio.\\
-    
 \end{enumerate}
 \end{document}
