@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.19)  31 JAN 2022 18:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.19)  2 FEB 2022 11:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1023,80 +1023,72 @@ LaTeX Warning: Reference `eq:angle2d_orth' on page 7 undefined on input line 99
 
 [7]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10> on input line 1056.
+(Font)              <10> on input line 1057.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 1056.
+(Font)              <5> on input line 1057.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1060--1061
-
- []
-
-
-Overfull \hbox (16.61243pt too wide) in paragraph at lines 1063--1075
+Overfull \hbox (16.61243pt too wide) in paragraph at lines 1109--1121
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1063--1075
+Underfull \hbox (badness 10000) in paragraph at lines 1109--1121
 
  []
 
 
-Underfull \hbox (badness 1389) in paragraph at lines 1075--1087
+Underfull \hbox (badness 1389) in paragraph at lines 1121--1133
 []\OT1/ptm/m/n/12 The dis-tri-bu-tion given be-low shows the
  []
 
 
-Overfull \hbox (20.03238pt too wide) in paragraph at lines 1075--1087
+Overfull \hbox (20.03238pt too wide) in paragraph at lines 1121--1133
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1075--1087
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1133
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1089
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1091--1094
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1095
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1149
 []\OT1/ptm/m/n/12 What min-i-mum must be added to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1094--1095
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1149
 
  []
 
 
-Underfull \hbox (badness 4416) in paragraph at lines 1097--1098
+Underfull \hbox (badness 4416) in paragraph at lines 1151--1152
 []\OT1/ptm/m/n/12 In a cylin-dri-cal ves-sel of ra-dius 10cm,
  []
 
 
-Underfull \hbox (badness 4940) in paragraph at lines 1097--1098
+Underfull \hbox (badness 4940) in paragraph at lines 1151--1152
 \OT1/ptm/m/n/12 balls are dropped which are com-pletely
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1097--1098
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1099--1100
+Underfull \hbox (badness 10000) in paragraph at lines 1153--1154
 
  []
 
-[8] (./main.aux)
+[9
+
+] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1104,10 +1096,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 318A0EAA72705C63555A68C195DDB6D4;364.
  ) 
 Here is how much of TeX's memory you used:
- 23989 strings out of 478353
- 435750 string characters out of 5854635
- 739481 words of memory out of 5000000
- 41417 multiletter control sequences out of 15000+600000
+ 24005 strings out of 478353
+ 436021 string characters out of 5854635
+ 739647 words of memory out of 5000000
+ 41421 multiletter control sequences out of 15000+600000
  447286 words of font info for 123 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  100i,20n,104p,496b,997s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1127,10 +1119,10 @@ pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/time
 s/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (8 pages, 660775 bytes).
+Output written on main.pdf (9 pages, 663224 bytes).
 PDF statistics:
- 515 PDF objects out of 1000 (max. 8388607)
- 444 compressed objects within 5 object streams
- 271 named destinations out of 1000 (max. 500000)
+ 536 PDF objects out of 1000 (max. 8388607)
+ 464 compressed objects within 5 object streams
+ 283 named destinations out of 1000 (max. 500000)
  90 words of extra memory for PDF output out of 10000 (max. 10000000)
 

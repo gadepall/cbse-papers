@@ -1040,6 +1040,7 @@ Substituting in 			\eqref{eq:cbse-10-5-section} and simplifying,
 		    \end{align}
 		    Thus, the desired solution is the point of intersection of the line with the circle in the first quadrant.  Using the parameteric equation of the line 
 		    \begin{align}
+			    \label{eq:cbse-2020-circ-line-param}
 			    \vec{x} &= \vec{A} + \lambda \vec{m}
 		    \end{align}
 			    Substituting the above in \eqref{eq:cbse-2020-circ}, 
@@ -1060,17 +1061,49 @@ Substituting in 			\eqref{eq:cbse-10-5-section} and simplifying,
 		    }
 		    For this problem, the numerical values are
 		    \begin{align}
-			    \vec{n} = \myvec{1 \\ -1}, c = 8, 
-		\vec{n} = \myvec{1 \\ 1}, 
-			     \vec{A} = \myvec{8 \\ 0},  r^2 = 544
+			    \label{eq:cbse-2020-circ_param}
+			    \vec{n} &= \myvec{1 \\ -1}, c = 8, 
+		\vec{m} = \myvec{1 \\ 1}, 
+			    \\
+			     \vec{A} &= \myvec{8 \\ 0},  r^2 = 544
 		    \end{align}
 		    Substituting the above in 
 			    \eqref{eq:cbse-2020-circ_lam}, 
 		    \begin{align}
-			    \lambda &= \frac{-8 \pm \sqrt{64 + 1088}}{2}
+			    \lambda = 12
+			    \label{eq:cbse-2020-circ-lam}
 		    \end{align}
+		    Thus, substituting from 
+			    \eqref{eq:cbse-2020-circ-lam}
+			    and 
+			    \eqref{eq:cbse-2020-circ_param}
+			    in 
+			    \eqref{eq:cbse-2020-circ-line-param}
+			    the desired point of intersection is 
+		    \begin{align}
+			    \vec{x} &= \myvec{8 \\ 0} +  12 \myvec{1 \\ 1}
+			    \\
+			    &= \myvec{20 \\ 12}
+		    \end{align}
+		    Thus, the sides are $20m$ and $12m$.
+			    
 		    
-        \item A motorboat whose speed is 18 kmph in still water takes 1 hour more to go 24 km upstream than to return downstream than to return downstream to the same spot. Find the speed of the stream.\\
+        \item A motorboat whose speed is 18 kmph in still water takes 1 hour more to go 24 km upstream than to return downstream to the same spot. Find the speed of the stream.\\
+		\solution Let the speed of the stream be x and the speed of the boat be v.  From the given information, 
+		    \begin{align}
+			    \frac{d}{v-x} = \frac{d}{x+v} + 1
+		    \end{align}
+		    where $d$ is the distance traveled upstream.  From the above equation, 
+		    \begin{align}
+			    \frac{2xd}{v^2 - x^2} &= 1
+			    \\
+			    \implies 
+			    x^2 +2xd -v^2 &=0
+			    \\
+			    \text{or, } x&= -d \pm \sqrt{d^2 + v^2}
+			    \\
+			    &= 6
+		    \end{align}
     \end{enumerate}
     \item \begin{enumerate}
         \item For the following data, draw a 'less than' ogive and hence find the median of the distribution.\\
@@ -1099,6 +1132,14 @@ Substituting in 			\eqref{eq:cbse-10-5-section} and simplifying,
     \vspace{2mm}\\
     \end{enumerate}
     \item A statue $1.6m$ tall, stands on the top of a pedestal. From a point on the ground,  the angle of elevation of the top of the statue is $60\degree$ and from the same point the angle of elevation of the top of the pedestal is $45\degree$. Find the height of the pedestal.Use$\myvec{\sqrt{3} = 1.73}$\\
+	    \solution Let the height of the pedestal be $x$ and the height of the statue be $h$. Ifthe given angles be $\theta_1 = 60 \degree$ and $\theta_2 = 45 \degree$,  from the given information, 
+\begin{align}
+	\brak{h + x }\cot \theta_1 &= x \cot \theta_2
+	\\
+	\implies x &= \frac{h\cot \theta_1}{\cot \theta_2-\cot \theta_1}
+\end{align}
+	    
+
     
     \item \begin{enumerate}
         \item  Obtain other zeros of the polynomial\\
