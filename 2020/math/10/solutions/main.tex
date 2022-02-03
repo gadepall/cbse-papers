@@ -299,7 +299,7 @@ This manual provides an introduction to vectors and their properties,  based on 
 
 
 
-\section{Section A}
+\section{Linear Algebra}
 \begin{enumerate}[label=1.\arabic*]
 
 \item The value(s) of k for which the quadratic equation $2x^2 + kx + 2 = 0$ has equal roots, is
@@ -656,8 +656,30 @@ Sustituting $n = 100$ in the above, the desired sum is
 \end{enumerate}
 
 
-\section{Section B}
+\section{Continuous Math}
 \begin{enumerate}[label=3.\arabic*]
+    \item Prove that
+	    \begin{align}
+		    \label{eq;cbse-2020-sincos}
+    \myvec{\sin^4\theta  - \cos^4\theta + 1} \csc^2\theta = 2
+		    \end{align}
+    \solution Since 
+	    \begin{align}
+\brak{\sin^2\theta  + \cos^2\theta }
+\brak{\sin^2\theta  - \cos^2\theta }
+= -\cos 2 \theta
+		    \end{align}
+		    the L.H.S in 
+		    \eqref{eq;cbse-2020-sincos}
+		    can be expressed as 
+	    \begin{align}
+		    \label{eq;cbse-2020-sincos_simp}
+		    \myvec{1-\cos2\theta} \csc^2\theta &= 
+2 \sin^2 \theta \csc^2\theta 
+\\
+		    &= 2
+		    \end{align}
+    
     \item A cone and a cylinder have the same radii, but the height of the cone is 3 times that of the cylinder. Find the ratio of their volumes\\
    \solution Let $h_i, V_i, i = 1,2$ be the respective heights and volumes of the cone and the cylinder. 
    Then 
@@ -763,29 +785,7 @@ Sustituting $n = 100$ in the above, the desired sum is
 		    \end{align}
 			    yielding \eqref{eq:cbse-2020-10-tri}.
 
-\section{Section C}
-    \item Prove that
-	    \begin{align}
-		    \label{eq;cbse-2020-sincos}
-    \myvec{\sin^4\theta  - \cos^4\theta + 1} \csc^2\theta = 2
-		    \end{align}
-    \solution Since 
-	    \begin{align}
-\brak{\sin^2\theta  + \cos^2\theta }
-\brak{\sin^2\theta  - \cos^2\theta }
-= -\cos 2 \theta
-		    \end{align}
-		    the L.H.S in 
-		    \eqref{eq;cbse-2020-sincos}
-		    can be expressed as 
-	    \begin{align}
-		    \label{eq;cbse-2020-sincos_simp}
-		    \myvec{1-\cos2\theta} \csc^2\theta &= 
-2 \sin^2 \theta \csc^2\theta 
-\\
-		    &= 2
-		    \end{align}
-    
+\section{Discrete Math}
     \item Find the sum
 	    \begin{align}
     \myvec{-5} + \myvec{-8} + \myvec{-11} + ... + \myvec{-230}
