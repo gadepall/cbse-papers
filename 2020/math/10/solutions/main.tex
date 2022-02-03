@@ -301,6 +301,66 @@ This manual provides an introduction to vectors and their properties,  based on 
 
 \section{Linear Algebra}
 \begin{enumerate}
+    \item If a line is drawn parallel to one side of a triangle to intersect the other two sides at distinct points, prove that the other two sides are divided in the same ratio.\\
+	    \solution Let the vertices of the triangle be $\vec{A}, \vec{B}, \vec{C}$ such that  
+		\begin{align}
+			\vec{B} =\vec{0} 
+		\end{align}
+		and $\vec{A}, \vec{C}$ are known. Let $\vec{P}$ be a known point on $AB$ such that $PQ$ is parallel to $BC$.  Let 
+		\begin{align}
+			\vec{P} &= \lambda \brak{\vec{A} -\vec{B} }
+			\\
+			&=\lambda 
+			 \vec{A} 
+			\label{eq:cbse-2020-10-bpt}
+			\\
+			\text{and , } \frac{\norm{\vec{P} 
+			}}{\norm{\vec{A}} } &= \frac{BP}{AB}= \abs{\lambda}
+			\label{eq:cbse-2020-10-bpt-pa}
+		\end{align}
+		Since 
+		\begin{align}
+			PQ &\parallel BC,
+			\\
+			\vec{Q} &= P + \mu \vec{B-C}
+			\\
+			&= \lambda \vec{A} - \mu \vec{C}
+			\label{eq:cbse-2020-10-bpt-q1}
+		\end{align}
+		using the equation of the line $PQ$  and substituting from 
+			\eqref{eq:cbse-2020-10-bpt}
+			Also, since $\vec{Q}$  lies on the line $AC$, 
+		\begin{align}
+			\vec{Q} &= \vec{A} + k \brak{\vec{A}-\vec{C}}
+			\\
+			&= \brak{1 + k}\vec{A} - k \vec{C}
+			\label{eq:cbse-2020-10-bpt-q2}
+			\\
+			\text{and }\frac{\norm{{\vec{A}-\vec{Q}}}}{\norm{{\vec{A}-\vec{C}}}} &= \frac{AQ}{AC}= \abs{k}
+			\label{eq:cbse-2020-10-bpt-q2k}
+		\end{align}
+			From \eqref{eq:cbse-2020-10-bpt-q1} and 
+			\eqref{eq:cbse-2020-10-bpt-q2}
+		\begin{align}
+			\lambda \vec{A} - \mu \vec{C}	&= 
+			 \brak{1 + k}\vec{A} - k \vec{C}
+			\\
+			\implies 
+			\brak{1 + k+\lambda }\vec{A} \brak{k - \mu}  \vec{C}	&=  0
+			\\
+			\implies k = \mu, \lambda = -1 - \mu 
+			\\
+			\text{or, } \abs{\lambda } = 1 + k
+			\label{eq:cbse-2020-10-bpt-q2-lk}
+		\end{align}
+		From 
+			\eqref{eq:cbse-2020-10-bpt-pa},  
+			\eqref{eq:cbse-2020-10-bpt-q2k} and
+			\eqref{eq:cbse-2020-10-bpt-q2-lk},
+			\begin{align}
+				\frac{AQ}{AC} = \frac{AP}{AB}
+			\end{align}
+		
     \item In Fig $\ref{Fig7}$ if $\vec{PQ} \parallel \vec{BC}$ and $\vec{PR} \parallel \vec{CD}$, prove that $\frac{QB}{AQ} = \frac{DR}{AR}$.\\
     \begin{figure}[h!]
         \centering
@@ -308,8 +368,35 @@ This manual provides an introduction to vectors and their properties,  based on 
     	\caption{}
     	\label{Fig7}
      \end{figure}
+\solution
+From the previous problem, it is obvious that 
+\begin{align}
+	\frac{AP}{PC}= 
+	\frac{AQ}{QB}= 
+	\frac{AR}{RD}
+\end{align}
+For construction, let $\vec{A} = \vec{0}, \vec{e}_2^{\top}\vec{C} = 0, \vec{B}, \vec{C}, \vec{D} $ be the input vectors.  Choose $0 < k < 1$ and define
+\begin{align}
+	\vec{P} = \frac{
+	k\vec{C}
+	}{k+1}
+	\\
+	\vec{Q} = \frac{
+	k\vec{B}
+	}{k+1}
+	\\
+	\vec{R} = \frac{
+	k\vec{D}
+	}{k+1}
+\end{align}
     \item In Fig $\ref{Fig5}$, a quadrilateral ABCD is drawn to circumscribe a circle. Prove that $\vec{AB} + \vec{CD} = \vec{BC} + \vec{AD}$.\\
-	    \solution 
+	    \solution   The input parameters for drawing the figure are available in Table
+\eqref{table:circ-tang}	
+\begin{table}[ht!]
+	\input{tables/cbse-2020-table-circ-tang.tex}
+\caption{}
+\label{table:circ-tang}	
+\end{table}
     \begin{figure}[h!]
         \centering
         \includegraphics[width=0.5\columnwidth]{Fig5.png}
@@ -323,7 +410,6 @@ This manual provides an introduction to vectors and their properties,  based on 
     	\caption{}
     	\label{Fig6}
      \end{figure}
-    \item If a line is drawn parallel to one side of a triangle to intersect the other two sides at distinct points, prove that the other two sides are divided in the same ratio.\\
 \item All concentric circles are \rule{1.5cm}{0.15mm} to each other\\
         \item Sum of the areas of two squares is $544 m^2$. If the difference of their perimeters is $32m$, find the sides of the two squares.\\
 		\solution Let the sides be $x, y$.  From the given information, 
@@ -1171,10 +1257,6 @@ Sustituting $n = 100$ in the above, the desired sum is
 	\item If the probablity of an event E happening is 0.023, then $P\brak{\bar{E}} = $\\
 
 \item The probability of an event that is sure to happen is, \rule{1.5cm}{0.15mm}\\
-
-
-
-
 
 \end{enumerate}
 \end{document}
