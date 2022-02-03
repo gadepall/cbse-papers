@@ -300,69 +300,130 @@ This manual provides an introduction to vectors and their properties,  based on 
 
 
 \section{Linear Algebra}
-\begin{enumerate}[label=1.\arabic*]
-
-\item The value(s) of k for which the quadratic equation $2x^2 + kx + 2 = 0$ has equal roots, is
 \begin{enumerate}
-    \item $4$
-    \item $\pm 4$
-    \item $- 4$\
-    \item $0$
-\end{enumerate}
-\solution 
-A quadratic equation 
-		\begin{align}
-			ax^2+bx + c  &= 0
-		\end{align}
-		has equal roots only if 
- the discriminant
-		\begin{align}
-			b^2 - 4a c  = 0
-		\end{align}
-		Substituting
-		\begin{align}
-			a = 2, b = k, c &= 2,
-			\\
-\implies 			k^2 - 4 &= 0
-			\\
-			\text{or, }k = \pm 4
-		\end{align}
+    \item In Fig $\ref{Fig7}$ if $\vec{PQ} \parallel \vec{BC}$ and $\vec{PR} \parallel \vec{CD}$, prove that $\frac{QB}{AQ} = \frac{DR}{AR}$.\\
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.5\columnwidth]{Fig7.png}
+    	\caption{}
+    	\label{Fig7}
+     \end{figure}
+    \item In Fig $\ref{Fig5}$, a quadrilateral ABCD is drawn to circumscribe a circle. Prove that $\vec{AB} + \vec{CD} = \vec{BC} + \vec{AD}$.\\
+	    \solution 
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.5\columnwidth]{Fig5.png}
+    	\caption{}
+    	\label{Fig5}
+     \end{figure}
+     \item In Fig $\ref{Fig6}$, find the perimeter of $\triangle ABC$ if $\vec{AP} = 12cm$\\
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.5\columnwidth]{Fig6.png}
+    	\caption{}
+    	\label{Fig6}
+     \end{figure}
+    \item If a line is drawn parallel to one side of a triangle to intersect the other two sides at distinct points, prove that the other two sides are divided in the same ratio.\\
+\item All concentric circles are \rule{1.5cm}{0.15mm} to each other\\
+        \item Sum of the areas of two squares is $544 m^2$. If the difference of their perimeters is $32m$, find the sides of the two squares.\\
+		\solution Let the sides be $x, y$.  From the given information, 
+		    \begin{align}
+			    x^2 +y^2 &= 544
+			    \\
+			    4x - 4y &= 32
+		    \end{align}
+		    From the given information, the above equations can be expressed in vector form as 
+		    \begin{align}
+			    \label{eq:cbse-2020-circ}
+			    \vec{x}^{\top}\vec{x} &= r^2
+			    \\
+			    \vec{n}^{\top}\vec{x} &= c
+		    \end{align}
+		    Thus, the desired solution is the point of intersection of the line with the circle in the first quadrant.  Using the parameteric equation of the line 
+		    \begin{align}
+			    \label{eq:cbse-2020-circ-line-param}
+			    \vec{x} &= \vec{A} + \lambda \vec{m}
+		    \end{align}
+			    Substituting the above in \eqref{eq:cbse-2020-circ}, 
+		    \begin{multline}
+			    \brak{ \vec{A} + \lambda \vec{m}}^{\top}
+			    \brak{ \vec{A} + \lambda \vec{m}}
+			    = r^2
+			    \\
+			    \implies \lambda^2\norm{\vec{m}}^2+ 2 \lambda \vec{m}^{\top}\vec{A}
+			    +\norm{\vec{A}}^2 - r^2 = 0
+		    \end{multline}
+		    yielding 
+		    {\small
+		    \begin{align}
+			    \label{eq:cbse-2020-circ_lam}
+		\lambda = \frac{-\vec{m}^{\top}\vec{A}\pm \sqrt{\brak{\vec{m}^{\top}\vec{A}}^2 -\norm{\vec{m}}^2\brak{\norm{\vec{A}}^2 - r^2 }}}{\norm{\vec{m}}^2}
+		    \end{align}
+		    }
+		    For this problem, the numerical values are
+		    \begin{align}
+			    \label{eq:cbse-2020-circ_param}
+			    \vec{n} &= \myvec{1 \\ -1}, c = 8, 
+		\vec{m} = \myvec{1 \\ 1}, 
+			    \\
+			     \vec{A} &= \myvec{8 \\ 0},  r^2 = 544
+		    \end{align}
+		    Substituting the above in 
+			    \eqref{eq:cbse-2020-circ_lam}, 
+		    \begin{align}
+			    \lambda = 12
+			    \label{eq:cbse-2020-circ-lam}
+		    \end{align}
+		    Thus, substituting from 
+			    \eqref{eq:cbse-2020-circ-lam}
+			    and 
+			    \eqref{eq:cbse-2020-circ_param}
+			    in 
+			    \eqref{eq:cbse-2020-circ-line-param}
+			    the desired point of intersection is 
+		    \begin{align}
+			    \vec{x} &= \myvec{8 \\ 0} +  12 \myvec{1 \\ 1}
+			    \\
+			    &= \myvec{20 \\ 12}
+		    \end{align}
+		    Thus, the sides are $20m$ and $12m$.
 
-\item Which of the following is not an A.P. ?
-\begin{enumerate}
-    \item $-1.2, 0.8, 2.8...$
-    \item $3, 3 + \sqrt{2}, 3 + 2\sqrt{2},3 + 3\sqrt{2}...$
-    \item $\frac{4}{3}, \frac{7}{3}, \frac{9}{3}, \frac{12}{3}...$
-    \item $\frac{-1}{5}, \frac{-2}{5}, \frac{-3}{5}$
-\end{enumerate}
-\solution $a_0, a_1, a_2$ can be terms of an AP only if 
-		\begin{align}
-	a_1 - 	a_0 = a_2 - 2a_1
-		\end{align}
-		Considering each of the above cases, 
-		\begin{enumerate}
-			\item 
-				\begin{align}
-					2.8 - 1.2 = 1.6 = 2(0.8)
-				\end{align}
-				Hence, the given terms are in A.P.
-			\item 
-				\begin{align}
-					3 + \sqrt{2} - 3 = \sqrt{2} \\
-					3 + 2\sqrt{2} - \brak{3+ \sqrt{2}}= \sqrt{2} \\
-					3 + 3\sqrt{2} - \brak{3+ 2\sqrt{2}}= \sqrt{2} 
-				\end{align}
-				Hence, the given terms are in A.P.
+\item AOBC is a rectangle whose 3 vertices are $A = \myvec{0,-3}$, $O = \myvec{0,0}$ and $B = \myvec{4,0}$. The length of the diagonal is \rule{1.5cm}{0.15mm}\\
+\solution
+The length of the diagonal is  
+  \begin{align}
+	  \norm{\vec{A}-\vec{B}} = \sqrt{3^2+4^2} = 5
+  \end{align}
     \item 
+    \begin{enumerate}
+    \item Construct a $\triangle ABC$ with sides $\vec{BC}=6cm$, $\vec{AB} = 5cm$ and $\angle{ABC} = 60\degree$. Then construct a triangle whose sides are $\frac{3}{4}$ of the corresponding sides of $\triangle ABC$.\\
+    
+    \item Draw a circle of radius $3.5 cm$. Take a point P outside the circle at a distance of $7 cm$ from the centre of the circle and construct a pair of tangents to the circle from that point. \\
+    \end{enumerate}
+    
+    \item In Fig $\ref{Fig8}$, ABCD is a parallelogram. A semicircle with centre O and the diameter AB has been drawn and it passes through D. If $\Vec{AB} = 12$ and $\Vec{OD} \perp \Vec{AB}$, then find the area of the shaded region. Use $\myvec{\pi = 3.14}$\\
+	    \solution From the figure, the radius of the circle is  
 	    \begin{align}
-		    \frac{7}{3} -   \frac{4}{3} &= 1
-		    \\
-		     \frac{9}{3}-\frac{7}{3} &= \frac{2}{3}
-		     \\
-		    \frac{12}{3}-\frac{9}{3} &= 1
+		    r = \frac{AB}{2} = OD = 6
 	    \end{align}
-				Hence, the given terms are not in A.P.
-				\end{enumerate}
+	    The area of the parallelogram is 
+	    \begin{align}
+		    AB \times OD = 2r^2 
+	    \end{align}
+	    The area of the sector $DOB$ is 
+	    \begin{align}
+		    \frac{1}{4}\pi r^2 
+	    \end{align}
+	    Thus, the desired area is 
+	    \begin{align}
+		    \brak{2 -  \frac{\pi}{4}} r^2 = 9\brak{8 - \pi}
+	    \end{align}
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.5\columnwidth]{Fig8.png}
+    	\caption{}
+    	\label{Fig8}
+     \end{figure} 
 
 \item The radius of a sphere (in cm), whose volume is $12\pi cm^3$, is
 \begin{enumerate}
@@ -390,7 +451,7 @@ The volume of a sphere, given the radius $r$, is given by
 			\\
 			\vec{A}-\vec{B} &= 2\myvec{m \\ -n}
 		\end{align}
-Using the definition   of the norm in \eqref{eq:norm2d},
+Using the definition   of the norm, 
 		\begin{align}
 \norm{\vec{A}-\vec{B}} &=2\norm{\myvec{m \\ -n}}
 			\\
@@ -420,21 +481,6 @@ upon substituting numerical values.
 	\label{Fig1}
  \end{figure}
  
- \item On dividing a polynomial p$\myvec{x}$ by $x^2 - 4$, the quotient and remainder are found to be x and 3 respectively. The polynomial p$\myvec{x}$
- \begin{enumerate}
-    \item $3$
-    \item $4$
-    \item $2$
-    \item $2\sqrt{2}$
-\end{enumerate}
-\solution In general, the polynomial
-\begin{align}
-	p(x) &= d(x)q(x) + r(x)
-	\\
-	&= \brak{x^2-4}x +3
-	\\
-	&= x^3 - 4x + 3
-\end{align}
 \item In Fig $\ref{Fig2}$ ,$DE \parallel BC$. If $\frac{AD}{DB} = \frac{3}{2}$ and $AE = 2.7cm$, then $EC$ is equal to 
 \begin{enumerate}
     \item $2.0 cm$
@@ -571,297 +617,6 @@ From the above, it is obvious that the rank of the coefficient matrix is not equ
 		&= 50 \degree
 	\end{align}
 
- \end{enumerate}
-\begin{enumerate}[label=2.\arabic*]
-\item What is the simplest form of $\frac{1 + \tan^2 A}{1 + \cot^2 A}$\\
-	\solution
-		\begin{align}
-			\frac{1 + \tan^2 A}{1 + \cot^2 A} 
-			&=\frac{1 + \tan^2 A}{1 + \frac{1}{\tan^2 A}} 
-			\\
-			&=\tan^2 A
-		\end{align}
-	\item If the probablity of an event E happening is 0.023, then $P\brak{\bar{E}} = $\\
-\item All concentric circles are \rule{1.5cm}{0.15mm} to each other\\
-
-\item The probability of an event that is sure to happen is, \rule{1.5cm}{0.15mm}\\
-
-\item AOBC is a rectangle whose 3 vertices are $A = \myvec{0,-3}$, $O = \myvec{0,0}$ and $B = \myvec{4,0}$. The length of the diagonal is \rule{1.5cm}{0.15mm}\\
-\solution
-The length of the diagonal is  
-  \begin{align}
-	  \norm{\vec{A}-\vec{B}} = \sqrt{3^2+4^2} = 5
-  \end{align}
-
-\item Write the value of $\sin^2 30\degree + \cos^2 60\degree$\\
-	\solution Since 
-  \begin{align}
-	  \cos 60\degree &= \sin 30\degree, 
-	  \\
-	  \sin^2 30\degree + \cos^2 60\degree &= 
-2\sin^2 30\degree 
-\\
-	  &=1
-  \end{align}
-
-
-\item \begin{enumerate}
-    \item Form a quadratic polynomial, the sum and product of whose zeros are $\myvec{-3}$ and $2$ respectively.\\
-	    \solution  The desired quadratic polynomial is 
-  \begin{align}
-	  \brak{x+3}\brak{x-2} = x^2-x-6
-  \end{align}
-    \item Can $\myvec{x^2 - 1}$ be a remainder while dividing $x^4 - 3x^2 + 5x - 9$ by $\myvec{x^2 + 3}$? ustify the reasons.\\
-	    \solution  If the given statement be true, 
-  \begin{align}
-	  \frac{x^4 - 3x^2 + 5x - 9}{x^2 + 3} &= q(x) +\frac{ x^2 - 1}{x^2+3}
-	  \\
-	  &= q(x) +\frac{ x^2 +3 - 4}{x^2+3}
-	  \\
-	  &=q(x) + 1 - \frac{4}{x^2+3} 
-  \end{align}
-  which implies that the remainder is -4 resulting in a contradiction.  Hence, the given statement is not true.
-\end{enumerate}
-
-\item Find the sum of the first 100 natural numbers.\\
-	\solution The sum of the first $n$ natural number is 
-  \begin{align}
-	  \frac{n\brak{n+1}}{2}
-  \end{align}
-Sustituting $n = 100$ in the above, the desired sum is 
-  \begin{align}
-50 \times 51 = 2550	
-  \end{align}
-\item The LCM of 2 numbers is 182 and their HCF is 13. If one of the numbers is 26, find the other.\\
-\solution The desired number is obtained as
-  \begin{align}
-	  \frac{182 \times 13}{26} = 91
-  \end{align}
-\item In Fig $\ref{Fig4}$ the angle of elevation from the top of a tower from a point C on the ground, which is 30m away from the foot of the tower is $30\degree$. Find the height of the tower.\\
-	\solution In general, the height is given by 
-  \begin{align}
-	  h &= d \tan \theta
-	  \\
-	  &= 30 \tan 30 \degree = 30 \frac{1}{\sqrt{3}}
-	  \\
-	  &= 10 \sqrt{3}
-  \end{align}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.5\columnwidth]{Fig4.png}
-	\caption{}
-	\label{Fig4}
- \end{figure}
-\end{enumerate}
-
-
-\section{Continuous Math}
-\begin{enumerate}[label=3.\arabic*]
-    \item Prove that
-	    \begin{align}
-		    \label{eq;cbse-2020-sincos}
-    \myvec{\sin^4\theta  - \cos^4\theta + 1} \csc^2\theta = 2
-		    \end{align}
-    \solution Since 
-	    \begin{align}
-\brak{\sin^2\theta  + \cos^2\theta }
-\brak{\sin^2\theta  - \cos^2\theta }
-= -\cos 2 \theta
-		    \end{align}
-		    the L.H.S in 
-		    \eqref{eq;cbse-2020-sincos}
-		    can be expressed as 
-	    \begin{align}
-		    \label{eq;cbse-2020-sincos_simp}
-		    \myvec{1-\cos2\theta} \csc^2\theta &= 
-2 \sin^2 \theta \csc^2\theta 
-\\
-		    &= 2
-		    \end{align}
-    
-    \item A cone and a cylinder have the same radii, but the height of the cone is 3 times that of the cylinder. Find the ratio of their volumes\\
-   \solution Let $h_i, V_i, i = 1,2$ be the respective heights and volumes of the cone and the cylinder. 
-   Then 
-  \begin{align}
-	  V_1 &= \frac{1}{3} \pi r^2 h_1
-	  \\
-	  V_2 &=  \pi r^2 h_2
-	  \\
-	  \implies \frac{V_1}{V_2} &= \frac{h_1}{3h_2}
-	  \\
-	  &= 1
-  \end{align}
-  $\because h_1 = 3h_2$.
-    \item \begin{enumerate} 
-    \item In Fig $\ref{Fig5}$, a quadrilateral ABCD is drawn to circumscribe a circle. Prove that $\vec{AB} + \vec{CD} = \vec{BC} + \vec{AD}$.\\
-	    \solution 
-    \begin{figure}[h!]
-        \centering
-        \includegraphics[width=0.5\columnwidth]{Fig5.png}
-    	\caption{}
-    	\label{Fig5}
-     \end{figure}
-     \item In Fig $\ref{Fig6}$, find the perimeter of $\triangle ABC$ if $\vec{AP} = 12cm$\\
-    \begin{figure}[h!]
-        \centering
-        \includegraphics[width=0.5\columnwidth]{Fig6.png}
-    	\caption{}
-    	\label{Fig6}
-     \end{figure}
-     \end{enumerate}
-      
-     \item Find the mode of the following distribution:\\
-     \vspace{2mm}\\
-     \scalebox{0.7}{
-     \begin{tabular}{|l|c|c|c|c|c|c|}
-        \hline
-        Marks & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60  \\
-        \hline
-        Number of Students  & 4 & 6 & 7 & 12 & 5 & 6\\
-        \hline
-     \end{tabular}
-     }
-     \vspace{2mm}
-     
-    \item In Fig $\ref{Fig7}$ if $\vec{PQ} \parallel \vec{BC}$ and $\vec{PR} \parallel \vec{CD}$, prove that $\frac{QB}{AQ} = \frac{DR}{AR}$.\\
-    \begin{figure}[h!]
-        \centering
-        \includegraphics[width=0.5\columnwidth]{Fig7.png}
-    	\caption{}
-    	\label{Fig7}
-     \end{figure}
-    
-    \item 
-    \begin{enumerate}
-        \item Show that $5 + 2\sqrt{7}$ is an irrational number, where $\sqrt{7}$ is given to be an irrational number.\\
-        \item Check whether $12^n$ can end with the digit 0 for any natural number n.\\
-		\solution  If $12^n$ ends with the digit 0, 
-		    \begin{align}
-			    12^{n} \equiv 0 {\pmod{10}}
-			    \\
-			    \implies 
-			    12^{n} \equiv 0 {\pmod{2}}
-			    \\
-			    12^{n} \equiv 0 {\pmod{5}}
-		    \end{align}
-		    However, 
-		    \begin{align}
-			    \label{eq:2020-mod-5}
-			    12 \not\equiv 0 {\pmod{5}}
-			    \\
-			    12^2 \not\equiv 0 {\pmod{5}}
-		    \end{align}
-		    Let 
-		    \begin{align}
-			    \label{eq:2020-mod-5-n-1}
-			    12^{n-1} \not \equiv 0 {\pmod{5}}
-		    \end{align}
-		    Then, it is obvious from
-			    \eqref{eq:2020-mod-5} and 
-			    \eqref{eq:2020-mod-5-n-1}
-			    that 
-		    \begin{align}
-%			    \label{eq:2020-mod-5-n-1}
-			    12.12^{n-1} \not \equiv 0 {\pmod{5}}
-			    \\
-			    \implies 
-			    12^{n} \not \equiv 0 {\pmod{5}}
-		    \end{align}
-    \end{enumerate}
-    
-    \item If A, B and C are interior angles of $\triangle ABC$, then show that
-		    \begin{align}
-			    \label{eq:cbse-2020-10-tri}
-    \cos \myvec{\frac{B + C}{2}} = \sin \myvec{\frac{A}{2}}
-		    \end{align}
-		    \solution In a triangle,
-		    \begin{align}
-			    A+B+C &= 180\degree
-			    \\
-			    \implies \myvec{\frac{B + C}{2}} &= 90\degree-\frac{A}{2}
-			    \\
-			    \text{or, }    \cos \myvec{\frac{B + C}{2}} = \sin \myvec{90\degree -\frac{A}{2}}
-		    \end{align}
-			    yielding \eqref{eq:cbse-2020-10-tri}.
-
-\section{Discrete Math}
-    \item Find the sum
-	    \begin{align}
-    \myvec{-5} + \myvec{-8} + \myvec{-11} + ... + \myvec{-230}
-	    \end{align}
-	    \solution The above series is an A.P. with 
-	    \begin{align}
-		    a_0 = -5, a_n = -230, d = -3
-	    \end{align}
-	    Since 
-	    \begin{align}
-		    a_n &= a_0 + \brak{n-1}d, 
-		    \\
-		    n &= \frac{a_n - a_0}{d} + 1
-		    \\
-		     &= 46
-	    \end{align}
-	    Thus the desired sum is given by 
-	    \begin{align}
-		    S_n &=  \frac{n\brak{a_n + a_0}}{2}  
-		    \\
-		    &=  -235 \times 23 = -5405
-	    \end{align}
-    
-    \item 
-    \begin{enumerate}
-    \item Construct a $\triangle ABC$ with sides $\vec{BC}=6cm$, $\vec{AB} = 5cm$ and $\angle{ABC} = 60\degree$. Then construct a triangle whose sides are $\frac{3}{4}$ of the corresponding sides of $\triangle ABC$.\\
-    
-    \item Draw a circle of radius $3.5 cm$. Take a point P outside the circle at a distance of $7 cm$ from the centre of the circle and construct a pair of tangents to the circle from that point. \\
-    \end{enumerate}
-    
-    \item In Fig $\ref{Fig8}$, ABCD is a parallelogram. A semicircle with centre O and the diameter AB has been drawn and it passes through D. If $\Vec{AB} = 12$ and $\Vec{OD} \perp \Vec{AB}$, then find the area of the shaded region. Use $\myvec{\pi = 3.14}$\\
-	    \solution From the figure, the radius of the circle is  
-	    \begin{align}
-		    r = \frac{AB}{2} = OD = 6
-	    \end{align}
-	    The area of the parallelogram is 
-	    \begin{align}
-		    AB \times OD = 2r^2 
-	    \end{align}
-	    The area of the sector $DOB$ is 
-	    \begin{align}
-		    \frac{1}{4}\pi r^2 
-	    \end{align}
-	    Thus, the desired area is 
-	    \begin{align}
-		    \brak{2 -  \frac{\pi}{4}} r^2 = 9\brak{8 - \pi}
-	    \end{align}
-    \begin{figure}[h!]
-        \centering
-        \includegraphics[width=0.5\columnwidth]{Fig8.png}
-    	\caption{}
-    	\label{Fig8}
-     \end{figure} 
-\end{enumerate}
-\begin{enumerate}[label=4.\arabic*]
-    \item A game in a booth at a Diwali Fair involves using a spinner first. Then, if the spinner stops on an even number, the player is allowed to pick a marble from a bag. The spinner and the marbles in the bag are represented in Fig $\ref{Fig9}$.\\
-    Prizes are given, when a black marble is picked. Shweta plays the game once.
-    \begin{figure}[h!]
-        \centering
-        \includegraphics[width=0.5\columnwidth]{Fig9.png}
-	    \caption{}
-	    \label{Fig9}
-    \end{figure} 
-    \begin{enumerate}
-        \item What is the probability that she will be allowed to pick a marble from the bag?\\
-		\solution Let $X\in \cbrak{0,1}$ represent the odd and even outcomes of the spinner and $Y \in \cbrak{0,1}$ represent the black and white marbles respectively.  Shweta can pick a marble only if she gets an even number in the spinner.  Hence, the desired probability is 
-		    \begin{align}
-			    \pr{X = 1} = \frac{5}{6}
-		    \end{align}
-        \item Suppose she is allowed to pick a marble from the bag, what is the probability of getting a prize, when it is given that the bag contains 20 balls out of which 6 are black?\\
-		\solution Shweta will get a prize only if she picks a black marble.  The desired probability can be expressed as 
-		    \begin{align}
-			    \pr{Y = 0 | X = 1} = \frac{6}{20} = \frac{3}{10}
-		    \end{align}
-    \end{enumerate}
-    \item \begin{enumerate}
         \item A fraction becomes $\frac{1}{3}$ when 1 is subtracted from the numerator and it becomes $\frac{1}{4}$ when 8 added to its denominator. Find the fraction.\\
 		\solution Let the desired fraction be $\frac{x}{y}$.  From the given information, 
 		    \begin{align}
@@ -941,8 +696,6 @@ Sustituting $n = 100$ in the above, the desired sum is
 		    }
 			    \implies \vec{x} = \myvec{33 \\ 10}
 		    \end{align}
-    \end{enumerate} 
-    \item \begin{enumerate}
         \item Find the ratio in which the y-axis divides the line segment joining the points $\myvec{6, -4}$ and $\myvec{-2, -7}$. Also find the point of intersection\\
 \solution  In general, letting the given points be $\vec{A}, \vec{B}$, 
 		\begin{align}
@@ -987,8 +740,6 @@ Substituting in 			\eqref{eq:cbse-10-5-section} and simplifying,
 			&=-106
 		\end{align}
 		From  the above equations, 
-    \eqref{eq:angle2d} and 
-    \eqref{eq:angle2d_orth},
 		\begin{align}
 			\brak{\vec{A} -\vec{B}}\perp \brak{\vec{B} -\vec{C}}
 			\\
@@ -996,99 +747,28 @@ Substituting in 			\eqref{eq:cbse-10-5-section} and simplifying,
 			\angle CAB  
 		\end{align}
 		Thus, the triangle is right angled and isosceles.
-   \end{enumerate}
-    \item Use Euclid Division Lemma to show that the square of any positive integer is either in the form $3q$ or $3q + 1$ for some integer q.\\
-	    \solution Let $p$ be any positive integer.  Then $p$ can be either $3k, 3k+1$ or $3k-1$, for some postive integer $k$.  If
-	    \begin{align}
-		    p &= 3k, 
-		    \\
-		    p^2 = 9k^2 &= 3\brak{q}
-		    \\
-		    \text{where } q &= 3k^2
-	    \end{align}
-	    If 
-	    \begin{align}
-		    p &= 3k+1, 
-		    \\
-		    p^2 = 9k^2 + 6k + 1&= 3\brak{q}+1, 
-		    \\
-		    \text{where } q &= 3k^2+2k
-	    \end{align}
-	    Similarly, if
-	    \begin{align}
-		    p &= 3k-1, 
-		    \\
-		    p^2 = 9k^2 - 6k + 1&= 3\brak{q}+1, 
-		    \\
-		    \text{where } q &= 3k^2-2k
-	    \end{align}
+ \end{enumerate}
 
-\section{Section D}
-    \item \begin{enumerate}
-        \item Sum of the areas of two squares is $544 m^2$. If the difference of their perimeters is $32m$, find the sides of the two squares.\\
-		\solution Let the sides be $x, y$.  From the given information, 
-		    \begin{align}
-			    x^2 +y^2 &= 544
-			    \\
-			    4x - 4y &= 32
-		    \end{align}
-		    From the given information, the above equations can be expressed in vector form as 
-		    \begin{align}
-			    \label{eq:cbse-2020-circ}
-			    \vec{x}^{\top}\vec{x} &= r^2
-			    \\
-			    \vec{n}^{\top}\vec{x} &= c
-		    \end{align}
-		    Thus, the desired solution is the point of intersection of the line with the circle in the first quadrant.  Using the parameteric equation of the line 
-		    \begin{align}
-			    \label{eq:cbse-2020-circ-line-param}
-			    \vec{x} &= \vec{A} + \lambda \vec{m}
-		    \end{align}
-			    Substituting the above in \eqref{eq:cbse-2020-circ}, 
-		    \begin{multline}
-			    \brak{ \vec{A} + \lambda \vec{m}}^{\top}
-			    \brak{ \vec{A} + \lambda \vec{m}}
-			    = r^2
-			    \\
-			    \implies \lambda^2\norm{\vec{m}}^2+ 2 \lambda \vec{m}^{\top}\vec{A}
-			    +\norm{\vec{A}}^2 - r^2 = 0
-		    \end{multline}
-		    yielding 
-		    {\small
-		    \begin{align}
-			    \label{eq:cbse-2020-circ_lam}
-		\lambda = \frac{-\vec{m}^{\top}\vec{A}\pm \sqrt{\brak{\vec{m}^{\top}\vec{A}}^2 -\norm{\vec{m}}^2\brak{\norm{\vec{A}}^2 - r^2 }}}{\norm{\vec{m}}^2}
-		    \end{align}
-		    }
-		    For this problem, the numerical values are
-		    \begin{align}
-			    \label{eq:cbse-2020-circ_param}
-			    \vec{n} &= \myvec{1 \\ -1}, c = 8, 
-		\vec{m} = \myvec{1 \\ 1}, 
-			    \\
-			     \vec{A} &= \myvec{8 \\ 0},  r^2 = 544
-		    \end{align}
-		    Substituting the above in 
-			    \eqref{eq:cbse-2020-circ_lam}, 
-		    \begin{align}
-			    \lambda = 12
-			    \label{eq:cbse-2020-circ-lam}
-		    \end{align}
-		    Thus, substituting from 
-			    \eqref{eq:cbse-2020-circ-lam}
-			    and 
-			    \eqref{eq:cbse-2020-circ_param}
-			    in 
-			    \eqref{eq:cbse-2020-circ-line-param}
-			    the desired point of intersection is 
-		    \begin{align}
-			    \vec{x} &= \myvec{8 \\ 0} +  12 \myvec{1 \\ 1}
-			    \\
-			    &= \myvec{20 \\ 12}
-		    \end{align}
-		    Thus, the sides are $20m$ and $12m$.
-			    
-		    
+
+\section{Continuous Math}
+\begin{enumerate}
+    \item In a cylindrical vessel of radius 10cm, containing some water, 9000 small spherical balls are dropped which are completely immersed in water which raises the water level. If each spherical ball is of radius 0.5 cm then find the rise in the level of water in the vessel.\\
+	    \solution The various parameters considered in this problem are listed in Table 
+\eqref{table:table1}. 
+
+\begin{table}[ht!]
+	\input{tables/cbse-2020-table.tex}
+\caption{}
+\label{table:table1}	
+\end{table}
+From the given information, the volume of all the balls will be equal the increase in the volume of water in the vessel.  Thus, 
+\begin{align}
+	N \times \frac{4}{3}\pi r^3 &= \pi R^2 h
+	\\
+	\implies  h &=  \frac{4r^3}{3R^2}N
+	\\
+	&= 15
+\end{align}
         \item A motorboat whose speed is 18 kmph in still water takes 1 hour more to go 24 km upstream than to return downstream to the same spot. Find the speed of the stream.\\
 		\solution Let the speed of the stream be x and the speed of the boat be v.  From the given information, 
 		    \begin{align}
@@ -1105,33 +785,164 @@ Substituting in 			\eqref{eq:cbse-10-5-section} and simplifying,
 			    \\
 			    &= 6
 		    \end{align}
-    \end{enumerate}
-    \item \begin{enumerate}
-        \item For the following data, draw a 'less than' ogive and hence find the median of the distribution.\\
+ \item On dividing a polynomial p$\myvec{x}$ by $x^2 - 4$, the quotient and remainder are found to be x and 3 respectively. The polynomial p$\myvec{x}$
+ \begin{enumerate}
+    \item $3$
+    \item $4$
+    \item $2$
+    \item $2\sqrt{2}$
+\end{enumerate}
+\solution In general, the polynomial
+\begin{align}
+	p(x) &= d(x)q(x) + r(x)
+	\\
+	&= \brak{x^2-4}x +3
+	\\
+	&= x^3 - 4x + 3
+\end{align}
+\item What is the simplest form of $\frac{1 + \tan^2 A}{1 + \cot^2 A}$\\
+	\solution
+		\begin{align}
+			\frac{1 + \tan^2 A}{1 + \cot^2 A} 
+			&=\frac{1 + \tan^2 A}{1 + \frac{1}{\tan^2 A}} 
+			\\
+			&=\tan^2 A
+		\end{align}
+\item Write the value of $\sin^2 30\degree + \cos^2 60\degree$\\
+	\solution Since 
+  \begin{align}
+	  \cos 60\degree &= \sin 30\degree, 
+	  \\
+	  \sin^2 30\degree + \cos^2 60\degree &= 
+2\sin^2 30\degree 
+\\
+	  &=1
+  \end{align}
+\item \begin{enumerate}
+    \item Form a quadratic polynomial, the sum and product of whose zeros are $\myvec{-3}$ and $2$ respectively.\\
+	    \solution  The desired quadratic polynomial is 
+  \begin{align}
+	  \brak{x+3}\brak{x-2} = x^2-x-6
+  \end{align}
+    \item Can $\myvec{x^2 - 1}$ be a remainder while dividing $x^4 - 3x^2 + 5x - 9$ by $\myvec{x^2 + 3}$? ustify the reasons.\\
+	    \solution  If the given statement be true, 
+  \begin{align}
+	  \frac{x^4 - 3x^2 + 5x - 9}{x^2 + 3} &= q(x) +\frac{ x^2 - 1}{x^2+3}
+	  \\
+	  &= q(x) +\frac{ x^2 +3 - 4}{x^2+3}
+	  \\
+	  &=q(x) + 1 - \frac{4}{x^2+3} 
+  \end{align}
+  which implies that the remainder is -4 resulting in a contradiction.  Hence, the given statement is not true.
+\end{enumerate}
+\item In Fig $\ref{Fig4}$ the angle of elevation from the top of a tower from a point C on the ground, which is 30m away from the foot of the tower is $30\degree$. Find the height of the tower.\\
+	\solution In general, the height is given by 
+  \begin{align}
+	  h &= d \tan \theta
+	  \\
+	  &= 30 \tan 30 \degree = 30 \frac{1}{\sqrt{3}}
+	  \\
+	  &= 10 \sqrt{3}
+  \end{align}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\columnwidth]{Fig4.png}
+	\caption{}
+	\label{Fig4}
+ \end{figure}
+\item The value(s) of k for which the quadratic equation $2x^2 + kx + 2 = 0$ has equal roots, is
+\begin{enumerate}
+    \item $4$
+    \item $\pm 4$
+    \item $- 4$\
+    \item $0$
+\end{enumerate}
+\solution 
+A quadratic equation 
+		\begin{align}
+			ax^2+bx + c  &= 0
+		\end{align}
+		has equal roots only if 
+ the discriminant
+		\begin{align}
+			b^2 - 4a c  = 0
+		\end{align}
+		Substituting
+		\begin{align}
+			a = 2, b = k, c &= 2,
+			\\
+\implies 			k^2 - 4 &= 0
+			\\
+			\text{or, }k = \pm 4
+		\end{align}
+
+    \item Prove that
+	    \begin{align}
+		    \label{eq;cbse-2020-sincos}
+    \myvec{\sin^4\theta  - \cos^4\theta + 1} \csc^2\theta = 2
+		    \end{align}
+    \solution Since 
+	    \begin{align}
+\brak{\sin^2\theta  + \cos^2\theta }
+\brak{\sin^2\theta  - \cos^2\theta }
+= -\cos 2 \theta
+		    \end{align}
+		    the L.H.S in 
+		    \eqref{eq;cbse-2020-sincos}
+		    can be expressed as 
+	    \begin{align}
+		    \label{eq;cbse-2020-sincos_simp}
+		    \myvec{1-\cos2\theta} \csc^2\theta &= 
+2 \sin^2 \theta \csc^2\theta 
+\\
+		    &= 2
+		    \end{align}
+    
+    \item A cone and a cylinder have the same radii, but the height of the cone is 3 times that of the cylinder. Find the ratio of their volumes\\
+   \solution Let $h_i, V_i, i = 1,2$ be the respective heights and volumes of the cone and the cylinder. 
+   Then 
+  \begin{align}
+	  V_1 &= \frac{1}{3} \pi r^2 h_1
+	  \\
+	  V_2 &=  \pi r^2 h_2
+	  \\
+	  \implies \frac{V_1}{V_2} &= \frac{h_1}{3h_2}
+	  \\
+	  &= 1
+  \end{align}
+  $\because h_1 = 3h_2$.
+      
+     \item Find the mode of the following distribution:\\
      \vspace{2mm}\\
-     \scalebox{0.6}{
-    \begin{tabular}{|l|c|c|c|c|c|c|c|}
+     \scalebox{0.7}{
+     \begin{tabular}{|l|c|c|c|c|c|c|}
         \hline
-        Age & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60 & 60-70  \\
+        Marks & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60  \\
         \hline
-        Number of people & 5 & 15 & 20 & 25 & 15 & 11 & 9\\
+        Number of Students  & 4 & 6 & 7 & 12 & 5 & 6\\
         \hline
-    \end{tabular}
-    }
-    \vspace{2mm}\\
-    \item The distribution given below shows the number of wickets taken by bowlers in one-day cricket matches. Find the mean and the median of the number of wickets. Find the mean and the median of the number of wickets taken.\\
-     \vspace{2mm}\\
-     \scalebox{0.6}{
-    \begin{tabular}{|l|c|c|c|c|c|c|c|}
-        \hline
-        Number of wickets & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60 & 60-70  \\
-        \hline
-        Number of bowlers & 5 & 15 & 20 & 25 & 15 & 11 & 9\\
-        \hline
-    \end{tabular}
-    }    
-    \vspace{2mm}\\
-    \end{enumerate}
+     \end{tabular}
+     }
+     \vspace{2mm}
+     
+    
+    
+    \item If A, B and C are interior angles of $\triangle ABC$, then show that
+		    \begin{align}
+			    \label{eq:cbse-2020-10-tri}
+    \cos \myvec{\frac{B + C}{2}} = \sin \myvec{\frac{A}{2}}
+		    \end{align}
+		    \solution In a triangle,
+		    \begin{align}
+			    A+B+C &= 180\degree
+			    \\
+			    \implies \myvec{\frac{B + C}{2}} &= 90\degree-\frac{A}{2}
+			    \\
+			    \text{or, }    \cos \myvec{\frac{B + C}{2}} = \sin \myvec{90\degree -\frac{A}{2}}
+		    \end{align}
+			    yielding \eqref{eq:cbse-2020-10-tri}.
+
     \item A statue $1.6m$ tall, stands on the top of a pedestal. From a point on the ground,  the angle of elevation of the top of the statue is $60\degree$ and from the same point the angle of elevation of the top of the pedestal is $45\degree$. Find the height of the pedestal.Use$\myvec{\sqrt{3} = 1.73}$\\
 	    \solution Let the height of the pedestal be $x$ and the height of the statue be $h$. Ifthe given angles be $\theta_1 = 60 \degree$ and $\theta_2 = 45 \degree$,  from the given information, 
 \begin{align}
@@ -1142,7 +953,6 @@ Substituting in 			\eqref{eq:cbse-10-5-section} and simplifying,
 	    
 
     
-    \item \begin{enumerate}
         \item  Obtain other zeros of the polynomial
 		\begin{align}
 			\label{cbse-2020-10-poly1}
@@ -1176,25 +986,195 @@ p \myvec{x} = 2x^4 - x^3 - 11x^2 + 5x + 5
 
 it is obvious that $33-10x$ needs to be added.
     \end{enumerate}
+\section{Discrete Math}
+\begin{enumerate}
+        \item Show that $5 + 2\sqrt{7}$ is an irrational number, where $\sqrt{7}$ is given to be an irrational number.\\
+        \item Check whether $12^n$ can end with the digit 0 for any natural number n.\\
+		\solution  If $12^n$ ends with the digit 0, 
+		    \begin{align}
+			    12^{n} \equiv 0 {\pmod{10}}
+			    \\
+			    \implies 
+			    12^{n} \equiv 0 {\pmod{2}}
+			    \\
+			    12^{n} \equiv 0 {\pmod{5}}
+		    \end{align}
+		    However, 
+		    \begin{align}
+			    \label{eq:2020-mod-5}
+			    12 \not\equiv 0 {\pmod{5}}
+			    \\
+			    12^2 \not\equiv 0 {\pmod{5}}
+		    \end{align}
+		    Let 
+		    \begin{align}
+			    \label{eq:2020-mod-5-n-1}
+			    12^{n-1} \not \equiv 0 {\pmod{5}}
+		    \end{align}
+		    Then, it is obvious from
+			    \eqref{eq:2020-mod-5} and 
+			    \eqref{eq:2020-mod-5-n-1}
+			    that 
+		    \begin{align}
+%			    \label{eq:2020-mod-5-n-1}
+			    12.12^{n-1} \not \equiv 0 {\pmod{5}}
+			    \\
+			    \implies 
+			    12^{n} \not \equiv 0 {\pmod{5}}
+		    \end{align}
+    \item Use Euclid Division Lemma to show that the square of any positive integer is either in the form $3q$ or $3q + 1$ for some integer q.\\
+	    \solution Let $p$ be any positive integer.  Then $p$ can be either $3k, 3k+1$ or $3k-1$, for some postive integer $k$.  If
+	    \begin{align}
+		    p &= 3k, 
+		    \\
+		    p^2 = 9k^2 &= 3\brak{q}
+		    \\
+		    \text{where } q &= 3k^2
+	    \end{align}
+	    If 
+	    \begin{align}
+		    p &= 3k+1, 
+		    \\
+		    p^2 = 9k^2 + 6k + 1&= 3\brak{q}+1, 
+		    \\
+		    \text{where } q &= 3k^2+2k
+	    \end{align}
+	    Similarly, if
+	    \begin{align}
+		    p &= 3k-1, 
+		    \\
+		    p^2 = 9k^2 - 6k + 1&= 3\brak{q}+1, 
+		    \\
+		    \text{where } q &= 3k^2-2k
+	    \end{align}
+\item Find the sum of the first 100 natural numbers.\\
+	\solution The sum of the first $n$ natural number is 
+  \begin{align}
+	  \frac{n\brak{n+1}}{2}
+  \end{align}
+Sustituting $n = 100$ in the above, the desired sum is 
+  \begin{align}
+50 \times 51 = 2550	
+  \end{align}
+\item The LCM of 2 numbers is 182 and their HCF is 13. If one of the numbers is 26, find the other.\\
+\solution The desired number is obtained as
+  \begin{align}
+	  \frac{182 \times 13}{26} = 91
+  \end{align}
+\item Which of the following is not an A.P. ?
+\begin{enumerate}
+    \item $-1.2, 0.8, 2.8...$
+    \item $3, 3 + \sqrt{2}, 3 + 2\sqrt{2},3 + 3\sqrt{2}...$
+    \item $\frac{4}{3}, \frac{7}{3}, \frac{9}{3}, \frac{12}{3}...$
+    \item $\frac{-1}{5}, \frac{-2}{5}, \frac{-3}{5}$
+\end{enumerate}
+\solution $a_0, a_1, a_2$ can be terms of an AP only if 
+		\begin{align}
+	a_1 - 	a_0 = a_2 - 2a_1
+		\end{align}
+		Considering each of the above cases, 
+		\begin{enumerate}
+			\item 
+				\begin{align}
+					2.8 - 1.2 = 1.6 = 2(0.8)
+				\end{align}
+				Hence, the given terms are in A.P.
+			\item 
+				\begin{align}
+					3 + \sqrt{2} - 3 = \sqrt{2} \\
+					3 + 2\sqrt{2} - \brak{3+ \sqrt{2}}= \sqrt{2} \\
+					3 + 3\sqrt{2} - \brak{3+ 2\sqrt{2}}= \sqrt{2} 
+				\end{align}
+				Hence, the given terms are in A.P.
+    \item 
+	    \begin{align}
+		    \frac{7}{3} -   \frac{4}{3} &= 1
+		    \\
+		     \frac{9}{3}-\frac{7}{3} &= \frac{2}{3}
+		     \\
+		    \frac{12}{3}-\frac{9}{3} &= 1
+	    \end{align}
+				Hence, the given terms are not in A.P.
+    \item Find the sum
+	    \begin{align}
+    \myvec{-5} + \myvec{-8} + \myvec{-11} + ... + \myvec{-230}
+	    \end{align}
+	    \solution The above series is an A.P. with 
+	    \begin{align}
+		    a_0 = -5, a_n = -230, d = -3
+	    \end{align}
+	    Since 
+	    \begin{align}
+		    a_n &= a_0 + \brak{n-1}d, 
+		    \\
+		    n &= \frac{a_n - a_0}{d} + 1
+		    \\
+		     &= 46
+	    \end{align}
+	    Thus the desired sum is given by 
+	    \begin{align}
+		    S_n &=  \frac{n\brak{a_n + a_0}}{2}  
+		    \\
+		    &=  -235 \times 23 = -5405
+	    \end{align}
     
-    \item In a cylindrical vessel of radius 10cm, containing some water, 9000 small spherical balls are dropped which are completely immersed in water which raises the water level. If each spherical ball is of radius 0.5 cm then find the rise in the level of water in the vessel.\\
-	    \solution The various parameters considered in this problem are listed in Table 
-\eqref{table:table1}. 
+\end{enumerate}
 
-\begin{table}[ht!]
-	\input{tables/cbse-2020-table.tex}
-\caption{}
-\label{table:table1}	
-\end{table}
-From the given information, the volume of all the balls will be equal the increase in the volume of water in the vessel.  Thus, 
-\begin{align}
-	N \times \frac{4}{3}\pi r^3 &= \pi R^2 h
-	\\
-	\implies  h &=  \frac{4r^3}{3R^2}N
-	\\
-	&= 15
-\end{align}
     
-    \item If a line is drawn parallel to one side of a triangle to intersect the other two sides at distinct points, prove that the other two sides are divided in the same ratio.\\
+    
+\end{enumerate}
+\section{Probability and Statistics}
+\begin{enumerate}
+    \item A game in a booth at a Diwali Fair involves using a spinner first. Then, if the spinner stops on an even number, the player is allowed to pick a marble from a bag. The spinner and the marbles in the bag are represented in Fig $\ref{Fig9}$.\\
+    Prizes are given, when a black marble is picked. Shweta plays the game once.
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.5\columnwidth]{Fig9.png}
+	    \caption{}
+	    \label{Fig9}
+    \end{figure} 
+    \begin{enumerate}
+        \item What is the probability that she will be allowed to pick a marble from the bag?\\
+		\solution Let $X\in \cbrak{0,1}$ represent the odd and even outcomes of the spinner and $Y \in \cbrak{0,1}$ represent the black and white marbles respectively.  Shweta can pick a marble only if she gets an even number in the spinner.  Hence, the desired probability is 
+		    \begin{align}
+			    \pr{X = 1} = \frac{5}{6}
+		    \end{align}
+        \item Suppose she is allowed to pick a marble from the bag, what is the probability of getting a prize, when it is given that the bag contains 20 balls out of which 6 are black?\\
+		\solution Shweta will get a prize only if she picks a black marble.  The desired probability can be expressed as 
+		    \begin{align}
+			    \pr{Y = 0 | X = 1} = \frac{6}{20} = \frac{3}{10}
+		    \end{align}
+    \end{enumerate}
+        \item For the following data, draw a 'less than' ogive and hence find the median of the distribution.\\
+     \vspace{2mm}\\
+     \scalebox{0.6}{
+    \begin{tabular}{|l|c|c|c|c|c|c|c|}
+        \hline
+        Age & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60 & 60-70  \\
+        \hline
+        Number of people & 5 & 15 & 20 & 25 & 15 & 11 & 9\\
+        \hline
+    \end{tabular}
+    }
+    \vspace{2mm}\\
+    \item The distribution given below shows the number of wickets taken by bowlers in one-day cricket matches. Find the mean and the median of the number of wickets. Find the mean and the median of the number of wickets taken.\\
+     \vspace{2mm}\\
+     \scalebox{0.6}{
+    \begin{tabular}{|l|c|c|c|c|c|c|c|}
+        \hline
+        Number of wickets & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60 & 60-70  \\
+        \hline
+        Number of bowlers & 5 & 15 & 20 & 25 & 15 & 11 & 9\\
+        \hline
+    \end{tabular}
+    }    
+	\item If the probablity of an event E happening is 0.023, then $P\brak{\bar{E}} = $\\
+
+\item The probability of an event that is sure to happen is, \rule{1.5cm}{0.15mm}\\
+
+
+
+
+
 \end{enumerate}
 \end{document}
