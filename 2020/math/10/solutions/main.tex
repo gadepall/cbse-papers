@@ -410,13 +410,19 @@ For construction, let $\vec{A} = \vec{0}, \vec{e}_2^{\top}\vec{C} = 0, \vec{B}, 
 	    \solution   The input parameters for drawing the figure are available in Table
 \eqref{table:circ-tang}.  The steps for construcing the figure are 
 \begin{enumerate}
-	\item  Find $AD$ using the norm.  
-	\item $AP = AD - d$
-	\item $\angle BAD = 2 \tan ^{-1}\frac{r}{AP}$
-	\item The slope of $AB$ is $m_1 =   \tan\brak{\angle ADC + \angle BAD}$
+	\item  $\theta_1 = \angle ADC = 2\tan ^{-1}\frac{r}{d}$. 
+	\item $\vec{A} = a+ d \myvec{\cos \theta \\ \sin \theta}$
+	\item $\angle BAD = 2 \tan ^{-1}\frac{r}{a}$
+	\item The slope of $AB$ is $m_1 =   \tan\brak{\angle ADC + \angle BAD}$.  This is obtained by extending $AB$ and $CD$ so that they meet.
 	\item $\angle BCD = 2 \tan^{-1}\frac{r}{c}$
 	\item The slope of $BC$ is $m_2 = \tan \angle BCD$
-	\item The
+	\item The direction vectors of $AB$ and $BC$ are
+		\begin{align}
+			\vec{m}_1 = \myvec{1 \\m_1},
+			\vec{m}_2 = \myvec{1 \\m_2}
+		\end{align}
+		respectively.
+	\item $\vec{B}$ is obtained as the point of intersection of the lines $AB$ and $BC$
 \end{enumerate}
 \begin{table}[ht!]
 	\input{tables/cbse-2020-table-circ-tang.tex}
@@ -530,18 +536,23 @@ The length of the diagonal is
     	\caption{}
     	\label{Fig8}
      \end{figure} 
-
-\item The radius of a sphere (in cm), whose volume is $12\pi cm^3$, is
-\begin{enumerate}
-    \item $3$
-    \item $3 \sqrt{2}$
-    \item $3^\frac{2}{3}$
-    \item $3^\frac{1}{3}$
-\end{enumerate}
-\solution 
-The volume of a sphere, given the radius $r$, is given by
+     For construction, the input parameters are given in Table 
+\ref{table:table-pgm}.	
+\begin{table}[ht!]
+	\input{tables/cbse-2020-table-pgm.tex}
+\caption{}
+\label{table:table-pgm}	
+\end{table}
+The various coordinates are 
 \begin{align}
-	V = \frac{4}{3}\pi r^3
+	\vec{A} &= \myvec{-r \\ 0},
+	\vec{B} = \myvec{r \\ 0},
+	\\
+	\vec{D} &= \myvec{0 \\ r},
+	\\
+	\vec{C} &= \vec{B}-\vec{A} + \vec{D}-\vec{A}
+	\\
+	&= \vec{B}+ \vec{D}-\vec{A}
 \end{align}
 
 \item The distance between the points (m , -n) and (-m , n) is
@@ -858,6 +869,19 @@ Substituting in 			\eqref{eq:cbse-10-5-section} and simplifying,
 
 \section{Continuous Math}
 \begin{enumerate}
+\item The radius of a sphere (in cm), whose volume is $12\pi cm^3$, is
+\begin{enumerate}
+    \item $3$
+    \item $3 \sqrt{2}$
+    \item $3^\frac{2}{3}$
+    \item $3^\frac{1}{3}$
+\end{enumerate}
+\solution 
+The volume of a sphere, given the radius $r$, is given by
+\begin{align}
+	V = \frac{4}{3}\pi r^3
+\end{align}
+
     \item In a cylindrical vessel of radius 10cm, containing some water, 9000 small spherical balls are dropped which are completely immersed in water which raises the water level. If each spherical ball is of radius 0.5 cm then find the rise in the level of water in the vessel.\\
 	    \solution The various parameters considered in this problem are listed in Table 
 \eqref{table:table1}. 

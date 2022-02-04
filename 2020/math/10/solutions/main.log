@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.4)  4 FEB 2022 10:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.4)  4 FEB 2022 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -855,15 +855,15 @@ Overfull \hbox (16.72728pt too wide) detected at line 355
 []
  []
 
-<Fig7.png, id=18, 301.25179pt x 209.20264pt>
+<Fig7.png, id=34, 301.25179pt x 209.20264pt>
 File: Fig7.png Graphic file (type png)
 <use Fig7.png>
 Package pdftex.def Info: Fig7.png  used on input line 367.
 (pdftex.def)             Requested size: 126.0pt x 87.4974pt.
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-LaTeX Warning: Reference `table:tri-sim' on page 1 undefined on input line 394.
 
-
+ <./Fig7.png>]
 (./tables/cbse-2020-table-tri-sim.tex
 \gnumericTableWidth=\skip70
 \gnumericTableWidthComplete=\skip71
@@ -872,190 +872,123 @@ LaTeX Warning: Reference `table:tri-sim' on page 1 undefined on input line 394.
 \gnumericColB=\skip74
 \gnumericColC=\skip75
 \gnumericColD=\skip76
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
- <./Fig7.png>]
-
-LaTeX Warning: Reference `table:circ-tangent' on page 2 undefined on input line
- 403.
-
+)
 (./tables/cbse-2020-table-circ-tangent.tex)
-
-LaTeX Warning: Reference `Fig5' on page 2 undefined on input line 409.
-
-
-LaTeX Warning: Reference `table:circ-tang' on page 2 undefined on input line 41
-1.
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
+[]\OT1/ptm/m/n/12 The slope of $\OML/cmm/m/it/12 AB$ \OT1/ptm/m/n/12 is $\OML/c
+mm/m/it/12 m[] \OT1/cmr/m/n/12 =
+ []
 
 (./tables/cbse-2020-table-circ-tang.tex)
-<Fig5.png, id=61, 167.3621pt x 110.30684pt>
+<Fig5.png, id=74, 167.3621pt x 110.30684pt>
 File: Fig5.png Graphic file (type png)
 <use Fig5.png>
-Package pdftex.def Info: Fig5.png  used on input line 419.
+Package pdftex.def Info: Fig5.png  used on input line 434.
 (pdftex.def)             Requested size: 126.0pt x 83.04634pt.
+<Fig6.png, id=76, 159.75473pt x 108.78537pt>
+File: Fig6.png Graphic file (type png)
+<use Fig6.png>
+Package pdftex.def Info: Fig6.png  used on input line 441.
+(pdftex.def)             Requested size: 126.0pt x 85.80171pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `Fig6' on page 2 undefined on input line 423.
-
-<Fig6.png, id=62, 159.75473pt x 108.78537pt>
-File: Fig6.png Graphic file (type png)
-<use Fig6.png>
-Package pdftex.def Info: Fig6.png  used on input line 426.
-(pdftex.def)             Requested size: 126.0pt x 85.80171pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
+Underfull \hbox (badness 10000) in paragraph at lines 445--446
 
  []
 
-
-LaTeX Warning: Reference `eq:cbse-2020-circ' on page 2 undefined on input line 
-450.
-
-[2 <./Fig5.png> <./Fig6.png>]
-
-LaTeX Warning: Reference `eq:cbse-2020-circ_lam' on page 3 undefined on input l
-ine 475.
-
-
-LaTeX Warning: Reference `eq:cbse-2020-circ-lam' on page 3 undefined on input l
-ine 481.
-
-
-LaTeX Warning: Reference `eq:cbse-2020-circ_param' on page 3 undefined on input
- line 483.
-
-
-LaTeX Warning: Reference `eq:cbse-2020-circ-line-param' on page 3 undefined on 
-input line 485.
-
-
-LaTeX Warning: Reference `Fig8' on page 3 undefined on input line 501.
-
-<Fig8.png, id=92, 343.85306pt x 160.51547pt>
+[2 <./Fig5.png>]
+<Fig8.png, id=122, 343.85306pt x 160.51547pt>
 File: Fig8.png Graphic file (type png)
 <use Fig8.png>
-Package pdftex.def Info: Fig8.png  used on input line 520.
+Package pdftex.def Info: Fig8.png  used on input line 535.
 (pdftex.def)             Requested size: 126.0pt x 58.81665pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+LaTeX Warning: Reference `table:table-pgm' on page 3 undefined on input line 54
+0.
 
-LaTeX Warning: Reference `Fig1' on page 3 undefined on input line 560.
-
-[3 <./Fig8.png>]
-<Fig1.png, id=140, 142.25778pt x 213.00632pt>
+(./tables/cbse-2020-table-pgm.tex) [3 <./Fig6.png> <./Fig8.png>]
+<Fig1.png, id=157, 142.25778pt x 213.00632pt>
 File: Fig1.png Graphic file (type png)
 <use Fig1.png>
-Package pdftex.def Info: Fig1.png  used on input line 576.
+Package pdftex.def Info: Fig1.png  used on input line 598.
 (pdftex.def)             Requested size: 126.0pt x 188.67145pt.
 
 
-LaTeX Warning: Reference `Fig2' on page 4 undefined on input line 581.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Fig2.png, id=141, 264.73642pt x 133.88968pt>
+<Fig2.png, id=159, 264.73642pt x 133.88968pt>
 File: Fig2.png Graphic file (type png)
 <use Fig2.png>
-Package pdftex.def Info: Fig2.png  used on input line 601.
+Package pdftex.def Info: Fig2.png  used on input line 623.
 (pdftex.def)             Requested size: 126.0pt x 63.72287pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 607--609
+Underfull \hbox (badness 10000) in paragraph at lines 629--631
 
  []
 
 [4 <./Fig1.png> <./Fig2.png>]
-
-LaTeX Warning: Reference `Fig3' on page 5 undefined on input line 696.
-
-<Fig3.png, id=185, 276.9082pt x 168.12285pt>
+<Fig3.png, id=209, 276.9082pt x 168.12285pt>
 File: Fig3.png Graphic file (type png)
 <use Fig3.png>
-Package pdftex.def Info: Fig3.png  used on input line 706.
+Package pdftex.def Info: Fig3.png  used on input line 728.
 (pdftex.def)             Requested size: 126.0pt x 76.49857pt.
-[5 <./Fig3.png>]
-
-LaTeX Warning: Reference `eq:cbse-10-5-section' on page 6 undefined on input li
-ne 810.
-
-
-LaTeX Warning: Reference `table:table1' on page 6 undefined on input line 854.
-
-(./tables/cbse-2020-table.tex) [6]
-
-LaTeX Warning: Reference `Fig4' on page 7 undefined on input line 935.
-
-<Fig4.png, id=258, 174.20874pt x 120.19643pt>
+ [5 <./Fig3.png>] (./tables/cbse-2020-table.tex)
+[6]
+<Fig4.png, id=288, 174.20874pt x 120.19643pt>
 File: Fig4.png Graphic file (type png)
 <use Fig4.png>
-Package pdftex.def Info: Fig4.png  used on input line 947.
+Package pdftex.def Info: Fig4.png  used on input line 969.
 (pdftex.def)             Requested size: 126.0pt x 86.93567pt.
 
-LaTeX Warning: Reference `eq;cbse-2020-sincos' on page 7 undefined on input lin
-e 989.
-
-[7 <./Fig4.png>]
-Overfull \hbox (21.64357pt too wide) in paragraph at lines 1013--1025
-[]
- []
-
-
-LaTeX Warning: Reference `eq:cbse-2020-10-tri' on page 8 undefined on input lin
-e 1041.
-
-
-LaTeX Warning: Reference `cbse-2020-10-poly1' on page 8 undefined on input line
- 1068.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1088--1089
-
- []
-
-
-LaTeX Warning: Reference `eq:2020-mod-5' on page 8 undefined on input line 1112
-.
-
-
-LaTeX Warning: Reference `eq:2020-mod-5-n-1' on page 8 undefined on input line 
-1113.
-
-[8]
-
-LaTeX Warning: Reference `Fig9' on page 9 undefined on input line 1225.
-
-<Fig9.png, id=340, 454.92064pt x 183.33759pt>
-File: Fig9.png Graphic file (type png)
-<use Fig9.png>
-Package pdftex.def Info: Fig9.png  used on input line 1229.
-(pdftex.def)             Requested size: 126.0pt x 50.77747pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[7]
+Overfull \hbox (21.64357pt too wide) in paragraph at lines 1035--1047
+[]
+ []
+
+[8 <./Fig4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1111
+
+ []
+
 [9]
-Overfull \hbox (4.61243pt too wide) in paragraph at lines 1245--1257
+<Fig9.png, id=418, 454.92064pt x 183.33759pt>
+File: Fig9.png Graphic file (type png)
+<use Fig9.png>
+Package pdftex.def Info: Fig9.png  used on input line 1251.
+(pdftex.def)             Requested size: 126.0pt x 50.77747pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (4.61243pt too wide) in paragraph at lines 1267--1279
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1245--1257
+Underfull \hbox (badness 10000) in paragraph at lines 1267--1279
 
  []
 
 
-Overfull \hbox (8.03238pt too wide) in paragraph at lines 1257--1268
+Overfull \hbox (8.03238pt too wide) in paragraph at lines 1279--1290
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1268--1269
+Underfull \hbox (badness 10000) in paragraph at lines 1290--1291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1270--1271
+Underfull \hbox (badness 10000) in paragraph at lines 1292--1293
 
  []
 
@@ -1066,23 +999,17 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D5B5EF869FE2EFCAE72BC95C443FE999;116
-(rerunfilecheck)             After:  636F6964256C7017A46CF8F458DA2B21;527.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 636F6964256C7017A46CF8F458DA2B21;527.
  ) 
 Here is how much of TeX's memory you used:
- 24517 strings out of 478353
- 444102 string characters out of 5854636
- 750340 words of memory out of 5000000
- 41883 multiletter control sequences out of 15000+600000
+ 24536 strings out of 478353
+ 444391 string characters out of 5854636
+ 756236 words of memory out of 5000000
+ 41889 multiletter control sequences out of 15000+600000
  453081 words of font info for 141 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 100i,20n,104p,496b,870s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 100i,20n,104p,496b,871s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
@@ -1104,10 +1031,10 @@ sr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/font
 s/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi
 8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (10 pages, 726896 bytes).
+Output written on main.pdf (10 pages, 731897 bytes).
 PDF statistics:
- 575 PDF objects out of 1000 (max. 8388607)
- 490 compressed objects within 5 object streams
- 309 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 624 PDF objects out of 1000 (max. 8388607)
+ 538 compressed objects within 6 object streams
+ 319 named destinations out of 1000 (max. 500000)
+ 90 words of extra memory for PDF output out of 10000 (max. 10000000)
 
