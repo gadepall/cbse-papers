@@ -408,7 +408,16 @@ For construction, let $\vec{A} = \vec{0}, \vec{e}_2^{\top}\vec{C} = 0, \vec{B}, 
 \end{table}
     \item In Fig $\ref{Fig5}$, a quadrilateral ABCD is drawn to circumscribe a circle. Prove that $\vec{AB} + \vec{CD} = \vec{BC} + \vec{AD}$.\\
 	    \solution   The input parameters for drawing the figure are available in Table
-\eqref{table:circ-tang}	
+\eqref{table:circ-tang}.  The steps for construcing the figure are 
+\begin{enumerate}
+	\item  Find $AD$ using the norm.  
+	\item $AP = AD - d$
+	\item $\angle BAD = 2 \tan ^{-1}\frac{r}{AP}$
+	\item The slope of $AB$ is $m_1 =   \tan\brak{\angle ADC + \angle BAD}$
+	\item $\angle BCD = 2 \tan^{-1}\frac{r}{c}$
+	\item The slope of $BC$ is $m_2 = \tan \angle BCD$
+	\item The
+\end{enumerate}
 \begin{table}[ht!]
 	\input{tables/cbse-2020-table-circ-tang.tex}
 \caption{}
