@@ -1,0 +1,443 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+%
+\usepackage{setspace}
+\usepackage{gensymb}
+%\doublespacing
+\singlespacing
+\usepackage{float}
+%\usepackage{graphicx}
+%\usepackage{amssymb}
+%\usepackage{relsize}
+\usepackage[cmex10]{amsmath}
+%\usepackage{amsthm}
+%\interdisplaylinepenalty=2500
+%\savesymbol{iint}
+%\usepackage{txfonts}
+%\restoresymbol{TXF}{iint}
+%\usepackage{wasysym}
+\usepackage{amsthm}
+%\usepackage{iithtlc}
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+\usepackage{tfrupee}
+%\usepackage{xtab}
+\usepackage{longtable}
+\usepackage{multirow}
+%\usepackage{algorithm}
+%\usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+%\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+%\usepackage{stmaryrd}
+\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+%\usetkzobj{all}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+  %optionally (for landscape tables embedded in another document): %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+%\usepackage{enumerate}
+
+%\usepackage{wasysym}
+%\newcounter{MYtempeqncnt}
+\DeclareMathOperator*{\Res}{Res}
+%\renewcommand{\baselinestretch}{2}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+%\lstset{
+%language=tex,
+%frame=single, 
+%breaklines=true
+%}
+
+\begin{document}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+%\newtheorem{thm}{Theorem}[section] 
+%\newtheorem{defn}[thm]{Definition}
+%\newtheorem{algorithm}{Algorithm}[section]
+%\newtheorem{cor}{Corollary}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+%\bibliographystyle{ieeetr}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+%\numberwithin{equation}{section}
+%\numberwithin{equation}{subsection}
+%\numberwithin{problem}{section}
+%\numberwithin{definition}{section}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
+\renewcommand{\thefigure}{\theproblem}
+%\setlist[enumerate,1]{before=\renewcommand\theequation{\theenumi.\arabic{equation}}
+%\counterwithin{equation}{enumi}
+%\renewcommand{\theequation}{\arabic{subsection}.\arabic{equation}}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{
+%	\logo{
+MATHEMATICS
+%	}
+}
+\author{ G V V Sharma$^{*}$% <-this % stops a space
+	\thanks{*The author is with the Department
+		of Electrical Engineering, Indian Institute of Technology, Hyderabad
+		502285 India e-mail:  gadepall@iith.ac.in. All content in this manual is released under GNU GPL.  Free and open source.}
+	
+}	
+%\title{
+%	\logo{Matrix Analysis through Octave}{\begin{center}\includegraphics[scale=.24]{tlc}\end{center}}{}{HAMDSP}
+%}
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+%\title{Matrix Analysis through Octave}
+%
+%
+% author names and IEEE memberships
+% note positions of commas and nonbreaking spaces ( ~ ) LaTeX will not break
+% a structure at a ~ so this keeps an author's name from being broken across
+% two lines.
+% use \thanks{} to gain access to the first footnote area
+% a separate \thanks must be used for each paragraph as LaTeX2e's \thanks
+% was not built to handle multiple paragraphs
+%
+%\author{<-this % stops a space
+%\thanks{}}
+%}
+% note the % following the last \IEEEmembership and also \thanks - 
+% these prevent an unwanted space from occurring between the last author name
+% and the end of the author line. i.e., if you had this:
+% 
+% \author{....lastname \thanks{...} \thanks{...} }
+%                     ^------------^------------^----Do not want these spaces!
+%
+% a space would be appended to the last name and could cause every name on that
+% line to be shifted left slightly. This is one of those "LaTeX things". For
+% instance, "\textbf{A} \textbf{B}" will typeset as "A B" not "AB". To get
+% "AB" then you have to do: "\textbf{A}\textbf{B}"
+% \thanks is no different in this regard, so shield the last } of each \thanks
+% that ends a line with a % and do not let a space in before the next \thanks.
+% Spaces after \IEEEmembership other than the last one are OK (and needed) as
+% you are supposed to have spaces between the names. For what it is worth,
+% this is a minor point as most people would not even notice if the said evil
+% space somehow managed to creep in.
+% The paper headers
+%\markboth{Journal of \LaTeX\ Class Files,~Vol.~6, No.~1, January~2007}%
+%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for Journals}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+% 
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers.                   ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+% If you want to put a publisher's ID mark on the page you can do it like
+% this:
+%\IEEEpubid{0000--0000/00\$00.00~\copyright~2007 IEEE}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark.
+% make the title area
+\maketitle
+\newpage
+%\tableofcontents
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+%\renewcommand{\theequation}{\theenumi}
+%\begin{abstract}
+%%\boldmath
+%In this letter, an algorithm for evaluating the exact analytical bit error rate  (BER)  for the piecewise linear (PL) combiner for  multiple relays is presented. Previous results were available only for upto three relays. The algorithm is unique in the sense that  the actual mathematical expressions, that are prohibitively large, need not be explicitly obtained. The diversity gain due to multiple relays is shown through plots of the analytical BER, well supported by simulations. 
+%
+%\end{abstract}
+% IEEEtran.cls defaults to using nonbold math in the Abstract.
+% This preserves the distinction between vectors and scalars. However,
+% if the journal you are submitting to favors bold math in the abstract,
+% then you can use LaTeX's standard command \boldmath at the very start
+% of the abstract to achieve this. Many IEEE journals frown on math
+% in the abstract anyway.
+% Note that keywords are not normally used for peerreview papers.
+%\begin{IEEEkeywords}
+%Cooperative diversity, decode and forward, piecewise linear
+%\end{IEEEkeywords}
+% For peer review papers, you can put extra information on the cover
+% page as needed:
+% \ifCLASSOPTIONpeerreview
+% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+% \fi
+%
+% For peerreview papers, this IEEEtran command inserts a page break and
+% creates the second title. It will be ignored for other modes.
+%\IEEEpeerreviewmaketitle
+%\begin{abstract}
+%This manual includes \LaTeX figures.
+%book provides an introduction to optimization  based on the NCERT textbooks from Class 6-12.  Links to sample Python codes are available in the text.  
+%\end{abstract}
+Download 
+\begin{lstlisting}
+https://github.com/Nagarajunaddi/CBSE2016
+\end{lstlisting}
+\section{\textbf{A}}
+%\begin{center}
+%\parbox{1in}{
+%{\textsc{\tixtbf{Section A} }}}}
+%\end{center}
+%\hrule 
+\textbf{Question numbers 1 to 4 carry 1 mark each.}
+\begin{enumerate}
+\item In Fig., PQ is a tangent at point C to a circle with centre O. If AB is a diameter and $\angle CAB = 30\degree $, Find $\angle PCA$.\\
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=5cm]{1.png}
+%\caption{Caption}
+\label{fig:my_label}
+\end{figure} 
+
+\item For what value of k will k+9, 2k-1 and 2k+7 are the consecutive terms of an A.P ?\\
+
+\item A ladder, leaning against a wall, makes an angle of 60 8 with the horizontal.If the foot of the ladder is 2.5 m away from the wall, find the length of the ladder.\\
+
+\item A card is drawn at random from a well shuffled pack of 52 playing cards. Find the probability of getting neither a red card nor a queen.\\
+
+\section{\textbf{B}}
+%\begin{center}
+%\parbox{1in}{
+%{\textsc{\textbf{Section B} }}}}
+%\end{center}
+%\vspace{0.15in}
+%\hrule 
+%\vspace{0.1in}
+\textbf{Question numbers 5 to 10 carry 2 marks each.}\\
+
+\item If -5 is a root of the quadratic equation $2x^2+px-15=0$ and the quadratic equation $ p\left(x^2+x\right)+k=0 $ has equal roots, find the value of k. \\
+
+\item  Let P and Q be the points of trisection of the line segment joining the points A(2,-2) and B(-7, 4) such that P is nearer to A. Find the coordinates of P and Q.\\
+
+\item  In Fig., a quadrilateral ABCD is drawn to circumscribe a circle, with centre O, in such a way that the sides AB, BC, CD and DA touch the circle at the points P, Q, R and S respectively. Prove that $ AB + CD= BC + DA $.\\
+	\begin{figure}[H]
+\centering
+      \includegraphics[width=5cm]{2.png}
+      %\caption{Caption}
+      \label{fig:my_label}
+\end{figure} 
+
+\item  Prove that the points (3, 0), (6, 4) and (-1, 3) are the vertices of a right angled isosceles triangle.\\
+
+\item  The 4th term of an A.P. is zero. Prove that the 25th term of the A.P. is three times its 11th term.\\
+
+%\vspace{0.1in}
+
+\item  In Fig. , from an external point P, two tangents PT and PS are drawn to a circle with centre O and radius r. If OP = 2r, show that $\angle OTS $ = $\angle OST $ = 30\degree.
+
+	\begin{figure}[H]
+      \centering
+      \includegraphics[width=5cm]{3.png}
+     % \caption{Caption}
+      \label{fig:my_label}
+   \end{figure} 
+\section{\textbf{C}}
+%\vspace{0.15in}
+% \begin{center}
+% \parbox{1in}{
+% {\textsc{\textbf{Section C} }}}}
+% \end{center}
+% \vspace{0.15in}
+% \hrule 
+% \vspace{0.1in}
+\textbf{Question numbers 11 to 20 carry 3 marks each.} \\
+
+\item  In fig., O is the centre of a circle such that diameter AB = 13 cm and AC = 12 cm. BC is joined. Find the area of the shaded region. (Take $\pi = 3.14$)\\
+
+	\begin{figure}[H]
+      \centering
+      \includegraphics[width=5cm]{4.png}
+      %\caption{Caption}
+      \label{fig:my_label}
+\end{figure} 
+
+\item  In fig. , a tent is in the shape of a cylinder surmounted by a conical top of same diameter. If the height and diameter of cylindrical part are 2.1 m and 3 m respectively and the slant height of conical part is 2.8 m, find the cost of canvas needed to make the tent if the canvas is available at the rate of Rs. 500/sq.metre. (Use $\pi$ = $\frac{22}{7}$)\\
+	\begin{figure}[H]
+      \centering
+      \includegraphics[width=5cm]{5.png}
+      %\caption{Caption}
+      \label{fig:my_label}
+\end{figure} 
+
+\item  If the point P(x, y) is equidistant from the points A(a+b, b-a) and B(a-b, a+b). Prove that bx=ay.\\
+   
+\item  In fig. 6, find the area of the shaded region, enclosed between two concentric circles of radii 7 cm and 14 cm where $\angle AOC$ = $40\degree$. (Use $\pi$ = $\frac{22}{7}$).
+	\begin{figure}[H]
+      \centering
+      \includegraphics[width=5cm]{6.png}
+      %\caption{Caption}
+      \label{fig:my_label}
+\end{figure} 
+
+\item  If the ratio of the sum of first n terms of two A.P's is (7n + 1) : (4n + 27), find the ratio of their m th terms.\\
+
+\item  Solve for $ x :  \frac{1}{(x-1)(x-2)} $ + $ \frac{1}{(x-2)(x-3)} $ = $ \frac{2}{3}$ , x $\neq$ 1,2,3   \\     
+\item  A conical vessel, with base radius 5 cm and height 24 cm, is full of water. This water is emptied into a cylindrical vessel of base radius 10 cm. Find the height to which the water will rise in the cylindrical vessel. (Use $ \pi  = \frac{22}{7}$)\\
+
+\item  A sphere of diameter 12cm, is dropped in a right circular cylindrical vessel, partly filled with water. If a sphere is completely submerged in water, the water level in the cylindrical vessel rises by $ 3 \frac{5}{9}$cm. Find the diameter of the cylindrical vessel.\\  
+
+\item  A man standing on the deck of a ship, which is 10 m above water level, observes the angle of elevation of the top of a hill as $ 60\degree $ and the angle of depression of the base of hill as $ 30 \degree $. Find the distance of the hill from the ship and the height of the hill.\\
+ 
+\item  Three different coins are tossed together. Find the probability of getting (i) exactly two heads (ii) at least two heads (iii) at least two tails.\\
+ 
+\section{\textbf{D}}  
+%  \vspace{0.3in}
+%  \begin{center}
+% \parbox{1in}{
+% {\textsc{\textbf{Section D} }}}}
+% \end{center}
+% \vspace{0.15in}
+% \hrule 
+% \vspace{0.1in}
+\textbf{Question numbers 21 to 31 carry 4 marks each.} \\
+
+\item  Due to heavy floods in a state, thousands were rendered homeless. 50 schools collectively offered to the state government to provide place and the canvas for 1500 tents to be fixed by the government and decided to share the whole expenditure equally. The lower part of each tent is cylindrical of base radius 2.8 m and height 3.5 m, with conical upper part of same base radius but of height 2.1 m. If the canvas used to make the tents costs \rupee~120 per sq.m, find the amount shared by each school to set up the tents. What value is generated by the above problem ? (Use $ \pi = \frac{22}{7} ) $\\
+ 
+\item Prove that the lengths of the tangents drawn from an external point to a circle are equal.\\
+
+\item Draw a circle of radius 4 cm. Draw two tangents to the circle inclined at an angle of $ 60 \degree $ to each other.\\
+
+\item In Fig. , two equal circles, with centres O and O', touch each other at X.OO' produced meets the circle with centre O' at A. AC is tangent to the circle with centre O, at the point C. O'D is perpendicular to AC. Find the value of $\frac{DO'}{CO}$.\\
+	\begin{figure}[H]
+      \centering
+      \includegraphics[width=5cm]{7.png}
+      %\caption{Caption}
+      \label{fig:my_label}
+   \end{figure} 
+ 
+\item  Solve for $ x :  \frac{1}{x+1} $ + $ \frac{2}{x+2} $ = $ \frac{4}{x+4} $ , x $\neq$ -1,-2,-4 . \\
+
+\item The angle of elevation of the top Q of a vertical tower PQ from a point X on the ground is $ 60\degree $. From a point Y, 40 m vertically above X, the angle of elevation of the top Q of tower is $ 45 \degree $. Find the height of the tower PQ and the distance PX. ( Use $ \sqrt{3} = 1.73 $ ).\\
+ 
+\item The houses in a row are numbered consecutively from 1 to 49. Show that there exists a value of X such that sum of numbers of houses proceeding the house numbered X is equal to sum of the numbers of houses following X.\\
+
+\item In fig., the vertices of \( \Delta ABC \) are A(4, 6), B(1, 5) and C(7, 2). A line-segment DE is drawn to intersect the sides AB and AC at D and E respectively such that $\frac{AD}{AB}$ = $\frac{AE}{AC}$ = $\frac{1}{3}$ . Calculate the area of \( \Delta ADE \) and compare it with area of \( \Delta ABC \).\\
+	\begin{figure}[H]
+      \centering
+      \includegraphics[width=5cm]{8.png}
+     % \caption{Caption}
+      \label{fig:my_label}
+\end{figure} 
+
+\item A number x is selected at random from the numbers 1, 2, 3 and 4. Another number y is selected at random from the numbers 1, 4, 9 and 16. Find the probability that product of x and y is less than 16.\\
+
+\item In Fig. , is shown a sector OAP of a circle with centre O, containing $\angle \theta$. AB is perpendicular to the radius OA and meets OP produced at B. Prove that the perimeter of shaded region is r $\left[\tan \theta + \sec \theta + \frac{\pi \theta}{180}-1 \right] $ \\
+
+	\begin{figure}[H]
+      \centering
+      \includegraphics[width=5cm]{9.png}
+     % \caption{Caption}
+     \label{fig:my_label}
+\end{figure} 
+
+
+\item A motor boat whose speed is 24 km/h in still water takes 1 hour more to go 32 km upstream than to return downstream to the same spot. Find the speed of the stream.\\
+
+%\end{questions}
+%\renewcommand{\theequation}{\theenumi}
+%\subsection{Problem}
+%\section{Chemistry}
+%\begin{enumerate}[label=\arabic*.,ref=\thesection.\theenumi]
+%\numberwithin{equation}{enumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+%\numberwithin{equation}{enumi}
+%\item Fig. \ref{fig:tri_sss_py} is generated using 
+%
+%\begin{figure}
+%centering
+%\includegraphics[width=\columnwidth]{./figs/tri_sss.pdf}
+%\caption{Triangle generated using python}
+%\label{fig:tri_sss_py}
+%\end{figure}
+%
+%\item Fig. \ref{fig:tri_sss_tikz} is generated using 
+%\begin{figure}[!ht]
+%	\begin{center}
+		
+%		\resizebox{\columnwidth}{!}{\input{./figs/tri_sss.tex}}
+%	\end{center}
+%	\caption{Triangle generated using \LaTeX Tikz.}
+%	\label{fig:tri_sss_tikz}	
+%\end{figure}
+\end{enumerate}
+\end{document}
