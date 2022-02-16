@@ -1,0 +1,318 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage[cmex10]{amsmath}
+\usepackage{amsthm}
+\usepackage[export]{adjustbox}
+\usepackage{bm}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{listings}
+\usepackage{color}                                            %%
+\usepackage{array}                                            %%
+\usepackage{longtable}                                        %%
+\usepackage{calc}                                             %%
+\usepackage{multirow}                                         %%
+\usepackage{hhline}                                           %%
+\usepackage{ifthen}                                           %%
+\usepackage{lscape}     
+\usepackage{multicol}
+% \usepackage{enumerate}
+\DeclareMathOperator*{\Res}{Res}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+\lstset{
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{CBSE MATHEMATICS 2020}
+\author{G V V Sharma$^{*}$
+	\thanks{}
+}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\section{Section-A}
+\textbf{Question numbers 1 to 20 carry 1 mark each.} \\
+\textbf{Question numbers 1 to 10 are multiple choice type questions. Select the correct option.} \\
+\renewcommand{\theequation}{\theenumi}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item The area of a triangle formed by vertices O, A and B, where $\overrightarrow{OA}=\hat{i} + 2\hat{j} + 3 \hat{k} $ and $\overrightarrow{OB}=-3\hat{i} - 2\hat{j} +  \hat{k} $ is \\
+ \begin{enumerate}
+     \item $ 3\sqrt{5} $ sq.units\\
+    \item$ 5\sqrt{5} $ sq.units\\
+    \item$ 6\sqrt{5} $ sq.units\\
+    \item$ 4 $ sq.units
+\end{enumerate}
+
+\item If $\cos (\sin^{-1} \frac{2}{\sqrt 5} + \cos^{-1} x)$ 
+
+\begin{enumerate}
+   \item $\frac{1}{\sqrt5}$\\
+   \item $ \frac{-2}{\sqrt5}$\\
+    \item $ \frac{2}{\sqrt5}$\\
+    \item $1$
+\end{enumerate}
+
+\item The interval in which the function f given by $ f({x}) = x^2e^{-x} $ is strictly increasing,  is
+
+\begin{enumerate}
+    \item $\left(\infty , -\infty \right)$
+    \item $\left(\infty , 0 \right)$
+    \item $\left(2 , \infty \right)$
+    \item $\left(0 , 2 \right)$
+\end{enumerate}
+\item The function $ f\left({x} \right) = \frac{x-1}{x\left(x^2 -1 \right)} $ is discontinuous at
+
+\begin{enumerate}
+    \item Exactly one point
+    \item Exactly two points
+    \item Exactly three points
+    \item No point
+\end{enumerate}
+
+\item The function  $ f : R \rightarrow \left[-1,1 \right] $ defined by $ f\left(x \right) = cosx $ is
+
+\begin{enumerate}
+    \item Both one-one and onto
+    \item Not one-one, but onto
+    \item one-one, but Not onto
+    \item Neither one-one, nor onto
+\end{enumerate}
+
+\item  The coordinates of the foot of the perpendicular drawn from the point $ \left(2,-3,4 \right) $ on the y-axis is 
+
+\begin{enumerate}
+    \item $\left(2,3,4\right)$
+    \item $\left(-2,-3,-4\right)$
+    \item $\left(0,-3,0\right)$
+    \item $\left(2,0,4\right)$
+\end{enumerate}
+
+\item  The relation R in the set $ \{1,2,3\}$  given by $R=\{(1,2)(2,1)(1,1)\}$ is
+
+\begin{enumerate}
+    \item Symmetric and transitive, but not reflexive  \\
+    \item reflexive and symmetric, but not transitive  \\
+    \item Symmetric, but neither reflexive nor transitive \\
+    \item An equivalence relation 
+\end{enumerate}
+\item  The angle between the vectors $ \hat{i} - \hat{j} $ and $ \hat{j} - \hat{k} $ is
+
+\begin{enumerate}
+    \item $\frac{-\pi}{3}$
+    \item 0
+    \item $\frac{\pi}{3}$
+    \item $\frac{2\pi}{3}$
+\end{enumerate}
+
+\item  If A is a non-singular square matrix of order 3 such that $ A^2 =3A $, then value of  $\begin{vmatrix}A \end{vmatrix}$ is
+
+\begin{enumerate}
+    \item -3
+     \item 3
+     \item 9
+     \item 27
+\end{enumerate}
+\item  If $\mydet{\overrightarrow{a}} = 4 $ and  $ -3\leq \lambda \leq 2 $ then $\mydet{\lambda \overrightarrow{a}} $ lies in
+
+\begin{enumerate}
+    \item $\left[0,12\right]$
+    \item $\left[2,3\right]$
+    \item $\left[8,12\right]$
+    \item $\left[-12,8\right]$
+\end{enumerate}
+\pagebreak
+\textbf{Fill in the blanks in question number 11 to 15}\\
+
+\item  If the radius of the circle is increasing at the rate of 0.5cm/s, then the rate of increase of its circumference is ---------------\\
+\item  If \begin{align} \mydet{2x & -9 \\ -2 & x}  = \mydet{-4 & 8 \\ 1 & -2 } \nonumber \end{align} then value of x is -------------\\
+\item  The corner points of the feasible region of an LPP are (0,0),(0,8),(2,7),(5,4) and (6,0). The maximum profit P=3x+2y occurs at the point .................\\
+\item \begin{enumerate} \item The range of the principle value branch of the function $ y= \sec^{-1}x $ is ----------------
+    
+\item The principal value of $\cos^{-1} \left(\frac{-1}{2}\right)$ is --------------\\
+\end{enumerate}
+
+\item  \begin{enumerate} \item The distance between parallel planes 2x+y-2z-6=0 and 4x+2y-4z=0 is ------------------ units.
+
+\item If P(1,0,-3) is the foot of the perpendicular from the origin to the plane, then the Cartesian equation of the plane is .................... \\
+\end{enumerate}
+    
+\textbf{Question numbers 16 to 20 are very short answer type questions}\\  
+\item  Evaluate :
+	\begin{align}
+         \int_{\frac{-\pi}{2}}^{\frac{\pi}{2}} x \cos^2 x dx \nonumber
+	\end{align}  
+
+\item  Find the coordinates of the point where the line 
+        \begin{align}
+        \frac{x-1}{3} = \frac{y+4}{7} = \frac{z+4}{2}
+        \nonumber
+	\end{align} 
+        cuts the xy-plane. \\
+
+\item  Find the value of k, so that the function \begin{equation*}  f(x)  = \begin{cases}
+                $ k$ x^2 $+ 5 $ ,  &\text{ if  x $\leq$ 1 } \\
+        2 , &\text{if x $ > $ 1}
+\end{cases} \end{equation*}  is continuous at x=1. \\
+\item  Find the integrating factor of the differential equation \begin{center} $ x\frac{dy}{dx} = 2x^2 +y $ \end{center} .
+\item \begin{enumerate} \item Differentiate $ \sec^2(x^2) $ with respect to $ x^2 $.
+ \item If $y=f(x^2)$  and  f'(x)= $ e^{\left(\sqrt{x}\right)}$  , then find $\frac{dy}{dx}$.\\
+\end{enumerate}
+\section{Section-B}
+
+\textbf{Question numbers 21 to 26 carry 2 marks each.}\\
+
+
+\item  \begin{enumerate} \item Find a vector $\overrightarrow{r}$ equally inclined to the three axes and whose magnitude is $3\sqrt{3}$ units.   
+\item Find the angle between unit vectors $\overrightarrow{a}$ and $\overrightarrow{b}$ so that $\sqrt{3}$ $\overrightarrow{a}$ - $\overrightarrow{b}$ is also a unit vector.\\
+\end{enumerate}
+\item If $A=\myvec{-3 & 2 \\ 1 & -1} $ and $ I=\myvec{1 & 0 \\ 0 & 1}$, Find scalar k so that $A^2 + I = kA$.\\
+
+\item \begin{enumerate} \item If \begin{align} f\left(x\right)= \sqrt{\frac{sec x-1}{sec x+1}}\nonumber \end{align} Find \begin{align} f'\left(\frac{\pi}{3}\right) \nonumber \end{align}.
+
+\item Find $f'$ $\left(x\right)$ if \begin{align} f\left(x\right)=\left(\tan x\right)^{\left(\tan x\right)} \nonumber \end{align}
+\end{enumerate}
+
+\item Find :\begin{align} \int \frac{\tan^3x}{\cos^3x} dx \nonumber \end{align} 
+
+\item Show that the plane $ x-5y-2z=1 $ contains the line $ \frac{x-5}{3}=y=2-z $ .\\
+
+\item A fair dice is thrown two times. Find the probability distribution of the number of sixes. Also determine the mean of the number of sixes.\\
+
+\section{Section-C}
+\textbf{Question numbers 27 to 32 carry 4 marks each.}\\
+
+\item Solve the following differential equation: \begin{align} (1+e^{\frac{y}{x}}) dy+e^{\frac{y}{x}(1-\frac{y}{x})} dx = 0 ; (x\not= 0) \nonumber \end{align}
+
+\item A cottage industry manufactures pedestal lamps and wooden shades. Both the products require machine time as well as craftsman time in the making. The number of hours required for producing 1 unit of each and the corresponding profit is given in the following table :
+\begin{table}[htb]
+\tiny
+%\begin{center}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{|c|c|c|c|}
+\hline
+% \begin{tabularx}{\linewidth} {lX}
+ Item & Machine Time & Craftsman Time & Profit(in INR) \\ 
+ \hline
+ Pedestal Lamp & 1.5 hours & 3 hours & 30\\  
+ \hline
+ Wooden shades & 3 hours & 1 hour & 20 \\
+ \hline
+%  \end{tabularx}
+\end{tabular}
+}
+\caption{}
+\end{table}
+%\end{center}
+In a day, the factory has availability of not more than 42 hours of machine time and 24 hours of craftsman time.\\
+Assuming that all items manufactured are sold, how should the manufacturer schedule his daily production in order to maximise the profit? Formulate it as an LPP and solve it graphically.\\
+
+ \item Evaluate : \begin{align} \int_{0}^{\frac{\pi}{2}} \sin2x \tan^{-1}  \left(\sin x\right)dx \nonumber \end{align}\\
+
+ \item \begin{enumerate} \item Check whether the relation R in the set N set of natural numbers given by R= \{(a,b):a is divisor of b\} is reflexive, symmetric or transitive. Also determine whether R is an equivalence relation. 
+    
+\item Prove that \begin{align} \tan^{-1} \frac{1}{4} + \tan^{-1} \frac{2}{9} = \frac{1}{2} \sin^{-1} (\frac{4}{5}) \nonumber \end{align}
+ \end{enumerate}
+
+\item Find the equation of the plane passing through the points $(1,0,-2)$ , $(3,-1,0)$ and perpendicular to the plane $ 2x-y+z=8 $. Also find the distance of the plane thus obtained from the origin.\\
+
+\item \begin{enumerate} \item If \begin{align} \tan^{-1}(\frac{y}{x})=\log \sqrt{x^2+y^2} \nonumber \end{align}  prove that \begin{align} \frac{dy}{dx}=\frac{x+y}{x-y} \nonumber \end{align}.
+
+\item If  \begin{align} y=e^{(acos^{-1}x)}  , -1 < x < 1 \nonumber \end{align}  then show that  \begin{align} (1-x^2) \frac{d^2y}{dx^2} - x \frac{dy}{dx} - a^2y =0 \nonumber \end{align}\\
+\end{enumerate}
+
+ \section{Section-D}
+ 
+ \textbf{Question numbers 33 to 36 carry 6 marks each.}\\
+ 
+ \item Amongst all open (from the top) right circular cylindrical boxes of volume $125 \pi $ $cm^3$, find the dimensions of the box which has the least surface area.\\  
+ 
+ \item \begin{enumerate} \item Using integration, Find the area lying above x-axis and included between the circle $ x^2 + y^2 =8x $ and inside the parabola $ y^2 =4x $.   
+    
+\item Using the method of integration, find the area of the triangle ABC, coordinates of whose vertices are A(2,0), B(4,5) and C(6,3).\\
+ \end{enumerate}
+\item \begin{enumerate} \item If $A=\myvec{5 & -1 & 4 \\ 2 & 3 & 5 \\ 5 & -2 & 6} $, Find $A^{-1}$ and use it to solve the following system of the equations: \\
+\begin{align}
+	5x-y+4z &= 5 \nonumber \\
+	2x+3y+5z &= 2 \nonumber \\
+	5x-2y+6z &= -1 
+\nonumber
+\end{align}
+    
+\item If x,y,z are different and \begin{align} \mydet{x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3}=0 \nonumber \end{align} then using properties of determinants show that \begin{align} 1+xyz=0 \nonumber \end{align}
+\end{enumerate} 
+
+\item A card from a pack of 52 cards is lost. From the remaining cards of the pack, two cards are drawn randomly one-by-one without replacement and are found to to be both kings. Find the probability of the lost card being a king.\\
+
+\end{enumerate}
+\end{document}
