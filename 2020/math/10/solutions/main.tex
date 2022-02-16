@@ -143,8 +143,10 @@ columns=fullflexible
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
-%\numberwithin{equation}{section}
-\numberwithin{equation}{subsection}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+%\numberwithin{equation}{subsection}
 %\numberwithin{problem}{section}
 %\numberwithin{definition}{section}
 \makeatletter
@@ -299,8 +301,745 @@ This manual provides an introduction to vectors and their properties,  based on 
 
 
 
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\section{Discrete Math}
+\begin{enumerate}
+        \item Show that $5 + 2\sqrt{7}$ is an irrational number, where $\sqrt{7}$ is given to be an irrational number.\\
+        \item Check whether $12^n$ can end with the digit 0 for any natural number n.\\
+		\solution  If $12^n$ ends with the digit 0, 
+		    \begin{align}
+			    12^{n} \equiv 0 {\pmod{10}}
+			    \\
+			    \implies 
+			    12^{n} \equiv 0 {\pmod{2}}
+			    \\
+			    12^{n} \equiv 0 {\pmod{5}}
+		    \end{align}
+		    However, 
+		    \begin{align}
+			    \label{eq:2020-mod-5}
+			    12 \not\equiv 0 {\pmod{5}}
+			    \\
+			    12^2 \not\equiv 0 {\pmod{5}}
+		    \end{align}
+		    Let 
+		    \begin{align}
+			    \label{eq:2020-mod-5-n-1}
+			    12^{n-1} \not \equiv 0 {\pmod{5}}
+		    \end{align}
+		    Then, it is obvious from
+			    \eqref{eq:2020-mod-5} and 
+			    \eqref{eq:2020-mod-5-n-1}
+			    that 
+		    \begin{align}
+%			    \label{eq:2020-mod-5-n-1}
+			    12.12^{n-1} \not \equiv 0 {\pmod{5}}
+			    \\
+			    \implies 
+			    12^{n} \not \equiv 0 {\pmod{5}}
+		    \end{align}
+    \item Use Euclid Division Lemma to show that the square of any positive integer is either in the form $3q$ or $3q + 1$ for some integer q.\\
+	    \solution Let $p$ be any positive integer.  Then $p$ can be either $3k, 3k+1$ or $3k-1$, for some postive integer $k$.  If
+	    \begin{align}
+		    p &= 3k, 
+		    \\
+		    p^2 = 9k^2 &= 3\brak{q}
+		    \\
+		    \text{where } q &= 3k^2
+	    \end{align}
+	    If 
+	    \begin{align}
+		    p &= 3k+1, 
+		    \\
+		    p^2 = 9k^2 + 6k + 1&= 3\brak{q}+1, 
+		    \\
+		    \text{where } q &= 3k^2+2k
+	    \end{align}
+	    Similarly, if
+	    \begin{align}
+		    p &= 3k-1, 
+		    \\
+		    p^2 = 9k^2 - 6k + 1&= 3\brak{q}+1, 
+		    \\
+		    \text{where } q &= 3k^2-2k
+	    \end{align}
+\item Find the sum of the first 100 natural numbers.\\
+	\solution The sum of the first $n$ natural number is 
+  \begin{align}
+	  \frac{n\brak{n+1}}{2}
+  \end{align}
+Sustituting $n = 100$ in the above, the desired sum is 
+  \begin{align}
+50 \times 101 = 5050	
+  \end{align}
+\item The LCM of 2 numbers is 182 and their HCF is 13. If one of the numbers is 26, find the other.\\
+\solution The desired number is obtained as
+  \begin{align}
+	  \frac{182 \times 13}{26} = 91
+  \end{align}
+\item Which of the following is not an A.P. ?
+\begin{enumerate}
+    \item $-1.2, 0.8, 2.8...$
+    \item $3, 3 + \sqrt{2}, 3 + 2\sqrt{2},3 + 3\sqrt{2}...$
+    \item $\frac{4}{3}, \frac{7}{3}, \frac{9}{3}, \frac{12}{3}...$
+    \item $\frac{-1}{5}, \frac{-2}{5}, \frac{-3}{5}$
+\end{enumerate}
+\solution $a_0, a_1, a_2$ can be terms of an AP only if 
+		\begin{align}
+	a_1 - 	a_0 = a_2 - 2a_1
+		\end{align}
+		Considering each of the above cases, 
+		\begin{enumerate}
+			\item 
+				\begin{align}
+					2.8 - 1.2 = 1.6 = 2(0.8)
+				\end{align}
+				Hence, the given terms are in A.P.
+			\item 
+				\begin{align}
+					3 + \sqrt{2} - 3 = \sqrt{2} \\
+					3 + 2\sqrt{2} - \brak{3+ \sqrt{2}}= \sqrt{2} \\
+					3 + 3\sqrt{2} - \brak{3+ 2\sqrt{2}}= \sqrt{2} 
+				\end{align}
+				Hence, the given terms are in A.P.
+    \item 
+	    \begin{align}
+		    \frac{7}{3} -   \frac{4}{3} &= 1
+		    \\
+		     \frac{9}{3}-\frac{7}{3} &= \frac{2}{3}
+		     \\
+		    \frac{12}{3}-\frac{9}{3} &= 1
+	    \end{align}
+				Hence, the given terms are not in A.P.
+			\item
+				\begin{align}
+					-\frac{2}{5} +   \frac{1}{5} &= -\frac{1}{5}
+		    \\
+					-\frac{3}{5} +   \frac{2}{5} &= -\frac{1}{5}
+	    \end{align}
+				Hence, the given terms are in A.P.
+  
+\end{enumerate}
+    \item Find the sum
+	    \begin{align}
+    \myvec{-5} + \myvec{-8} + \myvec{-11} + ... + \myvec{-230}
+	    \end{align}
+	    \solution The above series is an A.P. with 
+	    \begin{align}
+		    a_0 = -5, a_n = -230, d = -3
+	    \end{align}
+	    Since 
+	    \begin{align}
+		    a_n &= a_0 + \brak{n-1}d, 
+		    \\
+		    n &= \frac{a_n - a_0}{d} + 1
+		    \\
+		     &= 76
+	    \end{align}
+	    Thus the desired sum is given by 
+	    \begin{align}
+		    S_n &=  \frac{n\brak{a_n + a_0}}{2}  
+		    \\
+		    &=  -235 \times 38 = -8930
+	    \end{align}
+
+    
+    
+\end{enumerate}
+\section{Arithmetic}
+\begin{enumerate}
+\item The radius of a sphere (in cm), whose volume is $12\pi cm^3$, is
+\begin{enumerate}
+    \item $3$
+    \item $3 \sqrt{2}$
+    \item $3^\frac{2}{3}$
+    \item $3^\frac{1}{3}$
+\end{enumerate}
+\solution 
+The volume of a sphere, given the radius $r$, is given by
+\begin{align}
+	V = \frac{4}{3}\pi r^3
+\end{align}
+Hence the radius is 
+\begin{align}
+	r &= \brak{\frac{3V}{4\pi}}^{\frac{1}{3}}  
+	\\
+	 &= 3^{\frac{2}{3}}  
+\end{align}
+
+    \item In a cylindrical vessel of radius 10cm, containing some water, 9000 small spherical balls are dropped which are completely immersed in water which raises the water level. If each spherical ball is of radius 0.5 cm then find the rise in the level of water in the vessel.\\
+	    \solution The various parameters considered in this problem are listed in Table 
+\eqref{table:table1}. 
+
+\begin{table}[ht!]
+	\input{tables/cbse-2020-table.tex}
+\caption{}
+\label{table:table1}	
+\end{table}
+From the given information, the volume of all the balls will be equal the increase in the volume of water in the vessel.  Thus, 
+\begin{align}
+	N \times \frac{4}{3}\pi r^3 &= \pi R^2 h
+	\\
+	\implies  h &=  \frac{4r^3}{3R^2}N
+	\\
+	&= 15
+\end{align}
+    \item A cone and a cylinder have the same radii, but the height of the cone is 3 times that of the cylinder. Find the ratio of their volumes\\
+   \solution Let $h_i, V_i, i = 1,2$ be the respective heights and volumes of the cone and the cylinder. 
+   Then 
+  \begin{align}
+	  V_1 &= \frac{1}{3} \pi r^2 h_1
+	  \\
+	  V_2 &=  \pi r^2 h_2
+	  \\
+	  \implies \frac{V_1}{V_2} &= \frac{h_1}{3h_2}
+	  \\
+	  &= 1
+  \end{align}
+  $\because h_1 = 3h_2$.
+
+\end{enumerate}
+\section{Algebra}
+\begin{enumerate}
+        \item A motorboat whose speed is 18 kmph in still water takes 1 hour more to go 24 km upstream than to return downstream to the same spot. Find the speed of the stream.\\
+		\solution The input parameters are given in Table 
+\eqref{table:table-boat}.	
+\begin{table}[ht!]
+	\input{tables/cbse-2020-10-motor.tex}
+\caption{}
+\label{table:table-boat}	
+\end{table}
+		    \begin{align}
+			    \frac{d}{v-x} = \frac{d}{x+v} + t 
+		    \end{align}
+		    where $d$ is the distance traveled upstream.  From the above equation, 
+		    \begin{align}
+			    \frac{2xd}{v^2 - x^2} &= t
+			    \\
+			    \implies 
+			    tx^2 +2xd -tv^2 &=0
+			    \\
+			    \text{or, } x= -d \pm \sqrt{d^2 + t^2v^2}& 
+			    \\
+			    &= 6
+		    \end{align}
+ \item On dividing a polynomial p$\myvec{x}$ by $x^2 - 4$, the quotient and remainder are found to be x and 3 respectively. The polynomial p$\myvec{x}$ is 
+	 \\
+\solution The input parameters for this problem are available in 
+\eqref{table:table-polydiv}.	
+\begin{table}[ht!]
+	\input{tables/cbse-2020-10-polydiv.tex}
+\caption{}
+\label{table:table-polydiv}	
+\end{table}
+
+		In general, the polynomial
+\begin{align}
+	p(x) &= d(x)q(x) + r(x)
+	\\
+	&= \brak{x^2-4}x +3
+	\\
+	&= x^3 - 4x + 3
+\end{align}
+    \item Form a quadratic polynomial, the sum and product of whose zeros are $\myvec{-3}$ and $2$ respectively.\\
+	    \solution  The desired quadratic polynomial is 
+  \begin{align}
+	  x^2 -\brak{-3}x + 2 &= 0 
+	  \\
+	  \implies x^2 +3x + 2 &= 0 
+  \end{align}
+    \item Can $\myvec{x^2 - 1}$ be a remainder while dividing $x^4 - 3x^2 + 5x - 9$ by $\myvec{x^2 + 3}$? Justify the reasons.\\
+	    \solution  
+
+\polylongdiv[style=A]{x^4 - 3x^2 + 5x -9}{x^2 + 3}
+\\
+  which implies that the remainder is $5x+9$ resulting in a contradiction.  Hence, the given statement is not true.
+\item The value(s) of k for which the quadratic equation $2x^2 + kx + 2 = 0$ has equal roots, is
+\begin{enumerate}
+    \item $4$
+    \item $\pm 4$
+    \item $- 4$\
+    \item $0$
+\end{enumerate}
+\solution 
+A quadratic equation 
+		\begin{align}
+			ax^2+bx + c  &= 0
+		\end{align}
+		has equal roots only if 
+ the discriminant
+		\begin{align}
+			b^2 - 4a c  = 0
+		\end{align}
+		Substituting
+		\begin{align}
+			a = 2, b = k, c &= 2,
+			\\
+\implies 			k^2 - 4 &= 0
+			\\
+			\text{or, }k = \pm 4
+		\end{align}
+        \item  Obtain other zeros of the polynomial
+		\begin{align}
+			\label{cbse-2020-10-poly1}
+p \myvec{x} = 2x^4 - x^3 - 11x^2 + 5x + 5
+		\end{align}
+    if the two of its zeros are $\sqrt{5}$ and $- \sqrt{5}$\\
+    \solution The given polynomial can be expressed as
+		\begin{align}
+			p \myvec{x} 
+			&= \brak{x - \sqrt{5}}\brak{x + \sqrt{5}}\brak{ax^2 + bx + c }
+			\\
+			&= \brak{x^2 - 5}\brak{ax^2 + bx + c }
+			\\
+			&= ax^4 +bx^3 +\brak{c-5a}x^2 -5bx -5c
+		\end{align}
+			Comparing the above with \eqref{cbse-2020-10-poly1}, 
+		\begin{align}
+			a = 2, b = c = -1
+		\end{align}
+		Thus we need to find the zeros of the polynomial 
+		\begin{align}
+			2x^2 -x -1 &= 0
+			\\
+			\implies x = 1, -\frac{1}{2}
+		\end{align}
+        \item What minimum must be added to $2x^3 - 3x^2 + 6x + 7$ so that the resulting polynomial will be divisible by $x^2 - 4x + 8$ ?\\
+		\solution  From the following division,
+
+\polylongdiv[style=A]{2x^3 - 3x^2 + 6x + 7}{x^2 - 4x + 8}
+
+
+it is obvious that $33-10x$ needs to be added.
+\end{enumerate}
+\section{Trigonometry}
+\begin{enumerate}
+\item Write the value of $\sin^2 30\degree + \cos^2 60\degree$\\
+	\solution Since 
+  \begin{align}
+	  \cos 60\degree &= \sin 30\degree, 
+	  \\
+	  \sin^2 30\degree + \cos^2 60\degree &= 
+2\sin^2 30\degree 
+\\
+	  &=1
+  \end{align}
+\item What is the simplest form of $\frac{1 + \tan^2 A}{1 + \cot^2 A}$\\
+	\solution
+		\begin{align}
+			\frac{1 + \tan^2 A}{1 + \cot^2 A} 
+			&=\frac{1 + \tan^2 A}{1 + \frac{1}{\tan^2 A}} 
+			\\
+			&=\tan^2 A
+		\end{align}
+\item In Fig $\ref{Fig4}$ the angle of elevation from the top of a tower from a point C on the ground, which is 30m away from the foot of the tower is $30\degree$. Find the height of the tower.\\
+	\solution In general, the height is given by 
+  \begin{align}
+	  h &= d \tan \theta
+	  \\
+	  &= 30 \tan 30 \degree = 30 \frac{1}{\sqrt{3}}
+	  \\
+	  &= 10 \sqrt{3}
+  \end{align}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.5\columnwidth]{Fig4.png}
+	\caption{}
+	\label{Fig4}
+ \end{figure}
+
+    \item Prove that
+	    \begin{align}
+		    \label{eq;cbse-2020-sincos}
+    \myvec{\sin^4\theta  - \cos^4\theta + 1} \csc^2\theta = 2
+		    \end{align}
+    \solution Since 
+	    \begin{align}
+\brak{\sin^2\theta  + \cos^2\theta }
+\brak{\sin^2\theta  - \cos^2\theta }
+= -\cos 2 \theta
+		    \end{align}
+		    the L.H.S in 
+		    \eqref{eq;cbse-2020-sincos}
+		    can be expressed as 
+	    \begin{align}
+		    \label{eq;cbse-2020-sincos_simp}
+		    \myvec{1-\cos2\theta} \csc^2\theta &= 
+2 \sin^2 \theta \csc^2\theta 
+\\
+		    &= 2
+		    \end{align}
+    
+      
+     
+    
+    
+    \item If A, B and C are interior angles of $\triangle ABC$, then show that
+		    \begin{align}
+			    \label{eq:cbse-2020-10-tri}
+    \cos \myvec{\frac{B + C}{2}} = \sin \myvec{\frac{A}{2}}
+		    \end{align}
+		    \solution In a triangle,
+		    \begin{align}
+			    A+B+C &= 180\degree
+			    \\
+			    \implies \myvec{\frac{B + C}{2}} &= 90\degree-\frac{A}{2}
+			    \\
+			    \text{or, }    \cos \myvec{\frac{B + C}{2}} = \sin \myvec{90\degree -\frac{A}{2}}
+		    \end{align}
+			    yielding \eqref{eq:cbse-2020-10-tri}.
+
+    \item A statue $1.6m$ tall, stands on the top of a pedestal. From a point on the ground,  the angle of elevation of the top of the statue is $60\degree$ and from the same point the angle of elevation of the top of the pedestal is $45\degree$. Find the height of the pedestal.Use$\myvec{\sqrt{3} = 1.73}$\\
+	    \solution Let the height of the pedestal be $x$ and the height of the statue be $h$. If the given angles be $\theta_1 = 60 \degree$ and $\theta_2 = 45 \degree$,  from the given information, 
+\begin{align}
+	\brak{h + x }\cot \theta_1 &= x \cot \theta_2
+	\\
+	\implies x &= \frac{h\cot \theta_1}{\cot \theta_2-\cot \theta_1}
+	&= \frac{1.6}{\sqrt{3}-1}
+\end{align}
+	    
+
+    
+    \end{enumerate}
 \section{Linear Algebra}
 \begin{enumerate}
+\item The distance between the points $(m , -n)$ and $(-m , n)$ is
+\begin{enumerate}
+    \item $\sqrt{m^2 + n^2}$
+    \item $m + n$
+    \item $2\sqrt{m^2 + n^2}$
+    \item $\sqrt{2m^2 + 2n^2}$
+\end{enumerate}
+		\solution Letting 
+		\begin{align}
+			\vec{A} &= \myvec{m \\ -n}, \vec{B}=\myvec{-m \\ n}
+			\\
+			\vec{A}-\vec{B} &= 2\myvec{m \\ -n}
+		\end{align}
+Using the definition   of the norm, 
+		\begin{align}
+\norm{\vec{A}-\vec{B}} &=2\norm{\myvec{m \\ -n}}
+			\\
+			&=2 \sqrt{\myvec{m & -n}\myvec{m \\ -n}} 
+\\
+			&			= 2 \sqrt{m^2+n^2}
+		\end{align}
+
+\item The point on the $x$-axis which is equidistant from $\myvec{-4 \\ 0}$ and $\myvec{10\\0}$\\
+\begin{enumerate}
+\item $\myvec{7,0}$
+\item $\myvec{5,0}$
+\item $\myvec{0,0}$
+\item $\myvec{3,0}$
+\end{enumerate}
+
+\solution The input parameters for this problem are available in 
+\eqref{table:table-xequid}.	
+\begin{table}[ht!]
+	\input{tables/cbse-2020-10-xequid.tex}
+\caption{}
+\label{table:table-xequid}	
+\end{table}
+		If $\vec{x}$ lies on the  $x$-axis and is  equidistant from the points $\vec{A}$ and $\vec{B}$, 
+\begin{align}
+	\norm{\vec{x}-\vec{A}} &=
+\norm{\vec{A}-\vec{B}} 
+\\
+	\implies \norm{\vec{x}-\vec{A}}^2 &=
+\norm{\vec{x}-\vec{B}}^2 
+\end{align}
+which can be expressed as 
+\begin{multline}
+%  \label{eq:norm2d_dist}
+	\brak{\vec{x}-\vec{A}}^{\top} \brak{\vec{x}-\vec{A}}=
+	\brak{\vec{x}-\vec{B}}^{\top} 
+\brak{\vec{x}-\vec{B}}
+\\
+	\implies	\norm{\vec{x}}^2-2{\vec{x}}^{\top}\vec{A} + \norm{\vec{A}}^2
+	\\= \norm{\vec{x}}^2-2{\vec{x}}^{\top}\vec{B} + \norm{\vec{B}}^2
+\end{multline}
+which can be simplified to obtain
+%  \eqref{eq:norm2d_equidist}.
+  \begin{align}
+	  \vec{x} &=
+	   x\vec{e}_1
+  \end{align}
+  where 
+  \begin{align}
+	  x &=\frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
+}
+\\
+	  &= 3
+	  \label{eq:cbse_10_x}
+  \end{align}
+upon   substituting numerical values. 
+Hence, the desired point is $\myvec{ 3 \\ 0}$.
+    See Fig. 
+	  \ref{fig:matrix-10-2.pdf}
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/matrix-10-2.pdf}
+	  \caption{}
+	  \label{fig:matrix-10-2.pdf}
+	  \end{figure}
+\item The center of a circle whose end points of a diameter are $\myvec{-6, 3}$ and $\myvec{6,4}$ is
+\begin{enumerate}
+\item $\myvec{8,-1}$
+\item $\myvec{4,7}$
+\item $\myvec{0,\frac{7}{2}}$
+\item $\myvec{4,\frac{7}{2}}$
+\end{enumerate}
+		\solution 
+Using section formula, 
+		the desired point is given by 
+  \begin{align}
+	  \vec{O}&= \frac{\vec{B}+ \vec{A}}{2}
+	  \\
+	  &= \frac{1}{2}\sbrak{\myvec{ -6 \\ 3}+\myvec{6 \\ 4}}
+	  \\
+	  &=\frac{1}{2}\myvec{0 \\ 7}
+  \end{align}
+    See Fig. 
+	  \ref{fig:matrix-10-3.pdf}
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/matrix-10-3.pdf}
+	  \caption{}
+	  \label{fig:matrix-10-3.pdf}
+	  \end{figure}
+        \item Find the ratio in which the y-axis divides the line segment joining the points $\myvec{6, -4}$ and $\myvec{-2, -7}$. Also find the point of intersection\\
+\solution  In general, letting the given points be $\vec{A}, \vec{B}$, 
+		\begin{align}
+			\vec{P} &= \frac{k\vec{B}+ \vec{A} }{k+1}
+			\label{eq:cbse-10-5-section}
+		\end{align}
+		Since the point lies on the $y$-axis, 
+		\begin{align}
+			\vec{e}_1^{\top}\vec{P} &= 0
+			\\
+			\implies k\vec{e}_1^{\top}\vec{B}+ \vec{e}_1^{\top}\vec{A} &=0
+			\\
+			\text{or, } k &=- \frac{\vec{e}_1^{\top}\vec{A}}{\vec{e}_1^{\top}\vec{B}}
+		\end{align}
+Substituting in 			\eqref{eq:cbse-10-5-section} and simplifying, 
+		\begin{align}
+			\vec{P} &= \frac{\brak{\vec{e}_1^{\top}\vec{B}}\vec{A}- \brak{\vec{e}_1^{\top}\vec{A}}\vec{B} }{\brak{\vec{e}_1^{\top}\vec{B}}-\brak{\vec{e}_1^{\top}\vec{A}}}
+		\end{align}
+    See Fig. 
+	  \ref{fig:matrix-10-4.pdf}
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/matrix-10-4.pdf}
+	  \caption{}
+	  \label{fig:matrix-10-4.pdf}
+	  \end{figure}
+        \item Show that the points $\myvec{7, 10}$, $\myvec{-2,5}$ and $\myvec{3, -4}$ and vertices of an isosceles right triangle.
+		\\
+		\solution Let the given points be $\vec{A}, \vec{B}, \vec{C}$ respectively. 
+			 Then, the direction vectors of $AB, BC$ and $CA$ are
+		\begin{align}
+			\vec{A} -\vec{B}&= \myvec{7 \\ 10} -\myvec{-2 \\ 5} = \myvec{9 \\ 5}
+			\\
+			\vec{B} -\vec{C}&=  -\myvec{-2 \\ 5}-\myvec{3 \\ -4} = \myvec{-5 \\ 9}
+			\\
+			\vec{C} -\vec{A}&= \myvec{3 \\ -4} -\myvec{7 \\ 10} = \myvec{-4 \\ -14}
+		\end{align}
+		From the above,  we find that 
+		\begin{align}
+			\brak{\vec{A} -\vec{B}}^{\top}\brak{\vec{B} -\vec{C}}&=  \myvec{9 & 5}\myvec{-5 \\ 9}
+			\\
+			&=0
+			\\
+			\brak{\vec{B} -\vec{C}}^{\top}\brak{\vec{C} -\vec{A}}&=  \myvec{-5 & 9}\myvec{-4 \\ -14}
+\\
+			&=-106
+			\\
+			\brak{\vec{C} -\vec{A}}^{\top}\brak{\vec{A} -\vec{B}}&=  \myvec{-4 & -14}\myvec{9 \\ 5}
+\\
+			&=-106
+		\end{align}
+		From  the above equations, 
+		\begin{align}
+			\brak{\vec{A} -\vec{B}}\perp \brak{\vec{B} -\vec{C}}
+			\\
+			\angle BCA = 
+			\angle CAB  
+		\end{align}
+		Thus, the triangle is right angled and isosceles.
+    See Fig. 
+	  \ref{fig:matrix-10-5.pdf}
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/matrix-10-5.pdf}
+	  \caption{}
+	  \label{fig:matrix-10-5.pdf}
+	  \end{figure}
+  \item $AOBC$ is a rectangle whose 3 vertices are $\vec{A} = \myvec{0,-3}, \vec{O} = \myvec{0,0}$ and $\vec{B} = \myvec{4,0}$. The length of the diagonal is \rule{1.5cm}{0.15mm}\\
+\solution
+The length of the diagonal is  
+  \begin{align}
+	  \norm{\vec{A}-\vec{B}} = \sqrt{3^2+4^2} = 5
+  \end{align}
+  Also, the the fourth point 
+  \begin{align}
+	\vec{C} = \vec{A}+ \vec{B}-\vec{O} = \myvec{4 \\ -3}
+  \end{align}
+    See Fig. 
+	  \ref{fig:matrix-10-6.pdf}
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/matrix-10-6.pdf}
+	  \caption{}
+	  \label{fig:matrix-10-6.pdf}
+	  \end{figure}
+    
+
+     \item A fraction becomes $\frac{1}{3}$ when 1 is subtracted from the numerator and it becomes $\frac{1}{4}$ when 8 added to its denominator. Find the fraction.\\
+		\solution Let the desired fraction be $\frac{x}{y}$.  From the given information, 
+		    \begin{align}
+			    \frac{x-1}{y} &= \frac{1}{3}
+			    \\
+			    \frac{x}{y+8} &= \frac{1}{4}
+		    \end{align}
+		    The above equations result in the system 
+		    \begin{align}
+			    3x - y &= 3
+			    \\
+			    4x - y &= 8 
+		    \end{align}
+		    which can be expressed as the matrix equation 
+		    \begin{align}
+			    \myvec{	    3 & -1  
+			    \\
+			    4 & -1} \vec{x} &= \myvec{3\\8 }
+		    \end{align}
+		    The augmented matrix is obtained as 
+		    \begin{align}
+			    \myvec{	    \circled{3} & -1  &3
+			    \\
+			    4 & -1 & 8}  
+		    \end{align}
+		    Through pivoting, we obtain 
+		    \begin{align}
+			    \myvec{	    \circled{3} & -1  &3
+			    \\
+			    0 & 1 & 12}  
+			    \\
+			    \xleftrightarrow[]{R_1 \leftarrow \frac{R_1 + R_2}{3}}
+			    \myvec{	    1 & 0  & 5
+			    \\
+			    0 & 1 & 12}  
+			    \\
+			    \implies \vec{x} = \myvec{5\\12}
+		    \end{align}
+    See Fig. 
+	  \ref{fig:matrix-10-7.pdf}
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/matrix-10-7.pdf}
+	  \caption{}
+	  \label{fig:matrix-10-7.pdf}
+	  \end{figure}
+        \item The present age of a father is three years more than three times the age of his son. Three years hence the father's age will be 10 years more than twice the age of the son. Determine their present ages.\\
+		\solution Let the ages of the father and son be $x, y$ respectively.  From the given information, 
+		    \begin{align}
+			    x &= 3y+3
+			    \\
+			    x+3 &= 2\brak{y+3} + 10
+		    \end{align}
+		    which can be expressed as 
+		    \begin{align}
+			    x  -3y &= 3
+			    \\
+			    x -2y  &= 13
+			    \\
+			    \implies 
+			    \myvec{1 &  -3
+			    \\
+			    1 & -2}\vec{x} &= \myvec{3 \\ 13}
+		    \end{align}
+		    The augmented matrix for the above matrix equation is 
+		    \begin{align}
+			    \myvec{
+				    1 & -3 & \vrule & 3
+			    \\
+			    1 & -2  &\vrule & 13
+		    }
+		    \\
+		    \xleftrightarrow[]{R_2 \leftarrow R_2 -R_1 }
+			    \myvec{
+				    1 & -3 & \vrule & 3
+			    \\
+			    0 & 1  &\vrule & 10
+		    }
+		    \\
+		    \xleftrightarrow[]{R_1 \leftarrow 3R_2 +R_1 }
+			    \myvec{
+				    1 & 0 & \vrule & 33
+			    \\
+			    0 & 1  &\vrule & 10
+		    }
+			    \implies \vec{x} = \myvec{33 \\ 10}
+		    \end{align}
+    See Fig. 
+	  \ref{fig:matrix-10-8.pdf}
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/matrix-10-8.pdf}
+	  \caption{}
+	  \label{fig:matrix-10-8.pdf}
+	  \end{figure}
+
+\item The pair of linear equations,
+	\begin{align}
+		\frac{3x}{2} + \frac{5y}{3} &=7  \text{ and}\\
+		9x + 10y &= 14
+	\end{align}
+		is
+\begin{enumerate}
+\item consistent
+\item inconsistent 
+\item consistent with one solution
+\item consistent with many solutions
+\end{enumerate}
+\solution  The given system can be expressed as the matrix equation
+	\begin{align}
+		\myvec{\frac{3}{2} & \frac{5}{3} 
+		\\
+9 & 10 
+		}\vec{x}=\myvec{7  \\14}
+	\end{align}
+	The augmented matrix can be expressed as 
+	\begin{align}
+		\myvec{\frac{3}{2} & \frac{5}{3} & 7
+		\\
+		9 & 10 & 14
+		}
+		\\
+		\xleftrightarrow[]{R_1 \leftarrow 6R_1}
+		\myvec{9 & 10 & 42
+		\\
+		9 & 10 &14
+		}
+		\\
+		\xleftrightarrow[]{R_2 \leftarrow R_1 - R_2}
+		\myvec{9 & 10 & 42
+		\\
+		0 & 0 & 28
+		}
+	\end{align}
+From the above, it is obvious that the rank of the coefficient matrix is not equal to the rank of the augmented matrix.  Hence, the system is inconsistent.	
+    See Fig. 
+	  \ref{fig:matrix-10-9.pdf}
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/matrix-10-9.pdf}
+	  \caption{}
+	  \label{fig:matrix-10-9.pdf}
+	  \end{figure}
     \item If a line is drawn parallel to one side of a triangle to intersect the other two sides at distinct points, prove that the other two sides are divided in the same ratio.\\
 	    \solution Let the vertices of the triangle be $\vec{A}, \vec{B}, \vec{C}$ such that  
 		\begin{align}
@@ -342,8 +1081,8 @@ This manual provides an introduction to vectors and their properties,  based on 
 			From \eqref{eq:cbse-2020-10-bpt-q1} and 
 			\eqref{eq:cbse-2020-10-bpt-q2}
 		\begin{align}
-			\lambda \vec{A} - \mu \vec{C}	&= 
-			 \brak{1 + k}\vec{A} - k \vec{C}
+			\lambda \vec{A} - \mu \vec{C}	= 
+			 \brak{1 + k}\vec{A} - k \vec{C}&
 			\\
 			\implies 
 			\brak{1 + k+\lambda }\vec{A} \brak{k - \mu}  \vec{C}	&=  0
@@ -360,6 +1099,21 @@ This manual provides an introduction to vectors and their properties,  based on 
 			\begin{align}
 				\frac{AQ}{AC} = \frac{AP}{AB}
 			\end{align}
+    See Fig. 
+	  \ref{fig:matrix-10-10.pdf}
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/matrix-10-10.pdf}
+	  \caption{}
+	  \label{fig:matrix-10-10.pdf}
+	  \end{figure}
+	  for the input parameters in 
+\eqref{table:matrix-10-10}.	
+\begin{table}[ht!]
+	\input{tables/matrix-10-10.tex}
+\caption{}
+\label{table:matrix-10-10}	
+\end{table}
 		
     \item In Fig $\ref{Fig7}$ if $\vec{PQ} \parallel \vec{BC}$ and $\vec{PR} \parallel \vec{CD}$, prove that $\frac{QB}{AQ} = \frac{DR}{AR}$.\\
     \begin{figure}[h!]
@@ -506,13 +1260,6 @@ For construction, let $\vec{A} = \vec{0}, \vec{e}_2^{\top}\vec{C} = 0, \vec{B}, 
 		    \end{align}
 		    Thus, the sides are $20m$ and $12m$.
 
-\item AOBC is a rectangle whose 3 vertices are $A = \myvec{0,-3}$, $O = \myvec{0,0}$ and $B = \myvec{4,0}$. The length of the diagonal is \rule{1.5cm}{0.15mm}\\
-\solution
-The length of the diagonal is  
-  \begin{align}
-	  \norm{\vec{A}-\vec{B}} = \sqrt{3^2+4^2} = 5
-  \end{align}
-    
     \item In Fig $\ref{Fig8}$, ABCD is a parallelogram. A semicircle with centre O and the diameter AB has been drawn and it passes through D. If $\Vec{AB} = 12$ and $\Vec{OD} \perp \Vec{AB}$, then find the area of the shaded region. Use $\myvec{\pi = 3.14}$\\
 	    \solution From the figure, the radius of the circle is  
 	    \begin{align}
@@ -554,28 +1301,6 @@ The various coordinates are
 	\\
 	&= \vec{B}+ \vec{D}-\vec{A}
 \end{align}
-
-\item The distance between the points (m , -n) and (-m , n) is
-\begin{enumerate}
-    \item $\sqrt{m^2 + n^2}$
-    \item $m + n$
-    \item $2\sqrt{m^2 + n^2}$
-    \item $\sqrt{2m^2 + 2n^2}$
-\end{enumerate}
-		\solution Letting 
-		\begin{align}
-			\vec{A} &= \myvec{m \\ -n}, \vec{B}=\myvec{-m \\ n}
-			\\
-			\vec{A}-\vec{B} &= 2\myvec{m \\ -n}
-		\end{align}
-Using the definition   of the norm, 
-		\begin{align}
-\norm{\vec{A}-\vec{B}} &=2\norm{\myvec{m \\ -n}}
-			\\
-			&=2 \sqrt{\myvec{m & -n}\myvec{m \\ -n}} 
-\\
-			&			= 2 \sqrt{m^2+n^2}
-		\end{align}
 
 \item In Fig. $\ref{Fig1}$ ,from an external point P, two tangents $\Vec{PQ}$ and $\Vec{PR}$ are drawn to a circle of radius 4cm with center O. If $\angle{QPR} = 90\degree$, then length of $\Vec{PQ}$ is
 \begin{enumerate}
@@ -623,95 +1348,6 @@ upon substituting numerical values.
 	\label{Fig2}
  \end{figure}
  
-\item \begin{enumerate}
-\item The point on the x axis which is equidistant from $\myvec{-4 \\ 0}$ and $\myvec{10\\0}$\\
-\begin{enumerate}
-\item $\myvec{7,0}$
-\item $\myvec{5,0}$
-\item $\myvec{0,0}$
-\item $\myvec{3,0}$
-\end{enumerate}
-\solution If $\vec{x}$ lies on the  $x$-axis and is  equidistant from the points $\vec{A}$ and $\vec{B}$, 
-  \begin{align}
-	  \vec{x} &=
-	   x\vec{e}_1
-  \end{align}
-  where 
-  \begin{align}
-	  x &=\frac{\norm{\vec{A}}^2 -\norm{\vec{B}}^2 }{2\brak{\vec{A}-\vec{B}}^{\top }\vec{e}_1
-}
-	  &= 3
-	  \label{eq:cbse_10_x}
-  \end{align}
-upon   substituting numerical values. 
-  Hence, the desired point is $\myvec{ 3 \\ 0}$.
-
-\item The center of a circle whose end points of a diameter are $\myvec{-6, 3}$ and $\myvec{6,4}$ is
-\begin{enumerate}
-\item $\myvec{8,-1}$
-\item $\myvec{4,7}$
-\item $\myvec{0,\frac{7}{2}}$
-\item $\myvec{4,\frac{7}{2}}$
-\end{enumerate}
-		\solution 
-Using section formula, 
-		the desired point is given by 
-  \begin{align}
-	  \vec{O}&= \frac{\vec{B}+ \vec{A}}{2}
-	  \\
-	  &= \frac{1}{2}\sbrak{\myvec{ -6 \\ 3}+\myvec{6 \\ 4}}
-	  \\
-	  &=\frac{1}{2}\myvec{0 \\ 7}
-  \end{align}
-%    See Fig. 
-%	  \ref{fig:cbse-10-3.pdf}
-%  \begin{figure}
-%	  \centering 
-%	  \includegraphics[width=\columnwidth]{figs/cbse-10-3.pdf}
-%	  \caption{}
-%	  \label{fig:cbse-10-3.pdf}
-%	  \end{figure}
-\end{enumerate}
-
-\item The pair of linear equations,
-	\begin{align}
-		\frac{3x}{2} + \frac{5y}{3} &=7  \text{ and}\\
-		9x + 10y &= 14
-	\end{align}
-		is
-\begin{enumerate}
-\item consistent
-\item inconsistent 
-\item consistent with one solution
-\item consistent with many solutions
-\end{enumerate}
-\solution  The given system can be expressed as the matrix equation
-	\begin{align}
-		\myvec{\frac{3}{2} & \frac{5}{3} 
-		\\
-9 & 10 
-		}\vec{x}=\myvec{7  \\14}
-	\end{align}
-	The augmented matrix can be expressed as 
-	\begin{align}
-		\myvec{\frac{3}{2} & \frac{5}{3} & 7
-		\\
-		9 & 10 & 14
-		}
-		\\
-		\xleftrightarrow[]{R_1 \leftarrow 6R_1}
-		\myvec{9 & 10 & 42
-		\\
-		9 & 10 &14
-		}
-		\\
-		\xleftrightarrow[]{R_2 \leftarrow R_1 - R_2}
-		\myvec{9 & 10 & 42
-		\\
-		0 & 0 & 28
-		}
-	\end{align}
-From the above, it is obvious that the rank of the coefficient matrix is not equal to the rank of the augmented matrix.  Hence, the system is inconsistent.	
 
 \item In Fig $\ref{Fig3}$, $\myvec{PQ}$ is tangent to the circle with center at O, at the point B. If $\angle{AOB} = 100\degree$, then $\angle{ABP}$ is equal to
 \begin{enumerate}
@@ -734,525 +1370,9 @@ From the above, it is obvious that the rank of the coefficient matrix is not equ
 		&= 50 \degree
 	\end{align}
 
-        \item A fraction becomes $\frac{1}{3}$ when 1 is subtracted from the numerator and it becomes $\frac{1}{4}$ when 8 added to its denominator. Find the fraction.\\
-		\solution Let the desired fraction be $\frac{x}{y}$.  From the given information, 
-		    \begin{align}
-			    \frac{x-1}{y} &= \frac{1}{3}
-			    \\
-			    \frac{x}{y+8} &= \frac{1}{4}
-		    \end{align}
-		    The above equations result in the system 
-		    \begin{align}
-			    3x - y &= 3
-			    \\
-			    4x - y &= 8 
-		    \end{align}
-		    which can be expressed as the matrix equation 
-		    \begin{align}
-			    \myvec{	    3 & -1  
-			    \\
-			    4 & -1} \vec{x} &= \myvec{3\\8 }
-		    \end{align}
-		    The augmented matrix is obtained as 
-		    \begin{align}
-			    \myvec{	    \circled{3} & -1  &3
-			    \\
-			    4 & -1 & 8}  
-		    \end{align}
-		    Through pivoting, we obtain 
-		    \begin{align}
-			    \myvec{	    \circled{3} & -1  &3
-			    \\
-			    0 & 1 & 12}  
-			    \\
-			    \xleftrightarrow[]{R_1 \leftarrow \frac{R_1 + R_2}{3}}
-			    \myvec{	    1 & 0  & 5
-			    \\
-			    0 & 1 & 12}  
-			    \\
-			    \implies \vec{x} = \myvec{5\\12}
-		    \end{align}
-        \item The present age of a father is three years more than three times the age of his son. Three years hence the father's age will be 10 years more than twice the age of the son. Determine their present ages.\\
-		\solution Let the ages of the father and son be $x, y$ respectively.  From the given information, 
-		    \begin{align}
-			    x &= 3y+3
-			    \\
-			    x+3 &= 2\brak{y+3} + 10
-		    \end{align}
-		    which can be expressed as 
-		    \begin{align}
-			    x  -3y &= 3
-			    \\
-			    x -2y  &= 13
-			    \\
-			    \implies 
-			    \myvec{1 &  -3
-			    \\
-			    1 & -2}\vec{x} &= \myvec{3 \\ 13}
-		    \end{align}
-		    The augmented matrix for the above matrix equation is 
-		    \begin{align}
-			    \myvec{
-				    1 & -3 & \vrule & 3
-			    \\
-			    1 & -2  &\vrule & 13
-		    }
-		    \\
-		    \xleftrightarrow[]{R_2 \leftarrow R_2 -R_1 }
-			    \myvec{
-				    1 & -3 & \vrule & 3
-			    \\
-			    0 & 1  &\vrule & 10
-		    }
-		    \\
-		    \xleftrightarrow[]{R_1 \leftarrow 3R_2 +R_1 }
-			    \myvec{
-				    1 & 0 & \vrule & 33
-			    \\
-			    0 & 1  &\vrule & 10
-		    }
-			    \implies \vec{x} = \myvec{33 \\ 10}
-		    \end{align}
-        \item Find the ratio in which the y-axis divides the line segment joining the points $\myvec{6, -4}$ and $\myvec{-2, -7}$. Also find the point of intersection\\
-\solution  In general, letting the given points be $\vec{A}, \vec{B}$, 
-		\begin{align}
-			\vec{P} &= \frac{k\vec{B}+ \vec{A} }{k+1}
-			\label{eq:cbse-10-5-section}
-		\end{align}
-		Since the point lies on the $y$-axis, 
-		\begin{align}
-			\vec{e}_1^{\top}\vec{P} &= 0
-			\\
-			\implies k\vec{e}_1^{\top}\vec{B}+ \vec{e}_1^{\top}\vec{A} &=0
-			\\
-			\text{or, } k &=- \frac{\vec{e}_1^{\top}\vec{A}}{\vec{e}_1^{\top}\vec{B}}
-		\end{align}
-Substituting in 			\eqref{eq:cbse-10-5-section} and simplifying, 
-		\begin{align}
-			\vec{P} &= \frac{\brak{\vec{e}_1^{\top}\vec{B}}\vec{A}- \brak{\vec{e}_1^{\top}\vec{A}}\vec{B} }{\brak{\vec{e}_1^{\top}\vec{B}}-\brak{\vec{e}_1^{\top}\vec{A}}}
-		\end{align}
-        \item Show that the points $\myvec{7, 10}$, $\myvec{-2,5}$ and $\myvec{3, -4}$ and vertices of an isosceles right triangle.
-		\\
-		\solution Let the given points be $\vec{A}, \vec{B}, \vec{C}$ respectively. 
-			 Then, the direction vectors of $AB, BC$ and $CA$ are
-		\begin{align}
-			\vec{A} -\vec{B}&= \myvec{7 \\ 10} -\myvec{-2 \\ 5} = \myvec{9 \\ 5}
-			\\
-			\vec{B} -\vec{C}&=  -\myvec{-2 \\ 5}-\myvec{3 \\ -4} = \myvec{-5 \\ 9}
-			\\
-			\vec{C} -\vec{A}&= \myvec{3 \\ -4} -\myvec{7 \\ 10} = \myvec{-4 \\ -14}
-		\end{align}
-		From the above,  we find that 
-		\begin{align}
-			\brak{\vec{A} -\vec{B}}^{\top}\brak{\vec{B} -\vec{C}}&=  \myvec{9 & 5}\myvec{-5 \\ 9}
-			\\
-			&=0
-			\\
-			\brak{\vec{B} -\vec{C}}^{\top}\brak{\vec{C} -\vec{A}}&=  \myvec{-5 & 9}\myvec{-4 \\ -14}
-\\
-			&=-106
-			\\
-			\brak{\vec{C} -\vec{A}}^{\top}\brak{\vec{A} -\vec{B}}&=  \myvec{-4 & -14}\myvec{9 \\ 5}
-\\
-			&=-106
-		\end{align}
-		From  the above equations, 
-		\begin{align}
-			\brak{\vec{A} -\vec{B}}\perp \brak{\vec{B} -\vec{C}}
-			\\
-			\angle BCA = 
-			\angle CAB  
-		\end{align}
-		Thus, the triangle is right angled and isosceles.
- \end{enumerate}
-
-
-\section{Continuous Math}
-\begin{enumerate}
-\item The radius of a sphere (in cm), whose volume is $12\pi cm^3$, is
-\begin{enumerate}
-    \item $3$
-    \item $3 \sqrt{2}$
-    \item $3^\frac{2}{3}$
-    \item $3^\frac{1}{3}$
-\end{enumerate}
-\solution 
-The volume of a sphere, given the radius $r$, is given by
-\begin{align}
-	V = \frac{4}{3}\pi r^3
-\end{align}
-
-    \item In a cylindrical vessel of radius 10cm, containing some water, 9000 small spherical balls are dropped which are completely immersed in water which raises the water level. If each spherical ball is of radius 0.5 cm then find the rise in the level of water in the vessel.\\
-	    \solution The various parameters considered in this problem are listed in Table 
-\eqref{table:table1}. 
-
-\begin{table}[ht!]
-	\input{tables/cbse-2020-table.tex}
-\caption{}
-\label{table:table1}	
-\end{table}
-From the given information, the volume of all the balls will be equal the increase in the volume of water in the vessel.  Thus, 
-\begin{align}
-	N \times \frac{4}{3}\pi r^3 &= \pi R^2 h
-	\\
-	\implies  h &=  \frac{4r^3}{3R^2}N
-	\\
-	&= 15
-\end{align}
-        \item A motorboat whose speed is 18 kmph in still water takes 1 hour more to go 24 km upstream than to return downstream to the same spot. Find the speed of the stream.\\
-		\solution Let the speed of the stream be x and the speed of the boat be v.  From the given information, 
-		    \begin{align}
-			    \frac{d}{v-x} = \frac{d}{x+v} + 1
-		    \end{align}
-		    where $d$ is the distance traveled upstream.  From the above equation, 
-		    \begin{align}
-			    \frac{2xd}{v^2 - x^2} &= 1
-			    \\
-			    \implies 
-			    x^2 +2xd -v^2 &=0
-			    \\
-			    \text{or, } x&= -d \pm \sqrt{d^2 + v^2}
-			    \\
-			    &= 6
-		    \end{align}
- \item On dividing a polynomial p$\myvec{x}$ by $x^2 - 4$, the quotient and remainder are found to be x and 3 respectively. The polynomial p$\myvec{x}$
- \begin{enumerate}
-    \item $3$
-    \item $4$
-    \item $2$
-    \item $2\sqrt{2}$
-\end{enumerate}
-\solution In general, the polynomial
-\begin{align}
-	p(x) &= d(x)q(x) + r(x)
-	\\
-	&= \brak{x^2-4}x +3
-	\\
-	&= x^3 - 4x + 3
-\end{align}
-\item What is the simplest form of $\frac{1 + \tan^2 A}{1 + \cot^2 A}$\\
-	\solution
-		\begin{align}
-			\frac{1 + \tan^2 A}{1 + \cot^2 A} 
-			&=\frac{1 + \tan^2 A}{1 + \frac{1}{\tan^2 A}} 
-			\\
-			&=\tan^2 A
-		\end{align}
-\item Write the value of $\sin^2 30\degree + \cos^2 60\degree$\\
-	\solution Since 
-  \begin{align}
-	  \cos 60\degree &= \sin 30\degree, 
-	  \\
-	  \sin^2 30\degree + \cos^2 60\degree &= 
-2\sin^2 30\degree 
-\\
-	  &=1
-  \end{align}
-\item \begin{enumerate}
-    \item Form a quadratic polynomial, the sum and product of whose zeros are $\myvec{-3}$ and $2$ respectively.\\
-	    \solution  The desired quadratic polynomial is 
-  \begin{align}
-	  \brak{x+3}\brak{x-2} = x^2-x-6
-  \end{align}
-    \item Can $\myvec{x^2 - 1}$ be a remainder while dividing $x^4 - 3x^2 + 5x - 9$ by $\myvec{x^2 + 3}$? ustify the reasons.\\
-	    \solution  If the given statement be true, 
-  \begin{align}
-	  \frac{x^4 - 3x^2 + 5x - 9}{x^2 + 3} &= q(x) +\frac{ x^2 - 1}{x^2+3}
-	  \\
-	  &= q(x) +\frac{ x^2 +3 - 4}{x^2+3}
-	  \\
-	  &=q(x) + 1 - \frac{4}{x^2+3} 
-  \end{align}
-  which implies that the remainder is -4 resulting in a contradiction.  Hence, the given statement is not true.
-\end{enumerate}
-\item In Fig $\ref{Fig4}$ the angle of elevation from the top of a tower from a point C on the ground, which is 30m away from the foot of the tower is $30\degree$. Find the height of the tower.\\
-	\solution In general, the height is given by 
-  \begin{align}
-	  h &= d \tan \theta
-	  \\
-	  &= 30 \tan 30 \degree = 30 \frac{1}{\sqrt{3}}
-	  \\
-	  &= 10 \sqrt{3}
-  \end{align}
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.5\columnwidth]{Fig4.png}
-	\caption{}
-	\label{Fig4}
- \end{figure}
-\item The value(s) of k for which the quadratic equation $2x^2 + kx + 2 = 0$ has equal roots, is
-\begin{enumerate}
-    \item $4$
-    \item $\pm 4$
-    \item $- 4$\
-    \item $0$
-\end{enumerate}
-\solution 
-A quadratic equation 
-		\begin{align}
-			ax^2+bx + c  &= 0
-		\end{align}
-		has equal roots only if 
- the discriminant
-		\begin{align}
-			b^2 - 4a c  = 0
-		\end{align}
-		Substituting
-		\begin{align}
-			a = 2, b = k, c &= 2,
-			\\
-\implies 			k^2 - 4 &= 0
-			\\
-			\text{or, }k = \pm 4
-		\end{align}
-
-    \item Prove that
-	    \begin{align}
-		    \label{eq;cbse-2020-sincos}
-    \myvec{\sin^4\theta  - \cos^4\theta + 1} \csc^2\theta = 2
-		    \end{align}
-    \solution Since 
-	    \begin{align}
-\brak{\sin^2\theta  + \cos^2\theta }
-\brak{\sin^2\theta  - \cos^2\theta }
-= -\cos 2 \theta
-		    \end{align}
-		    the L.H.S in 
-		    \eqref{eq;cbse-2020-sincos}
-		    can be expressed as 
-	    \begin{align}
-		    \label{eq;cbse-2020-sincos_simp}
-		    \myvec{1-\cos2\theta} \csc^2\theta &= 
-2 \sin^2 \theta \csc^2\theta 
-\\
-		    &= 2
-		    \end{align}
-    
-    \item A cone and a cylinder have the same radii, but the height of the cone is 3 times that of the cylinder. Find the ratio of their volumes\\
-   \solution Let $h_i, V_i, i = 1,2$ be the respective heights and volumes of the cone and the cylinder. 
-   Then 
-  \begin{align}
-	  V_1 &= \frac{1}{3} \pi r^2 h_1
-	  \\
-	  V_2 &=  \pi r^2 h_2
-	  \\
-	  \implies \frac{V_1}{V_2} &= \frac{h_1}{3h_2}
-	  \\
-	  &= 1
-  \end{align}
-  $\because h_1 = 3h_2$.
-      
-     \item Find the mode of the following distribution:\\
-     \vspace{2mm}\\
-     \scalebox{0.7}{
-     \begin{tabular}{|l|c|c|c|c|c|c|}
-        \hline
-        Marks & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60  \\
-        \hline
-        Number of Students  & 4 & 6 & 7 & 12 & 5 & 6\\
-        \hline
-     \end{tabular}
-     }
-     \vspace{2mm}
-     
-    
-    
-    \item If A, B and C are interior angles of $\triangle ABC$, then show that
-		    \begin{align}
-			    \label{eq:cbse-2020-10-tri}
-    \cos \myvec{\frac{B + C}{2}} = \sin \myvec{\frac{A}{2}}
-		    \end{align}
-		    \solution In a triangle,
-		    \begin{align}
-			    A+B+C &= 180\degree
-			    \\
-			    \implies \myvec{\frac{B + C}{2}} &= 90\degree-\frac{A}{2}
-			    \\
-			    \text{or, }    \cos \myvec{\frac{B + C}{2}} = \sin \myvec{90\degree -\frac{A}{2}}
-		    \end{align}
-			    yielding \eqref{eq:cbse-2020-10-tri}.
-
-    \item A statue $1.6m$ tall, stands on the top of a pedestal. From a point on the ground,  the angle of elevation of the top of the statue is $60\degree$ and from the same point the angle of elevation of the top of the pedestal is $45\degree$. Find the height of the pedestal.Use$\myvec{\sqrt{3} = 1.73}$\\
-	    \solution Let the height of the pedestal be $x$ and the height of the statue be $h$. Ifthe given angles be $\theta_1 = 60 \degree$ and $\theta_2 = 45 \degree$,  from the given information, 
-\begin{align}
-	\brak{h + x }\cot \theta_1 &= x \cot \theta_2
-	\\
-	\implies x &= \frac{h\cot \theta_1}{\cot \theta_2-\cot \theta_1}
-\end{align}
-	    
-
-    
-        \item  Obtain other zeros of the polynomial
-		\begin{align}
-			\label{cbse-2020-10-poly1}
-p \myvec{x} = 2x^4 - x^3 - 11x^2 + 5x + 5
-		\end{align}
-    if the two of its zeros are $\sqrt{5}$ and $- \sqrt{5}$\\
-    \solution The given polynomial can be expressed as
-		\begin{align}
-			p \myvec{x} 
-			&= \brak{x - \sqrt{5}}\brak{x + \sqrt{5}}\brak{ax^2 + bx + c }
-			\\
-			&= \brak{x^2 - 5}\brak{ax^2 + bx + c }
-			\\
-			&= ax^4 +bx^3 +\brak{c-5a}x^2 -5bx -5c
-		\end{align}
-			Comparing the above with \eqref{cbse-2020-10-poly1}, 
-		\begin{align}
-			a = 2, b = c = -1
-		\end{align}
-		Thus we need to find the zeros of the polynomial 
-		\begin{align}
-			2x^2 -x -1 &= 0
-			\\
-			\implies x = 1, -\frac{1}{2}
-		\end{align}
-        \item What minimum must be added to $2x^3 - 3x^2 + 6x + 7$ so that the resulting polynomial will be divisible by $x^2 - 4x + 8$ ?\\
-		\solution  From the following division,
-
-\polylongdiv[style=A]{2x^3 - 3x^2 + 6x + 7}{x^2 - 4x + 8}
-
-
-it is obvious that $33-10x$ needs to be added.
-    \end{enumerate}
-\section{Discrete Math}
-\begin{enumerate}
-        \item Show that $5 + 2\sqrt{7}$ is an irrational number, where $\sqrt{7}$ is given to be an irrational number.\\
-        \item Check whether $12^n$ can end with the digit 0 for any natural number n.\\
-		\solution  If $12^n$ ends with the digit 0, 
-		    \begin{align}
-			    12^{n} \equiv 0 {\pmod{10}}
-			    \\
-			    \implies 
-			    12^{n} \equiv 0 {\pmod{2}}
-			    \\
-			    12^{n} \equiv 0 {\pmod{5}}
-		    \end{align}
-		    However, 
-		    \begin{align}
-			    \label{eq:2020-mod-5}
-			    12 \not\equiv 0 {\pmod{5}}
-			    \\
-			    12^2 \not\equiv 0 {\pmod{5}}
-		    \end{align}
-		    Let 
-		    \begin{align}
-			    \label{eq:2020-mod-5-n-1}
-			    12^{n-1} \not \equiv 0 {\pmod{5}}
-		    \end{align}
-		    Then, it is obvious from
-			    \eqref{eq:2020-mod-5} and 
-			    \eqref{eq:2020-mod-5-n-1}
-			    that 
-		    \begin{align}
-%			    \label{eq:2020-mod-5-n-1}
-			    12.12^{n-1} \not \equiv 0 {\pmod{5}}
-			    \\
-			    \implies 
-			    12^{n} \not \equiv 0 {\pmod{5}}
-		    \end{align}
-    \item Use Euclid Division Lemma to show that the square of any positive integer is either in the form $3q$ or $3q + 1$ for some integer q.\\
-	    \solution Let $p$ be any positive integer.  Then $p$ can be either $3k, 3k+1$ or $3k-1$, for some postive integer $k$.  If
-	    \begin{align}
-		    p &= 3k, 
-		    \\
-		    p^2 = 9k^2 &= 3\brak{q}
-		    \\
-		    \text{where } q &= 3k^2
-	    \end{align}
-	    If 
-	    \begin{align}
-		    p &= 3k+1, 
-		    \\
-		    p^2 = 9k^2 + 6k + 1&= 3\brak{q}+1, 
-		    \\
-		    \text{where } q &= 3k^2+2k
-	    \end{align}
-	    Similarly, if
-	    \begin{align}
-		    p &= 3k-1, 
-		    \\
-		    p^2 = 9k^2 - 6k + 1&= 3\brak{q}+1, 
-		    \\
-		    \text{where } q &= 3k^2-2k
-	    \end{align}
-\item Find the sum of the first 100 natural numbers.\\
-	\solution The sum of the first $n$ natural number is 
-  \begin{align}
-	  \frac{n\brak{n+1}}{2}
-  \end{align}
-Sustituting $n = 100$ in the above, the desired sum is 
-  \begin{align}
-50 \times 51 = 2550	
-  \end{align}
-\item The LCM of 2 numbers is 182 and their HCF is 13. If one of the numbers is 26, find the other.\\
-\solution The desired number is obtained as
-  \begin{align}
-	  \frac{182 \times 13}{26} = 91
-  \end{align}
-\item Which of the following is not an A.P. ?
-\begin{enumerate}
-    \item $-1.2, 0.8, 2.8...$
-    \item $3, 3 + \sqrt{2}, 3 + 2\sqrt{2},3 + 3\sqrt{2}...$
-    \item $\frac{4}{3}, \frac{7}{3}, \frac{9}{3}, \frac{12}{3}...$
-    \item $\frac{-1}{5}, \frac{-2}{5}, \frac{-3}{5}$
-\end{enumerate}
-\solution $a_0, a_1, a_2$ can be terms of an AP only if 
-		\begin{align}
-	a_1 - 	a_0 = a_2 - 2a_1
-		\end{align}
-		Considering each of the above cases, 
-		\begin{enumerate}
-			\item 
-				\begin{align}
-					2.8 - 1.2 = 1.6 = 2(0.8)
-				\end{align}
-				Hence, the given terms are in A.P.
-			\item 
-				\begin{align}
-					3 + \sqrt{2} - 3 = \sqrt{2} \\
-					3 + 2\sqrt{2} - \brak{3+ \sqrt{2}}= \sqrt{2} \\
-					3 + 3\sqrt{2} - \brak{3+ 2\sqrt{2}}= \sqrt{2} 
-				\end{align}
-				Hence, the given terms are in A.P.
-    \item 
-	    \begin{align}
-		    \frac{7}{3} -   \frac{4}{3} &= 1
-		    \\
-		     \frac{9}{3}-\frac{7}{3} &= \frac{2}{3}
-		     \\
-		    \frac{12}{3}-\frac{9}{3} &= 1
-	    \end{align}
-				Hence, the given terms are not in A.P.
-    \item Find the sum
-	    \begin{align}
-    \myvec{-5} + \myvec{-8} + \myvec{-11} + ... + \myvec{-230}
-	    \end{align}
-	    \solution The above series is an A.P. with 
-	    \begin{align}
-		    a_0 = -5, a_n = -230, d = -3
-	    \end{align}
-	    Since 
-	    \begin{align}
-		    a_n &= a_0 + \brak{n-1}d, 
-		    \\
-		    n &= \frac{a_n - a_0}{d} + 1
-		    \\
-		     &= 46
-	    \end{align}
-	    Thus the desired sum is given by 
-	    \begin{align}
-		    S_n &=  \frac{n\brak{a_n + a_0}}{2}  
-		    \\
-		    &=  -235 \times 23 = -5405
-	    \end{align}
-    
 \end{enumerate}
 
-    
-    
-\end{enumerate}
+
 \section{Probability and Statistics}
 \begin{enumerate}
     \item A game in a booth at a Diwali Fair involves using a spinner first. Then, if the spinner stops on an even number, the player is allowed to pick a marble from a bag. The spinner and the marbles in the bag are represented in Fig $\ref{Fig9}$.\\
@@ -1301,6 +1421,18 @@ Sustituting $n = 100$ in the above, the desired sum is
 	\item If the probablity of an event E happening is 0.023, then $P\brak{\bar{E}} = $\\
 
 \item The probability of an event that is sure to happen is, \rule{1.5cm}{0.15mm}\\
+     \item Find the mode of the following distribution:\\
+     \vspace{2mm}\\
+     \scalebox{0.7}{
+     \begin{tabular}{|l|c|c|c|c|c|c|}
+        \hline
+        Marks & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60  \\
+        \hline
+        Number of Students  & 4 & 6 & 7 & 12 & 5 & 6\\
+        \hline
+     \end{tabular}
+     }
+     \vspace{2mm}
 
 \end{enumerate}
 \end{document}
