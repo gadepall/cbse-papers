@@ -135,7 +135,7 @@ columns=fullflexible
 			\\
 			\implies x = -\frac{2}{\sqrt 5}   
 		\end{align}
-\item The interval in which the function f given by $ f({x}) = x^2e^{-x} $ is strictly increasing,  is
+\item The interval in which the function $f$ given by $ f({x}) = x^2e^{-x} $ is strictly increasing,  is
 
 \begin{enumerate}
     \item $\left(\infty , -\infty \right)$
@@ -143,6 +143,20 @@ columns=fullflexible
     \item $\left(2 , \infty \right)$
     \item $\left(0 , 2 \right)$
 \end{enumerate}
+\solution Taking the derivative
+		\begin{align}
+			f^{\prime}(x) &= 2xe^{-x} -x^2 e^{-x} 
+\\
+			&= \brak{2x - x^2}e^{-x}
+		\end{align}
+		and 
+		\begin{align}
+			f^{\prime}(x) &> 0
+			\\
+			\implies x\brak{2 - x} &> 0
+			\\
+			\text{or, } x &\in \brak{0,2}
+		\end{align}
 \item The function $ f\left({x} \right) = \frac{x-1}{x\left(x^2 -1 \right)} $ is discontinuous at
 
 \begin{enumerate}
@@ -151,7 +165,12 @@ columns=fullflexible
     \item Exactly three points
     \item No point
 \end{enumerate}
-
+\solution The given function can be expressed as
+		\begin{align}
+			f\brak{x} = \frac{x-1}{x\brak{x-1}\brak{x+1}} 
+		\end{align}
+Hence, the denominator of the given function vanishes at $x = 0, 1, -1$,    
+which are the points of discontinuity.  However, there is a removable discontinuity at $x = 1$.
 \item The function  $ f : R \rightarrow \left[-1,1 \right] $ defined by $ f\left(x \right) = cosx $ is
 
 \begin{enumerate}
