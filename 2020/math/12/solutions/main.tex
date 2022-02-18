@@ -178,7 +178,56 @@ columns=fullflexible
 \renewcommand{\theequation}{\theenumi}
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
- \item Evaluate : \begin{align} \int_{0}^{\frac{\pi}{2}} \sin2x \tan^{-1}  \left(\sin x\right)dx \nonumber \end{align}\\
+ \item Evaluate : \begin{align} \int_{0}^{\frac{\pi}{2}} \sin2x \tan^{-1}  \left(\sin x\right)dx \nonumber \end{align}
+		 \solution Let 
+		 \begin{align}
+			 \label{eq:cont_def_int_1}
+			 \tan \theta = \sin x
+		 \end{align}
+		 Then 
+		 \begin{align}
+			 \label{eq:cont_def_int_2}
+			 \sec^2  \theta \, d\theta= \cos x \, dx
+		 \end{align}
+			 From \eqref{eq:cont_def_int_1} and 
+			 \eqref{eq:cont_def_int_2}
+ \begin{multline} 
+ \int_{0}^{\frac{\pi}{2}} \sin2x \tan^{-1}  \left(\sin x\right)\, dx  
+ \\
+	 =
+2 \int_{0}^{\frac{\pi}{4}}  \theta \tan \theta \sec^2\theta \, d\theta
+ \end{multline}
+ Letting 
+ \begin{multline} 
+	 u = \theta , dv = \tan \theta \sec^2\theta \, d\theta, 
+	 \\
+	 v = \int \tan \theta \sec^2\theta \, d\theta 
+	 \\
+	  = \int t \, dt \quad \brak{t = \tan \theta }
+	  \\
+	  = \frac{t^2}{2} = \frac{\tan^2 \theta }{2}
+ \end{multline}
+ Thus, 
+ \begin{multline} 
+v\,du 
+	 =   \frac{\tan^2\theta }{2}\, d\theta
+	 \\
+	 \implies \int v\, du = \int \frac{\tan^2\theta }{2}\, d\theta
+	 \\
+	 = \int \frac{\sec^2\theta -1 }{2}\, d\theta
+	 \\
+	 =  \frac{\tan \theta - 1}{2}
+ \end{multline}
+ and
+ \begin{multline} 
+ \int_{0}^{\frac{\pi}{2}} \sin2x \tan^{-1}  \left(\sin x\right)\, dx  
+ \\
+	 = \sbrak{\theta \frac{\tan^2\theta}{2} -  \frac{\tan \theta - 1}{2} }_{0}^{\frac{\pi}{4}}
+	 \\
+	 = \frac{\pi}{8} - \frac{1}{2}
+ \end{multline}
+
+		 
 
     
 \item Prove that \begin{align} \tan^{-1} \frac{1}{4} + \tan^{-1} \frac{2}{9} = \frac{1}{2} \sin^{-1} (\frac{4}{5}) \nonumber \end{align}
