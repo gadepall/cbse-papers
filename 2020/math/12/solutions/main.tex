@@ -230,12 +230,74 @@ v\,du
 		 
 
     
-\item Prove that \begin{align} \tan^{-1} \frac{1}{4} + \tan^{-1} \frac{2}{9} = \frac{1}{2} \sin^{-1} (\frac{4}{5}) \nonumber \end{align}
+\item Prove that \begin{align} \tan^{-1} \frac{1}{4} + \tan^{-1} \frac{2}{9} = \frac{1}{2} \sin^{-1} \brak{\frac{4}{5}} \nonumber \end{align}
+		\solution 
+		\begin{align} \tan^{-1} \frac{1}{4} + \tan^{-1} \frac{2}{9} &= \tan^{-1}\frac{\frac{1}{4}+\frac{2}{9}}{1-\frac{1}{4}\times \frac{2}{9}}
+			\\
+			&= \tan^{-1}\frac{1}{2}
+			\\
+			&= \frac{1}{2}\tan^{-1}\frac{2 \times \frac{1}{2}}{1-\brak{\frac{1}{2}}^2}
+			\\
+			&= \frac{1}{2}\tan^{-1}\frac{4}{3}
+			\\
+			&= R.H.S
+ \end{align}
  \item Differentiate $ \sec^2(x^2) $ with respect to $ x^2 $.
- \item If $y=f(x^2)$  and  f'(x)= $ e^{\left(\sqrt{x}\right)}$  , then find $\frac{dy}{dx}$.\\
-\item If \begin{align} \tan^{-1}(\frac{y}{x})=\log \sqrt{x^2+y^2} \nonumber \end{align}  prove that \begin{align} \frac{dy}{dx}=\frac{x+y}{x-y} \nonumber \end{align}.
+	 \\
+	 \solution 
+\begin{align} 
+	\frac{\sec^2(x^2) }{d\brak{x^2}} &=2 2 \sec(x^2) \tan(x^2)  
+\end{align}
+ \item If $y=f(x^2)$  and  $f^{\prime}(x)=  e^{\left(\sqrt{x}\right)}$  , then find $\frac{dy}{dx}$.\\
+	 \solution 
+\begin{align} 
+	\frac{dy}{dx} = 2x f^{\prime}(x) = 2x e^{\sqrt{x}}
+\end{align}
+\item If \begin{align} \tan^{-1}\brak{\frac{y}{x}}=\log \sqrt{x^2+y^2} \nonumber \end{align}  prove that \begin{align} \frac{dy}{dx}=\frac{x+y}{x-y} \label{eq:tanlog}\end{align}.
+		\solution Let 
+		\begin{align}
+			y &= x \tan \theta 
+			\\
+			\implies \frac{dy}{dx} = \tan \theta + x \sec^2 \theta \frac{d\theta}{dx}
+\label{eq:tanlog_1}
+		\end{align}
+		Then, \eqref{eq:tanlog} can be expressed as 
+		\begin{align}
+			\theta  &= \log \brak{x \sec \theta}
+			\\
+			\implies \frac{d\theta}{dx} &= \frac{1}{{x \sec \theta}}\brak{\sec \theta + x \sec \theta \tan \theta \frac{d\theta}{dx}}
+			\\
+			&= \frac{1}{x}\brak{1 + x \tan \theta \frac{d\theta}{dx}}
+			\\
+			\text{or, } \frac{d\theta}{dx} &= \frac{1}{x\brak{1 - \tan \theta}}
+\label{eq:tanlog_2}
+		\end{align}
+From \eqref{eq:tanlog_1} and 
+\eqref{eq:tanlog_2}
+		\begin{align}
+			\frac{dy}{dx} &= \tan \theta +  \frac{\sec^2 \theta}{\brak{1 - \tan \theta}}
+			\\
+			&= \frac{1 + \tan \theta}{{1 - \tan \theta}}
+			\\
+			&= \frac{x + y}{x-y}
+		\end{align}
+upon substituting from \eqref{eq:tanlog} and simplifying.
 
-\item If  \begin{align} y=e^{(acos^{-1}x)}  , -1 < x < 1 \nonumber \end{align}  then show that  \begin{align} (1-x^2) \frac{d^2y}{dx^2} - x \frac{dy}{dx} - a^2y =0 \nonumber \end{align}\\
+\item If  \begin{align} y=e^{(a\cos^{-1}x)}  , -1 < x < 1 \nonumber \end{align}  then show that  \begin{align} (1-x^2) \frac{d^2y}{dx^2} - x \frac{dy}{dx} - a^2y =0 \nonumber \end{align}
+		\solution From the given information, 
+		\begin{align}
+			y_1 &= -\frac{ae^{(a\cos^{-1}x)}}{\sqrt{1-x^2}}
+			\\
+			&= -\frac{ay}{\sqrt{1-x^2}}
+			\implies \sqrt{1-x^2}y_1 + ay &= 0
+		\end{align}
+		Hence,  differentiating the above equation, 
+		\begin{align}
+			\sqrt{1-x^2 }	y_2 - \frac{2xy_1}{\sqrt{1-x^2}} + ay_1 &= 0
+			\\
+			\implies 
+			\brak{1-x^2 }	y_2 - 2xy_1 - a^2y &= 0
+		\end{align}
 
 \item If $\cos (\sin^{-1} \frac{2}{\sqrt 5} + \cos^{-1} x) = 0$, then $x$ is  
 
@@ -291,7 +353,7 @@ v\,du
 		\end{align}
 Hence, the denominator of the given function vanishes at $x = 0, 1, -1$,    
 which are the points of discontinuity.  However, there is a removable discontinuity at $x = 1$.
-\item The function  $ f : R \rightarrow \left[-1,1 \right] $ defined by $ f\left(x \right) = cosx $ is
+\item The function  $ f : R \rightarrow \left[-1,1 \right] $ defined by $ f\left(x \right) = \cos x $ is
 
 \begin{enumerate}
     \item Both one-one and onto
@@ -311,9 +373,25 @@ which are the points of discontinuity.  However, there is a removable discontinu
 
 
 \item  If the radius of the circle is increasing at the rate of 0.5cm/s, then the rate of increase of its circumference is ---------------\\
+	\solution Let the $p$ be the circumference and $r$ the radius.  Then 
+		\begin{align}
+			p	&= 2\pi r
+			\\
+			\implies \frac{dp}{dt} &= 2\pi\frac{dr}{dt} = \pi
+		\end{align}
+
 \item \begin{enumerate} \item The range of the principle value branch of the function $ y= \sec^{-1}x $ is ----------------
+			\\
+			\solution The range is $\sbrak{0,\pi} - \cbrak{\frac{\pi}{2}}$.
     
 \item The principal value of $\cos^{-1} \left(\frac{-1}{2}\right)$ is --------------\\
+	\solution Since
+		\begin{align}
+			\cos \frac{\pi}{3} &= \frac{1}{2},
+			\\
+			\cos \brak{\pi - \frac{\pi}{3}} &= -\frac{1}{2}
+		\end{align}
+		Thus the desired principal value is $\frac{2\pi}{3}$
 \end{enumerate}
 
 \item  Evaluate :
