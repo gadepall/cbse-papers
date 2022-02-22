@@ -10,6 +10,7 @@
 \usepackage{longtable}
 \usepackage{enumitem}
 \usepackage{mathtools}
+ \usepackage{tikz}
 \usepackage[breaklinks=true]{hyperref}
 \usepackage{listings}
 \usepackage{color}                                            %%
@@ -47,6 +48,8 @@ columns=fullflexible
 \newcommand{\BEQA}{\begin{eqnarray}}
 \newcommand{\EEQA}{\end{eqnarray}}
 \newcommand{\define}{\stackrel{\triangle}{=}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+    \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
 \bibliographystyle{IEEEtran}
 \providecommand{\mbf}{\mathbf}
 \providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
@@ -78,6 +81,9 @@ columns=fullflexible
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\newcommand*{\permcomb}[4][0mu]{{{}^{#3}\mkern#1#2_{#4}}}
+\newcommand*{\perm}[1][-3mu]{\permcomb[#1]{P}}
+\newcommand*{\comb}[1][-1mu]{\permcomb[#1]{C}}
 \numberwithin{equation}{subsection}
 \makeatletter
 \@addtoreset{figure}{problem}
@@ -100,20 +106,158 @@ columns=fullflexible
 \bigskip
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-\section{Matrices}
 \renewcommand{\theequation}{\theenumi}
+\section{Matrices}
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
 \item Show that the plane $ x-5y-2z=1 $ contains the line $ \frac{x-5}{3}=y=2-z $ .\\
+	\solution The plane and line can be expressed in vector form as
+  \begin{align}
+	  \label{eq:line_plane_contain_plane}
+	  \myvec{1 & -5 & -2}\vec{x}=1 
+	  \\
+	  \vec{x} = \myvec{5 \\ 0 \\ 2} + \lambda \myvec{3 \\ 1 \\ -1}
+	  \label{eq:line_plane_containline}
+  \end{align}
+The plane contains the line if 
+  \begin{align}
+	  \vec{m}^{\top}\vec{n} = 0
+  \end{align}
+  The input parameters are 
+  \begin{align}
+	  \vec{m} = \myvec{3 \\ 1 \\ -1},
+	 \vec{n} = \myvec{1 & -5 & -2}.
+  \end{align}
+  $\because$
+  \begin{align}
+	  \myvec{1 & -5 & -2}\myvec{3 \\ 1 \\ -1} = 0,
+	  \label{eq:line_plane_containline_sol}
+  \end{align}
+the given plane contains the given line.
 \item  Find a vector $\overrightarrow{r}$ equally inclined to the three axes and whose magnitude is $3\sqrt{3}$ units.   
+	\\
+	\solution  Let $\vec{e}_1, \vec{e}_2, \vec{e}_3$ be the standard basis vectors (direction vectors of the coordinate axes) such that
+  \begin{align}
+	  \myvec{\vec{e}_1 & \vec{e}_2 &\vec{e}_3} = \vec{I}
+  \end{align}
+  Then, 
+  \begin{align}
+	  \frac{\vec{e}_1^{\top} \vec{r}}{\norm{\vec{e}_1}\norm{\vec{r}}} = 
+	  \frac{\vec{e}_2^{\top} \vec{r}}{\norm{\vec{e}_2}\norm{\vec{r}}} = 
+	  \frac{\vec{e}_3^{\top} \vec{r}}{\norm{\vec{e}_3}\norm{\vec{r}}} = \cos \theta
+  \end{align}
+  which can be expressed as the system of equations
+  \begin{align}
+	  {\vec{e}_1^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
+	  \\
+	  {\vec{e}_2^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
+	  \\
+	  {\vec{e}_3^{\top} \vec{r}} = \norm{\vec{r}}\cos \theta
+  \end{align}
+  which can be combined to obtain the matrix equation
+  \begin{align}
+	  \myvec{\vec{e}_1 & \vec{e}_2 & \vec{e}_3}^{\top}\vec{r} &= \norm{\vec{r}}\cos \theta \myvec{1\\1\\1}
+	  \\
+	  \implies \frac{\vec{r}}{\norm{\vec{r}}}&= \cos \theta \myvec{1\\1\\1}
+	  \label{eq:equal_incline_unit}
+  \end{align}
+  \begin{align}
+	  \because 	\myvec{\vec{e}_1 & \vec{e}_2 & \vec{e}_3} = \vec{I}
+  \end{align}
+  From 
+	  \eqref{eq:equal_incline_unit}
+  \begin{align}
+	  \norm {\cos \theta \myvec{1\\1\\1}} &= 1
+	  \\
+	  \implies\cos \theta  = \frac{1}{\sqrt{3}}
+	  \label{eq:equal_incline_unit_cos}
+  \end{align}
+ From  
+	  \eqref{eq:equal_incline_unit_cos} and 
+	  \eqref{eq:equal_incline_unit}
+
+  \begin{align}
+	  \vec{r} &=  3\sqrt{3}\times \frac{1}{\sqrt{3}}\myvec{1\\1\\1}
+	  \\
+		  &=3\myvec{1\\1\\1}
+	  \label{eq:equal_incline_unit_ans}
+  \end{align}
 \item Find the angle between unit vectors $\overrightarrow{a}$ and $\overrightarrow{b}$ so that $\sqrt{3}$ $\overrightarrow{a}$ - $\overrightarrow{b}$ is also a unit vector.\\
-\item If $A=\myvec{-3 & 2 \\ 1 & -1} $ and $ I=\myvec{1 & 0 \\ 0 & 1}$, Find scalar k so that $A^2 + I = kA$.\\
+	\solution From the given information, 
+  \begin{align}
+	  \norm{	\sqrt{3}\vec{a} - \vec{b}} &= 1
+	  \\
+	  \implies \norm{	\sqrt{3}\vec{a} - \vec{b}}^2 &= 1
+	  \label{eq:norm_unit}
+  \end{align}
+  which can be expressed as 
+  \begin{align}
+	  \brak{	\sqrt{3}\vec{a} - \vec{b}}^{\top} \brak{	\sqrt{3}\vec{a} - \vec{b}}&= 1
+	  \\
+	  \implies  3 \norm{\vec{a}}^2  + \norm{\vec{b}}^2 - 2 \sqrt{3} \vec{a}^{\top}\vec{b} &= 1
+	  \label{eq:norm_unit_mid}
+  \end{align}
+  and simplified to obtain 
+  \begin{align}
+	\vec{a}^{\top}\vec{b}  =  \frac{\sqrt{3}}{2} 
+	  \label{eq:norm_unit_mid_angle}
+  \end{align}
+  Thus the desired angle  is 
+  \begin{align}
+\cos^{-1}   \frac{\sqrt{3}}{2} = 30 \degree
+	  \label{eq:norm_unit_mid_angle_ans}
+  \end{align}
+\item If $\vec{A}=\myvec{-3 & 2 \\ 1 & -1} $ and $ \vec{I}=\myvec{1 & 0 \\ 0 & 1}$, Find scalar k so that $\vec{A}^2 + \vec{I} = k\vec{A}$.\\
+	\solution Using the Cayley-Hamilton theorem, 
+  \begin{align}
+	  \lambda^2 - k \lambda + 1 = 0
+	  \label{eq:cayley_applic}
+  \end{align}
+  Since the trace of the matrix is equal to the sum of its eigenvalues, 
+  \begin{align}
+	   k  = \lambda_1+\lambda_2 = \text{tr}\brak{\vec{A}} = -3-1 = -4
+	  \label{eq:cayley_sol}
+  \end{align}
 \item  Find the coordinates of the point where the line 
         \begin{align}
         \frac{x-1}{3} = \frac{y+4}{7} = \frac{z+4}{2}
         \nonumber
 	\end{align} 
         cuts the xy-plane. \\
+	\solution 
+	The given line can be expressed as 
+	\begin{align}
+		\vec{x} = \myvec{1 \\ -4 \\ -4} + \lambda \myvec{3 \\ 7 \\ 2}
+		\label{eq:cbse_12_line_plane}
+\end{align}
+and the $xy$- plane is 
+	\begin{align}
+		\myvec{0 & 0 &1}\vec{x}  = 0
+		\label{eq:cbse_12_line_plane_eq}
+\end{align}
+The desired point can be obtained as 
+\begin{align}
+		\label{eq:cbse_12_line_plane_eq-isect}
+	\vec{x} &= \vec{A} + \frac{c - \vec{n}^{\top}\vec{A}}{\vec{n}^{\top}\vec{m}}
+\vec{m}
+\end{align}
+Substiuting the input parameters
+\begin{align}
+	\vec{m} = \myvec{3 \\ 7 \\ 2},
+	\vec{A} = \myvec{1 \\ -4 \\ -4},
+	\vec{n} = \myvec{0 & 0 &1},
+	\vec{c} = 0,
+\end{align}
+		in \eqref{eq:cbse_12_line_plane_eq-isect},
+\begin{align}
+	& \myvec{1 \\ -4 \\ -4} + \frac{0 - \myvec{0 & 0 &1}\myvec{1 \\ -4 \\ -4}}{\myvec{0 & 0 &1}\myvec{3 \\ 7 \\ 2}}\myvec{3 \\ 7 \\ 2}
+	\\
+	&=\myvec{1 \\ -4 \\ -4}+2\myvec{3 \\ 7 \\ 2}
+	\\
+	&=\myvec{7 \\ 10 \\ 0}
+\end{align}
 \item  The angle between the vectors $ \hat{i} - \hat{j} $ and $ \hat{j} - \hat{k} $ is
 
 \begin{enumerate}
@@ -122,8 +266,29 @@ columns=fullflexible
     \item $\frac{\pi}{3}$
     \item $\frac{2\pi}{3}$
 \end{enumerate}
+\solution 
+The angle between the vectors $\vec{m}_1, \vec{m}_2$ is given by 
+  \begin{align}
+	  \label{eq:matrix-ang-vec}
+	  \cos \theta = \frac{\vec{m}_1^{\top} \vec{m}_2}{\norm{\vec{m}_1}\norm{ \vec{m}_2}}
+  \end{align}
+  Substituting 
+  \begin{align}
+\vec{m}_1 = \myvec{1 \\ -1 \\ 0}, \vec{m}_2 = \myvec{0 \\ 1 \\ -1}
+  \end{align}
+	  in \eqref{eq:matrix-ang-vec},
+%
+  \begin{align}
+	  \myvec{1 & -1 & 0} \myvec{0 \\ 1 \\ -1} &= -1,
+	  \\
+	  \norm{\myvec{1 \\ -1 \\ 0}}=\norm{\myvec{0 \\ 1 \\ -1}} &= \sqrt{2}
+	  \\
+	  \implies \cos \theta &= \frac{-1}{2}
+	  \\
+	  \text{or, }\theta &= \frac{2\pi}{3}
+  \end{align}
 
-\item  If A is a non-singular square matrix of order 3 such that $ A^2 =3A $, then value of  $\begin{vmatrix}A \end{vmatrix}$ is
+\item  If $\vec{A}$ is a non-singular square matrix of order 3 such that $ \vec{A}^2 =3\vec{A} $, then value of  $\begin{vmatrix}\vec{A} \end{vmatrix}$ is
 
 \begin{enumerate}
     \item -3
@@ -131,6 +296,17 @@ columns=fullflexible
      \item 9
      \item 27
 \end{enumerate}
+  \begin{align}
+	  \mydet {\vec{A}^2} &=\mydet{3\vec{ A}}
+	  \\
+	  \implies 
+	  \mydet {\vec{A}} ^2&=3^3\mydet{\vec{ A}}
+  \end{align}
+	yielding 
+  \begin{align}
+	  \mydet {\vec{A}} &=27
+  \end{align}
+  after simplification.
 \item  If $\mydet{\overrightarrow{a}} = 4 $ and  $ -3\leq \lambda \leq 2 $ then $\mydet{\lambda \overrightarrow{a}} $ lies in
 
 \begin{enumerate}
@@ -139,6 +315,19 @@ columns=fullflexible
     \item $\left[8,12\right]$
     \item $\left[-12,8\right]$
 \end{enumerate}
+	 \solution  
+\begin{align}
+  \norm{\lambda \vec{a}} 
+  &= \abs{\lambda} \norm{\vec{a}}
+  \\
+	&= 4\abs{\lambda} 
+\end{align}
+$\because$
+\begin{align}
+	0 \leq \abs{\lambda} \leq 3,  
+\\
+	0 \leq 4\abs{\lambda} \leq 12
+\end{align}
 \item The area of a triangle formed by vertices O, A and B, where $\overrightarrow{OA}=\hat{i} + 2\hat{j} + 3 \hat{k} $ and $\overrightarrow{OB}=-3\hat{i} - 2\hat{j} +  \hat{k} $ is \\
  \begin{enumerate}
      \item $ 3\sqrt{5} $ sq.units\\
@@ -146,7 +335,33 @@ columns=fullflexible
     \item$ 6\sqrt{5} $ sq.units\\
     \item$ 4 $ sq.units
 \end{enumerate}
-\item  The coordinates of the foot of the perpendicular drawn from the point $ \left(2,-3,4 \right) $ on the y-axis is 
+\solution Let
+		\begin{align}
+			\vec{A} = \myvec{1 \\ 2 \\ 3},
+			\vec{B}  = \myvec{-3 \\ -2 \\ 1},
+		\end{align}
+In general, the area of $\triangle OAB$ can be expressed as
+		\begin{align}
+		\frac{1}{2}	\norm{\brak{\vec{A}-\vec{O}}  \times 
+			\brak{\vec{B}- \vec{O}}}  
+		\end{align}
+$\because $
+		\begin{align}
+			\myvec{2 & -2 \\ 3 & 1 } &= 8,
+\\
+			\myvec{3 & 1 \\ 1 & -3 } &= -10,
+			\\
+			\myvec{1 & -3 \\ 2 & -2 } &= 4,
+		\end{align}
+		\begin{align}
+			\vec{A}  \times 
+			\vec{B}  = \myvec{8 \\ -10 \\ 4},
+		\end{align}
+		and the  desired area can be obtained as 
+		\begin{align}
+			\frac{1}{2}\norm{\myvec{8 \\ -10 \\ 4}} = 3 \sqrt{5}
+		\end{align}
+\item  The coordinates of the foot of the perpendicular drawn from the point $ \left(2,-3,4 \right) $ on the $y$-axis is 
 
 \begin{enumerate}
     \item $\left(2,3,4\right)$
@@ -154,15 +369,143 @@ columns=fullflexible
     \item $\left(0,-3,0\right)$
     \item $\left(2,0,4\right)$
 \end{enumerate}
+\solution 
+In general, let $\vec{P}$ be any point and the line be
+\begin{align}
+	\label{cbse_12_foot_perp_line}
+	L: \quad	\vec{x} &=  \vec{A} + \lambda \vec{m}
+		\end{align}
+\begin{align}
+	\label{cbse_12_foot_perp_pt}
+\vec{x} &=  \vec{A} + \frac{	\vec{m}^{\top}\brak{\vec{P}  -  \vec{A}}}{\norm{\vec{m}}^2}\vec{m}
+		\end{align}
+The equation of the $y$-axis can be written as	
+		\begin{align}
+			\vec{x} = \lambda 	\myvec{0 \\ 1 \\ 0} 
+		\end{align}
+		Substituting the input parameters 
+		\begin{align}
+			\vec{P} =  	\myvec{2 \\ -3 \\ 4},  
+			\vec{A} =  	\myvec{0 \\ 0 \\ 0},  
+			\vec{m} =  	\myvec{0 \\ 1 \\ 0},  
+		\end{align}
+	in \eqref{cbse_12_foot_perp_pt},
+  the desired point is given by 
+\begin{align}
+	\vec{x} &=   \myvec{0 & 1 & 0}\myvec{2 \\-3 \\4 } 
+ \myvec{0 \\ 1 \\ 0} 
+ \\
+	&=
+ \myvec{0 \\ -3 \\ 0} 
+		\end{align}
 \item  The distance between parallel planes 2x+y-2z-6=0 and 4x+2y-4z=0 is ------------------ units.
+	\\
+\solution The above planes have parameters
+	\begin{align}
+		\vec{n} = \myvec{2 & 1 & -2}, c_1=6, c_2 = 0
+\end{align}
+The distance is then obtained as
+
+\begin{align}
+	d &= \frac{\abs{c_1-c_2}}{\norm{\vec{n}}} 
+\\
+	&= \frac{6}{3} = 2
+\end{align}
 
 \item If P(1,0,-3) is the foot of the perpendicular from the origin to the plane, then the Cartesian equation of the plane is .................... \\
+    \solution Let the equation of the plane be 
+	\begin{align}
+		\vec{n}^{\top}\vec{x} = c
+\end{align}
+Since $\vec{P}$ is a point on the plane, it satisfies the above equation and 
+	\begin{align}
+		\vec{n}^{\top}\vec{P} = c
+		\label{eq:cbse_12_foot}
+\end{align}
+The normal vector to the plane is $OP$.  Hence, 
+	\begin{align}
+		\vec{n} = \vec{P} 
+\end{align}
+		Substituting the above in \eqref{eq:cbse_12_foot},
+	\begin{align}
+		\vec{P}^{\top}\vec{P} = c
+		\label{eq:cbse_12_foot_sub}
+\end{align}
+and the desired equation of the plane is 
+	\begin{align}
+		\vec{P}^{\top}\vec{x} &= 		\vec{P}^{\top}\vec{P}
+		\\
+		\myvec{1 & 0 &-3}\vec{x} &= 	10	
+		\label{eq:cbse_12_foot_ans}
+\end{align}
+   after substituting numerical values. 
     
 \item Find the equation of the plane passing through the points $(1,0,-2)$ , $(3,-1,0)$ and perpendicular to the plane $ 2x-y+z=8 $. Also find the distance of the plane thus obtained from the origin.\\
+\solution Let the equation of the desired plane be 
+\begin{align}
+	\vec{n}^{\top}\vec{x} = 1
+%	\\
+%	\myvec{1 \\0 \\-2} \myvec{3 \\ -1 \\0}
+  \end{align}
+  From the given information, 
+\begin{align}
+	\vec{n}^{\top}\vec{x} &= 1
+	\\
+\implies
+\begin{split}
+	\myvec{1 &0 &-2} \vec{n} &=1 
+	\\
+	\myvec{3 & -1 &0}\vec{n} &=1
+	\\
+	\myvec{2 & -1 & 1}\vec{n} &=0
+	\end{split}
+	\label{eq:plane_pt_perp}
+  \end{align}
+From 
+	\eqref{eq:plane_pt_perp},
+	we obtain  the matrix equation
+\begin{align}
+	\myvec{1 &0 &-2\\ 3 & -1 &0 \\ 2 & -1 & 1} \vec{n} &= \myvec{1 \\ 1 \\ 0}
+  \end{align}
+Forming the augmented matrix, and choosing the pivot,
+\begin{align}
+	\myvec{\circled{1} &0 &-2 & \vrule &  1\\ 3 & -1 &0 & \vrule &1\\ 2 & -1 & 1 & \vrule &0} 
+	\\
+	\xleftrightarrow[]{}
+	\myvec{1 &0 &-2 & \vrule &  1\\ 0 & \circled{1} &-6 & \vrule &2\\ 0 & -1 & 5 & \vrule &-2} 
+	\\
+	\myvec{1 &0 &-2 & \vrule &  1\\ 0 & 1 &-6 & \vrule &2\\ 0 & 0 & \circled{1} & \vrule &0} 
+  \end{align}
+  yielding 
+\begin{align}
+\vec{n} =\myvec{1 \\ 2 \\ 0} 
+  \end{align}
+  Thus, the equation of the desired plane is 
+\begin{align}
+\myvec{1 & 2 & 0} \vec{n} = 1
+  \end{align}
 \item  If \begin{align} \mydet{2x & -9 \\ -2 & x}  = \mydet{-4 & 8 \\ 1 & -2 } \nonumber \end{align} then value of x is -------------\\
+\solution
+		Expanding the above determinants,
+\begin{align}
+	2x^2 - 18 &= 0
+	\\
+	\implies x &= \pm 3
+\end{align}
  \item Using integration, Find the area lying above x-axis and included between the circle $ x^2 + y^2 =8x $ and inside the parabola $ y^2 =4x $.   
     
 \item Using the method of integration, find the area of the triangle ABC, coordinates of whose vertices are A(2,0), B(4,5) and C(6,3).\\
+    \solution Since 
+\begin{align}
+	\vec{A}-\vec{B} &= \myvec{-2 \\-5},
+	\\
+	\vec{A}-\vec{C} &= \myvec{-4 \\-3},
+    \end{align}
+    the desired area is  the magnitude of 
+\begin{align}
+ \mydet{2 & 4\\5 & 3} 
+    \end{align}
+    Thus the desired area is 14 units.
 \item If $A=\myvec{5 & -1 & 4 \\ 2 & 3 & 5 \\ 5 & -2 & 6} $, Find $A^{-1}$ and use it to solve the following system of the equations: \\
 \begin{align}
 	5x-y+4z &= 5 \nonumber \\
@@ -170,14 +513,93 @@ columns=fullflexible
 	5x-2y+6z &= -1 
 \nonumber
 \end{align}
+   \solution Forming the augmented matrix and pivoting,  
+\begin{align}
+	\myvec{\circled{5} & -1 & 4 & \vrule & 1 & 0 & 0\\ 2 & 3 & 5 & \vrule & 0 & 1 & 0\\ 5 & -2 & 6 & \vrule & 0 & 0 & 1}
+	\\
+	\xleftrightarrow []{}
+	\myvec{5 & -1 & 4 & \vrule & 1 & 0 & 0\\ 0 & \circled{17} & 17 & \vrule & -2 & 5 & 0\\ 0 & 1 & -2 & \vrule & 1 & 0 & -1}
+	\\
+	\xleftrightarrow []{}
+	\myvec{17 & 0 & 17 & \vrule & 3 & 1 & 0\\ 0 & 17 & 17 & \vrule & -2 & 5 & 0\\ 0 & 0 & \circled{51} & \vrule & -19 & 5 & 17}
+	\\
+	\xleftrightarrow [R_2\leftarrow 3R_2 - R_3]{R_1\leftarrow 3R_1 - R_3}
+	\\
+	\myvec{51 & 0 & 0 & \vrule & 28 & -2& -17\\ 0 & 51 & 0 & \vrule & 13 & 10 & -17\\ 0 & 0 & 51 & \vrule & -19 & 5 & 17}
+    \end{align}
+    resulting in 
+\begin{align}
+	\vec{A}^{-1} = \frac{1}{51}\myvec{ 28 & -2 & -17\\  13 & 10 & -17\\  -19 & 5 & 17}
+    \end{align}
     
-\item If x,y,z are different and \begin{align} \mydet{x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3}=0 \nonumber \end{align} then using properties of determinants show that \begin{align} 1+xyz=0 \nonumber \end{align}
+\item If x,y,z are different and 
+\begin{align}
+	\mydet{x & x^2 & 1+x^3 \\ y & y^2 & 1+y^3 \\ z & z^2 & 1+z^3 } =0 
+	\label{eq:det_xyz_given}
+    \end{align}
+
+		then using properties of determinants show that \begin{align} 1+xyz=0 \nonumber \end{align}
+	\solution The given determinant can be expressed as 
+\begin{align}
+	\mydet{x & x^2 & 1 \\ y & y^2 & 1 \\ z & z^2 & 1}  
+	+\mydet{x & x^2 & x^3 \\ y & y^2 & y^3 \\ z & z^2 & z^3}  
+	\label{eq:det_xyz}
+%\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
+    \end{align}
+    Since
+\begin{align}
+	\mydet{x & x^2 & x^3 \\ y & y^2 & y^3 \\ z & z^2 & z^3} 
+	= xyz  
+	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}  
+	\label{eq:det_xyz_2}
+%\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
+    \end{align}
+    and 
+\begin{align}
+	\mydet{x & x^2 & 1 \\ y & y^2 & 1 \\ z & z^2 & 1} 
+	= 
+	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}, 
+	\label{eq:det_xyz_12}
+%\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
+    \end{align}
+	\eqref{eq:det_xyz} can be expressed as
+\begin{align}
+	\brak{1+xyz}
+	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}, 
+	\label{eq:det_xyz_onefac}
+    \end{align}
+    The above determinant can be simplified as
+\begin{align}
+	\mydet{1 & x & x^2 \\ 1 & y & y^2 \\ 1 & z & z^2}, 
+	\\
+\xleftrightarrow[R_2 \leftarrow R_1 -R_2]{R_3 \leftarrow R_1 -R_3}
+	\mydet{1 & x & x^2 \\ 0 & x-y & x^2-y^2 \\ 0 & x-z & x^2-z^2}, 
+	\\
+	=
+	\brak{x-y}	\brak{x-z}\mydet{1 & x & x^2 \\ 0 & 1 & x+y \\ 0 & 1 & x+z}, 
+	\\
+	=
+	\brak{x-y}\brak{y-z}	\brak{z-x}
+    \end{align}
+	and \eqref{eq:det_xyz_given} can be obtained from 
+	\eqref{eq:det_xyz_onefac} as
+\begin{align}
+	\brak{1+xyz}
+	\brak{x-y}\brak{y-z}	\brak{z-x} = 0
+    \end{align}
+    Since 
+\begin{align}
+	x \ne y \ne z, 
+	\brak{1+xyz} = 0
+    \end{align}
 \end{enumerate}
 
 \section{Continuous Math}
-\renewcommand{\theequation}{\theenumi}
+%\renewcommand{\theequation}{\theenumi}
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
  \item Evaluate : \begin{align} \int_{0}^{\frac{\pi}{2}} \sin2x \tan^{-1}  \left(\sin x\right)dx \nonumber \end{align}
 		 \solution Let 
 		 \begin{align}
@@ -251,14 +673,14 @@ v\,du
  \item If $y=f(x^2)$  and  $f^{\prime}(x)=  e^{\left(\sqrt{x}\right)}$  , then find $\frac{dy}{dx}$.\\
 	 \solution 
 \begin{align} 
-	\frac{dy}{dx} = 2x f^{\prime}(x) = 2x e^{\sqrt{x}}
+	\frac{dy}{dx} = 2x f^{\prime}(x^2) = 2x e^{x}
 \end{align}
 \item If \begin{align} \tan^{-1}\brak{\frac{y}{x}}=\log \sqrt{x^2+y^2} \nonumber \end{align}  prove that \begin{align} \frac{dy}{dx}=\frac{x+y}{x-y} \label{eq:tanlog}\end{align}.
 		\solution Let 
 		\begin{align}
 			y &= x \tan \theta 
 			\\
-			\implies \frac{dy}{dx} = \tan \theta + x \sec^2 \theta \frac{d\theta}{dx}
+			\implies \frac{dy}{dx} &= \tan \theta + x \sec^2 \theta \frac{d\theta}{dx}
 \label{eq:tanlog_1}
 		\end{align}
 		Then, \eqref{eq:tanlog} can be expressed as 
@@ -398,27 +820,131 @@ which are the points of discontinuity.  However, there is a removable discontinu
 	\begin{align}
          \int_{\frac{-\pi}{2}}^{\frac{\pi}{2}} x \cos^2 x dx \nonumber
 	\end{align}  
+	\solution $\because$ the integrand is odd, the given integral is 0. 
 
 
-\item  Find the value of k, so that the function \begin{equation*}  f(x)  = \begin{cases}
-                $ k$ x^2 $+ 5 $ ,  &\text{ if  x $\leq$ 1 } \\
-        2 , &\text{if x $ > $ 1}
-\end{cases} \end{equation*}  is continuous at x=1. \\
-\item  Find the integrating factor of the differential equation \begin{center} $ x\frac{dy}{dx} = 2x^2 +y $ \end{center} .
-\item If \begin{align} f\left(x\right)= \sqrt{\frac{sec x-1}{sec x+1}}\nonumber \end{align} Find \begin{align} f'\left(\frac{\pi}{3}\right) \nonumber \end{align}.
+\item  Find the value of k, so that the function 
+	\begin{equation*}  f(x)  = \begin{cases}
+                 k x^2 + 5,  & x \leq 1 \\
+        2 , & x  >  1
+\end{cases} \end{equation*} 
+is continuous at x=1. \\
+\solution  From the given equation, 
+	\begin{align}  f(1+)  &= f(1)  
+		\\
+		\implies k+5 &= 2
+		\\
+		\text{or, } k &= -3
+ \end{align} 
+\item  Find the integrating factor of the differential equation 
+	\begin{align} 
+	 x\frac{dy}{dx} = 2x^2 +y 
+	\end{align} 
+	\solution  The given differential equation can be expressed as
+	\begin{align} 
+		\frac{dy}{dx} -\frac{y}{x} = 2x 
+	\end{align} 
+	Letting 
+	\begin{align} 
+		P(x) &= -\frac{1}{x}, Q(x) = 2x,
+		\\
+		M(x) &= Ce^{\int P(x)\,dx} = e^{-\ln x}
+		\\
+		&= \frac{1}{x}
+	\end{align} 
+	which is the desired integrating factor.
 
-\item Find $f'$ $\left(x\right)$ if \begin{align} f\left(x\right)=\left(\tan x\right)^{\left(\tan x\right)} \nonumber \end{align}
+\item If 
+	\begin{align} 
+		f\left(x\right)= \sqrt{\frac{\sec x-1}{\sec x+1}}\nonumber 
+		\end{align} 
+		Find 
+		\begin{align} 
+			f^{\prime}\left(\frac{\pi}{3}\right) \nonumber 
+		\end{align}
+		\solution The given equation can be expressed as
+	\begin{align} 
+		f\left(x\right)&= \sqrt{\frac{1-\cos x}{1+\cos x}}
+		\\
+		&=\sqrt{2 \sin^2{\frac{x}{2}}{2\cos^2 \frac{x}{2}}}
+		\\
+		&= \tan \frac{x}{2}
+		\\
+		\implies 
+			f^{\prime}(x) &= f^{\prime}\brak{\frac{\pi}{3}}= \frac{1}{2}
+		\end{align} 
 
-\item Find :\begin{align} \int \frac{\tan^3x}{\cos^3x} dx \nonumber \end{align} 
+\item Find $f^{\prime}\left(x\right)$ if 
+	\begin{align} 
+	f\left(x\right)=\left(\tan x\right)^{\left(\tan x\right)} 
+	\end{align}
+	\solution Differentiating the above, 
+	\begin{multline} 
+		f^{\prime}\brak{x}=\frac{d}{dx}\cbrak{\brak{\tan x}^{\brak{\tan x}} }
+		\\
+		=\brak{\tan x}\brak{\tan x}^{\brak{\tan x}-1}\sec^2 x
+		\\
+		+ \brak{\tan x}^{\brak{\tan x}} \ln \brak{\tan x}\sec^2 x
+		\\
+		= \sec^2\brak{\tan x}^{\brak{\tan x}}\brak{1 +\ln \brak{\tan x} }
+	\end{multline}
+
+\item Find :
+	\begin{align}
+		\int \frac{\tan^3x}{\cos^3x} dx 
+	\end{align} 
+\solution Letting 
+	\begin{align}
+		t = \sec x, dt &= \sec x \tan x \, dx
+		\\
+\implies 		\int \frac{\tan^3x}{\cos^3x} dx &= 
+		\int \brak{\sec x \tan x}^3 \, dx
+		\\
+		&= \int t^2\brak{t^2-1}\, dt
+		\\
+		&= \frac{t^5}{5} - \frac{t^3}{3}
+		\\
+		&= \frac{\sec^5}{5} - \frac{\sec^3}{3}
+	\end{align} 
 
 
 
-\item Solve the following differential equation: \begin{align} (1+e^{\frac{y}{x}}) dy+e^{\frac{y}{x}(1-\frac{y}{x})} dx = 0 ; (x\not= 0) \nonumber \end{align}
-
+\item Solve the following differential equation:
+	\begin{align}
+		\label{eq:diffeq}
+		(1+e^{\frac{y}{x}}) dy+e^{\frac{y}{x}}\brak{1-\frac{y}{x}} dx = 0 ; (x \ne 0) 
+	\end{align}
+\solution  Letting
+	\begin{align}
+		y = xt, dy &= x\,dt + t\, dx
+	\end{align}
+		\eqref{eq:diffeq}
+ can be expressed as
+	\begin{multline}
+		\brak{1+e^{t}}\brak{x\,dt + t\, dx} +e^{t}(1-t) dx = 0 
+		\\
+		\implies x\brak{1+e^{t}}\,dt 
+		\\
+		+ \cbrak{t\brak{1+e^{t}}+\brak{1-t}e^t }\,dx = 0
+		\\
+		\implies \frac{dx}{x} = - \frac{\brak{1+e^{t}}}{t+e^t}\,dt 
+		\\
+		\implies 
+		\int\frac{dx}{x} = - \int\frac{\brak{1+e^{t}}}{t+e^t}\,dt 
+		\\
+		\text{or, }\ln x = -\ln \brak{\frac{y}{x}+e^{\frac{y}{x}}}+C_1
+	\end{multline}
+	Thus, 
+	\begin{align}
+y+xe^{\frac{y}{x}} = C
+	\end{align}
 
 \end{enumerate}
  \section{Discrete Math }
-\begin{enumerate}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
 \item  The relation R in the set $ \{1,2,3\}$  given by $R=\{(1,2)(2,1)(1,1)\}$ is
 
 \begin{enumerate}
@@ -430,15 +956,90 @@ which are the points of discontinuity.  However, there is a removable discontinu
   \item Check whether the relation R in the set N set of natural numbers given by R= \{(a,b):a is divisor of b\} is reflexive, symmetric or transitive. Also determine whether R is an equivalence relation. 
 \end{enumerate}
  \section{Probability}
-\begin{enumerate}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
 \item A card from a pack of 52 cards is lost. From the remaining cards of the pack, two cards are drawn randomly one-by-one without replacement and are found to to be both kings. Find the probability of the lost card being a king.\\
+\solution See Tables 
+	\eqref{table:prob-1.0}
+	and 
+	\eqref{table:prob-1.1}
+\begin{table}[!htb]
+	\input{tables/prob-1.0}
+\caption{}
+	\label{table:prob-1.0}
+\end{table}
+\begin{table}[!htb]
+	\input{tables/prob-1.1}
+\caption{}
+	\label{table:prob-1.1}
+\end{table}
+for the input probabilities.
+The desired probability is then obtained from 
+			\eqref{eq:prob-1}
+			as
+			\begin{multline}
+			\pr{X_1 = 1|X_2 = 1, X_3=1} 
+			\\
+				= \frac{\frac{1}{25}\times\frac{1}{17}\times\frac{1}{13} }{\frac{1}{25}\times\frac{1}{17}\times\frac{1}{13} +\frac{3}{50}\times\frac{4}{51}\times\frac{12}{13}   }
+				= \frac{1}{25}
+			\end{multline}
 
+		\begin{figure*}[!b]
+			\hrule
+		\begin{multline}
+			\pr{X_1 = 1|X_2 = 1, X_3=1} 
+			= \frac{\pr{X_1 = 1,X_2 = 1, X_3=1}}{\pr{X_2 = 1, X_3=1}}
+			\\
+			= \frac{\pr{X_3 = 1 | X_1 = 1, X_2=1}\pr{X_2 = 1| X_1 = 1}\pr{X_1=1}}{\sum_{i=0}^{1}\pr{X_1 = i, X_2 = 1, X_3=1}}
+			\\
+			= \frac{\pr{X_3 = 1 | X_1 = 1, X_2=1}\pr{X_2 = 1| X_1 = 1}\pr{X_1=1}}{\sum_{i=0}^{1}\pr{X_3=1,| X_1 = i, X_2 = 1 }\pr{X_2 = 1| X_1 = i}\pr{X_1=i}}
+			\label{eq:prob-1}
+		\end{multline}
+		\end{figure*}
 \item A fair dice is thrown two times. Find the probability distribution of the number of sixes. Also determine the mean of the number of sixes.\\
-
+	\solution Let $X = \cbrak{0,1,2}$ denote the sample space.  
+		Table 
+	\eqref{table:prob-2}
+		gives the desired probability distribution.  In general, this can be expressed as a Binomial distribution with probability mass function (pmf)
+		\begin{align}
+			p_X(k) = \comb{n}{k}\brak{1-p}^{k}p^{n-k}, 0 \le k \le n
+		\end{align}
+		The mean value is then obtained as
+		\begin{align}
+			\mean{X} &= np = \frac{1}{3}
+		\end{align}
+		for $n = 2$ and $p = \frac{1}{6}$
+\begin{table}[!htb]
+	\input{tables/prob-2}
+\caption{}
+	\label{table:prob-2}
+\end{table}
 \end{enumerate}
  \section{Linear Programming}
-\begin{enumerate}
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\numberwithin{table}{enumi}
 \item  The corner points of the feasible region of an LPP are (0,0),(0,8),(2,7),(5,4) and (6,0). The maximum profit P=3x+2y occurs at the point .................\\
+	\solution The profit can be expressed as
+\begin{align}
+	P=\myvec{3  & 2} \vec{x}
+    \end{align}
+    and the respective values at each of the above points are given by 
+\begin{align}
+	\myvec{3  & 2}\myvec{0\\0} &= 0,
+	\\
+	\myvec{3  & 2}\myvec{0\\8} & = 16
+	\\
+	\myvec{3  & 2}\myvec{2\\7} &= 20
+	\\
+	\myvec{3  & 2}\myvec{5\\4} &= 23
+	\\
+	\myvec{3  & 2} \myvec{6\\0} &= 18 
+    \end{align}
+    Hence, the maximum profit is $P = 23$ which occurs at $\myvec{5\\4}$
 \item A cottage industry manufactures pedestal lamps and wooden shades. Both the products require machine time as well as craftsman time in the making. The number of hours required for producing 1 unit of each and the corresponding profit is given in the following table :
 \begin{table}[htb]
 \tiny
@@ -461,7 +1062,87 @@ which are the points of discontinuity.  However, there is a removable discontinu
 %\end{center}
 In a day, the factory has availability of not more than 42 hours of machine time and 24 hours of craftsman time.\\
 Assuming that all items manufactured are sold, how should the manufacturer schedule his daily production in order to maximise the profit? Formulate it as an LPP and solve it graphically.\\
+\solution Let $x$ be the number of lamps and $y$ be the number of wooden shades produced.  From the given information, the problem can be formulated as
+\begin{align}
+	P = \max_{x,y}30x+20y
+	\\
+1.5x+3y \le 42
+\\
+3x+y \le 24
+\end{align}
+which can be expressed in vector form as
+\begin{align}
+	P = \max_{\vec{x}}\myvec{30 &20}\vec{x}
+	\\
+	\myvec{1 &2 \\ 3 & 1} \vec{x}\preceq \myvec{28 \\ 24}
+\end{align}
+The feasible region is a quadrilateral with vertices
+\begin{align}
+\myvec{0 \\ 0},
+\myvec{8 \\ 0},
+\myvec{0 \\ 14},
+\myvec{4 \\ 12}
+\end{align}
+with respective profit
+\begin{align}
+	\myvec{30 &20}\myvec{0 \\ 0} &= 0 \\
+	\myvec{30 &20}\myvec{8 \\ 0} &= 240 \\
+	\myvec{30 &20}\myvec{0 \\ 14} &= 280 \\
+	\myvec{30 &20}\myvec{4 \\ 12} &= 360
+\end{align}
+Thus, the manufacturer should produce 4 pedestal lamps and 12 wooden shades daily.
  \item Amongst all open (from the top) right circular cylindrical boxes of volume $125 \pi $ $cm^3$, find the dimensions of the box which has the least surface area.\\  
+\solution Let $r$ be the radius of the cylinder and $h$ be the height.  Then the surface area is 
+		\begin{align}
+			\label{eq:opt-box-S}
+			S &= \pi r^2 + 2\pi r h 
+		\end{align}
+		Also, the volume is 
+		\begin{align}
+			\label{eq:opt-box-V}
+			V &= \pi r^2 h 
+		\end{align}
+		\begin{enumerate}
+			\item 
+		The given problem can then be formulated as 
+		\begin{align}
+			S = \min_{r,h}\pi r^2 + 2\pi r h 
+			\\
+			\text{s.t} \quad \pi r^2 h =1 
+		\end{align}
+		which is a geometric programming problem that can be solved using $cvxpy$. 
+	\item 
+		Alternatively, from 
+			\eqref{eq:opt-box-S} and 
+			\eqref{eq:opt-box-V}
+		\begin{align}
+			S(r) &= \pi r^2 +  \frac{2 V}{r} 
+			\\
+			\label{eq:opt-box-Sdiff}
+			\implies 
+			S^{\prime}(r) &= 2\pi r -  \frac{2 V}{r^2} 
+			\\
+			\text{and }
+			S^{\prime\prime}(r) &= 2\pi  +  \frac{4 V}{r^3} > 0 
+		\end{align}
+		Thus, $S(r)$ has a minimum which can be obtained from 
+			\eqref{eq:opt-box-Sdiff} as
+		\begin{align}
+			2\pi r -  \frac{2 V}{r^2} &= 0
+			\\
+			\implies r &= \brak{\frac{V}{\pi}}^{\frac{1}{3}}
+			\\
+			&= 5 \quad \text{and }
+			\\
+			h &= \frac{V}{\pi r^2} = 5
+		\end{align}
+		upon substituting numerical values.
+	\item Using gradient descent, the update equation can be expressed as 
+		\begin{align}
+			r_{n+1} = r_n - \mu S^{\prime}(r_n)
+		\end{align}
 
+
+\end{enumerate}
 \end{enumerate}
 \end{document}
