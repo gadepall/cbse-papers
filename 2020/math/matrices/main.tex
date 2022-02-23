@@ -1068,23 +1068,25 @@ f &= \norm{\vec{n}}^2\norm{\vec{F}}^2-c^2e^2
 which can be expressed as \eqref{eq:conic_quad_form} after simplification.
 \item \eqref{eq:conic_quad_form} represents 
 	\begin{enumerate}
-		\item a parabola for $\mydet{\vec{V}} = 0 $,
-		\item ellipse for $\mydet{\vec{V}} > 0 $ and 
-		\item hyperbola for $\mydet{\vec{V}} < 0 $.
-	\end{enumerate}
-			In general
-\eqref{eq:conic_quad_form}  represents a conic  if and only if
+		\item a pair of straight lines if
 \begin{align}
 \mydet{
 \vec{V}&\vec{u}
 \\
 \vec{u}^{\top}&f
 }
-\ne  0
+=  0, \quad \mydet{\vec{V}} < 0
 \label{eq:quad_forms_pair_det}
 \end{align}
-%
-else, it represents a pair of straight lines.
+			else, it represents
+		\item a parabola for $\mydet{\vec{V}} = 0 $,
+		\item ellipse for $\mydet{\vec{V}} > 0 $ and 
+		\item hyperbola for $\mydet{\vec{V}} < 0 $.
+	\end{enumerate}
+%			In general
+%\eqref{eq:conic_quad_form}  represents a conic  if and only if
+%%
+%else, it represents a pair of straight lines.
 \end{enumerate}
 \subsection{Conic Parameters}
 \renewcommand{\theequation}{\theenumi}
@@ -1286,8 +1288,13 @@ For the standard conic, $\vec{y} = \vec{0} $ is the centre/vertex and in \eqref{
   \label{eq:hyper_axes}
 \end{align} 
 \solution For \begin{align} \abs{\vec{V}} > 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 > 0 
-  \end{align} and \eqref{eq:conic_simp_temp_nonparab} becomes \begin{align} \lambda_1y_1^2 +\lambda_2y_2^2 = 
-  \vec{u}^{\top}\vec{V}^{-1}\vec{u} -f \end{align} yielding        \eqref{eq:ellipse_axes}.  Similarly, \eqref{eq:hyper_axes} can be obtained for 
+  \end{align} and \eqref{eq:conic_simp_temp_nonparab} becomes 
+  \begin{align} 
+	  \lambda_1y_1^2 +\lambda_2y_2^2 = 
+  \vec{u}^{\top}\vec{V}^{-1}\vec{u} -f 
+	  \label{eq:hyper-pair-cond}
+  \end{align} 
+  yielding        \eqref{eq:ellipse_axes}.  Similarly, \eqref{eq:hyper_axes} can be obtained for 
   \begin{align} 
     \label{eq:conic_hyper_cond}
     \abs{\vec{V}} 
@@ -1863,11 +1870,19 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
 \vec{V} \vec{q} = \kappa \vec{n} - \vec{u}.
 \end{align}
 \eqref{eq:conic_zero_eigen_normal_fq} and \eqref{eq:conic_zero_eigen_normal_vq} clubbed together result in \eqref{eq:conic_tangent_q_eigen}.
+\end{enumerate}
+\subsection{Pair of Straight Lines}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
 \item When \eqref{eq:conic_quad_form} is a hyperbola, its  {\em asymptotes}  are defined as the pair of intersecting straight lines 
   \begin{align}
   \label{eq:asymp_quad_form}
   \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+\vec{u}^{\top}\vec{V}^{-1}\vec{u}=0, \quad \abs{\vec{V}} < 0
   \end{align}
+  \solution From 
+	  \eqref{eq:hyper-pair-cond}
 %  such that 
   % \begin{align} 
   % %\label{eq:quad_form_asymp_cond}
@@ -1965,7 +1980,7 @@ From \eqref{eq:quad_forms_pair_det}, the above equation will represent a pair of
 \mydet{
 \vec{V}_1+ \mu \vec{V}_2&\vec{u}_1+\mu\vec{u}_2
 \\
-\vec{u}_1+\mu\vec{u}_2}^{\top}&f
+	\brak{\vec{u}_1+\mu\vec{u}_2}^{\top}&f
 }
 \ne  0
 \end{align}
@@ -1974,7 +1989,7 @@ which can be expressed as
 \mydet{
 \vec{V}_1+ \mu \vec{V}_2&\vec{u}_1+\mu\vec{u}_2
 \\
-\vec{u}_1+\mu\vec{u}_2}^{\top}&f
+	\brak{\vec{u}_1+\mu\vec{u}_2}^{\top}&f
 }
 \ne  0
 \end{multline}
