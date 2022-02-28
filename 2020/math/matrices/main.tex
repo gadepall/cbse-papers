@@ -1498,244 +1498,6 @@ in \eqref{eq:conic_quad_form},
 \end{align}
 Solving the above quadratic in \eqref{eq:conic_intercept}
 yields \eqref{eq:tangent_roots}.
-  \item ({\em Latus Rectum}) The latus rectum of a conic section is the chord that passes through the focus, is perpendicular to the major axis and has both endpoints on the curve.
-  \item The latus rectum is parallel to the directrix.
-  \item The equation of the latus rectum is given by 
-\begin{align}
-	 \vec{n}^{\top}\brak{\vec{x}-\vec{F}} = 0
-	\\
-	\text{or, }\vec{x} = \vec{F} + \mu\vec{m}
-\end{align}
-where $\vec{F}$ is the focus and $\vec{m}$  is the normal to the directrix, i.e.
-\begin{align}
-	\vec{m}^{\top} \vec{n} = 0
-\end{align}
-\item The affine transform preserves the norm.  This implies that the length of any chord of a conic
-	is invariant to translation and/or rotation.
-	\solution Let 
-From \eqref{eq:conic_affine}, 
-\begin{align}
-\vec{x}_i = \vec{P}\vec{y}_i+\vec{c} 
-\label{eq:conic_affine_pts}
-\end{align}
-be any two points on the conic.  Then the distance between the points is given by 
-\begin{align}
-	\norm{\vec{x}_1-\vec{x}_2 } &= \norm{\vec{P}	\vec{y}_1 -\vec{y}_2 }
-	\\
-	\implies \norm{\vec{x}_1-\vec{x}_2 }^2 &= 		\brak{\vec{y}_1 -\vec{y}_2 }^{\top}\vec{P}^{\top}\vec{P}\brak{\vec{y}_1 -\vec{y}_2 }
-	\\
-	&= 		\norm{\vec{y}_1 -\vec{y}_2 }^2
-\label{eq:conic_affine_norm_preserve}
-\end{align}
-since 
-\begin{align}
-	\vec{P}^{\top}\vec{P} = \vec{I}
-\end{align}
-\item The length of the latus rectum is given by 
-	\solution 
-\\
-From 
-\eqref{eq:conic_tangent_pts}
-and
-\eqref{eq:tangent_roots}, substituting $\vec{q} = \vec{F}$, the end points of the latus rectum on the conic
-section can be obtained.  Thus, the distance between these points is given by 
-\begin{align}
-	\norm{\vec{x}_1-\vec{x}_2} =  \abs{\mu_1-\mu_2} \norm{\vec{m}}
-\label{eq:conic_tangent_pts_dist}
-\end{align}
-which can be used to obtain the length of the latus rectum as 
-	{\tiny
-\begin{multline}
- \frac{2\sqrt{
-\sbrak{
-\vec{m}^T\brak{\vec{V}\vec{F}+\vec{u}}
-}^2
--
-\brak
-{
-\vec{F}^T\vec{V}\vec{F} + 2\vec{u}^T\vec{F} +f
-}
-\brak{\vec{m}^T\vec{V}\vec{m}}
-}
-}
-{
-\vec{m}^T\vec{V}\vec{m}
-}\norm{\vec{m}}
-\label{eq:tangent_roots_latus}
-\end{multline}
-}
-\begin{enumerate}
-\item 
-From \eqref{eq:conic_affine_norm_preserve}, we may consider the standard ellipse/hyperbola given by 
-    \eqref{eq:conic_simp_temp_nonparab} as
-  \begin{multline}
-    \vec{y}^{\top}\vec{D}\vec{y} = -f,
-	\vec{V} =     \vec{D} = \myvec{\lambda_1 & 0 \\ 0 &\lambda_2},
-	  \\
-	   f = -1, \vec{u} = 0, \vec{p}_1 = \vec{e}_1, \vec{p}_2 = \vec{e}_2
-	    \label{eq:latus_rectum_ellipse_param}
-\end{multline}
-for computing the length of the latus rectum in 
-	  \eqref{eq:tangent_roots_latus}. Note that $\vec{p}_1, \vec{p}_2$ are the eigenvectors and $\vec{e}_1, \vec{e}_2$ are the standard basis vectors.  Substituting from 
-	    \eqref{eq:latus_rectum_ellipse_param} in
-\eqref{eq:conic_quad_form_nc},
-	     the parameters of the directrix are obtained as 
-
-\begin{align}
-\label{eq:conic_quad_form_nc_latus} 
-  \vec{n}&= \sqrt{\lambda_2}\vec{e}_1,  
-  \\
-	c &=	\pm   \frac{ 1 }{e\sqrt{e^2-1} }
-\end{align}  
-and the focus is 
-\begin{align}
-  \label{eq:conic_quad_form_e_latus} 
-  e&= \sqrt{1-\frac{\lambda_1}{\lambda_2}}
-  \\
-  \label{eq:conic_quad_form_F_latus} 
-	\vec{F}  &= \frac{ e  }{\sqrt{\lambda_2}\sqrt{e^2-1}}\vec{e}_1
-\end{align}  
-From \eqref{eq:conic_quad_form_nc_latus},  
-\begin{align}  
-	\vec{m} = \vec{e}_1
-\end{align}  
-Substituting the above in 
-\eqref{eq:tangent_roots_latus} along with
-  \eqref{eq:conic_quad_form_e_latus} and  
-  \eqref{eq:conic_quad_form_F_latus}, 
-
-
-	the length of the latus rectum for an ellipse and hyperbola is obtained from 
-\eqref{eq:tangent_roots_latus} as .
-	{\tiny
-\begin{multline}
- \frac{2\sqrt{
-\sbrak{
-\vec{m}^T\brak{\vec{V}\vec{F}+\vec{u}}
-}^2
--
-\brak
-{
-\vec{F}^T\vec{V}\vec{F} + 2\vec{u}^T\vec{F} +f
-}
-\brak{\vec{m}^T\vec{V}\vec{m}}
-}
-}
-{
-\vec{m}^T\vec{V}\vec{m}
-}\norm{\vec{m}}
-%\label{eq:tangent_roots_latus}
-\end{multline}
-}
-
-	\solution For simplicity, we consider the standard ellipse given by 
-\begin{align}
-	\vec{x}^{\top}\vec{V}\vec{x} &= 1,
-	\\
-	\text{where }
-	\vec{V} = \myvec{\lambda_1 & 0 \\ 0 & \lambda_2}, \vec{u} = 0, f &= -1
-  \label{eq:conic_quad_form_std_ellipse}, 
-\end{align}
-From 
-  \eqref{eq:conic_quad_form_std_ellipse} and  
-  \eqref{eq:conic_quad_form_F}, 
-  the distance between the foci can be expressed as
-\begin{align}
-  \label{eq:conic_quad_form_std_ellipse_foci_dir}, 
-	\norm{\vec{F}_1 - \vec{F}_2}  &= e^2\abs{\frac{c_1-c_2}{\lambda_2}}\norm{\vec{n}}
-\end{align}
-%
-where $c_1,c_2$ are the scalar parameters of the directrices.  The distances between the directrices is given by 
-\begin{align}
-	\frac{\abs{c_1-c_2}}{\norm{\vec{n}}}
-\end{align}
-Thus, substituting the above in 
-  \eqref{eq:conic_quad_form_std_ellipse_foci_dir}, 
-\begin{align}
-  \label{eq:conic_quad_form_std_ellipse_foci_dir_ratio}, 
-	\frac{\norm{\vec{F}_1 - \vec{F}_2}}{\abs{c_1-c_2}} \norm{n} &= e^2\frac{\norm{\vec{n}}^2}{\abs{\lambda_2}}
-	\\
-	&=\frac{6}{12} = \frac{1}{2},
-\end{align}
-based on the given information.  For the standard ellipse, 
-\begin{align}
-	\vec{p}_1 &= \vec{e}_1 = \myvec{1 \\ 0}
-	\\
-	\implies \vec{n} &= \sqrt{\lambda_2}\vec{e}_1,  
-	\\
-	\text{or, }\vec{m} &=\sqrt{\lambda_2}\vec{e}_2,   
-\end{align}
-Hence, substituting in 
-  \eqref{eq:conic_quad_form_std_ellipse_foci_dir_ratio} and using  
-\eqref{eq:conic_quad_form_nc} 
-\begin{align}
-	e^2\frac{\norm{\vec{n}}^2}{\lambda_2} &= \frac{1}{2}
-	\\
-	\implies e^2 = \frac{1}{2}
-\end{align}
-Substituting $\vec{u} = 0$ in 
-\eqref{eq:conic_quad_form_nc} and 
-  \eqref{eq:conic_quad_form_F} 
-  and simplifying using
-  \eqref{eq:conic_quad_form_e},
-\begin{align}
-	c &= \pm \frac{1}{e}\sqrt{\frac{\lambda_1}{\lambda_2}}
-	\\
-	\vec{F} &= \pm \frac{e}{\sqrt{\lambda_1}}\vec{p}_1
-\end{align}
-For the standard ellipse, $\vec{m}$, orthogonal to $\vec{n}$ is also an eigenvector, such that 
-\begin{align}
-	\vec{V}\vec{m} &= {\lambda_1}\vec{m}  
-	\\
-	\implies\vec{m} &=  \sqrt{\lambda_1}\vec{e}_2
-\end{align}
-Thus, 
-\begin{align}
-	\vec{m}^{\top}\vec{V}\vec{m} &= {\lambda_1}^2
-	\\
-	\vec{m}^{\top}\vec{V}\vec{F} &= 0
-	\\
-	\vec{F}^{\top}\vec{V}\vec{F} &=e^2 
-\label{eq:tangent_roots_latus_quad},
-\end{align}
-From 
-\eqref{eq:tangent_roots_latus},
-the length of the latus rectum is given by 
-{\tiny
-\begin{multline}
- \frac{2\sqrt{
-\sbrak{
-\vec{m}^T\brak{\vec{V}\vec{F}+\vec{u}}
-}^2
--
-\brak
-{
-\vec{F}^T\vec{V}\vec{F} + 2\vec{u}^T\vec{F} +f
-}
-\brak{\vec{m}^T\vec{V}\vec{m}}
-}
-}
-{
-\vec{m}^T\vec{V}\vec{m}
-}\norm{\vec{m}}
-\end{multline}
-}
-Substituting \eqref{eq:tangent_roots_latus_quad} in the above, the desired length can be expressed as,
-%\eqref{eq:conic_quad_form_nc}, 
-%{\tiny
-%\begin{multline}
-% \frac{2\sqrt{
-%1-e^2
-%	}}
-%\lambda_1^2
-%	}
-%}
-%{
-%\lambda_1^2
-%	}\sqrt{\lambda_1}
-%\end{multline}
-\end{enumerate}
-
 \item  If $L$ in \eqref{eq:conic_tangent} touches \eqref{eq:conic_quad_form} at exactly one point $\vec{q}$, 
   \begin{align}
   \vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}} = 0
@@ -1883,6 +1645,17 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
   \end{align}
   \solution From 
 	  \eqref{eq:hyper-pair-cond}
+  \begin{align} 
+	  \lambda_1y_1^2 +\lambda_2y_2^2 = 
+  \vec{u}^{\top}\vec{V}^{-1}\vec{u} -f 
+  \end{align} 
+  which represents a pair of straight lines 
+  for 
+  \begin{align} 
+  f = \vec{u}^{\top}\vec{V}^{-1}\vec{u}, 
+%    \label{eq:conic_hyper_cond}
+    \abs{\vec{V}} 
+    < 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 < 0 \end{align}
 %  such that 
   % \begin{align} 
   % %\label{eq:quad_form_asymp_cond}
@@ -1891,6 +1664,9 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
   
   % \label{eq:quad_pair_det}
   % \end{align} 
+Thus,     
+  \eqref{eq:asymp_quad_form} are the asymptotes of  all hyperbolas defined by 
+\eqref{eq:conic_quad_form}.  Also, any pair of straight lines has the form in \eqref{eq:asymp_quad_form}.
 \item \eqref{eq:asymp_quad_form} can be expressed as the lines 
 %
 \begin{align} 
@@ -1920,7 +1696,7 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
 \cos\theta=\frac{\abs{\lambda_1}-\abs{\lambda_2}}
 {\abs{\lambda_1}+\abs{\lambda_2}}
 \end{align} 
-\item The normal vectors of the lines in \eqref{eq:quad_form_pair} are 
+\solution The normal vectors of the lines in \eqref{eq:quad_form_pair} are 
   \begin{align} 
   \label{eq:quad_form_pair_normvecs}
   \begin{split}
@@ -1936,10 +1712,10 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
 \end{align} 
 The orthogonal matrix $\vec{P}$ preserves the norm, i.e.
 \begin{align} 
-\norm{\vec{n_1}} = \norm{\vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}}
-\\
-=\norm{\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}}
-=\sqrt{\abs{\lambda_1}+\abs{\lambda_2}} = \norm{\vec{n_2}}
+	\norm{\vec{n_1}} &= \norm{\vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}}
+	=\norm{\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}}
+	\\
+	&=\sqrt{\abs{\lambda_1}+\abs{\lambda_2}} = \norm{\vec{n_2}}
 \end{align} 
 It is easy to verify that 
 \begin{align} 
@@ -1952,12 +1728,135 @@ Thus, the angle between the asymptotes is obtained from \eqref{eq:quad_form_pair
 % \cos\theta=\frac{\abs{\lambda_1}-\abs{\lambda_2}}
 % {\abs{\lambda_1}+\abs{\lambda_2}}
 % \end{align} 
-\item Another hyperbola with the same asymptotes as \eqref{eq:quad_form_pair} can be obtained from \eqref{eq:conic_quad_form} and \eqref{eq:asymp_quad_form} as
+\item The {\em conjugate} hyperbola with the same asymptotes as \eqref{eq:quad_form_pair} can be obtained from \eqref{eq:conic_quad_form} and \eqref{eq:asymp_quad_form} as
 \begin{align}
 \label{eq:hyper_conj_quad_form}
 \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+2\vec{u}^{\top}\vec{V}^{-1}\vec{u}-f=0
 \end{align}
 \end{enumerate}
+\subsection{Latus Rectum}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
+\numberwithin{equation}{enumi}
+  \item  The latus rectum of a conic section is the chord that passes through the focus, is perpendicular to the major axis and has both endpoints on the curve.
+  \item The latus rectum is parallel to the directrix.
+  \item The equation of the latus rectum is given by 
+\begin{align}
+	 \vec{n}^{\top}\brak{\vec{x}-\vec{F}} = 0
+	\\
+	\text{or, }\vec{x} = \vec{F} + \mu\vec{m}
+\end{align}
+where $\vec{F}$ is the focus and $\vec{m}$  is the normal to the directrix, i.e.
+\begin{align}
+	\vec{m}^{\top} \vec{n} = 0
+\end{align}
+\item The affine transform preserves the norm.  This implies that the length of any chord of a conic
+	is invariant to translation and/or rotation.
+	\solution Let 
+%From \eqref{eq:conic_affine}, 
+\begin{align}
+\vec{x}_i = \vec{P}\vec{y}_i+\vec{c} 
+\label{eq:conic_affine_pts}
+\end{align}
+be any two points on the conic.  Then the distance between the points is given by 
+\begin{align}
+	\norm{\vec{x}_1-\vec{x}_2 } &= \norm{\vec{P}\brak{	\vec{y}_1 -\vec{y}_2 }}
+\end{align}
+which can be expressed as 
+\begin{multline}
+\norm{\vec{x}_1-\vec{x}_2 }^2 = 		\brak{\vec{y}_1 -\vec{y}_2 }^{\top}\vec{P}^{\top}\vec{P}\brak{\vec{y}_1 -\vec{y}_2 }
+	\\
+	= 		\norm{\vec{y}_1 -\vec{y}_2 }^2
+\label{eq:conic_affine_norm_preserve}
+\end{multline}
+since 
+\begin{align}
+	\vec{P}^{\top}\vec{P} = \vec{I}
+\end{align}
+\item The length of the latus rectum is given by 
+	{\tiny
+\begin{multline}
+ \frac{2\sqrt{
+\sbrak{
+\vec{m}^T\brak{\vec{V}\vec{F}+\vec{u}}
+}^2
+-
+\brak
+{
+\vec{F}^T\vec{V}\vec{F} + 2\vec{u}^T\vec{F} +f
+}
+\brak{\vec{m}^T\vec{V}\vec{m}}
+}
+}
+{
+\vec{m}^T\vec{V}\vec{m}
+}\norm{\vec{m}}
+\label{eq:tangent_roots_latus}
+\end{multline}
+}
+	\solution 
+\\
+From 
+\eqref{eq:conic_tangent_pts}
+and
+\eqref{eq:tangent_roots}, substituting $\vec{q} = \vec{F}$, the end points of the latus rectum on the conic
+section can be obtained.  Thus, the distance between these points is given by 
+\begin{align}
+	\norm{\vec{x}_1-\vec{x}_2} =  \abs{\mu_1-\mu_2} \norm{\vec{m}}
+\label{eq:conic_tangent_pts_dist}
+\end{align}
+which can be used to obtain the length of the latus rectum as 
+\eqref{eq:tangent_roots_latus}.
+
+\begin{enumerate}
+\item 
+From \eqref{eq:conic_affine_norm_preserve}, we may consider the standard ellipse/hyperbola given by 
+    \eqref{eq:conic_simp_temp_nonparab} as
+  \begin{multline}
+    \vec{y}^{\top}\vec{D}\vec{y} = -f,
+	\vec{V} =     \vec{D} = \myvec{\lambda_1 & 0 \\ 0 &\lambda_2},
+	  \\
+	   f = -1, \vec{u} = 0, \vec{p}_1 = \vec{e}_1, \vec{p}_2 = \vec{e}_2
+	    \label{eq:latus_rectum_ellipse_param}
+\end{multline}
+for computing the length of the latus rectum in 
+	  \eqref{eq:tangent_roots_latus}. Note that $\vec{p}_1, \vec{p}_2$ are the eigenvectors and $\vec{e}_1, \vec{e}_2$ are the standard basis vectors.  Substituting from 
+	    \eqref{eq:latus_rectum_ellipse_param} in
+\eqref{eq:conic_quad_form_nc},
+	     the parameters of the directrix are obtained as 
+
+\begin{align}
+\label{eq:conic_quad_form_nc_latus} 
+  \vec{n}&= \sqrt{\lambda_2}\vec{e}_1,  
+  \\
+	c &=	\pm   \frac{ 1 }{e\sqrt{e^2-1} }
+\end{align}  
+and the focus is 
+\begin{align}
+  \label{eq:conic_quad_form_e_latus} 
+  e&= \sqrt{1-\frac{\lambda_1}{\lambda_2}}
+  \\
+  \label{eq:conic_quad_form_F_latus} 
+	\vec{F}  &= \frac{ e  }{\sqrt{\lambda_2}\sqrt{e^2-1}}\vec{e}_1
+\end{align}  
+From \eqref{eq:conic_quad_form_nc_latus},  
+\begin{align}  
+	\vec{m} = \vec{e}_2
+\end{align}  
+Substituting the above in 
+\eqref{eq:tangent_roots_latus} along with
+  \eqref{eq:conic_quad_form_e_latus} and  
+  \eqref{eq:conic_quad_form_F_latus}, 
+	the length of the latus rectum for an ellipse and hyperbola is obtained from 
+\eqref{eq:tangent_roots_latus} as 
+		\begin{align}
+			2\frac{\sqrt{\lambda_1}}{\lambda_2}
+		\end{align}
+%
+\end{enumerate}
+\end{enumerate}
+
 \subsection{Intersection of Conics}
 \renewcommand{\theequation}{\theenumi}
 %\begin{enumerate}[label=\arabic*.,ref=\theenumi]
@@ -1982,17 +1881,21 @@ From \eqref{eq:quad_forms_pair_det}, the above equation will represent a pair of
 \\
 	\brak{\vec{u}_1+\mu\vec{u}_2}^{\top}&f
 }
-\ne  0
+	= 0, \mydet{\vec{V}_1+ \mu \vec{V}_2} < 0
 \end{align}
-which can be expressed as 
-\begin{multline}
-\mydet{
-\vec{V}_1+ \mu \vec{V}_2&\vec{u}_1+\mu\vec{u}_2
-\\
-	\brak{\vec{u}_1+\mu\vec{u}_2}^{\top}&f
-}
-\ne  0
-\end{multline}
+\item Once $\mu$ is obtained, 
+    \eqref{eq:conic_quad_form_int}
+can be used to obtain 
+	the pair of straight lines passing throught the intersection of the conics in 
+    \eqref{eq:conic_quad_form_ints}.
+    \item The intersection of 
+    \eqref{eq:conic_quad_form_int}
+    with 
+    \eqref{eq:conic_quad_form_ints} can be obtained  using  
+\eqref{eq:conic_tangent_pts}
+to obtain the points of intersection of the conics.
+\item Note that there could be several cases to be considered, since the conics can intersect in 1 to 4 points.
+
 \end{enumerate}
 \end{document}
 

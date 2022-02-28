@@ -492,7 +492,159 @@ Forming the augmented matrix, and choosing the pivot,
 	\\
 	\implies x &= \pm 3
 \end{align}
- \item Using integration, Find the area lying above x-axis and included between the circle $ x^2 + y^2 =8x $ and inside the parabola $ y^2 =4x $.   
+ \item Using integration, find the area lying above x-axis and included between the circle $ x^2 + y^2 =8x $ and inside the parabola $ y^2 =4x $.   
+	 \\
+	 \solution The given circle and parabola can be expressed as conics with parameters
+\begin{align}
+	\vec{V}_1 &= \vec{I}, \vec{u}_1 = -\myvec{4 \\0}, f_1 = 0
+	\\
+	\vec{V}_2 &= \myvec{ 0 & 0 \\ 0 & 1}, \vec{u}_2 = -\myvec{2 \\0}, f_2 = 0
+    \end{align}
+    The intersection of the given conics is obtained as 
+\begin{align}
+	\vec{x}^{\top}\brak{\vec{V}_1 + \mu\vec{V}_2}\vec{x}+2 \brak{\vec{u}_1+\mu \vec{u}_2}^{\top} \vec{x} 
+	\\
+	+ \brak{f_1+\mu f_2}= 0
+    \end{align}
+    This conic is a pair of straight lines if  and only if 
+\begin{align}
+	\mydet{\vec{V}_1 + \mu\vec{V}_2 & \vec{u}_1+\mu \vec{u}_2\\ \brak{\vec{u}_1+\mu \vec{u}_2}^{\top} & f_1 + \mu f_2} &= 0
+	\\
+	\label{eq:conic-pair}
+	\mydet{\vec{V}_1 + \mu\vec{V}_2} &< 0
+\\
+	\implies 	\mydet{1 & 0 & -4-2\mu\\ 0 & 1+\mu & 0 \\ -4 - 2\mu & 0 & 0} &= 0
+    \end{align}
+    upon substituting numerical values, which can be expanded to obtain 
+\begin{align}
+	\brak{\mu + 1}\brak{\mu + 2}^2 &= 0
+    \end{align}
+    yielding
+\begin{align}
+\mu =  -2
+    \end{align}
+upon checking for \eqref{eq:conic-pair}.  Thus, the parameters for the pair of straight lines can be expressed as
+\begin{align}
+	\vec{V} &= 
+\vec{V}_1 + \mu\vec{V}_2
+=\myvec{ 1 & 0 \\ 0 & -1},
+\\
+	\vec{u} &=
+\vec{u}_1+\mu \vec{u}_2
+	= \vec{0},
+\\
+	f&=0,
+	\\
+	\implies \vec{D} &= \vec{V}, \vec{P} = \vec{I}
+\label{eq:quad_form_pair-param}
+    \end{align}
+    Thus, the desired pair of straight lines are 
+\begin{align} 
+	\myvec{\sqrt{\abs{\lambda_1}} & \pm \sqrt{\abs{\lambda_2}}}\vec{P}^{\top}\brak{\vec{x}-\vec{c}} &= 0
+	\\
+	\implies 
+	\myvec{1 & \pm 1}\vec{x} &= 0
+	\\
+	\text{or, }\vec{x} &= \kappa \myvec{\pm 1 \\ 1}
+\end{align} 
+upon substituting from 
+\eqref{eq:quad_form_pair-param}.
+The points of intersection of the line 
+\begin{align}
+L: \quad \vec{x} = \vec{q} + \kappa \vec{m} \quad \kappa \in \mathbb{R}
+\label{eq:conic_tangent}
+\end{align}
+with the conic section 
+\begin{align}
+	\vec{x}^{\top}\vec{V}\vec{x} + 2\vec{u}^{\top} \vec{x} + f = 0
+\label{eq:conic_quad_form}
+\end{align}
+are given by
+\begin{align}
+\vec{x}_i = \vec{q} + \kappa_i \vec{m}
+\label{eq:conic_tangent_pts}
+\end{align}
+%
+where
+{\tiny
+\begin{multline}
+\kappa_i = \frac{1}
+{
+\vec{m}^T\vec{V}\vec{m}
+}
+\lbrak{-\vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}}
+\\
+\pm
+\rbrak{\sqrt{
+\sbrak{
+\vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}
+}^2
+-
+\brak
+{
+\vec{q}^T\vec{V}\vec{q} + 2\vec{u}^T\vec{q} +f
+}
+\brak{\vec{m}^T\vec{V}\vec{m}}
+}
+}
+\label{eq:tangent_roots}
+\end{multline}
+}
+Substituting
+\begin{align}
+	\vec{q} &= \vec{0}, \vec{m} = \myvec{1 \\ 1}
+	\\
+	\vec{V} &= \vec{I},
+	\vec{u} = -\myvec{4 \\0}
+	f = 0
+\end{align}
+in 
+\eqref{eq:tangent_roots}, the intersection parameters $\kappa_i$ of the line 
+\begin{align}
+	\myvec{1 & - 1}\vec{x} &= 0
+\end{align}
+with the given circle are
+\begin{align}
+\kappa = 0, 4 
+\end{align}
+and the points of intersection are 
+\begin{align}
+	\vec{0}, \myvec{4 \\ 4}
+\end{align}
+Similarly, 
+the points of intersection of the line 
+\begin{align}
+	\myvec{1 & - 1}\vec{x} &= 0
+\end{align}
+with the given circle are 
+\begin{align}
+	\vec{0}, \myvec{4 \\ -4}
+\end{align}
+%
+Thus the intersection of the parabola with the circle above the $x$-axis are the points 
+\begin{align}
+	\vec{0}, \myvec{4 \\ 4}
+\end{align}
+From Fig. 
+the area covered by the parabola is given by 
+\begin{align}
+	\int_{0}^{4}2\sqrt{x} &= \frac{4}{3}\sbrak{x^{\frac{3}{2}}}_{0}^4{}	
+	\\
+	&= \frac{32}{3}
+\end{align}
+The area covered by the circle is
+\begin{align}
+	\frac{\pi r^2}{4} = 4\pi
+\end{align}
+Thus, the desired area is 
+\begin{align}
+ 4\pi+ \frac{32}{3}
+\end{align}
+
+
+
+
+
     
 \item Using the method of integration, find the area of the triangle ABC, coordinates of whose vertices are A(2,0), B(4,5) and C(6,3).\\
     \solution Since 
