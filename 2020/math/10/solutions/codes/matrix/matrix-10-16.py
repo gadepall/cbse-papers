@@ -31,32 +31,28 @@ e1 =  I[:,0]
 #Input parameters
 
 #line parameters
-n =  np.array(([1,-1]))
-m =  omat@n
+n =  np.array(([1,-1])) #normal vector
+m =  omat@n #direction vector
 c = 8
-q = c/(n@e1)*e1
+q = c/(n@e1)*e1 #x-intercept
+print(q)
 
 #circle parameters
 V = I
-u = np.zeros((1,2) )
+u = np.zeros(2)
 r = np.sqrt(544)
-f = -np.sqrt(544)
+f = -r**2
 O = -u #Centre
 
 #Points of intersection
 #of line with circle
 x1,x2 = inter_pt(m,q,V,u,f)
-#x1 = inter_pt(m,q,V,u,f)
-
-
-
-
-
+print(x1,x2)
 
 ##Generating the line 
-k1 = -2
-k2 = 2
-xline = line_dir_pt(m,A,k1,k2)
+k1 = -20
+k2 = 20
+xline = line_dir_pt(m,q,k1,k2)
 
 ##Generating the circle
 x_circ= circ_gen(O,r)
@@ -71,7 +67,7 @@ plt.plot(x_circ[0,:],x_circ[1,:],label='$Circle$')
 #Labeling the coordinates
 tri_coords = np.vstack((O,x1,x2)).T
 plt.scatter(tri_coords[0,:], tri_coords[1,:])
-vert_labels = ['O','x1','x2']
+vert_labels = ['O','$x_1$','$x_2$']
 for i, txt in enumerate(vert_labels):
     plt.annotate(txt, # this is the text
                  (tri_coords[0,i], tri_coords[1,i]), # this is the point to label
