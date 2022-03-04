@@ -43,9 +43,10 @@ def conic_quad(q,V,u,f):
 #Points of intersection of a conic section with a line
 def inter_pt(m,q,V,u,f):
     a = m@V@m
+    print(V,q,u)
     b = m@(V@q+u)
     c = conic_quad(q,V,u,f)
-    l1,l2 =np.roots(([a,2*b,c])) 
+    l1,l2 =np.roots([a,2*b,c]) 
     x1 = q+l1*m
     x2 = q+l2*m
-	return x1,x2 
+    return x1,x2 
