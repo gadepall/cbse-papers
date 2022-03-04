@@ -1,6 +1,7 @@
 #Code by GVV Sharma
 #December 7, 2019
 #Revised July 15, 2020
+#Revised March 4, 2022
 #released under GNU GPL
 #Functions related to conics
 
@@ -36,4 +37,15 @@ def hyper_gen(y):
 	x = np.sqrt(1+y**2)
 	return x
 
+def conic_quad(q,V,u,f):
+	return q@V@q + 2@u@q + f
 
+#Points of intersection of a conic section with a line
+def inter_pt(m,q,V,u,f):
+    a = m@V@m
+    b = m@(V@q+u)
+    c = conic_quad(q,V,u,f)
+    l1,l2 =np.roots(([a,2*b,c])) 
+    x1 = q+l1*m
+    x2 = q+l2*m
+	return x1,x2 

@@ -1168,6 +1168,14 @@ For construction, let $\vec{A} = \vec{0}, \vec{e}_2^{\top}\vec{C} = 0, \vec{B}, 
 \caption{}
 \label{table:tri-sim}	
 \end{table}
+    See Fig. 
+	  \ref{fig:matrix-10-12.pdf}.
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/matrix-10-12.pdf}
+	  \caption{}
+	  \label{fig:matrix-10-12.pdf}
+	  \end{figure}
     
     \item Draw a circle of radius $3.5 cm$. Take a point P outside the circle at a distance of $7 cm$ from the centre of the circle and construct a pair of tangents to the circle from that point. \\
 	    \solution The input parameters for this construction are available in Table 
@@ -1177,15 +1185,31 @@ For construction, let $\vec{A} = \vec{0}, \vec{e}_2^{\top}\vec{C} = 0, \vec{B}, 
 \caption{}
 	\label{table:circ-tangent}
 \end{table}
-    \item In Fig $\ref{Fig5}$, a quadrilateral ABCD is drawn to circumscribe a circle. Prove that $\vec{AB} + \vec{CD} = \vec{BC} + \vec{AD}$.\\
+See Fig.
+	  \ref{fig:matrix-10-13.pdf},
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/matrix-10-13.pdf}
+	  \caption{}
+	  \label{fig:matrix-10-13.pdf}
+	  \end{figure}
+    \item In Fig. 
+	  \ref{fig:matrix-10-14.pdf},
+a quadrilateral ABCD is drawn to circumscribe a circle. Prove that $\vec{AB} + \vec{CD} = \vec{BC} + \vec{AD}$.\\
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/matrix-10-14.pdf}
+	  \caption{}
+	  \label{fig:matrix-10-14.pdf}
+	  \end{figure}
 	    \solution   The input parameters for drawing the figure are available in Table
 \eqref{table:circ-tang}.  The steps for construcing the figure are 
 \begin{enumerate}
 	\item  $\theta_1 = \angle ADC = 2\tan ^{-1}\frac{r}{d}$. 
-	\item $\vec{A} = a+ d \myvec{\cos \theta \\ \sin \theta}$
-	\item $\angle BAD = 2 \tan ^{-1}\frac{r}{a}$
+	\item $\vec{A} = \brak{a+ d} \myvec{\cos \theta \\ \sin \theta}$
+	\item $\theta_2 = \angle BAD = 2 \tan ^{-1}\frac{r}{a}$
 	\item The slope of $AB$ is $m_1 =   \tan\brak{\angle ADC + \angle BAD}$.  This is obtained by extending $AB$ and $CD$ so that they meet.
-	\item $\angle BCD = 2 \tan^{-1}\frac{r}{c}$
+	\item $\theta_3 = \angle BCD = 2 \tan^{-1}\frac{r}{c}$
 	\item The slope of $BC$ is $m_2 = \tan \angle BCD$
 	\item The direction vectors of $AB$ and $BC$ are
 		\begin{align}
@@ -1195,24 +1219,70 @@ For construction, let $\vec{A} = \vec{0}, \vec{e}_2^{\top}\vec{C} = 0, \vec{B}, 
 		respectively.
 	\item $\vec{B}$ is obtained as the point of intersection of the lines $AB$ and $BC$
 \end{enumerate}
+The equation of $AB$ and BC are respectively 
+\begin{align}
+	\begin{split}
+	\vec{x} &= \vec{A} + \lambda_1 \vec{m}_1
+\\
+		\vec{x} &= \vec{C} + \lambda_2 \vec{m}_2
+		\label{eq:quad-circ-lam-B}
+	\end{split}
+\end{align}
+and their intersection is given by 
+\begin{align}
+	 \vec{A} + \lambda_1 \vec{m}_1
+	&	= \vec{C} + \lambda_2 \vec{m}_2
+	\\
+	\implies \myvec{\vec{m}_1 & \vec{m}_2}\myvec{\lambda_1 \\ -\lambda_2 } &= \vec{C}-\vec{A}
+\end{align}
+which can be used to obtained $\lambda_1, \lambda_2$ and consequently $\vec{B}$, using 
+		\eqref{eq:quad-circ-lam-B}
 \begin{table}[ht!]
 	\input{tables/cbse-2020-table-circ-tang.tex}
 \caption{}
 \label{table:circ-tang}	
 \end{table}
-    \begin{figure}[h!]
-        \centering
-        \includegraphics[width=0.5\columnwidth]{Fig5.png}
-    	\caption{}
-    	\label{Fig5}
-     \end{figure}
-     \item In Fig $\ref{Fig6}$, find the perimeter of $\triangle ABC$ if $\vec{AP} = 12cm$\\
-    \begin{figure}[h!]
-        \centering
-        \includegraphics[width=0.5\columnwidth]{Fig6.png}
-    	\caption{}
-    	\label{Fig6}
-     \end{figure}
+%    \begin{figure}[h!]
+%        \centering
+%        \includegraphics[width=0.5\columnwidth]{Fig5.png}
+%    	\caption{}
+%    	\label{Fig5}
+%     \end{figure}
+     \item In Fig 
+	  \ref{fig:matrix-10-15.pdf}
+find the perimeter of $\triangle ABC$ if $\vec{AP} = 12cm$\\
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/matrix-10-15.pdf}
+	  \caption{}
+	  \label{fig:matrix-10-15.pdf}
+	  \end{figure}
+     \solution The steps for constructing Fig.
+	  \ref{fig:matrix-10-15.pdf}
+	  are
+	  \begin{enumerate}
+		  \item Draw a circle of radius $r$.
+		  \item From any point $\vec{A}$ outside the circle, draw two tangents $AP$ and $AQ$
+	using Table \ref{table:circ-tangent}
+\item Choose any point $\vec{B}$ on $AP$.   Find its reflection $\vec{R}$ about the line $BO$ using the formula
+		\begin{align}
+			\vec{R} &=
+	  \vec{B} + 2\frac{c - \vec{n}^{\top}\vec{B}}{\norm{\vec{n}}^2}
+			\label{eq:image_pt_plane}
+		\end{align}
+		where 
+
+		\begin{align}
+			\vec{m} &= 
+			\vec{B}- 
+			\vec{O},
+			\vec{m}^{\top}\vec{n}  = 0,
+			c = 
+			\vec{n}^{\top}\vec{O},
+		\end{align}
+	\item Find the equations of the lines $AQ$ and $BR$ and use them to find the intersection $\vec{C}$.
+	
+	  \end{enumerate}
 \item All concentric circles are \rule{1.5cm}{0.15mm} to each other\\
         \item Sum of the areas of two squares is $544 m^2$. If the difference of their perimeters is $32m$, find the sides of the two squares.\\
 		\solution Let the sides be $x, y$.  From the given information, 
@@ -1228,6 +1298,12 @@ For construction, let $\vec{A} = \vec{0}, \vec{e}_2^{\top}\vec{C} = 0, \vec{B}, 
 			    \\
 			    \vec{n}^{\top}\vec{x} &= c
 		    \end{align}
+with parameters listed in 	Table \eqref{table:matrix-10-16}
+\begin{table}[ht!]
+	\input{tables/matrix-10-16.tex}
+\caption{}
+	\label{table:matrix-10-16}
+\end{table}
 		    Thus, the desired solution is the point of intersection of the line with the circle in the first quadrant.  Using the parameteric equation of the line 
 		    \begin{align}
 			    \label{eq:cbse-2020-circ-line-param}

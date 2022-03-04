@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.19)  28 FEB 2022 20:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.19)  2 MAR 2022 11:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -934,35 +934,35 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 449.
 
 [2] [3]
-Underfull \hbox (badness 6893) in paragraph at lines 779--785
+Underfull \hbox (badness 6893) in paragraph at lines 865--871
 \OT1/ptm/m/n/12 yielding [] af-ter sub-sti-tut-ing from
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 785--789
+Underfull \hbox (badness 2913) in paragraph at lines 871--875
 []\OT1/ptm/m/n/12 The dis-tance be-tween the par-al-lel planes
  []
 
 [4] [5] [6] [7]
-Underfull \hbox (badness 5460) in paragraph at lines 1306--1332
+Underfull \hbox (badness 5460) in paragraph at lines 1392--1418
 []\OT1/ptm/m/n/12 The ec-cen-tric-ity, di-rec-tri-ces and foci of
  []
 
 [8]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 1462.
+(Font)              <5> on input line 1548.
  [9]
-Underfull \hbox (badness 10000) in paragraph at lines 1580--1585
+Underfull \hbox (badness 10000) in paragraph at lines 1666--1671
 \OT1/ptm/m/n/12 Substituting [] in [] yields
  []
 
 
-Underfull \hbox (badness 7522) in paragraph at lines 1687--1693
+Underfull \hbox (badness 7522) in paragraph at lines 1773--1779
 \OT1/ptm/m/n/12 from which [] is ob-tained us-ing
  []
 
 [10]
-Underfull \hbox (badness 10000) detected at line 1796
+Underfull \hbox (badness 10000) detected at line 1882
  []$[]  [] []$ []  
  []
 

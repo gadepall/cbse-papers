@@ -4,6 +4,7 @@
 #released under GNU GPL
 #Functions related to line
 import numpy as np
+from numpy import linalg as LA
 #from line.params import *
 from params import *
 
@@ -39,6 +40,7 @@ def line_dir_pt(m,A,k1,k2):
 #Intersection of two lines
 def line_intersect(n1,A1,n2,A2):
   N=np.vstack((n1,n2))
+#  print(N)
   p = np.zeros(2)
   p[0] = n1@A1
   p[1] = n2@A2
@@ -46,7 +48,7 @@ def line_intersect(n1,A1,n2,A2):
   P=np.linalg.inv(N)@p
   return P
 
-#Intersection of two lines
+#Foot of the Perpendicular
 def perp_foot(n,cn,P):
   m = omat@n
   N=np.block([[n],[m]])
@@ -57,3 +59,8 @@ def perp_foot(n,cn,P):
   x_0=np.linalg.inv(N)@p
   return x_0
 
+#Reflection
+def reflect(n,c,P):
+
+  D = P+2*(c-n@P)/(LA.norm(n)**2)*n
+  return D
