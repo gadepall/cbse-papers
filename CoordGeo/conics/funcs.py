@@ -18,6 +18,15 @@ def circ_gen(O,r):
 	x_circ = (x_circ.T + O).T
 	return x_circ
 
+#Generating points on a circular arc
+def circ_arc(O,r,theta):
+	len = 50
+	theta = np.linspace(0,theta/180*np.pi,len)
+	x_circ = np.zeros((2,len))
+	x_circ[0,:] = r*np.cos(theta)
+	x_circ[1,:] = r*np.sin(theta)
+	x_circ = (x_circ.T + O).T
+	return x_circ
 #Generating points on an ellipse
 def ellipse_gen(a,b):
 	len = 50

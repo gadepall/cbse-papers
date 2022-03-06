@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.19)  4 MAR 2022 19:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.19)  6 MAR 2022 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1045,75 +1045,96 @@ Package pdftex.def Info: figs/matrix-10-16.pdf  used on input line 1311.
  [11 <./figs/matrix-10-15.pdf>]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10> on input line 1333.
-<Fig8.png, id=818, 343.85306pt x 160.51547pt>
-File: Fig8.png Graphic file (type png)
-<use Fig8.png>
-Package pdftex.def Info: Fig8.png  used on input line 1385.
-(pdftex.def)             Requested size: 126.0pt x 58.81665pt.
 
-(./tables/cbse-2020-table-pgm.tex) [12 <./figs/matrix-10-16.pdf> <./Fig8.png>]
-<Fig1.png, id=881, 142.25778pt x 213.00632pt>
+
+LaTeX Warning: Reference `fig:matrix-10-17.pdf' on page 12 undefined on input l
+ine 1367.
+
+<figs/matrix-10-17.pdf, id=817, 462.52798pt x 346.89601pt>
+File: figs/matrix-10-17.pdf Graphic file (type pdf)
+<use figs/matrix-10-17.pdf>
+Package pdftex.def Info: figs/matrix-10-17.pdf  used on input line 1370.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+(./tables/cbse-2020-table-pgm.tex)
+Underfull \hbox (badness 1371) in paragraph at lines 1391--1400
+\OT1/ptm/m/n/12 For con-struc-tion, the in-put pa-ram-e-ters are
+ []
+
+[12 <./figs/matrix-10-16.pdf> <./figs/matrix-10-17.pdf>]
+<Fig1.png, id=903, 142.25778pt x 213.00632pt>
 File: Fig1.png Graphic file (type png)
 <use Fig1.png>
-Package pdftex.def Info: Fig1.png  used on input line 1424.
+Package pdftex.def Info: Fig1.png  used on input line 1427.
 (pdftex.def)             Requested size: 126.0pt x 188.67145pt.
-<Fig2.png, id=883, 264.73642pt x 133.88968pt>
+
+Underfull \vbox (badness 1292) has occurred while \output is active []
+
+<Fig2.png, id=905, 264.73642pt x 133.88968pt>
 File: Fig2.png Graphic file (type png)
 <use Fig2.png>
-Package pdftex.def Info: Fig2.png  used on input line 1449.
+Package pdftex.def Info: Fig2.png  used on input line 1452.
 (pdftex.def)             Requested size: 126.0pt x 63.72287pt.
-<Fig3.png, id=885, 276.9082pt x 168.12285pt>
+<Fig3.png, id=907, 276.9082pt x 168.12285pt>
 File: Fig3.png Graphic file (type png)
 <use Fig3.png>
-Package pdftex.def Info: Fig3.png  used on input line 1465.
+Package pdftex.def Info: Fig3.png  used on input line 1468.
 (pdftex.def)             Requested size: 126.0pt x 76.49857pt.
-<Fig9.png, id=887, 454.92064pt x 183.33759pt>
+<Fig9.png, id=909, 454.92064pt x 183.33759pt>
 File: Fig9.png Graphic file (type png)
 <use Fig9.png>
-Package pdftex.def Info: Fig9.png  used on input line 1485.
+Package pdftex.def Info: Fig9.png  used on input line 1488.
 (pdftex.def)             Requested size: 126.0pt x 50.77747pt.
 
-[13 <./Fig1.png> <./Fig2.png> <./Fig3.png> <./Fig9.png>]
-Overfull \hbox (4.61243pt too wide) in paragraph at lines 1501--1513
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 <./Fig1.png> <./Fig2.png> <./Fig3.png>]
+Overfull \hbox (4.61243pt too wide) in paragraph at lines 1504--1516
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1501--1513
+Underfull \hbox (badness 10000) in paragraph at lines 1504--1516
 
  []
 
 
-Overfull \hbox (8.03238pt too wide) in paragraph at lines 1513--1524
+Overfull \hbox (8.03238pt too wide) in paragraph at lines 1516--1527
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1524--1525
+Underfull \hbox (badness 10000) in paragraph at lines 1527--1528
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1526--1527
+Underfull \hbox (badness 10000) in paragraph at lines 1529--1530
 
  []
 
 
-Overfull \hbox (21.64357pt too wide) in paragraph at lines 1527--1539
+Overfull \hbox (21.64357pt too wide) in paragraph at lines 1530--1542
 []
  []
 
 [14
 
-] (./main.aux)
+ <./Fig9.png>] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 640B00132C91580C8DB83A8F282E8D51;680.
  ) 
 Here is how much of TeX's memory you used:
- 24671 strings out of 478353
- 447834 string characters out of 5854635
+ 24672 strings out of 478353
+ 447966 string characters out of 5854635
  751155 words of memory out of 5000000
- 41960 multiletter control sequences out of 15000+600000
+ 41961 multiletter control sequences out of 15000+600000
  451280 words of font info for 133 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  100i,20n,104p,496b,878s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1137,10 +1158,10 @@ y8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf
 -dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/t
 imes/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (14 pages, 755478 bytes).
+Output written on main.pdf (14 pages, 689958 bytes).
 PDF statistics:
- 1110 PDF objects out of 1200 (max. 8388607)
- 753 compressed objects within 8 object streams
+ 1140 PDF objects out of 1200 (max. 8388607)
+ 761 compressed objects within 8 object streams
  357 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
