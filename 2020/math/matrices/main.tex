@@ -593,6 +593,25 @@ the inverse is given by
 	\vec{x} = \vec{A} + \lambda \vec{m}
 \end{align}
 		where $\vec{m}$ is the direction vector of the line and $\vec{A}$ is any point on the line.
+  \item Let $\vec{A}$ and $\vec{B}$ be two points on a straight line and let $\vec{P}= \myvec{p_1\\p_2}$ be any point on it. If $p_2$ is known, then 
+  \begin{align}
+	  \vec{P}  &=	  \vec{A} + \frac{p_2 -\vec{e}_2^{\top}  \vec{A} }{\vec{e}_2^{\top}\brak{\vec{B} -\vec{A} }}\brak{\vec{B} -\vec{A} }
+	  \label{eq:line-3pt}
+  \end{align}
+  \solution The equation of the line can be expressed in parametric from as 
+  \begin{align}
+	  \vec{x}  &=	  \vec{A} + \lambda \brak{\vec{B} -\vec{A} }
+	  \\
+	  \implies 
+	  \vec{P}  &=	  \vec{A} + \lambda \brak{\vec{B} -\vec{A} }
+	  \\
+	  \implies 	   \vec{e}_2^{\top}\vec{P}  &=	\vec{e}_2^{\top}  \vec{A} + \lambda \vec{e}_2^{\top}\brak{\vec{B} -\vec{A} }
+	  \\
+	 \implies p_2 &=\vec{e}_2^{\top}  \vec{A} + \lambda \vec{e}_2^{\top}\brak{\vec{B} -\vec{A} }
+	 \\
+	  \text{or, } \lambda &= \frac{p_2 -\vec{e}_2^{\top}  \vec{A} }{\vec{e}_2^{\top}\brak{\vec{B} -\vec{A} }}
+  \end{align}
+	  yielding \eqref{eq:line-3pt}.
 	\item The distance from a point $\vec{P}$ to the line  in 
 	\eqref{eq:normal_line}
 	is given by 

@@ -8,10 +8,10 @@
 \contentsline {section}{\numberline {2}Linear Forms}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Two Dimensions}{3}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Three Dimensions}{4}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Quadratic Forms}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Conic Sections}{6}{subsection.3.1}%
+\contentsline {section}{\numberline {3}Quadratic Forms}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Conic Sections}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Conic Parameters}{7}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Tangent and Normal}{9}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Pair of Straight Lines}{10}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.4}Pair of Straight Lines}{11}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Latus Rectum}{11}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Intersection of Conics}{12}{subsection.3.6}%

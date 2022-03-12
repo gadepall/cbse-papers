@@ -1513,9 +1513,12 @@ Table	  \ref{table:matrix-10-20}
 			    \pr{Y = 0 | X = 1} = \frac{6}{20} = \frac{3}{10}
 		    \end{align}
     \end{enumerate}
-        \item For the following data, draw a 'less than' ogive and hence find the median of the distribution.\\
-     \vspace{2mm}\\
-     \scalebox{0.6}{
+        \item For the following data, in Table 
+			\label{table:prob-10-2}, draw a 'less than' ogive and hence find the median of the distribution.
+		\begin{table}[!hb]
+			\resizebox{\columnwidth}{!}{
+
+%			\scalebox{0.6}{
     \begin{tabular}{|l|c|c|c|c|c|c|c|}
         \hline
         Age & 0-10 & 10-20 & 20-30 & 30-40 & 40-50 & 50-60 & 60-70  \\
@@ -1524,7 +1527,57 @@ Table	  \ref{table:matrix-10-20}
         \hline
     \end{tabular}
     }
-    \vspace{2mm}\\
+			\caption{}
+			\label{table:prob-10-2}
+		\end{table}
+		\solution  The less than ogive graph is available in Fig. 
+	  \ref{fig:prob-10-2.pdf}.  Let the age data be represented as
+		\begin{align}
+			\vec{a} = \myvec{0 \\ 10 \\ \vdots \\ 70}
+		\end{align}
+		and the people data be 
+		\begin{align}
+			\vec{b} = \myvec{5 \\ 15 \\ \vdots \\ 9}
+		\end{align}
+		The  cumulative frequency data is then obtained as 
+		\begin{align}
+			\vec{c} = \vec{P} \vec{b}
+		\end{align}
+		where 
+		\begin{align}
+			\vec{P} =\myvec{
+				1 & 0 & 0 &\cdots & 0
+			\\
+				1 & 1 &  0 & \cdots & 0
+			\\
+				1 & 1 & 1 &\cdots & 0
+			\\
+			\vdots & 
+			\vdots & 
+			\vdots & 
+			\vdots & 
+			\vdots  
+			\\
+				1 & 1 & 1 &\cdots & 1 
+			\\
+			}
+		\end{align}
+		If $n$ be the data size,  the median is obtained as 
+		\begin{align}
+			\vec{e}_1^{\top}\sbrak{\vec{A}_i + \frac{\frac{c_n}{2} -\vec{e}_2^{\top}  \vec{A}_i }{\vec{e}_2^{\top}\brak{\vec{A}_{i+1} -\vec{A}_i }}\brak{\vec{A}_{i+1} -\vec{A}_i }}
+		\end{align}
+		where
+		\begin{align}
+			\vec{A}_k = \myvec{a_k \\ c_k},
+			c_i < \frac{c_n}{2} < c_{i+1}
+		\end{align}
+
+  \begin{figure}
+	  \centering 
+	  \includegraphics[width=\columnwidth]{figs/prob-10-2.pdf}
+	  \caption{}
+	  \label{fig:prob-10-2.pdf}
+	  \end{figure}
     \item The distribution given below shows the number of wickets taken by bowlers in one-day cricket matches. Find the mean and the median of the number of wickets. Find the mean and the median of the number of wickets taken.\\
      \vspace{2mm}\\
      \scalebox{0.6}{

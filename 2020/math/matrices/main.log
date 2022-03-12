@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.19)  2 MAR 2022 11:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.4)  11 MAR 2022 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -111,28 +111,23 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 ) (/usr/share/texmf-dist/tex/latex/was/gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(/home/user/texmf/tex/latex/tmeslatex/amssymb.sty
-Package: amssymb 2002/01/22 v2.2d
+(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/home/user/texmf/tex/latex/tmeslatex/amsfonts.sty
-Package: amsfonts 2001/10/25 v2.2f
+(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks17
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 123.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/home/user/texmf/tex/latex/tmeslatex/amsmath.sty
-Package: amsmath 2000/07/18 v2.13 AMS math features
+(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip50
 
 For additional information on amsmath, use the `?' option.
-LaTeX Font Info:    Trying to load font information for OMX+cmex on input line 
-126.
-(/usr/share/texmf-dist/tex/latex/base/omxcmex.fd
-File: omxcmex.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
@@ -141,63 +136,28 @@ File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks18
 \ex@=\dimen162
 ))
-(/home/user/texmf/tex/latex/tmeslatex/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
+(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen163
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
 \inf@bad=\count198
-LaTeX Info: Redefining \tmspace on input line 145.
-LaTeX Info: Redefining \frac on input line 211.
+LaTeX Info: Redefining \frac on input line 234.
 \uproot@=\count199
 \leftroot@=\count266
-LaTeX Info: Redefining \overline on input line 307.
+LaTeX Info: Redefining \overline on input line 399.
 \classnum@=\count267
 \DOTSCASE@=\count268
-LaTeX Info: Redefining \ldots on input line 379.
-LaTeX Info: Redefining \dots on input line 382.
-LaTeX Info: Redefining \cdots on input line 467.
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
 \Mathstrutbox@=\box52
 \strutbox@=\box53
 \big@size=\dimen164
-LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-
-
-Package amsmath Warning: Unable to redefine math accent \hat.
-
-
-Package amsmath Warning: Unable to redefine math accent \check.
-
-
-Package amsmath Warning: Unable to redefine math accent \tilde.
-
-
-Package amsmath Warning: Unable to redefine math accent \acute.
-
-
-Package amsmath Warning: Unable to redefine math accent \grave.
-
-
-Package amsmath Warning: Unable to redefine math accent \dot.
-
-
-Package amsmath Warning: Unable to redefine math accent \ddot.
-
-
-Package amsmath Warning: Unable to redefine math accent \breve.
-
-
-Package amsmath Warning: Unable to redefine math accent \bar.
-
-
-Package amsmath Warning: Unable to redefine math accent \vec.
-
-
-Package amsmath Warning: Unable to redefine math accent \mathring.
-
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count269
 \c@MaxMatrixCols=\count270
 \dotsspace@=\muskip16
@@ -218,9 +178,10 @@ Package amsmath Warning: Unable to redefine math accent \mathring.
 \multlinegap=\skip51
 \multlinetaggap=\skip52
 \mathdisplay@stack=\toks22
-LaTeX Info: Redefining \[ on input line 2666.
-LaTeX Info: Redefining \] on input line 2667.
-) (/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+)
+(/usr/share/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks23
 \thm@bodyfont=\toks24
@@ -300,13 +261,6 @@ LaTeX Info: Redefining \addtolength on input line 81.
 (/usr/share/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-
-LaTeX Warning: You have requested, on input line 117, version
-               `2016/11/05' of package amsmath,
-               but only version
-               `2000/07/18 v2.13 AMS math features'
-               is available.
-
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
@@ -322,7 +276,8 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \l_MT_below_shortintertext_sep=\dimen181
 \xmathstrut@box=\box60
 \xmathstrut@dim=\dimen182
-) (/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+)
+(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
@@ -341,8 +296,8 @@ Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 
 (/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(/home/user/texmf/tex/latex/tmeslatex/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
@@ -877,12 +832,6 @@ LaTeX Info: Redefining \nameref on input line 90.
 \c@example=\count342
 \c@rem=\count343
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 250.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14> on input line 250.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.79996> on input line 250.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 250.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 250
 .
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -893,14 +842,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 250
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./main.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
-)
+) (./main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -933,73 +875,98 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 449.
 
-[2] [3]
-Underfull \hbox (badness 6893) in paragraph at lines 865--871
+[2] [3] [4]
+Underfull \hbox (badness 6893) in paragraph at lines 884--890
 \OT1/ptm/m/n/12 yielding [] af-ter sub-sti-tut-ing from
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 871--875
+Underfull \hbox (badness 2913) in paragraph at lines 890--894
 []\OT1/ptm/m/n/12 The dis-tance be-tween the par-al-lel planes
  []
 
-[4] [5] [6] [7]
-Underfull \hbox (badness 5460) in paragraph at lines 1392--1418
+[5] [6]
+Overfull \hbox (0.54396pt too wide) detected at line 1160
+[]
+ []
+
+[7]
+Overfull \hbox (15.7821pt too wide) detected at line 1394
+[]
+ []
+
+
+Underfull \hbox (badness 5460) in paragraph at lines 1411--1437
 []\OT1/ptm/m/n/12 The ec-cen-tric-ity, di-rec-tri-ces and foci of
  []
 
-[8]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 1548.
- [9]
-Underfull \hbox (badness 10000) in paragraph at lines 1666--1671
+[8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 1685--1690
 \OT1/ptm/m/n/12 Substituting [] in [] yields
  []
 
 
-Underfull \hbox (badness 7522) in paragraph at lines 1773--1779
-\OT1/ptm/m/n/12 from which [] is ob-tained us-ing
+Overfull \hbox (4.24303pt too wide) detected at line 1733
+[]
  []
 
 [10]
-Underfull \hbox (badness 10000) detected at line 1882
- []$[]  [] []$ []  
+Underfull \hbox (badness 7522) in paragraph at lines 1792--1798
+\OT1/ptm/m/n/12 from which [] is ob-tained us-ing
  []
 
-[11] [12] (./main.aux)
+
+Overfull \hbox (8.8159pt too wide) detected at line 1901
+ []$[]  [] []$ [][][]  
+ []
+
+[11]
+Overfull \hbox (6.388pt too wide) detected at line 1990
+[]
+ []
+
+[12] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 51BC5A0941FC7C8E09254A5F870AE292;2342.
  ) 
 Here is how much of TeX's memory you used:
- 24103 strings out of 478353
- 437630 string characters out of 5854635
- 753921 words of memory out of 5000000
- 41440 multiletter control sequences out of 15000+600000
- 448014 words of font info for 122 fonts, out of 8000000 for 9000
+ 24143 strings out of 478353
+ 438132 string characters out of 5854636
+ 754588 words of memory out of 5000000
+ 41473 multiletter control sequences out of 15000+600000
+ 449590 words of font info for 129 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 100i,26n,104p,496b,603s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmbx6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/ty
-pe1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.p
-fb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-di
-st/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (12 pages, 274845 bytes).
+ 100i,26n,104p,496b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{equation.10.2} has been referenced but does not e
+xist, replaced by a fixed one
+
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.p
+fb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-d
+ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/tim
+es/utmri8a.pfb>
+Output written on main.pdf (12 pages, 292117 bytes).
 PDF statistics:
- 869 PDF objects out of 1000 (max. 8388607)
- 784 compressed objects within 8 object streams
- 371 named destinations out of 1000 (max. 500000)
+ 891 PDF objects out of 1000 (max. 8388607)
+ 801 compressed objects within 9 object streams
+ 379 named destinations out of 1000 (max. 500000)
  149 words of extra memory for PDF output out of 10000 (max. 10000000)
 
