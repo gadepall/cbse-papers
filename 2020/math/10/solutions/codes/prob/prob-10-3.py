@@ -1,6 +1,5 @@
 #Code by GVV Sharma (works on termux)
-#Started on March 7, 2022
-#Completed on March 13, 2022
+# March 13, 2022
 #License
 #https://www.gnu.org/licenses/gpl-3.0.en.html
 #To draw a less than ogive for the given data
@@ -13,6 +12,7 @@ import matplotlib.pyplot as plt
 from numpy import linalg as LA
 from statistics import median
 import pandas as pd
+from scipy.ndimage import shift
 
 import sys                                          #for path to external scripts
 sys.path.insert(0,'/storage/emulated/0/github/cbse-papers/CoordGeo')         #path to my scripts
@@ -34,10 +34,29 @@ e2 = I[0:,1]
 
 
 #Input parameters from excel file
-df= pd.read_excel('/storage/emulated/0/github/cbse-papers/2020/math/10/solutions/tables/prob-10-2.xlsx')
+df= pd.read_excel('/storage/emulated/0/github/cbse-papers/2020/math/10/solutions/tables/prob-10-3.xlsx')
 print(df)
 dst = df.to_numpy()[:,1:]
-print(dst)
+
+
+#Data cleaning for finding the mean
+temp = dst[0].astype(float)
+temp1 = shift(temp, 1, cval=np.NAN)
+temp2 = (temp+temp1)/2
+
+#Class mark
+clmark = temp2[1:]
+
+#Frequency
+nbowl= dst[1].astype(float)[1:]
+
+#Mean
+mean = clmark@nbowl/np.sum(nbowl)
+
+
+print(clmark,nbowl)
+print(mean)
+
 nvalues = np.size(dst[0])-1
 
 #Creating numpy matrix of the Age and cumulative frequency of number of people
@@ -72,8 +91,8 @@ for i, txt in enumerate(vert_labels):
 
 
 #if using termux
-plt.savefig('/storage/emulated/0/github/cbse-papers/2020/math/10/solutions/figs/prob-10-2.pdf')
-subprocess.run(shlex.split("termux-open /storage/emulated/0/github/cbse-papers/2020/math/10/solutions/figs/prob-10-2.pdf"))
+plt.savefig('/storage/emulated/0/github/cbse-papers/2020/math/10/solutions/figs/prob-10-3.pdf')
+subprocess.run(shlex.split("termux-open /storage/emulated/0/github/cbse-papers/2020/math/10/solutions/figs/prob-10-3.pdf"))
 
 #else
 #plt.show()
