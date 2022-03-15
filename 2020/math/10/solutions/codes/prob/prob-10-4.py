@@ -63,12 +63,19 @@ nvalues = np.size(dst[0])-1
 #A = np.block([[dst[0]],[np.cumsum(dst[1])]])
 A = np.block([[dst[0]],[dst[1]]])
 Amax = np.amax(A[1])
-print(Amax, A)
 
 #Locating the lower index for the mode class
 #imed = np.searchsorted(A[1],Amax , side='right', sorter=None)-1
 imed = np.where(A[1]==Amax)
+imed = imed[0]
 #print(A[1][imed])
+P = np.array([A[0,imed],A[1,imed]])
+Q = np.array([A[0,imed],A[1,imed-1]])
+#R = np.array([A[0,imed+1],A[1,imed]])
+#S = np.array([A[0,imed+1],A[0,imed+1]])
+print(Amax, A)
+#print(P,Q,R,S)
+print(P,Q)
 
 #Computing the median point
 #M = A[:,imed]+ (A[1,nvalues]/2-e2@A[:,imed])/(e2@(A[:,imed+1]-A[:,imed]))*(A[:,imed+1]-A[:,imed])
