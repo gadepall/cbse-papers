@@ -66,7 +66,7 @@ n2 = omat@(R-S)
 #Computing the mode
 M = line_intersect(n1.T,P,n2.T,R)
 Mx = np.array([M[0],0])
-print(P,Q,R,S,M)
+print(Mx)
 
 
 #Generating PQ and RS
@@ -78,7 +78,7 @@ xM = line_gen(M,Mx)
 
 
 #Plotting the bar graph for the data
-plt.bar(A[0,:]-5,A[1,:],width=10)
+plt.bar(A[0,:],A[1,:],width=10)
 
 #Plotting the lines PQ and RS
 plt.plot(xPQ[0,:],xPQ[1,:],color='red')#,label='$Diameter$')

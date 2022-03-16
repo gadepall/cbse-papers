@@ -40,7 +40,7 @@ def line_dir_pt(m,A,k1,k2):
 #Intersection of two lines
 def line_intersect(n1,A1,n2,A2):
   N=np.vstack((n1,n2))
-#  print(N)
+  print(type(N))
   p = np.zeros(2)
   p[0] = n1@A1
   p[1] = n2@A2
