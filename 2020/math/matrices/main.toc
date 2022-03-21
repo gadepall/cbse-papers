@@ -11,7 +11,8 @@
 \contentsline {section}{\numberline {3}Quadratic Forms}{7}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Conic Sections}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Conic Parameters}{7}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Tangent and Normal}{9}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.3}Tangent and Normal}{10}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Pair of Straight Lines}{11}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Latus Rectum}{11}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Intersection of Conics}{12}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.5}Latus Rectum}{12}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Intersection of Conics}{13}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Miscellaneous}{13}{subsection.3.7}%

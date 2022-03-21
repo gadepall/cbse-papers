@@ -101,12 +101,19 @@ columns=fullflexible
 \author{G V V Sharma$^{*}$
 	\thanks{}
 }
+% make the title area
 \maketitle
+
 \newpage
+
+\tableofcontents
+
 \bigskip
+
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 \renewcommand{\theequation}{\theenumi}
+
 \section{Matrices}
 \begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
 \numberwithin{equation}{enumi}
@@ -185,29 +192,28 @@ the given plane contains the given line.
 	  \label{eq:equal_incline_unit_ans}
   \end{align}
 \item Find the angle between unit vectors $\overrightarrow{a}$ and $\overrightarrow{b}$ so that $\sqrt{3}$ $\overrightarrow{a}$ - $\overrightarrow{b}$ is also a unit vector.\\
-	\solution From the given information, 
+	\solution 
+	From the given information, the coordinate vector  is 
   \begin{align}
-	  \norm{	\sqrt{3}\vec{a} - \vec{b}} &= 1
-	  \\
-	  \implies \norm{	\sqrt{3}\vec{a} - \vec{b}}^2 &= 1
-	  \label{eq:norm_unit}
+	  \vec{x} = \myvec{\sqrt{3} \\ -1}
+			\label{eq:misc-x}
   \end{align}
-  which can be expressed as 
+  The angle between the vectors is then given by 
+		\begin{align}
+	\cos \theta
+			= \frac{1 - \norm{\vec{x}}^2}{\vec{x}^{\top}\vec{R}\vec{x}}
+			\label{eq:misc-c-ellipse-d-rho-final}
+		\end{align}
+		where 
+		\begin{align}
+			\vec{R}	&= \myvec{0 & 1 \\ 1 & 0}.
+		\end{align}
+		By substituting from 
+			\eqref{eq:misc-x}
+			in 
+			\eqref{eq:misc-c-ellipse-d-rho-final}
   \begin{align}
-	  \brak{	\sqrt{3}\vec{a} - \vec{b}}^{\top} \brak{	\sqrt{3}\vec{a} - \vec{b}}&= 1
-	  \\
-	  \implies  3 \norm{\vec{a}}^2  + \norm{\vec{b}}^2 - 2 \sqrt{3} \vec{a}^{\top}\vec{b} &= 1
-	  \label{eq:norm_unit_mid}
-  \end{align}
-  and simplified to obtain 
-  \begin{align}
-	\vec{a}^{\top}\vec{b}  =  \frac{\sqrt{3}}{2} 
-	  \label{eq:norm_unit_mid_angle}
-  \end{align}
-  Thus the desired angle  is 
-  \begin{align}
-\cos^{-1}   \frac{\sqrt{3}}{2} = 30 \degree
-	  \label{eq:norm_unit_mid_angle_ans}
+\cos \theta=   \frac{\sqrt{3}}{2} \implies \theta = 30 \degree
   \end{align}
 \item If $\vec{A}=\myvec{-3 & 2 \\ 1 & -1} $ and $ \vec{I}=\myvec{1 & 0 \\ 0 & 1}$, Find scalar k so that $\vec{A}^2 + \vec{I} = k\vec{A}$.\\
 	\solution Using the Cayley-Hamilton theorem, 
@@ -626,6 +632,13 @@ Thus the intersection of the parabola with the circle above the $x$-axis are the
 	\vec{0}, \myvec{4 \\ 4}
 \end{align}
 From Fig. 
+	\ref{fig:matrix-12-15},
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\columnwidth]{figs/matrix-12-15.pdf}
+	\caption{}
+	\label{fig:matrix-12-15}
+\end{figure}
 the area covered by the parabola is given by 
 \begin{align}
 	\int_{0}^{4}2\sqrt{x} &= \frac{4}{3}\sbrak{x^{\frac{3}{2}}}_{0}^4{}	
@@ -637,8 +650,11 @@ The area covered by the circle is
 	\frac{\pi r^2}{4} = 4\pi
 \end{align}
 Thus, the desired area is 
+the shaded region in Fig. 
+	\ref{fig:matrix-12-15},
+	and given by 
 \begin{align}
- 4\pi+ \frac{32}{3}
+ 4\pi - \frac{32}{3}
 \end{align}
 
 
@@ -683,6 +699,15 @@ Thus, the desired area is
 \begin{align}
 	\vec{A}^{-1} = \frac{1}{51}\myvec{ 28 & -2 & -17\\  13 & 10 & -17\\  -19 & 5 & 17}
     \end{align}
+    Thus, letting 
+\begin{align}
+	\vec{b} &= \myvec{ 5 \\ 2 \\ -1},
+	\\
+	\vec{x} &= \vec{A}^{-1}\vec{b} = \frac{1}{51}\myvec{ 28 & -2 & -17\\  13 & 10 & -17\\  -19 & 5 & 17}\myvec{ 5 \\ 2 \\ -1}
+	\\
+	&= \myvec{ 3 \\ 2 \\ -2}
+    \end{align}
+    is the desired solution.
     
 \item If x,y,z are different and 
 \begin{align}
@@ -790,15 +815,17 @@ v\,du
 	 \\
 	 = \int \frac{\sec^2\theta -1 }{2}\, d\theta
 	 \\
-	 =  \frac{\tan \theta - 1}{2}
+	 =  \frac{\tan \theta - \theta}{2}
  \end{multline}
  and
  \begin{multline} 
  \int_{0}^{\frac{\pi}{2}} \sin2x \tan^{-1}  \left(\sin x\right)\, dx  
  \\
-	 = \sbrak{\theta \frac{\tan^2\theta}{2} -  \frac{\tan \theta - 1}{2} }_{0}^{\frac{\pi}{4}}
+	 = 22\sbrak{\theta \frac{\tan^2\theta}{2} -  \frac{\tan \theta - \theta}{2} }_{0}^{\frac{\pi}{4}}
 	 \\
-	 = \frac{\pi}{8} - \frac{1}{2}
+	 = 2\sbrak{\frac{\pi}{8} - \frac{1}{2}\brak{1-\frac{\pi}{4}}}
+	 \\
+	 =\frac{\pi}{2}-1
  \end{multline}
 
 		 
@@ -885,17 +912,17 @@ upon substituting from \eqref{eq:tanlog} and simplifying.
 		\begin{align}
 			\sin^{-1} \frac{2}{\sqrt 5} + \cos^{-1} x &= \frac{\pi}{2}
 			\\
-			\implies \frac{\pi}{2} -\cos^{-1}x &= - \sin^{-1} \frac{2}{\sqrt 5} 
+			\implies \frac{\pi}{2} -\cos^{-1}x &=  \sin^{-1} \frac{2}{\sqrt 5} 
 			\\
-			\text{or, }\sin^{-1}x &=  \sin^{-1} \brak{-\frac{2}{\sqrt 5}   }
+			\text{or, }\sin^{-1}x &=  \sin^{-1} \brak{\frac{2}{\sqrt 5}   }
 			\\
-			\implies x = -\frac{2}{\sqrt 5}   
+			\implies x = \frac{2}{\sqrt 5}   
 		\end{align}
 \item The interval in which the function $f$ given by $ f({x}) = x^2e^{-x} $ is strictly increasing,  is
 
 \begin{enumerate}
-    \item $\left(\infty , -\infty \right)$
-    \item $\left(\infty , 0 \right)$
+    \item $\left(-\infty , \infty \right)$
+    \item $\left(-\infty , 0 \right)$
     \item $\left(2 , \infty \right)$
     \item $\left(0 , 2 \right)$
 \end{enumerate}
@@ -910,9 +937,28 @@ upon substituting from \eqref{eq:tanlog} and simplifying.
 			f^{\prime}(x) &> 0
 			\\
 			\implies x\brak{2 - x} &> 0
-			\\
-			\text{or, } x &\in \brak{0,2}
 		\end{align}
+		The above expression results in two possibilities
+		\begin{align}
+			x > 0, \brak{2 - x} > 0
+			\\
+			\implies 0 <x < 2
+		\end{align}
+	and 
+		\begin{align}
+			x < 0, \brak{2 - x} < 0
+			\\
+			\implies x > 0, x < 2
+		\end{align}
+		which is impossible.
+This can be seen in Fig. 
+	\ref{fig:cont-12-8},
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\columnwidth]{figs/cont-12-8.pdf}
+	\caption{}
+	\label{fig:cont-12-8}
+\end{figure}
 \item The function $ f\left({x} \right) = \frac{x-1}{x\left(x^2 -1 \right)} $ is discontinuous at
 
 \begin{enumerate}
@@ -927,6 +973,14 @@ upon substituting from \eqref{eq:tanlog} and simplifying.
 		\end{align}
 Hence, the denominator of the given function vanishes at $x = 0, 1, -1$,    
 which are the points of discontinuity.  However, there is a removable discontinuity at $x = 1$.
+This can be seen in Fig. 
+	\ref{fig:cont-12-9},
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\columnwidth]{figs/cont-12-9.pdf}
+	\caption{}
+	\label{fig:cont-12-9}
+\end{figure}
 \item The function  $ f : R \rightarrow \left[-1,1 \right] $ defined by $ f\left(x \right) = \cos x $ is
 
 \begin{enumerate}
@@ -942,6 +996,14 @@ which are the points of discontinuity.  However, there is a removable discontinu
 			\cos\brak{2\pi} = 1
 		\end{align}
 		Hence, $f(x)$ is not one to one.  However, it  is onto.
+This can be seen in Fig. 
+	\ref{fig:cont-12-10},
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\columnwidth]{figs/cont-12-10.pdf}
+	\caption{}
+	\label{fig:cont-12-10}
+\end{figure}
 
 
 
@@ -957,6 +1019,14 @@ which are the points of discontinuity.  However, there is a removable discontinu
 \item \begin{enumerate} \item The range of the principle value branch of the function $ y= \sec^{-1}x $ is ----------------
 			\\
 			\solution The range is $\sbrak{0,\pi} - \cbrak{\frac{\pi}{2}}$.
+This can be seen in Fig. 
+	\ref{fig:cont-12-12},
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\columnwidth]{figs/cont-12-12.pdf}
+	\caption{}
+	\label{fig:cont-12-12}
+\end{figure}
     
 \item The principal value of $\cos^{-1} \left(\frac{-1}{2}\right)$ is --------------\\
 	\solution Since
@@ -973,6 +1043,14 @@ which are the points of discontinuity.  However, there is a removable discontinu
          \int_{\frac{-\pi}{2}}^{\frac{\pi}{2}} x \cos^2 x dx \nonumber
 	\end{align}  
 	\solution $\because$ the integrand is odd, the given integral is 0. 
+This can be seen in Fig. 
+	\ref{fig:cont-12-13},
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\columnwidth]{figs/cont-12-13.pdf}
+	\caption{}
+	\label{fig:cont-12-13}
+\end{figure}
 
 
 \item  Find the value of k, so that the function 
@@ -988,6 +1066,14 @@ is continuous at x=1. \\
 		\\
 		\text{or, } k &= -3
  \end{align} 
+This can be seen in Fig. 
+	\ref{fig:cont-12-14},
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=\columnwidth]{figs/cont-12-14.pdf}
+	\caption{}
+	\label{fig:cont-12-14}
+\end{figure}
 \item  Find the integrating factor of the differential equation 
 	\begin{align} 
 	 x\frac{dy}{dx} = 2x^2 +y 
@@ -1227,8 +1313,21 @@ which can be expressed in vector form as
 	P = \max_{\vec{x}}\myvec{30 &20}\vec{x}
 	\\
 	\myvec{1 &2 \\ 3 & 1} \vec{x}\preceq \myvec{28 \\ 24}
+	\\
+	\vec{x} \succeq \vec{0}
 \end{align}
-The feasible region is a quadrilateral with vertices
+		\begin{enumerate}
+			\item {\em Graphical solution:} 
+
+From Fig. 
+	\ref{fig:opt-12-2},
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=\columnwidth]{figs/opt-12-2.pdf}
+	\caption{}
+	\label{fig:opt-12-2}
+\end{figure}
+				the feasible region is a quadrilateral with vertices
 \begin{align}
 \myvec{0 \\ 0},
 \myvec{8 \\ 0},
@@ -1243,6 +1342,61 @@ with respective profit
 	\myvec{30 &20}\myvec{4 \\ 12} &= 360
 \end{align}
 Thus, the manufacturer should produce 4 pedestal lamps and 12 wooden shades daily.
+\item {\em Lagrange Multipliers: } The given problem is expressed in the form 
+\begin{align}
+	P = -\min_{\vec{x}}\myvec{30 &20}\vec{x}
+	\\
+	\myvec{1 &2 \\ 3 & 1 \\ -1 & 0 \\ 0 & -1} \vec{x}\preceq \myvec{28 \\ 24 \\0 \\ 0}
+\end{align}
+
+	The Lagrangian, defined as the linear combination of the loss function and the constraints is defined as
+	\begin{multline}
+		L\brak{\vec{x},\bm{\lambda}} =-\myvec{30 & 20}\vec{x} 
+		\\
+		+ \lambda_1\sbrak{\myvec{1 & 2}\vec{x}-28}
+		\\
+		+
+\lambda_2\sbrak{\myvec{3 & 1}\vec{x}-24}+
+\lambda_3\sbrak{\myvec{-1 & 0}\vec{x}}
+\\
++
+\lambda_4\sbrak{\myvec{0 & -1}\vec{x}}
+	\end{multline}
+	Taking the derivative
+				\begin{align}
+					{\nabla L\brak{\vec{x},\bm{\lambda}}} = 0,
+				\end{align}
+				we obtain 
+				\begin{align}
+					 \lambda_1 + 3\lambda_2 -\lambda_3 &= 30
+					\\
+					 2\lambda_1 + \lambda_2 -\lambda_4 &= 20
+					\\
+					x_1 + 2x_2 &= 28
+					\\
+					3x_1 + x_2 &= 24
+					\\
+					x_1  &= 0
+					\\
+					x_2 &= 0
+				\end{align}
+				It is obvious that $x_1=0, x_2=0$ are infeasible.  Hence, considering only $\lambda_1, \lambda_2$ as the active multipliers, the above equations can be expressed as
+				\begin{align}
+					\myvec{0 & 0 &1 & 3 
+\\
+					0 & 0 & 2 & 1
+					\\
+					1 & 2 & 0 & 0
+					\\
+					3 & 1 & 0 & 0
+					}
+					\myvec{\vec{x} \\ \bm{\lambda}} = \myvec{30\\20\\28\\24}
+					\end{align}
+					yielding the optimal solution as
+					\begin{align}
+						\myvec{\vec{x} \\ \bm{\lambda}} = \myvec{4\\12\\6\\8}
+					\end{align}
+		\end{enumerate}
  \item Amongst all open (from the top) right circular cylindrical boxes of volume $125 \pi $ $cm^3$, find the dimensions of the box which has the least surface area.\\  
 \solution Let $r$ be the radius of the cylinder and $h$ be the height.  Then the surface area is 
 		\begin{align}
@@ -1260,9 +1414,43 @@ Thus, the manufacturer should produce 4 pedestal lamps and 12 wooden shades dail
 		\begin{align}
 			S = \min_{r,h}\pi r^2 + 2\pi r h 
 			\\
-			\text{s.t} \quad \pi r^2 h =1 
+			\text{s.t} \quad \pi r^2 h =125 
 		\end{align}
-		which is a geometric programming problem that can be solved using $cvxpy$. 
+				which is a {\em disciplined geometric programming} (DGP) problem that can be solved using $cvxpy$. DGP is a subset of 
+				 {\em log-log-convex program} (LLCP). An LLCP is defined as
+
+				\begin{equation}
+\begin{split}
+\begin{array}{ll}
+\mbox{minimize} & f_0(x) \\
+\mbox{subject to} & f_i(x) \leq \tilde{f_i}, \quad i=1, \ldots, m\\
+& g_i(x) = \tilde{g_i}, \quad i=1, \ldots, p,
+\end{array}
+\end{split}
+\end{equation}
+
+where the functions $f_i$
+				are log-log convex, $\tilde{f}_i$
+ are log-log concave, and the functions $g_i$
+				and $\tilde{g}_i$
+ are log-log affine. An optimization problem with constraints of the above form in which the goal is to maximize a log-log concave function is also an LLCP.
+A function 
+				\begin{align}
+ f : D \subseteq \mathbf{R}^{n}_{++} \to \mathbf{R}
+				\end{align}
+				is said to be log-log convex if the function
+				\begin{align}
+				F(u)=\log f(e^u)
+				\end{align}
+				with domain
+				\begin{align}
+				\{u \in \mathbf{R}^n : e^u \in D\}
+				\end{align}
+				is convex (where
+$				\mathbf{R}^{n}_{++}$
+				denotes the set of positive reals and the logarithm and exponential are meant elementwise); the function $F$  is called the log-log transformation of $f$. The function $f$ is log-log concave if $F$ is concave, and it is log-log affine if $F$ is affine.
+				LLCPs are problems that become convex after the variables, objective functions, and constraint functions are replaced with their logs, an operation that we refer to as a log-log transformation. LLCPs generalize geometric programming.
+
 	\item 
 		Alternatively, from 
 			\eqref{eq:opt-box-S} and 
@@ -1289,10 +1477,20 @@ Thus, the manufacturer should produce 4 pedestal lamps and 12 wooden shades dail
 			h &= \frac{V}{\pi r^2} = 5
 		\end{align}
 		upon substituting numerical values.
+		This is verified in 
+Fig. 
+	\ref{fig:opt-12-3}.
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=\columnwidth]{figs/opt-12-3.pdf}
+	\caption{}
+	\label{fig:opt-12-3}
+\end{figure}
 	\item Using gradient descent, the update equation can be expressed as 
 		\begin{align}
-			r_{n+1} = r_n - \mu S^{\prime}(r_n)
+			r_{n+1} &= r_n - \gamma S^{\prime}(r_n)
 		\end{align}
+		where $r_0 = 2$ and $\gamma = 0.001$ are chosen by the user.  These values need to be suitably guessed for the algorithm to converge.
 
 
 \end{enumerate}

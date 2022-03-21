@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.19)  27 FEB 2022 16:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2022.1.19)  20 MAR 2022 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -993,116 +993,160 @@ LaTeX Info: Redefining \nameref on input line 40.
 \c@lemma=\count352
 \c@example=\count353
 \c@rem=\count354
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 105.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 106.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14> on input line 105.
+(Font)              <14> on input line 106.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.79996> on input line 105.
+(Font)              <9.79996> on input line 106.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 105.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 105
+(Font)              <7> on input line 106.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 106
 .
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 105
+LaTeX Font Info:    Trying to load font information for U+msb on input line 106
 .
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
+) (./main.toc)
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 115.
+(Font)              <12> on input line 122.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 115.
+(Font)              <8> on input line 122.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 115.
+(Font)              <6> on input line 122.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 2245) in paragraph at lines 269--271
+Underfull \hbox (badness 2245) in paragraph at lines 275--277
 \OT1/ptm/b/n/12 Solution: \OT1/ptm/m/n/12 The an-gle be-tween the vec-tors
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 331--333
+Underfull \hbox (badness 10000) in paragraph at lines 337--339
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 333--334
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 334--335
+Underfull \hbox (badness 10000) in paragraph at lines 340--341
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
 
  []
 
 [3] [4]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 570.
-
-Underfull \hbox (badness 10000) in paragraph at lines 661--662
-
- []
-
-[5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 879--880
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 880--881
+(Font)              <5> on input line 576.
+<figs/matrix-12-15.pdf, id=191, 462.52798pt x 346.89601pt>
+File: figs/matrix-12-15.pdf Graphic file (type pdf)
+<use figs/matrix-12-15.pdf>
+Package pdftex.def Info: figs/matrix-12-15.pdf  used on input line 638.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 677--678
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 881--882
+Underfull \vbox (badness 2573) has occurred while \output is active []
+
+ [6 <./figs/matrix-12-15.pdf>] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 906--907
 
  []
 
 
-Underfull \hbox (badness 1796) in paragraph at lines 884--885
+Underfull \hbox (badness 10000) in paragraph at lines 907--908
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 908--909
+
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 911--912
 \OT1/ptm/b/n/12 Solution: \OT1/ptm/m/n/12 Us-ing a sim-plis-tic ap-proach, $\U/
 msa/m/n/12 *
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 1103--1104
+<figs/cont-12-8.pdf, id=356, 462.52798pt x 346.89601pt>
+File: figs/cont-12-8.pdf Graphic file (type pdf)
+<use figs/cont-12-8.pdf>
+Package pdftex.def Info: figs/cont-12-8.pdf  used on input line 958.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+<figs/cont-12-9.pdf, id=358, 462.52798pt x 346.89601pt>
+File: figs/cont-12-9.pdf Graphic file (type pdf)
+<use figs/cont-12-9.pdf>
+Package pdftex.def Info: figs/cont-12-9.pdf  used on input line 980.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+<figs/cont-12-10.pdf, id=360, 462.52798pt x 346.89601pt>
+File: figs/cont-12-10.pdf Graphic file (type pdf)
+<use figs/cont-12-10.pdf>
+Package pdftex.def Info: figs/cont-12-10.pdf  used on input line 1003.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+<figs/cont-12-12.pdf, id=362, 462.52798pt x 346.89601pt>
+File: figs/cont-12-12.pdf Graphic file (type pdf)
+<use figs/cont-12-12.pdf>
+Package pdftex.def Info: figs/cont-12-12.pdf  used on input line 1026.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+ [9 <./figs/cont-12-8.pdf> <./figs/cont-12-9.pdf>]
+<figs/cont-12-13.pdf, id=437, 462.52798pt x 346.89601pt>
+File: figs/cont-12-13.pdf Graphic file (type pdf)
+<use figs/cont-12-13.pdf>
+Package pdftex.def Info: figs/cont-12-13.pdf  used on input line 1050.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+<figs/cont-12-14.pdf, id=439, 462.52798pt x 346.89601pt>
+File: figs/cont-12-14.pdf Graphic file (type pdf)
+<use figs/cont-12-14.pdf>
+Package pdftex.def Info: figs/cont-12-14.pdf  used on input line 1073.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+ [10 <./figs/cont-12-10.pdf> <./figs/cont-12-12.pdf> <./figs/cont-12-13.pdf> <.
+/figs/cont-12-14.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1104--1105
+Underfull \hbox (badness 10000) in paragraph at lines 1190--1191
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1105--1106
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1192
 []\OT1/ptm/m/n/12 Symmetric, but nei-ther re-flex-ive nor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1105--1106
+Underfull \hbox (badness 10000) in paragraph at lines 1191--1192
 
  []
 
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 1
-108.
+194.
 (/usr/share/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1108.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1194.
 
- [9] (./tables/prob-1.0
+ [11] (./tables/prob-1.0
 \gnumericTableWidth=\skip72
 \gnumericTableWidthComplete=\skip73
 \gnumericMultiRowLength=\skip74
@@ -1113,27 +1157,45 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \gnumericColC=\skip77
 )
 (./tables/prob-1.1) (./tables/prob-2.tex)
-Underfull \hbox (badness 4036) in paragraph at lines 1195--1218
+Underfull \hbox (badness 4036) in paragraph at lines 1281--1304
 []\OT1/ptm/m/n/12 A cot-tage in-dus-try man-u-fac-tures pedestal
  []
 
-[10]
-Underfull \hbox (badness 2096) in paragraph at lines 1244--1246
-\OT1/ptm/m/n/12 Thus, the man-u-fac-turer should pro-duce 4
- []
+[12]
+<figs/opt-12-2.pdf, id=623, 462.52798pt x 346.89601pt>
+File: figs/opt-12-2.pdf Graphic file (type pdf)
+<use figs/opt-12-2.pdf>
+Package pdftex.def Info: figs/opt-12-2.pdf  used on input line 1326.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
-[11] [12] (./main.aux)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13]
+<figs/opt-12-3.pdf, id=666, 462.52798pt x 346.89601pt>
+File: figs/opt-12-3.pdf Graphic file (type pdf)
+<use figs/opt-12-3.pdf>
+Package pdftex.def Info: figs/opt-12-3.pdf  used on input line 1485.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14] [15] [16
+
+
+ <./figs/opt-12-2.pdf> <./figs/opt-12-3.pdf>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 91AC72FEA27FA36AA26F6C94E80C75CD;557.
  ) 
 Here is how much of TeX's memory you used:
- 25289 strings out of 478353
- 458325 string characters out of 5854635
- 777952 words of memory out of 5000000
- 42610 multiletter control sequences out of 15000+600000
- 448669 words of font info for 129 fonts, out of 8000000 for 9000
+ 25404 strings out of 478353
+ 460553 string characters out of 5854635
+ 770165 words of memory out of 5000000
+ 42674 multiletter control sequences out of 15000+600000
+ 449805 words of font info for 130 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 84i,20n,90p,423b,861s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,20n,90p,423b,863s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmbx6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
@@ -1142,21 +1204,23 @@ mbx8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
 ist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/
-msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pf
-b></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dis
-t/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (12 pages, 282489 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share
+/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1
+/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+
+Output written on main.pdf (16 pages, 375812 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 553 compressed objects within 6 object streams
- 339 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 933 PDF objects out of 1000 (max. 8388607)
+ 710 compressed objects within 8 object streams
+ 376 named destinations out of 1000 (max. 500000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 

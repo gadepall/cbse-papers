@@ -53,11 +53,6 @@ Q = np.array([A[0,imed-1],A[1,imed-1]])
 R = np.array([A[0,imed-1],A[1,imed]])
 S = np.array([A[0,imed],A[1,imed+1]])
 
-#P = np.array(P.tolist(), dtype=float)
-#Q = np.array(Q.tolist(), dtype=float)
-#R = np.array(R.tolist(), dtype=float)
-#S = np.array(S.tolist(), dtype=float)
-
 #Finding the mode
 n1 = omat@(P-Q)
 n2 = omat@(R-S)

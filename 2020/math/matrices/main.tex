@@ -1545,6 +1545,78 @@ yielding
 %  \frac{\norm{\vec{u}}^2 - \lambda_2 f   }{2e^2\vec{u}^{\top}\vec{n}} & e = 1
 %\end{cases}
 %\end{align}
+  \item For 
+	  \begin{align}
+		  \vec{V} = \myvec{1 & \rho \\ \rho & 1}, \vec{u} = 0, f = -1
+	  \end{align}
+	  in 
+  \eqref{eq:conic_quad_form}, 
+		\begin{align}
+			\vec{P} = \frac{1}{\sqrt{2}}\myvec{1 & 1 \\ -1 & 1},
+			\vec{D} = \myvec{1+\rho & 0 \\ 0 & 1-\rho}
+		\end{align}
+		and 
+		%\begin{align}
+		%	\vec{x} = \myvec{x_1 \\ x_2}
+		%\end{align}
+		\begin{align}
+			\rho 
+			= \frac{1 - \norm{\vec{x}}^2}{\vec{x}^{\top}\vec{R}\vec{x}}
+			\label{eq:misc-c-ellipse-d-rho-final}
+		\end{align}
+		where 
+		\begin{align}
+			\vec{R}	&= \myvec{0 & 1 \\ 1 & 0}.
+		\end{align}
+
+		\solution Let 
+		\begin{align}
+			\vec{x} = \myvec{x_1 \\ x_2}
+		\end{align}
+		\begin{align}
+\vec{x}^{\top}\vec{V}\vec{x} = 1
+			\label{eq:misc-c-ellipse}
+		\end{align}
+		Since
+		\begin{align}
+			\mydet{\vec{V}} = 1-\rho^2, 
+			0 < \mydet{\vec{V}} < 1,
+		\end{align}
+\eqref{eq:misc-c-ellipse}
+		represents the equation of an ellipse.
+		Using eigenvalue decomposition, 
+		\begin{align}
+			\vec{V} = \vec{P}^{\top}\vec{D}\vec{P}
+		\end{align}
+		where 
+		Using the affine transformation, 
+		\begin{align}
+			\vec{x} = 
+			\vec{P}\vec{y}
+			\label{eq:misc-c-ellipse-affine}
+		\end{align}
+			\eqref{eq:misc-c-ellipse}
+			can be expressed as 
+		\begin{align}
+			\vec{y}^{\top}\vec{D}\vec{y} &= 1
+			\label{eq:misc-c-ellipse-d}
+			\implies y_1^2\brak{1+\rho} + y_2^2\brak{1-\rho} &= 1
+		\end{align}
+		which can be simplified to obtain 
+		\begin{align}
+			\rho &= \frac{1 - y_1^2 -  y_2^2}{y_1^2 -  y_2^2}
+			\\
+			&= \frac{1 - \norm{\vec{y}}^2}{\vec{y}^{\top}\vec{Q}\vec{y}}
+			\label{eq:misc-c-ellipse-d-rho}
+		\end{align}
+		where 
+		\begin{align}
+			\vec{Q}	&= \myvec{1 & 0 \\ 0 & -1}
+		\end{align}
+			From \eqref{eq:misc-c-ellipse-affine}, 
+			\eqref{eq:misc-c-ellipse-d-rho} can be expressed as 
+			\eqref{eq:misc-c-ellipse-d-rho-final}
+
   \end{enumerate}
 \subsection{Tangent and Normal}
 \renewcommand{\theequation}{\theenumi}
@@ -2001,6 +2073,59 @@ can be used to obtain
 to obtain the points of intersection of the conics.
 \item Note that there could be several cases to be considered, since the conics can intersect in 1 to 4 points.
 
+\end{enumerate}
+\subsection{Miscellaneous}
+\renewcommand{\theequation}{\theenumi}
+%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item  Given unit basis vectors $\vec{a}, \vec{b}$, with angle	$\theta $ between them, the locus of the coordinates of a unit vector $\vec{c}$ in the space spanned by $\vec{a}, \vec{b}$  is given by 
+			\eqref{eq:misc-c-ellipse}, with $\rho = \cos \theta $.
+\\
+%		\begin{align}
+%		\vec{V} = 	\myvec{1 & \cos \theta\\ \cos \theta & 1}, 
+%			\label{eq:misc-locus}
+%		\end{align}
+		\solution Let 
+
+		\begin{align}
+			\vec{c}& =x_1\vec{a}+ x_2\vec{b} = \myvec{\vec{a} & \vec{b}}\vec{x}
+		\end{align}
+		Then, 
+		\begin{align}
+		\norm{\vec{c}}^2 &= \vec{x}^{\top}\myvec{\vec{a}^{\top} \\ \vec{b}^{\top}}\myvec{\vec{a} & \vec{b}}\vec{x}
+\\
+			&= \vec{x}^{\top}\myvec{1 & \vec{a}^{\top} \vec{b} \\ \vec{a}^{\top}\vec{b}& 1}\vec{x}
+		\end{align}
+			which can be expressed as \eqref{eq:misc-c-ellipse},
+			%\eqref{eq:misc-locus}.
+		\begin{align}
+\because \norm{\vec{a}} = \norm{\vec{b}} = 1.
+		\end{align}
+
+%		\begin{align}
+%			\rho &= 			\cos \theta = \vec{a}^{\top} \vec{b} 
+%\\
+%			\implies \vec{x}^{\top}\vec{V}\vec{x} &= 1
+%		\end{align}
+%		where
+%		\\
+		\item Given the coordinates of $\vec{c}$, the angle $\theta$ between the  basis vectors 
+			is given by $\rho = \cos \theta$ in 
+			\eqref{eq:misc-c-ellipse-d-rho-final}.
+
+%			\label{eq:misc-c}
+%			\\
+%			&\brak
+%		\end{align}
+%		Letting  be the angle between $\vec{a}, \vec{b}$, 
+%		\begin{align}
+%			\rho &= 			\cos \theta = \vec{a}^{\top} \vec{b} 
+%\\
+%			\implies \vec{V} &= \myvec{1 & \rho \\ \rho & 1}, \abs{\rho} < 1
+%		\end{align}
+%		From 
+%			\eqref{eq:misc-c}, since $\norm{\vec{c}} = 1$, 
 \end{enumerate}
 \end{document}
 
