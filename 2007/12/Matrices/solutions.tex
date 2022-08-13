@@ -1,0 +1,302 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\raggedbottom
+\setlength{\parindent}{0pt}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{CBSE Maths Questions 2007}
+\author{Priyanka - EE21MTECH12002}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all python codes from 
+\begin{lstlisting}
+https://github.com/PeriPriyanka/cbsemathsquestions/2007/12/matrices/codes/solutions
+\end{lstlisting}
+%
+Get latex-tikz codes from 
+%
+\begin{lstlisting}
+https://github.com/PeriPriyanka/cbsemathsquestions/2007/12/matrices/solutions
+\end{lstlisting}
+
+\begin{enumerate}
+
+\item (CBSE 2007-Question 1)
+If $\vec{A} = \myvec{2&-3\\3&4}$, show that $ \vec{A}^2-6\vec{A}+17\vec{I}=0$. Hence find $\vec{A}^{-1}$. 
+\solution Consider the matrix  given in the problem statement.
+\begin{align}
+&\vec{A} = \myvec{2&-3\\3&4}&
+\end{align}
+Considering the characteristic equation:  
+\begin{align} 
+& \vert\vec{A}-\lambda\vec{I}\vert = 0  & \label{eq:0.0.2}
+\end{align}
+From \eqref{eq:0.0.2} we get,
+\begin{align}
+&\begin{vmatrix}
+  2-\lambda & -3\\ 3& 4-\lambda 
+\end{vmatrix}
+=0 \\
+&(2-\lambda)(4-\lambda)+9=0\\ 
+&\lambda^2-6\lambda+17=0 \label{eq:0.0.5} 
+\end{align}
+From the Cayley-Hamilton theorem \eqref{eq:0.0.5} can be written as
+\begin{align}
+&\vec{A}^2-6\vec{A}+17\vec{I} = 0  \label{eq:0.0.6} 
+\end{align} 
+Multiplying with $\vec{A}^{-1}$ on both sides of equation \eqref{eq:0.0.6}
+We get,
+\begin{align}
+  &\vec{A}-6\vec{I}+17\vec{A}^{-1} = 0  \\
+  &\vec{A}^{-1} = \displaystyle\frac{6\vec{I}-\vec{A}}{17} \\
+  &\vec{A}^{-1} =  \myvec{4/17 &  3/17 \\ -3/17 & 2/17 }
+\end{align}
+\item (CBSE 2007-Question 3) Using the properties of determinants, prove the following:
+\begin{center}
+$\begin{vmatrix}
+a-b-c & 2a& 2a\\ 2b& b-c-a& 2b\\2c&2c&c-a-b 
+\end{vmatrix}$
+$= (a+b+c)^3$
+\end{center}
+\solution
+ \begin{align}
+  &\begin{vmatrix}
+    a-b-c & 2a& 2a\\ 2b& b-c-a& 2b\\2c&2c&c-a-b 
+    \end{vmatrix}\\
+& \xleftrightarrow[]{ R_1 \leftarrow R_1 + R_2+R_3}  \nonumber \\
+&\begin{vmatrix} a+b+c & a+b+c& a+b+c \\ 2b& b-c-a& 2b\\2c&2c&c-a-b  \end{vmatrix}\\
+  &= (a+b+c)\begin{vmatrix} 1 & 1 & 1\\ 2b& b-c-a& 2b\\2c&2c&c-a-b  \end{vmatrix}\\
+   & \xleftrightarrow[]{ C_2 \leftarrow C_2- C_1 , C_3 \leftarrow C_3 - C_1} \nonumber \\
+   &(a+b+c)\begin{vmatrix} 1 & 0 & 0\\ 2b& a+b+c& 0\\2c&0&a+b+c \end{vmatrix}\\
+ &= (a+b+c)(a+b+c)^2  \\
+ &= (a+b+c)^3 
+  \end{align}
+\item (CBSE 2007-Question 19) Using matrices, solve the following system of equation:
+\begin{align}
+   & x+2y-3z=6  \label{eq:0.0.16}  \\
+   &  3x+2y-2z=3  \label{eq:0.0.17}\\
+   &  2x-y+z=2   \label{eq:0.0.18}
+\end{align}
+\solution
+Consider the equations given in the problem statement.
+The solution can be found by solving the above system of linear equations.\\ 
+System of linear equations are defined as 
+\begin{align}
+\vec{Ax=B} \label{eq:0.0.19}
+\end{align}
+From the equations \eqref{eq:0.0.16} ,\eqref{eq:0.0.17} and \eqref{eq:0.0.18}, 
+\begin{align}
+&\vec{A}= \myvec{1 &2 &-3\\3 & 2& -2\\2&-1&1} \\
+\medskip
+&\vec{x}= \myvec{ x\\ y\\z}\\
+\medskip
+&\vec{B}= \myvec{6\\3\\2}
+\end{align} 
+Substituting the values of $\vec{A}$, $\vec{x}$ and $\vec{B}$ in the equation \eqref{eq:0.0.19}
+We get,
+\begin{align}
+&\myvec{1&2&-3\\3&2&-2\\2&-1&1} \myvec{x\\y\\z}= \myvec{6\\3\\2}
+\end{align}
+Considering the augmented matrix 
+ \begin{align}
+& \myvec{1&2&-3&6\\3&2&-2&3\\2&-1&1&2}
+ \\
+&\xleftrightarrow[]{ R_2 \leftarrow R_2 - 3R_1 , R_3 \leftarrow R_3 - 2R_1}
+\myvec{1&2&-3&6\\0&-4&7&-15\\0&-5&7&-10}\\
+ &\xleftrightarrow[]{ R_3 \leftarrow 4R_3 - 5R_2}
+ \myvec{1&2&-3&6\\0&-4&7&-15\\0&0&-7&35}\\
+ &\xleftrightarrow[]{ R_3 \leftarrow R_3/-7}
+ \myvec{1&2&-3&6\\0&-4&7&-15\\0&0&1&-5}\\
+ &\xleftrightarrow[]{ R_2 \leftarrow R_2-7R_3}
+ \myvec{1&2&-3&6\\0&-4&0&20\\0&0&1&-5}\\
+ &\xleftrightarrow[]{ R_2 \leftarrow R_2/-4}
+ \myvec{1&2&-3&6\\0&1&0&-5\\0&0&1&-5}\\
+ &\xleftrightarrow[]{ R_1 \leftarrow R_1-2R_2,R_1 \leftarrow R_1+3R_2}
+ \myvec{1&0&-0&1\\0&1&0&-5\\0&0&1&-5}
+ \end{align}
+ \begin{align}
+&\myvec{1&0&0\\0&1&0\\0&0&1} \myvec{x\\y\\z}= \myvec{1\\-5\\-5}& \label{eq:0.0.30}
+\medskip
+\end{align}
+By solving equation \eqref{eq:0.0.30} we get,
+\begin{align}
+&x=1\\
+&y= -5\\
+&z=-5
+\end{align}
+Therefore, x=1, y= -5 and z=-5 are solutions to the given equations. 
+\bigskip
+\item (CBSE 2007-Question 24) Find the projection of $\overrightarrow{\vec{b}}+\overrightarrow{\vec{c}}$ on $\overrightarrow{\vec{a}}$ where $\overrightarrow{\vec{a}}=2\hat{\vec{i}}-2\hat{\vec{j}}+\hat{\vec{k}} , \overrightarrow{\vec{b}}=\hat{\vec{i}}+2\hat{\vec{j}}-2\hat{\vec{k}}$ and $ \overrightarrow{\vec{c}}=2\hat{\vec{i}}-\hat{\vec{j}}+4\hat{\vec{k}}$\\
+\solution Consider the given vectors,
+\begin{align}
+&\vec{A}= \myvec{2\\-2\\1}\\
+&\vec{B}=\myvec{1\\2\\-2}\\
+&\vec{C}=\myvec{2\\-1\\4}
+\end{align}
+Projection of $\vec{(B+C)}$ on $\vec{A}$ is given by 
+\begin{align}
+&\displaystyle\frac{\vec{(B+C)}^\text T\vec{A}}{\|\vec{A}\|} \label{eq:0.0.38}
+\end{align}
+By substituting $\vec{A}$, $\vec{B}$ and $\vec{C} $ in \eqref{eq:0.0.38} we get, 
+\begin{align}
+  &\displaystyle\frac{\vec{(B+C)}^\text T\vec{A}}{\|\vec{A}\|}
+&=\displaystyle\frac{\myvec{3&1&2}.\myvec{2\\-2\\1}}{\sqrt{4+4+1}} 
+&=2 
+\end{align}
+\item (CBSE 2007-Question 25) Find the value of $\lambda$ which makes the vectors $\overrightarrow{\vec{a}}$,$\overrightarrow{\vec{b}}$ and $\overrightarrow{\vec{c}}$ coplanar, where $ \overrightarrow{\vec{a}}=2\hat{\vec{i}}-\hat{\vec{j}}+\hat{\vec{k}}$,$ \overrightarrow{\vec{b}}=\hat{\vec{i}}+2\hat{\vec{j}}-3\hat{\vec{k}}$ and $ \overrightarrow{\vec{c}}=3\hat{\vec{i}}-\lambda\hat{\vec{j}}+5\hat{\vec{k}}$\\
+\solution Consider the given vectors,
+\begin{align}
+&\vec{A}= \myvec{2\\-1\\1}\\
+&\vec{B}=\myvec{1\\2\\-3}\\
+&\vec{C}=\myvec{3\\-\lambda\\5}
+\end{align}
+For the vectors $\vec{A}$, $\vec{B}$ and $\vec{C}$ to be coplanlar, the three vectors are linearly dependent. Therfore,
+\begin{align}
+  &\begin{vmatrix}
+    2 & -1& 1\\ 1& 2& -3\\3&-\lambda&5 
+    \end{vmatrix} = 0 \\
+& = 2(10-3\lambda)+1(5+9)+1(-\lambda -6)=0\\
+& \lambda=4
+\end{align}
+\item (CBSE 2007-Question 31) Find the equation of the plane which is perpendicular to the plane $5x + 3y + 6 z + 8 = 0$ and which contains the line of intersection of the planes $x + 2y + 3z - 4 = 0 $ and $2x + y - z + 5 = 0$.\\ 
+\solution consider the given planes as
+\begin{align}
+&\vec{A}^\text T\vec{x}=\text c_1\nonumber \\&=\myvec{5&3&6}\myvec{x\\y\\z}=-8 \label{eq:0.0.46}\\ 
+&\vec{B}^\text T\vec{x}=\text c_2\nonumber \\&=\myvec{1&2&3}\myvec{x\\y\\z}=4\\
+  &\vec{C}^\text T\vec{x}=\text c_3\nonumber \\&=\myvec{2&1&-1}\myvec{x\\y\\z}=-5
+\end{align}
+Plane $\perp$ to $5x + 3y + 6 z + 8 = 0$ is given by,
+\begin{align}
+&(\vec{B}+\text k\vec{C})\vec{x}= \text c\\
+&\left(\myvec{1\\2\\3}+\text k\myvec{2\\1\\-1}\right)^\text T.\myvec{x\\y\\z} =4-5\text k \label{eq:0.0.50} 
+\end{align}
+The plane in equation \eqref{eq:0.0.50} is $\perp$ to plane in equation \eqref{eq:0.0.46}. Therefore,
+\begin{align}  
+&\vec{A}^\text T. \left(\vec{B}+\text k\vec{C}\right) =0\\
+&\myvec{5&3&6}.\left[\myvec{1\\2\\3}+\text k\myvec{2\\1\\-1}\right]=0\\
+&\text k= \displaystyle\frac{-29}{7}
+\end{align}
+The required plane is \begin{align} \myvec{51&15&-50}\myvec{x\\y\\z}=-173 \end{align}
+\end{enumerate}
+\end{document}
