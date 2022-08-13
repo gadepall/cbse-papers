@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.11)  13 AUG 2022 11:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.8.11)  13 AUG 2022 13:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1406,50 +1406,41 @@ LaTeX Info: Redefining \nameref on input line 65.
 \c@lemma=\count371
 \c@example=\count372
 \c@rem=\count373
-
-
-LaTeX Warning: No \author given.
-
-
-LaTeX Warning: No \author given.
-
-
-LaTeX Warning: No \author given.
-
-(./main.toc)
+ (./main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
 <1.png, id=37, 347.2975pt x 159.59625pt>
 File: 1.png Graphic file (type png)
 <use 1.png>
-Package pdftex.def Info: 1.png  used on input line 149.
+Package pdftex.def Info: 1.png  used on input line 153.
 (pdftex.def)             Requested size: 252.0pt x 115.8078pt.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 17
-8.
- (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 18
+2.
+
+(/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+txmia on input line 1
-78.
+82.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 1
-78.
+82.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyb on input line 1
-78.
+82.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Trying to load font information for U+txsyc on input line 1
-78.
+82.
 
 (/usr/share/texmf-dist/tex/latex/txfonts/utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
@@ -1457,164 +1448,164 @@ File: utxsyc.fd 2000/12/15 v3.1
 
 
  <./1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 262--264
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
 
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 397--399
-
- []
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 414--416
+[2] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 401--403
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 424--426
+Underfull \hbox (badness 10000) in paragraph at lines 418--420
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--438
+Underfull \hbox (badness 10000) in paragraph at lines 428--430
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 446--448
+Underfull \hbox (badness 10000) in paragraph at lines 440--442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 456--458
+Underfull \hbox (badness 10000) in paragraph at lines 450--452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 466--468
+Underfull \hbox (badness 10000) in paragraph at lines 470--472
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 482--484
+Underfull \hbox (badness 10000) in paragraph at lines 486--488
 
  []
 
-<c_8.png, id=179, 462.528pt x 346.896pt>
+<c_8.png, id=176, 462.528pt x 346.896pt>
 File: c_8.png Graphic file (type png)
 <use c_8.png>
-Package pdftex.def Info: c_8.png  used on input line 516.
+Package pdftex.def Info: c_8.png  used on input line 520.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--525
+Underfull \hbox (badness 10000) in paragraph at lines 527--529
 
  []
 
 [5 <./c_8.png>]
-Overfull \hbox (8.6953pt too wide) detected at line 549
+Overfull \hbox (8.6953pt too wide) detected at line 553
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--555
+Underfull \hbox (badness 10000) in paragraph at lines 557--559
 
  []
 
 
-Overfull \hbox (19.99408pt too wide) detected at line 565
+Overfull \hbox (19.99408pt too wide) detected at line 569
 []
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 574--575
+Underfull \hbox (badness 10000) in paragraph at lines 578--579
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--577
+Underfull \hbox (badness 10000) in paragraph at lines 579--581
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 583--584
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
 
  []
 
 
-Overfull \hbox (46.39792pt too wide) detected at line 593
+Overfull \hbox (46.39792pt too wide) detected at line 597
 []
  []
 
 
-Overfull \hbox (39.48846pt too wide) detected at line 604
+Overfull \hbox (39.48846pt too wide) detected at line 608
 []
  []
 
 
-Overfull \hbox (42.8046pt too wide) detected at line 610
+Overfull \hbox (42.8046pt too wide) detected at line 614
 []
  []
 
 
-Underfull \hbox (badness 3907) in paragraph at lines 622--626
+Underfull \hbox (badness 3907) in paragraph at lines 626--630
 \OT1/txr/m/n/12 Let $\OML/txmi/m/it/12 X$ \OT1/txr/m/n/12 be a ran-dom vari-abl
 e such that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 622--626
+Underfull \hbox (badness 10000) in paragraph at lines 626--630
 
  []
 
 
-Underfull \hbox (badness 3907) in paragraph at lines 644--649
+Underfull \hbox (badness 3907) in paragraph at lines 648--653
 \OT1/txr/m/n/12 Let $\OML/txmi/m/it/12 X$ \OT1/txr/m/n/12 be a ran-dom vari-abl
 e such that
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 644--649
+Underfull \hbox (badness 10000) in paragraph at lines 648--653
 
  []
 
 
-Overfull \hbox (1.63367pt too wide) detected at line 656
+Overfull \hbox (1.63367pt too wide) detected at line 660
 []
  []
 
 [7]
-Overfull \hbox (48.8042pt too wide) detected at line 680
+Overfull \hbox (48.8042pt too wide) detected at line 684
 []
  []
 
 [8] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 903--905
+Underfull \hbox (badness 10000) in paragraph at lines 907--909
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 910--914
+Underfull \hbox (badness 10000) in paragraph at lines 914--918
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 991--993
+Underfull \hbox (badness 10000) in paragraph at lines 995--997
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 1008--1010
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1012--1014
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1015--1016
+Underfull \hbox (badness 10000) in paragraph at lines 1016--1018
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1019--1020
 
  []
 
@@ -1623,11 +1614,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: BC85581759F57B64978EDBF1BBBDA60E;599.
  ) 
 Here is how much of TeX's memory you used:
- 45761 strings out of 478238
- 1040931 string characters out of 5850456
+ 45763 strings out of 478238
+ 1040942 string characters out of 5850456
  1573170 words of memory out of 5000000
  62916 multiletter control sequences out of 15000+600000
- 539195 words of font info for 173 fonts, out of 8000000 for 9000
+ 540511 words of font info for 175 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  91i,18n,93p,420b,1015s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
@@ -1637,7 +1628,7 @@ onts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr
 nts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/urw/times/
 utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (13 pages, 167506 bytes).
+Output written on main.pdf (13 pages, 167685 bytes).
 PDF statistics:
  570 PDF objects out of 1000 (max. 8388607)
  529 compressed objects within 6 object streams

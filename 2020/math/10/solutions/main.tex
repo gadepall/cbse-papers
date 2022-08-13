@@ -1,52 +1,56 @@
+
 \let\negmedspace\undefined
 \let\negthickspace\undefined
-%\RequirePackage{amsmath}
 \documentclass[journal,12pt,twocolumn]{IEEEtran}
-%
-% \usepackage{setspace}
- \usepackage{gensymb}
-%\doublespacing
- \usepackage{polynom}
-%\singlespacing
-%\usepackage{silence}
-%Disable all warnings issued by latex starting with "You have..."
-%\usepackage{graphicx}
-\usepackage{amssymb}
-%\usepackage{relsize}
-\usepackage[cmex10]{amsmath}
-%\usepackage{amsthm}
-%\interdisplaylinepenalty=2500
-%\savesymbol{iint}
-%\usepackage{txfonts}
-%\restoresymbol{TXF}{iint}
-%\usepackage{wasysym}
-\usepackage{amsthm}
-%\usepackage{pifont}
-%\usepackage{iithtlc}
-% \usepackage{mathrsfs}
-% \usepackage{txfonts}
- \usepackage{stfloats}
-% \usepackage{steinmetz}
- \usepackage{bm}
-% \usepackage{cite}
-% \usepackage{cases}
-% \usepackage{subfig}
-%\usepackage{xtab}
-\usepackage{longtable}
-%\usepackage{multirow}
-%\usepackage{algorithm}
-%\usepackage{algpseudocode}
-\usepackage{enumitem}
- \usepackage{mathtools}
- \usepackage{tikz}
-% \usepackage{circuitikz}
-% \usepackage{verbatim}
-%\usepackage{tfrupee}
-\usepackage[breaklinks=true]{hyperref}
-%\usepackage{stmaryrd}
-%\usepackage{tkz-euclide} % loads  TikZ and tkz-base
-%\usetkzobj{all}
+%\documentclass[conference]{IEEEtran}
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amssymb,amsfonts,amsthm,amsmath}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
 \usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{bm}
+\usepackage{polynom}
+
+%%
+%\usepackage{setspace}
+%%\doublespacing
+%\singlespacing
+%
+%%\usepackage{graphicx}
+%%\usepackage{amssymb}
+%%\usepackage{relsize}
+%\usepackage[cmex10]{amsmath}
+%%\interdisplaylinepenalty=2500
+%%\savesymbol{iint}
+%%\usepackage{txfonts}
+%%\restoresymbol{TXF}{iint}
+%%\usepackage{wasysym}
+%\usepackage{amsthm}
+%\usepackage{mathrsfs}
+%\usepackage{txfonts}
+%%\usepackage{stfloats}
+%%\usepackage{cite}
+%%\usepackage{cases}
+%%\usepackage{subfig}
+%%\usepackage{xtab}
+%%\usepackage{multirow}
+%%\usepackage{algorithm}
+%%\usepackage{algpseudocode}
+\usepackage{tikz}
+%%\usepackage{circuitikz}
+%%\usepackage{verbatim}
+\usepackage{hyperref}
+%%\usepackage{stmaryrd}
+%%\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+%%\usetkzobj{all}
     \usepackage{color}                                            %%
     \usepackage{array}                                            %%
     \usepackage{longtable}                                        %%
@@ -54,16 +58,15 @@
     \usepackage{multirow}                                         %%
     \usepackage{hhline}                                           %%
     \usepackage{ifthen}                                           %%
-  %optionally (for landscape tables embedded in another document): %%
-    \usepackage{lscape}     
-% \usepackage{multicol}
-% \usepackage{chngcntr}
+%  %optionally (for landscape tables embedded in another document): %%
+%    \usepackage{lscape}     
+%%\usepackage{multicol}
+%\usepackage{chngcntr}
 %\usepackage{enumerate}
 
 %\usepackage{wasysym}
 %\newcounter{MYtempeqncnt}
 \DeclareMathOperator*{\Res}{Res}
-\DeclareMathOperator*{\equals}{=}
 %\renewcommand{\baselinestretch}{2}
 \renewcommand\thesection{\arabic{section}}
 \renewcommand\thesubsection{\thesection.\arabic{subsection}}
@@ -78,18 +81,12 @@
 \def\inputGnumericTable{}                                 %%
 
 \lstset{
-%language=C,
+language=tex,
 frame=single, 
-breaklines=true,
-columns=fullflexible
+breaklines=true
 }
-%\lstset{
-%language=tex,
-%frame=single, 
-%breaklines=true
-%}
-\begin{document}
 
+\begin{document}
 %
 
 
@@ -109,12 +106,15 @@ columns=fullflexible
 \newcommand{\define}{\stackrel{\triangle}{=}}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
     \node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
 \bibliographystyle{IEEEtran}
 %\bibliographystyle{ieeetr}
 
 
 \providecommand{\mbf}{\mathbf}
 \providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\re}[1]{\ensuremath{\text{Re}\left(#1\right)}}
+\providecommand{\im}[1]{\ensuremath{\text{Im}\left(#1\right)}}
 \providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
 \providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
 \providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
@@ -143,10 +143,12 @@ columns=fullflexible
 \providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
 \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
 \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
-\numberwithin{equation}{section}
-\numberwithin{figure}{section}
-\numberwithin{table}{section}
-%\numberwithin{equation}{subsection}
+	\newcommand*{\permcomb}[4][0mu]{{{}^{#3}\mkern#1#2_{#4}}}
+\newcommand*{\perm}[1][-3mu]{\permcomb[#1]{P}}
+\newcommand*{\comb}[1][-1mu]{\permcomb[#1]{C}}
+
+%\numberwithin{equation}{section}
+\numberwithin{equation}{subsection}
 %\numberwithin{problem}{section}
 %\numberwithin{definition}{section}
 \makeatletter
@@ -155,6 +157,7 @@ columns=fullflexible
 
 \let\StandardTheFigure\thefigure
 \let\vec\mathbf
+\let\j\jmath
 %\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
 \renewcommand{\thefigure}{\theproblem}
 %\setlist[enumerate,1]{before=\renewcommand\theequation{\theenumi.\arabic{equation}}
