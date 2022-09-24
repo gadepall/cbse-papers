@@ -724,10 +724,10 @@ where $\vec{m}$ is the direction vector of the given line.  Combining the above 
 %2\vec{Q} &= \vec{P}+\vec{R}
 %\\
 %\label{eq:reflect_Q}
-%\vec{n}^{T}\vec{Q} &= c \quad \because \vec{Q} \text{ lies on the given line}
+%\vec{n}^{\top}\vec{Q} &= c \quad \because \vec{Q} \text{ lies on the given line}
 %\\
 %\label{eq:reflect_R}
-%\vec{m}^{T}\vec{R} &= \vec{m}^{T}\vec{P} \quad \because \vec{m}\perp \vec{P} - \vec{R}
+%\vec{m}^{\top}\vec{R} &= \vec{m}^{\top}\vec{P} \quad \because \vec{m}\perp \vec{P} - \vec{R}
 %\end{align}
 %%
 %%where 
@@ -735,7 +735,7 @@ where $\vec{m}$ is the direction vector of the given line.  Combining the above 
 %From \eqref{eq:reflect_bisect} and \eqref{eq:reflect_Q},
 %\begin{align}
 %\label{eq:reflect_bisectQ}
-%\vec{n}^{T}\vec{R}  &= 2c - \vec{n}^{T}\vec{P}
+%\vec{n}^{\top}\vec{R}  &= 2c - \vec{n}^{\top}\vec{P}
 %\end{align}
 %%
 %From \eqref{eq:reflect_bisectQ} and \eqref{eq:reflect_R},
@@ -1817,7 +1817,140 @@ yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zer
 \end{align}
 \eqref{eq:conic_zero_eigen_normal_fq} and \eqref{eq:conic_zero_eigen_normal_vq} clubbed together result in \eqref{eq:conic_tangent_q_eigen}.
 \end{proof}
-
+\begin{theorem}
+	The points of contact from a point $\vec{h}$ to the conic in \eqref{eq:conic_quad_form}
+	are given by 
+\begin{align}
+L_P: \quad \vec{x} = \vec{h} + \mu \vec{m} \quad \mu \in \mathbb{R}
+\label{eq:conic_tangent-q}
+\end{align}
+where 
+	\begin{align}
+  \label{eq:conic_tangent_dirvec-h}
+		\vec{m} &= \myvec{1 \\ m}
+		\\
+\vec{m}^{\top}\bm{\Sigma}
+		\vec{m} &= 0
+  \label{eq:conic_tangent_qquad-h}
+  \\
+		\bm{\Sigma} &= 
+	   \brak{\vec{V}\vec{h}+\vec{u}}
+	  \brak{\vec{V}\vec{h}+\vec{u}}^{\top}
+   -\vec{V}
+  \brak
+  {
+  \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
+  },
+  \end{align}                    
+  and $\mu$ given by 
+\eqref{eq:tangent_roots}.
+\end{theorem}
+\begin{proof}
+%	Let the direction vector of the tangent from $\vec{h}$ to the conic be given by
+%  \eqref{eq:conic_tangent_dirvec-h}.
+%	The equation of the tangent from $\vec{h}$ to the conic in \eqref{eq:conic_quad_form} can then be expressed as 
+%\label{eq:conic_tangent-q}
+ From \eqref{eq:tangent_roots},
+ and
+  \eqref{eq:conic_tangent_disc}
+  \begin{align}
+  \sbrak{
+  \vec{m}^{\top}\brak{\vec{V}\vec{h}+\vec{u}}
+  }^2 -\brak{\vec{m}^{\top}\vec{V}\vec{m}}
+  \brak
+  {
+  \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
+  } &= 0                                                                                             
+  \\
+	  \implies 
+  \vec{m}^{\top}  \sbrak{\brak{\vec{V}\vec{h}+\vec{u}}
+	  \brak{\vec{V}\vec{h}+\vec{u}}^{\top}
+   -\vec{V}
+  \brak
+  {
+  \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
+  }}\vec{m} &= 0                                                                                             
+%	  \implies 
+%	  \vec{m}^{\top}  \sbrak{\brak{\vec{V}\vec{h}\vec{h}^{\top}\vec{V}+\vec{V}\vec{h}\vec{u}^{\top}+ \vec{u}\vec{h}^{\top}\vec{V}+\vec{u}\vec{u}^{\top}}
+%   -\vec{V}
+%  \brak
+%  {
+%  \vec{h}^{\top}\vec{V}\vec{h} + 2\vec{u}^{\top}\vec{h} +f
+%  }}\vec{m} &= 0                                                                                             
+  \label{eq:conic_tangent_disc-h}
+  \end{align}                    
+  yielding
+  \eqref{eq:conic_tangent_qquad-h}
+%  Letting 
+%  \eqref{eq:conic_tangent_disc-h} can be expressed as 
+%  Substituting \eqref{eq:conic_tangent_qquad} in \eqref{eq:conic_tangent_disc} and simplifying, we obtain \eqref{eq:conic_tangent_mq}.
+% The points of intersection of the line 
+%\eqref{eq:conic_tangent-q}
+%%	From 
+%%  \eqref{eq:conic_tangent_mq}
+%%  \begin{align}
+%%  \vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}} = 0
+%%  \end{align}
+%\end{proof}
+%with the conic section in \eqref{eq:conic_quad_form} are given by
+%\begin{align}
+%\vec{x}_i = \vec{q} + \mu_i \vec{m}
+%	\label{eq:chord-pts}
+%\end{align}
+%%
+%where
+%\begin{multline}
+%\mu_i = \frac{1}
+%{
+%\vec{m}^{\top}\vec{V}\vec{m}
+%}
+%\lbrak{-\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}}
+%\\
+%\pm
+%{\small
+%\rbrak{\sqrt{
+%\sbrak{
+%\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}
+%}^2
+%-
+%\brak
+%{
+%\vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f
+%}
+%\brak{\vec{m}^{\top}\vec{V}\vec{m}}
+%}
+%}
+%}
+%\label{eq:tangent_roots}
+%\end{multline}
+%
+%
+%%\end{theorem}
+%\begin{proof}
+%  Substituting \eqref{eq:conic_tangent}
+%in \eqref{eq:conic_quad_form}, 
+%\begin{align}
+%\brak{\vec{q} + \mu \vec{m}}^{\top}\vec{V}\brak{\vec{q} + \mu \vec{m}}  + 2 \vec{u}^{\top}\brak{\vec{q} + \mu \vec{m}}+f &= 0
+%\\
+%\implies \mu^2\vec{m}^{\top}\vec{V}\vec{m} + 2 \mu\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}} 
+%+ \vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f &= 0
+%\label{eq:conic_intercept}
+%\end{align}
+%Solving the above quadratic in \eqref{eq:conic_intercept}
+%yields \eqref{eq:tangent_roots}.
+%\end{proof}
+%\begin{corollary}
+%  If $L$ in \eqref{eq:conic_tangent} touches \eqref{eq:conic_quad_form} at exactly one point $\vec{q}$, 
+%  \begin{align}
+%  \vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}} = 0
+%  \label{eq:conic_tangent_mq}
+%  \end{align}
+%\end{corollary}
+%\begin{proof}
+%  In this case, \eqref{eq:conic_intercept} has exactly one root.  Hence, 
+%  in 
+\end{proof}
+%
 \subsection{Pair of Straight Lines}
 \begin{lemma}[Asymptotes]
 	The asymptotes of the hyperbola in 
@@ -3004,82 +3137,6 @@ Substituting the above in
 		f_0\lambda_1}}{\lambda_2}
  & \brak{ \because e^2 = 1-\frac{\lambda_1}{\lambda_2}}
 		   \end{align}
-%			from \eqref{eq:conic_simp_temp_nonparab},  
-%					from \eqref{eq:F-ell-hyp-parab}
-%and 						 \\
-%the length of the latus rectum  can be expressed as
-%{\footnotesize
-%\begin{align}
-% \frac{2\sqrt{
-%\sbrak{
-%\vec{e}_2^{\top}\brak{\vec{D}\brak{-\frac{\eta}{4\lambda_2}\vec{e}_1}+\frac{\eta}{2}\vec{e}_1}
-%}^2
-%-
-%\brak
-%{
-%\brak{-\frac{\eta}{4\lambda_2}\vec{e}_1}^{\top}\vec{D}\brak{-\frac{\eta}{4\lambda_2}\vec{e}_1} + 2\frac{\eta}{2}\vec{e}_1^{\top}\brak{-\frac{\eta}{4\lambda_2}\vec{e}_1} 
-%}
-%\brak{\vec{e}_2^{\top}\vec{D}\vec{e}_2}
-%}
-%}
-%{
-%\vec{e}_2^{\top}\vec{D}\vec{e}_2
-%}\norm{\vec{e}_2}
-%\label{eq:chord-len-sub}
-%  \end{align}
-%  }
-%\begin{align}
-%	&\frac{2\sqrt{
-%-
-%\brak
-%{
-%\vec{F}^{\top}\frac{\vec{D}}{f_0}\vec{F} -1 
-%}
-%\brak{\vec{e}_2^{\top}\frac{\vec{D}}{f_0}\vec{e}_2}
-%}
-%}
-%{
-%\vec{e}_2^{\top}\frac{\vec{D}}{f_0}\vec{e}_2
-%	} & \brak{\because \vec{e}_2^{\top}\vec{D}\vec{F} = 0, \norm{\vec{e}_2} = 1, f = -1 }
-%	\\
-%	&=\frac{2\sqrt{
-%-
-%\brak
-%{
-%\vec{F}^{\top}\frac{\vec{D}}{f_0}\vec{F}  -1
-%}
-%\brak{{\frac{\lambda_2}{f_0}}}
-%}
-%}
-%{
-%\frac{\lambda_2}{f_0}}
-%	 & \brak{\because \vec{e}_2^{\top}\vec{D}\vec{e}_2 = {\lambda_2} }
-%	\\
-%	&=		\frac{2\sqrt{\brak{1-\frac{\lambda_1e^2}{{\lambda_2\brak{1-e^2}}}}\brak{\frac{\lambda_2}{f_0}}}}
-%{
-%	\frac{\lambda_2}{f_0}
-%	} 	
-%	& \brak{\because \vec{F}^{\top}\vec{D}\vec{F} =\frac{f_0\lambda_1e^2}{{\lambda_2\brak{1-e^2}}}}
-%	\\
-%	&=		2\frac{\sqrt{
-%		f_0\lambda_1}}{\lambda_2}
-% & \brak{ \because e^2 = 1-\frac{\lambda_1}{\lambda_2}}
-%		   \end{align}
-%yielding			\eqref{eq:latus-ellipse} upon substituting from 
-%  \eqref{eq:conic_quad_form_e} 
-%  and simplifying.
-%    \begin{align}
-%	  \vec{q} =			\vec{F} 
-%=
-%					 \pm e\sqrt{\frac{f_0}{\lambda_2\brak{1-e^2}}} \vec{e }_1
-%%					 \frac{e}{\sqrt{f_0\lambda_2\brak{1-e^2}}}\vec{e }_1
-%\end{align}  
-%for the standard hyperbola/ellipse.  Also, 
-%  \begin{align}
-%	  \vec{V} =     \frac{\vec{D} }{f_0}, 
-%	   \vec{u} = 0, 
-%	    \label{eq:latus_rectum_ellipse_param}
-%\end{align}  
 For the standard parabola, the parameters in 
 \eqref{eq:chord-len} are
 \begin{align}  
@@ -3129,891 +3186,5 @@ the length of the latus rectum  can be expressed as
   \end{align}
 
 %
-%\section{Old}
-%\subsection{Conic Sections}
-%\renewcommand{\theequation}{\theenumi}
-%%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-%\numberwithin{equation}{enumi}
-%\item Let $\vec{P}$ be a point such that the ratio of its distance from a fixed point $\vec{F}$ and the distance ($d$) from a fixed line 
-%$L: \vec{n}^{\top}\vec{x}=c$ is constant, given by 
-%\begin{align}
-%\label{conics/30/def}
-%\frac{\norm{\vec{P}-\vec{F}}}{d} = e    
-%\end{align}
-%The locus of $\vec{P}$ such is known as a conic section. The line $L$ is known as the directrix and the point $\vec{F}$ is the focus. $e$ is defined to be 
-%the eccentricity of the conic.  
-%\begin{enumerate}
-%    \item For $e = 1$, the conic is a parabola
-%    \item For $e < 1$, the conic is an ellipse
-%    \item For $e > 1$, the conic is a hyperbola
-%\end{enumerate}
-%\item The equation of  a conic with directrix $\vec{n}^{\top}\vec{x} = c$, eccentricity $e$ and focus $\vec{F}$ is given by 
-%\begin{align}
-%    \label{eq:conic_quad_form}
-%    \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+f=0
-%    \end{align}
-%where     
-%\begin{align}
-%  \label{eq:conic_quad_form_v}
-%\vec{V} &=\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}, 
-%\\
-%\label{eq:conic_quad_form_u}
-%\vec{u} &= ce^2\vec{n}-\norm{\vec{n}}^2\vec{F}, 
-%\\
-%\label{eq:conic_quad_form_f}
-%f &= \norm{\vec{n}}^2\norm{\vec{F}}^2-c^2e^2
-%%\\
-%    \end{align}
-%    \solution  From \eqref{conics/30/def} and \eqref{eq:line_dist_2d},  for any point $\vec{x}$ on the conic,
-%		\begin{align}	
-%			\norm{\vec{x}-\vec{F}}^2=e^2 \frac{\brak{{\vec{n}^{\top}\vec{x} - c}}^2}{\norm{\vec{n}}^2}\label{conics/30/eq:1} \\
-%			\implies \norm{\vec{n}}^2\brak{\vec{x}-\vec{F}}^{\top}\brak{\vec{x}-\vec{F}}=e^2\brak{\vec{n}^{\top}\vec{x} - c}^2
-%    \end{align}
-%    yielding
-%\begin{multline}
-%\norm{\vec{n}}^2\brak{\vec{x}^{\top}\vec{x}-2\vec{F}^{\top}\vec{x}+\norm{\vec{F}}^2}
-%	\\
-%	=e^2\brak{c^2+\brak{\vec{n}^{\top}\vec{x} }^2-2c\vec{n}^{\top}\vec{x}} 
-%	\\
-%=e^2\brak{c^2+\brak{\vec{x}^{\top}\vec{n}\vec{n}^{\top}\vec{x} }-2c\vec{n}^{\top}\vec{x}}
-%% t\vec{x}^{\top}\vec{x}-(\vec{n}^{\top}\vec{x} )^2-2t\vec{F}^{\top}\vec{x}+2c\vec{n}^{\top}\vec{x}=c^2-t\norm{\vec{F}}^2\\
-%% t\vec{x}^{\top}\vec{I}\vec{x}-\vec{n}^{\top}\vec{x} \vec{n}^{\top}\vec{x}+2(c\vec{n}-t\vec{F})^{\top}\vec{x}=c^2-t\norm{\vec{F}}^2\\
-%% \vec{x}^{\top}(t\vec{I}-\vec{n}\vec{n}^{\top})\vec{x}+2(c\vec{n}-t\vec{F})^{\top}\vec{x}+t\norm{\vec{F}}^2-c^2=0
-%\end{multline}
-%%
-%which can be expressed as \eqref{eq:conic_quad_form} after simplification.
-%\item \eqref{eq:conic_quad_form} represents 
-%	\begin{enumerate}
-%		\item a pair of straight lines if
-%\begin{align}
-%\mydet{
-%\vec{V}&\vec{u}
-%\\
-%\vec{u}^{\top}&f
-%}
-%=  0, \quad \mydet{\vec{V}} < 0
-%\label{eq:quad_forms_pair_det}
-%\end{align}
-%			else, it represents
-%		\item a parabola for $\mydet{\vec{V}} = 0 $,
-%		\item ellipse for $\mydet{\vec{V}} > 0 $ and 
-%		\item hyperbola for $\mydet{\vec{V}} < 0 $.
-%	\end{enumerate}
-%%			In general
-%%\eqref{eq:conic_quad_form}  represents a conic  if and only if
-%%%
-%%else, it represents a pair of straight lines.
-%\end{enumerate}
-%\subsection{Conic Parameters}
-%\renewcommand{\theequation}{\theenumi}
-%%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-%\numberwithin{equation}{enumi}
-%\item The conic in     \eqref{eq:conic_quad_form} can be expressed in standard form (centre/vertex at the origin, major axis - $x$ axis) as
-%  \begin{align}
-%    %\begin{aligned}
-%    \label{eq:conic_simp_temp_nonparab}
-%    \vec{y}^{\top}\vec{D}\vec{y} &=  \vec{u}^{\top}\vec{V}^{-1}\vec{u} -f  &  \abs{V} &\ne 0
-%    \\
-%    \vec{y}^{\top}\vec{D}\vec{y} &=  -2\eta\vec{e}_1^{\top}\vec{y}   & \abs{V} &= 0
-%    \label{eq:conic_simp_temp_parab}
-%    %\end{aligned}
-%    \end{align}
-%
-%    where
-%    \begin{align}
-%      %\begin{split}
-%      \label{eq:conic_parmas_eig_def}
-%      \vec{P}^{\top}\vec{V}\vec{P} &= \vec{D}. \quad \text{(Eigenvalue Decomposition)}
-%      \\
-%      \vec{D} &= \myvec{\lambda_1 & 0\\ 0 & \lambda_2}, 
-%      \\
-%      \vec{P} &= \myvec{\vec{p}_1 & \vec{p}_2}, \quad \vec{P}^{\top}=\vec{P}^{-1},
-%      \label{eq:eigevecP}
-%      \\
-%      \label{eq:eta}
-%       \eta &=\vec{u}^{\top}\vec{p}_1
-%       \\
-%       \vec{e}_1 &=\myvec{1 \\ 0}
-%      \end{align}
-%      \solution Using 
-%\begin{align}
-%\vec{x} = \vec{P}\vec{y}+\vec{c} \quad \text{(Affine Transformation)}
-%\label{eq:conic_affine}
-%\end{align}
-%%such that 
-%\eqref{eq:conic_quad_form} can be expressed as
-%
-%%\item  
-%%Substituting \eqref{eq:conic_affine} in \eqref{eq:conic_quad_form}
-%\begin{multline}
-%\brak{\vec{P}\vec{y}+\vec{c}}^T\vec{V}\brak{\vec{P}\vec{y}+\vec{c}}+2\vec{u}^T\brak{\vec{P}\vec{y}+\vec{c}}+ f
-%	\\
-%	= 0, 
-%\end{multline}
-%yielding 
-%\begin{multline}
-%\vec{y}^T\vec{P}^T\vec{V}\vec{P}\vec{y}+2\brak{\vec{V}\vec{c}+\vec{u}}^T\vec{P}\vec{y}
-%\\
-%+  \vec{c}^T\vec{V}\vec{c} + 2\vec{u}^T\vec{c} + f= 0
-%\label{eq:conic_simp_one}
-%\end{multline}
-%%
-%From \eqref{eq:conic_simp_one} and \eqref{eq:conic_parmas_eig_def},
-%\begin{multline}
-%\vec{y}^T\vec{D}\vec{y}+2\brak{\vec{V}\vec{c}+\vec{u}}^T\vec{P}\vec{y}
-%\\
-%+  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
-%\label{eq:conic_simp}
-%\end{multline}
-%When $\vec{V}^{-1}$ exists,
-%\begin{align}
-%%\begin{split}
-%\vec{V}\vec{c}+\vec{u} &= \vec{0}, \quad \text{or}, \vec{c} = -\vec{V}^{-1}\vec{u},
-%\label{eq:conic_parmas_c_def}
-%\end{align}
-%%
-%%%From \eqref{eq:conic_parmas_k_def} and 
-%%%
-%and substituting \eqref{eq:conic_parmas_c_def}
-%in \eqref{eq:conic_simp}
-%yields \eqref{eq:conic_simp_temp_nonparab}. 
-%%\item  
-%When $\abs{\vec{V}} = 0, \lambda_1 = 0$ and 
-%\begin{align}
-%\vec{V}\vec{p}_1 = 0, 
-%\vec{V}\vec{p}_2 = \lambda_2\vec{p}_2.
-%\label{eq:conic_parab_eig_prop} 
-%\end{align}
-%where $\vec{p}_1,\vec{p}_2$ are the eigenvectors of $\vec{V}$ such that  \eqref{eq:conic_parmas_eig_def}
-%%
-%\begin{align}
-%\vec{P} = \myvec{\vec{p}_1 & \vec{p}_2},
-%\label{eq:eig_matrix}
-%\end{align}
-%Substituting \eqref{eq:eig_matrix}
-%in \eqref{eq:conic_simp},
-%\begin{multline}
-%	\vec{y}^T\vec{D}\vec{y}+2\brak{\vec{c}^T\vec{V}+\vec{u}^T}\myvec{\vec{p}_1 & \vec{p}_2}\vec{y}
-%\\
-%+  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
-%\\
-%\implies \vec{y}^T\vec{D}\vec{y}
-%\\
-%+2\myvec{\brak{\vec{c}^T\vec{V}+\vec{u}^T}\vec{p}_1  \brak{\vec{c}^T\vec{V}+\vec{u}^T}\vec{p}_2}\vec{y}
-%\\
-%+  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
-%\\
-%\implies \vec{y}^T\vec{D}\vec{y}
-%\\
-%+2\myvec{\vec{u}^T\vec{p}_1 & \brak{\lambda_2\vec{c}^T+\vec{u}^T}\vec{p}_2}\vec{y}
-%\\
-%+  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
-%\text{ from } \eqref{eq:conic_parab_eig_prop}     \nonumber \\
-%\\
-%\implies \lambda_2y_2^2+2\brak{\vec{u}^T\vec{p}_1}y_1+  2y_2\brak{\lambda_2\vec{c}+\vec{u}}^T\vec{p}_2
-%\\
-%+  \vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f= 0
-%\label{eq:conic_parab_foc_len_temp} 
-%\end{multline}
-%which is the equation of a parabola. 
-%Thus, \eqref{eq:conic_parab_foc_len_temp} 
-%can be expressed as \eqref{eq:conic_simp_temp_parab} by choosing
-%\begin{align}
-%%\label{eq:eta}
-%\eta = \vec{u}^T\vec{p}_1
-%\end{align}
-%%Choosing 
-%%\begin{align}
-%%\vec{u} + \lambda_2\vec{c} = 0,
-%%\vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f = 0,
-%%\end{align}
-%% the above equation becomes
-%%\begin{align}
-%%y_2^2= -\frac{2\vec{u}^T\vec{p}_1}{ \lambda_2} \brak{y_1
-%%+  \frac{\vec{u}^T\vec{V}\vec{u} - 2\lambda_2\vec{u}^T\vec{u} + f\lambda_2^2}{2\vec{u}^T\vec{p}_1\lambda_2^2}}
-%%\\
-%%or \eta = 2\vec{u}^T\vec{p}_1
-%%%\label{eq:conic_simp_parab_new}
-%%\end{align}
-%and $\vec{c}$ in \eqref{eq:conic_simp} such that
-%\begin{align}
-%\label{eq:conic_parab_one}
-%\vec{P}^{T}\brak{\vec{V}\vec{c}+\vec{u}} &= \eta\myvec{1\\0}
-%\\
-%\vec{c}^T\brak{\vec{V}\vec{c} + \vec{u}}+ \vec{u}^T\vec{c} + f&= 0
-%\label{eq:conic_parab_two}
-%\end{align}
-%%we obtain  \eqref{eq:conic_simp_temp_parab}.
-%Multiplying \eqref{eq:conic_parab_one} by $\vec{P}$ yields
-%\begin{align}
-%\label{eq:conic_parab_one_eig}
-%\brak{\vec{V}\vec{c}+\vec{u}} &= \eta\vec{p}_1,
-%\end{align}
-%which, upon substituting in \eqref{eq:conic_parab_two}
-%results in 
-%\begin{align}
-%\eta\vec{c}^T\vec{p}_1 + \vec{u}^T\vec{c} + f&= 0
-%\label{eq:conic_parab_two_eig}
-%\end{align}
-%\eqref{eq:conic_parab_one_eig} and \eqref{eq:conic_parab_two_eig} can be clubbed together to obtain \eqref{eq:conic_parab_c}.
-%
-%\item The centre/vertex of the conic is given by 
-%  \begin{align}
-%    %\begin{aligned}[t]
-%    \label{eq:conic_nonparab_c}
-%    \vec{c} &= - \vec{V}^{-1}\vec{u} & \abs{V} &\ne 0
-%    \\
-%    \myvec{ \vec{u}^{\top}+\eta\vec{p}_1^{\top} \\ \vec{V}}\vec{c} &= \myvec{-f \\ \eta\vec{p}_1-\vec{u}}  &\abs{V} &= 0
-%    %\end{cases}
-%    %\end{aligned}
-%    \label{eq:conic_parab_c}
-%    \end{align}      
-%    \solution From \eqref{eq:conic_affine},
-%\begin{align}
-%\label{eq:conic_affine_inv}
-%\vec{y} = \vec{P}^{\top}\brak{\vec{x}-\vec{c}}
-%\end{align}
-%For the standard conic, $\vec{y} = \vec{0} $ is the centre/vertex and in \eqref{eq:conic_affine_inv}, 
-%\begin{align}
-%\label{eq:conic_centre}
-%\vec{y} = \vec{0} \implies \vec{x}=\vec{c}
-%\end{align}
-%\item The focal length of the parabola in \eqref{eq:conic_simp_temp_parab} is given by 
-%  \begin{align}
-%    \mydet{\frac{2\eta}{\lambda_2}} 
-%    %= \mydet{\frac{2\vec{u}^T\vec{p}_1}{\lambda_2}}.
-%    \label{eq:conic_parab_foc_len} 
-%    \end{align}    
-%    where $\lambda_2$ is the nonzero eigenvalue of $\vec{V}$ and $\eta$ is defined in \eqref{eq:eta}.
-%    % \begin{align}
-%    %   \eta = \vec{u}^T\vec{p}_1
-%    %   \end{align}
-%    \item For $\mydet{V} \ne 0$, the lengths of the semi-major and semi-minor axes of the conic in \eqref{eq:conic_quad_form} are given by 
-%  \begin{align} 
-%    \label{eq:ellipse_axes}
-%  %  \begin{aligned}[t]
-%    \sqrt{\frac{\vec{u}^{\top}\vec{V}^{-1}\vec{u} -f}{\lambda_1}}, 
-%    \sqrt{\frac{\vec{u}^{\top}\vec{V}^{-1}\vec{u} -f}{\lambda_2}}. \quad \brak{\text{ellipse}}
-%    \\
-%%
-%       \sqrt{\frac{\vec{u}^{\top}\vec{V}^{-1}\vec{u} -f}{\lambda_1}}, 
-%       \sqrt{\frac{f-\vec{u}^{\top}\vec{V}^{-1}\vec{u}}{\lambda_2}}, \quad \brak{\text{hyperbola }}
-%%
-%  %\end{aligned}
-%  \label{eq:hyper_axes}
-%\end{align} 
-%\solution For \begin{align} \abs{\vec{V}} > 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 > 0 
-%  \end{align} and \eqref{eq:conic_simp_temp_nonparab} becomes 
-%  \begin{align} 
-%	  \lambda_1y_1^2 +\lambda_2y_2^2 = 
-%  \vec{u}^{\top}\vec{V}^{-1}\vec{u} -f 
-%	  \label{eq:hyper-pair-cond}
-%  \end{align} 
-%  yielding        \eqref{eq:ellipse_axes}.  Similarly, \eqref{eq:hyper_axes} can be obtained for 
-%  \begin{align} 
-%    \label{eq:conic_hyper_cond}
-%    \abs{\vec{V}} 
-%    < 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 < 0 \end{align}
-%    \item The equation of the minor and major  axes are respectively given by 
-%  \begin{align}
-%\vec{p}_i^{\top}\brak{\vec{x}-\vec{c}} = 0, i = 1,2
-%  \end{align}
-%  \item The eccentricity, directrices and foci of \eqref{eq:conic_quad_form} are given by 
-%  \eqref{eq:conic_quad_form_e} -
-%  \eqref{eq:conic_quad_form_F} 
-%  \begin{figure*}[!hb]
-%	  \centering
-%	  \hrule
-%\begin{align}
-%  \label{eq:conic_quad_form_e} 
-%  e&= \sqrt{1-\frac{\lambda_1}{\lambda_2}}
-%\\
-%\label{eq:conic_quad_form_nc} 
-%  \vec{n}&= \sqrt{\lambda_2}\vec{p}_1,  
-%  \\
-%	c &= 
-%  \begin{cases}
-%    \frac{e\vec{u}^{\top}\vec{n} \pm \sqrt{e^2\brak{\vec{u}^{\top}\vec{n}}^2-\lambda_2\brak{e^2-1}\brak{\norm{\vec{u}}^2 - \lambda_2 f}}}{\lambda_2e\brak{e^2-1}} & e \ne 1
-%    \\
-%    \frac{\norm{\vec{u}}^2 - \lambda_2 f   }{2e^2\vec{u}^{\top}\vec{n}} & e = 1
-%  \end{cases}
-%  \\
-%  \label{eq:conic_quad_form_F} 
-%  \vec{F}  &= \frac{ce^2\vec{n}-\vec{u}}{\lambda_2}
-%\end{align}  
-%  \end{figure*}
-%\solution 
-%From \eqref{eq:conic_quad_form_v},
-%  \begin{multline}
-%    \vec{V}^{\top} \vec{V}=\brak{\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}}^{\top}
-%	  \\
-%	  \brak{\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}}
-%    \\
-%    \implies \vec{V}^{2} = \norm{\vec{n}}^4\vec{I}+e^4\vec{n}\vec{n}^{\top}\vec{n}\vec{n}^{\top}
-%	  \\
-%	  -2e^2\norm{\vec{n}}^2\vec{n}\vec{n}^{\top}
-%    \\
-%    = \norm{\vec{n}}^4\vec{I} + e^4\norm{\vec{n}}^2\vec{n}\vec{n}^{\top}
-%	%  \\
-%	  - 2e^2\norm{\vec{n}}^2\vec{n}\vec{n}^{\top}
-%    \\
-%    = \norm{\vec{n}}^4\vec{I} + e^2\brak{e^2 - 2}\norm{\vec{n}}^2\vec{n}\vec{n}^{\top}
-%    \\
-%    = \norm{\vec{n}}^4\vec{I} + \brak{e^2 - 2}\norm{\vec{n}}^2\brak{\norm{\vec{n}}^2\vec{I}- \vec{V}}
-%    \end{multline}
-%%    
-%which can be expressed as
-%\begin{align}
-%  \vec{V}^{2} + \brak{e^2 - 2}\norm{\vec{n}}^2\vec{V} - \brak{e^2 - 1}\norm{\vec{n}}^4\vec{I}=0
-%  \label{eq:conic_quad_form_e_cayley}
-%\end{align}
-%Using the Cayley-Hamilton theorem, \eqref{eq:conic_quad_form_e_cayley} results in the characteristic equation, 
-%\begin{align}
-%  \lambda^{2} - \brak{2-e^2}\norm{\vec{n}}^2\lambda + \brak{1-e^2 }\norm{\vec{n}}^4=0
-%\end{align}
-%which can be expressed as
-%\begin{multline}
-%\brak{\frac{\lambda}{\norm{\vec{n}}^2}}^2 - \brak{2-e^2 }\brak{\frac{\lambda}{\norm{\vec{n}}^2}} 
-%	\\
-%	+ \brak{1-e^2 } = 0
-%\end{multline}
-%\begin{align}
-%  \implies \frac{\lambda}{\norm{\vec{n}}^2} = 1-e^2, 1
-%  \\
-%  \text{or, }\lambda_2 = \norm{\vec{n}}^2, \lambda_1 = \brak{1-e^2}\lambda_2 
-%  \label{eq:conic_quad_form_lam_cayley}
-%\end{align}
-%From   \eqref{eq:conic_quad_form_lam_cayley}, the eccentricity of \eqref{eq:conic_quad_form} is given by 
-%\eqref{eq:conic_quad_form_e}.   
-%%
-%% By inspection, we find that 
-%% \begin{align}
-%%   \frac{\lambda}}{\norm{\vec{n}}^2} = 1
-%%   \label{eq:conic_quad_form_lam2_cayley}
-%% \end{align}
-%%satisfies \eqref{eq:conic_quad_form_lam_cayley}.
-%Multiplying both sides of    \eqref{eq:conic_quad_form_v} by $\vec{n}$,
-%\begin{align}
-%\vec{V} \vec{n}&=\norm{\vec{n}}^2\vec{n}-e^2\vec{n}\vec{n}^{\top}\vec{n} 
-%\\
-%&=\norm{\vec{n}}^2\brak{1-e^2}\vec{n} 
-% \\
-%% &=\frac{\lambda_1}{\lambda_2}\norm{\vec{n}}^2\vec{n} 
-%% \end{align}
-%% upon substituting from \eqref{eq:conic_quad_form_e}  and simplifying.  From the above, it is obvious that $\vec{n}$ is an eigenvector
-%% of $\vec{V}$.  Choosing 
-%% \begin{align}
-%%   \lambda_2 = \norm{\vec{n}}^2,
-%%   \label{eq:eigevecn_lam2}
-%% \end{align}  
-%% we obtain 
-%% \begin{align}
-%  &=\lambda_1 \vec{n} 
-%  \label{eq:eigevecn}
-%\end{align}  
-%from \eqref{eq:conic_quad_form_lam_cayley}
-%Thus,  $\lambda_1$ is the corresponding eigenvalue for $\vec{n}$.  From       \eqref{eq:eigevecP},   \eqref{eq:conic_quad_form_lam_cayley} and \eqref{eq:eigevecn}, 
-%\begin{align}
-%   \vec{n}&= \norm{\vec{n}}\vec{p}_1  = \sqrt{\lambda_2}\vec{p}_1 
-%\end{align}  
-%From \eqref{eq:conic_quad_form_u} and \eqref{eq:conic_quad_form_lam_cayley},
-%\begin{align}
-%%   \label{eq:conic_quad_form_v}
-%% \vec{V} &=\norm{\vec{n}}^2\vec{I}-e^2\vec{n}\vec{n}^{\top}, 
-%% \\
-%%\label{eq:conic_quad_form_u}
-%\vec{F}  &= \frac{ce^2\vec{n}-\vec{u}}{\lambda_2}
-% \\
-% \implies \norm{\vec{F}}^2  &= \frac{\brak{ce^2\vec{n}-\vec{u}}^{\top}\brak{ce^2\vec{n}-\vec{u}}}{\lambda_2^2}
-% \\
-% \implies \lambda_2^2\norm{\vec{F}}^2  &= c^2e^4\lambda_2-2ce^2\vec{u}^{\top}\vec{n}+\norm{\vec{u}}^2
-% \label{eq:conic_quad_form_u_temp}
-%% f &= \norm{\vec{n}}^2\norm{\vec{F}}^2-c^2e^2
-%% %\\
-%    \end{align}
-%    Also, \eqref{eq:conic_quad_form_f} can be expressed as
-%    \begin{align}
-%    \lambda_2\norm{\vec{F}}^2 &= f+c^2e^2
-%    \label{eq:conic_quad_form_f_temp}
-%\end{align}
-%From  \eqref{eq:conic_quad_form_u_temp} and     \eqref{eq:conic_quad_form_f_temp},
-%\begin{align}
-%c^2e^4\lambda_2-2ce^2\vec{u}^{\top}\vec{n}+\norm{\vec{u}}^2 = \lambda_2\brak{f+c^2e^2}
-%\end{align}
-%\begin{multline}
-%\implies \lambda_2e^2\brak{e^2-1}c^2-2ce^2\vec{u}^{\top}\vec{n}
-%	\\
-%	+\norm{\vec{u}}^2 - \lambda_2 f = 0
-%\end{multline}
-%yielding
-%  \eqref{eq:conic_quad_form_F}. 
-%%\begin{align}
-%%\text{or, } c = 
-%%\begin{cases}
-%%  \frac{e\vec{u}^{\top}\vec{n} \pm \sqrt{e^2\brak{\vec{u}^{\top}\vec{n}}^2-\lambda_2\brak{e^2-1}\brak{\norm{\vec{u}}^2 - \lambda_2 f}}}{\lambda_2e\brak{e^2-1}} & e \ne 1
-%%  \\
-%%  \frac{\norm{\vec{u}}^2 - \lambda_2 f   }{2e^2\vec{u}^{\top}\vec{n}} & e = 1
-%%\end{cases}
-%%\end{align}
-%  \end{enumerate}
-%\subsection{Tangent and Normal}
-%\renewcommand{\theequation}{\theenumi}
-%%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-%\numberwithin{equation}{enumi}
-%\item The points of intersection of the line 
-%\begin{align}
-%L: \quad \vec{x} = \vec{q} + \mu \vec{m} \quad \mu \in \mathbb{R}
-%\label{eq:conic_tangent}
-%\end{align}
-%with the conic section in \eqref{eq:conic_quad_form} are given by
-%\begin{align}
-%\vec{x}_i = \vec{q} + \mu_i \vec{m}
-%\label{eq:conic_tangent_pts}
-%\end{align}
-%%
-%where
-%{\tiny
-%\begin{multline}
-%\mu_i = \frac{1}
-%{
-%\vec{m}^T\vec{V}\vec{m}
-%}
-%\lbrak{-\vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}}
-%\\
-%\pm
-%\rbrak{\sqrt{
-%\sbrak{
-%\vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}
-%}^2
-%-
-%\brak
-%{
-%\vec{q}^T\vec{V}\vec{q} + 2\vec{u}^T\vec{q} +f
-%}
-%\brak{\vec{m}^T\vec{V}\vec{m}}
-%}
-%}
-%\label{eq:tangent_roots}
-%\end{multline}
-%}
-%\\
-%\solution 
-%Substituting \eqref{eq:conic_tangent}
-%in \eqref{eq:conic_quad_form}, 
-%\begin{align}
-%\brak{\vec{q} + \mu \vec{m}}^T\vec{V}\brak{\vec{q} + \mu \vec{m}}  
-%\\
-%+ 2 \vec{u}^T\brak{\vec{q} + \mu \vec{m}}+f &= 0
-%\\
-%\implies \mu^2\vec{m}^T\vec{V}\vec{m} + 2 \mu\vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}} 
-%\\
-%+ \vec{q}^T\vec{V}\vec{q} + 2\vec{u}^T\vec{q} +f &= 0
-%\label{eq:conic_intercept}
-%\end{align}
-%Solving the above quadratic in \eqref{eq:conic_intercept}
-%yields \eqref{eq:tangent_roots}.
-%\item  If $L$ in \eqref{eq:conic_tangent} touches \eqref{eq:conic_quad_form} at exactly one point $\vec{q}$, 
-%  \begin{align}
-%  \vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}} = 0
-%  \label{eq:conic_tangent_mq}
-%  \end{align}
-%\\
-%\solution
-%In this case, \eqref{eq:conic_intercept} has exactly one root.  Hence, 
-%  in \eqref{eq:tangent_roots}
-%  \begin{multline}
-%  \sbrak{
-%  \vec{m}^T\brak{\vec{V}\vec{q}+\vec{u}}
-%  }^2 -\brak{\vec{m}^T\vec{V}\vec{m}}
-%  \\
-%  \brak
-%  {
-%  \vec{q}^T\vec{V}\vec{q} + 2\vec{u}^T\vec{q} +f
-%  } = 0                                                                                             
-%  \label{eq:conic_tangent_disc}
-%  \end{multline}                    
-%  $\because \vec{q}$ is the point of contact, $\vec{q}$ satisfies \eqref{eq:conic_quad_form}
-%  and 
-%  \begin{align}
-%  \vec{q}^T\vec{V}\vec{q} + 2\vec{u}^T\vec{q} +f = 0
-%  \label{eq:conic_tangent_qquad}
-%  \end{align}
-%  Substituting \eqref{eq:conic_tangent_qquad} in \eqref{eq:conic_tangent_disc} and simplifying, we obtain \eqref{eq:conic_tangent_mq}.
-%  \item Given the point of contact $\vec{q}$, the equation of a tangent to \eqref{eq:conic_quad_form} is 
-%  \begin{align}
-%  \brak{\vec{V}\vec{q}+\vec{u}}^T\vec{x}+\vec{u}^T\vec{q}+f = 0
-%  \label{eq:conic_tangent_final}
-%  \end{align}
-%  \solution The normal vector is obtained from \eqref{eq:conic_tangent_mq} 
-%and \eqref{eq:normal_line}
-%  as
-%  %
-%  \begin{align}
-%  \label{eq:conic_normal_vec}
-%  \vec{n} = \vec{V}\vec{q}+\vec{u}
-%  \end{align}  
-%  From \eqref{eq:conic_normal_vec} and \eqref{eq:normal_line_pt}, the equation of the tangent is\begin{align}
-%    \brak{\vec{V}\vec{q}+\vec{u}}^T\brak{\vec{x}-\vec{q}} &=0
-%    \\
-%    \implies \brak{\vec{V}\vec{q}+\vec{u}}^T\vec{x}-\vec{q}^T\vec{V}\vec{q}-\vec{u}^T\vec{q} &= 0
-%    \end{align}
-%    which, upon substituting from \eqref{eq:conic_tangent_qquad} and simplifying yields \eqref{eq:conic_tangent}.
-%    \item   If $\vec{V}^{-1}$ exists, given the normal vector $\vec{n}$, the tangent points of contact to \eqref{eq:conic_quad_form} are given by
-%\begin{align}
-%  \begin{split}
-%\vec{q}_i &= \vec{V}^{-1}\brak{\kappa_i \vec{n}-\vec{u}}, i = 1,2
-%\\
-%\text{where }\kappa_i &= \pm \sqrt{
-%\frac{
-%\vec{u}^T\vec{V}^{-1}\vec{u}-f
-%}
-%{
-%\vec{n}^T\vec{V}^{-1}\vec{n}
-%}
-%}
-%  \end{split}
-%\label{eq:conic_tangent_qk}
-%\end{align}
-%\solution From \eqref{eq:conic_normal_vec},
-%\begin{align}
-%\label{eq:conic_normal_vec_q}
-% \vec{q} = \vec{V}^{-1}\brak{\kappa \vec{n}-\vec{u}}, \quad \kappa \in \mathbb{R}
-%\end{align}
-%Substituting \eqref{eq:conic_normal_vec_q}
-%in \eqref{eq:conic_tangent_qquad},
-%\begin{multline}
-%\brak{\kappa \vec{n}-\vec{u}}^T\vec{V}^{-1}\brak{\kappa \vec{n}-\vec{u}} 
-%\\
-%+ 2\vec{u}^T\vec{V}^{-1}\brak{\kappa \vec{n}-\vec{u}} +f = 0
-%\end{multline}
-%\begin{align}
-%\implies 
-%\kappa^2 \vec{n}^T\vec{V}^{-1}\vec{n} - \vec{u}^T\vec{V}^{-1}\vec{u} + f &=0
-% \\
-% \text{or, } \kappa = \pm \sqrt{\frac{\vec{u}^T\vec{V}^{-1}\vec{u}-f}{\vec{n}^T\vec{V}^{-1}\vec{n}}} &\label{eq:conic_normal_k}
-%\end{align}
-%%
-%%yileding 
-%Substituting \eqref{eq:conic_normal_k} in \eqref{eq:conic_normal_vec_q}
-%yields \eqref{eq:conic_tangent_qk}.
-%\item If $\vec{V}$ is not invertible,  given the normal vector $\vec{n}$, the point of contact to \eqref{eq:conic_quad_form} is given by the matrix equation
-%\begin{align}
-%\label{eq:conic_tangent_q_eigen}
-%\begin{pmatrix}
-%	\vec{\vec{u}^{\top}+\kappa \vec{n}}^{\top} \\ \vec{V}
-%\end{pmatrix}
-%\vec{q} &= 
-%\begin{pmatrix}
-%-f
-%\\
-%\kappa\vec{n}-\vec{u}
-%\end{pmatrix}
-%\\
-%\text{where }  \kappa = \frac{\vec{p}_1^T\vec{u}}{\vec{p}_1^T\vec{n}}, \quad \vec{V}\vec{p}_1 &= 0
-%\label{eq:conic_tangent_qk_eigen}
-%\end{align}
-%\solution 
-%  If $\vec{V}$ is non-invertible, it has a zero eigenvalue.  If the corresponding eigenvector is $\vec{p}_1$, then,
-%\begin{align}
-%\vec{V}\vec{p}_1 = 0
-%\label{eq:conic_zero_eigen}
-%\end{align}
-%From \eqref{eq:conic_normal_vec},
-%\begin{align}
-%\label{eq:conic_zero_eigen_normal}
-%\kappa \vec{n} &= \vec{V} \vec{q}+\vec{u}, \quad \kappa \in \mathbb{R}
-%\\
-%\implies \kappa \vec{p}_1^T\vec{n} &= \vec{p}_1^T\vec{V} \vec{q}+\vec{p}_1^T\vec{u}
-%\\
-%\text{or, } \kappa \vec{p}_1^T\vec{n} &= \vec{p}_1^T\vec{u},  \quad \because \vec{p}_1^T \vec{V} = 0, 
-%\\
-%%\quad 
-%	&\brak{\text{ from } \eqref{eq:conic_zero_eigen}}
-%%\label{eq:conic_normal_vec_q}
-%\end{align}
-%yielding $\kappa$ in \eqref{eq:conic_tangent_qk_eigen}. From \eqref{eq:conic_zero_eigen_normal},
-%\begin{align}
-%\kappa \vec{q}^T\vec{n} &= \vec{q}^T\vec{V} \vec{q}+\vec{q}^T\vec{u}
-%\\
-%\implies \kappa \vec{q}^T\vec{n} &= -f-\vec{q}^T\vec{u} \quad \text{from } \eqref{eq:conic_tangent_qquad},
-%\\
-%	\text{or, } \brak{\kappa \vec{n}+\vec{u}}^{\top}\vec{q} &= -f
-%\label{eq:conic_zero_eigen_normal_fq}
-%\end{align}
-%\eqref{eq:conic_zero_eigen_normal} can be expressed as
-%\begin{align}
-%\label{eq:conic_zero_eigen_normal_vq}
-%\vec{V} \vec{q} = \kappa \vec{n} - \vec{u}.
-%\end{align}
-%\eqref{eq:conic_zero_eigen_normal_fq} and \eqref{eq:conic_zero_eigen_normal_vq} clubbed together result in \eqref{eq:conic_tangent_q_eigen}.
-%\end{enumerate}
-%\subsection{Pair of Straight Lines}
-%\renewcommand{\theequation}{\theenumi}
-%%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-%\numberwithin{equation}{enumi}
-%\item When \eqref{eq:conic_quad_form} is a hyperbola, its  {\em asymptotes}  are defined as the pair of intersecting straight lines 
-%  \begin{align}
-%  \label{eq:asymp_quad_form}
-%  \vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+\vec{u}^{\top}\vec{V}^{-1}\vec{u}=0, \quad \abs{\vec{V}} < 0
-%  \end{align}
-%  \solution From 
-%	  \eqref{eq:hyper-pair-cond}
-%  \begin{align} 
-%	  \lambda_1y_1^2 +\lambda_2y_2^2 = 
-%  \vec{u}^{\top}\vec{V}^{-1}\vec{u} -f 
-%  \end{align} 
-%  which represents a pair of straight lines 
-%  for 
-%  \begin{align} 
-%  f = \vec{u}^{\top}\vec{V}^{-1}\vec{u}, 
-%%    \label{eq:conic_hyper_cond}
-%    \abs{\vec{V}} 
-%    < 0, \quad \text{or, } \lambda_1 > 0, \lambda_2 < 0 \end{align}
-%%  such that 
-%  % \begin{align} 
-%  % %\label{eq:quad_form_asymp_cond}
-%  % %K =  \vec{u}^{\top}\vec{V}^{-1}\vec{u}
-%  % %\\
-%  
-%  % \label{eq:quad_pair_det}
-%  % \end{align} 
-%Thus,     
-%  \eqref{eq:asymp_quad_form} are the asymptotes of  all hyperbolas defined by 
-%\eqref{eq:conic_quad_form}.  Also, any pair of straight lines has the form in \eqref{eq:asymp_quad_form}.
-%\item \eqref{eq:asymp_quad_form} can be expressed as the lines 
-%%
-%\begin{align} 
-%\label{eq:quad_form_pair}
-%\myvec{\sqrt{\abs{\lambda_1}} & \pm \sqrt{\abs{\lambda_2}}}\vec{P}^{\top}\brak{\vec{x}-\vec{c}} = 0
-%\end{align} 
-%\solution Reducing   \eqref{eq:asymp_quad_form} to standard form using the {\em affine transformation} yields
-%  \begin{align} 
-%    \lambda_1y_1^2 -\brak{-\lambda_2}y_1^2 = 0
-%    \label{eq:quad_form_hyper}
-%    \end{align}
-%    From \eqref{eq:asymp_quad_form},
-%    %
-%    %\eqref{eq:quad_form_hyper} and \eqref{eq:quad_form_asymp_cond} 
-%    the equation of the asymptotes for \eqref{eq:quad_form_hyper} is
-%    \begin{align} 
-%    \myvec{\sqrt{\abs{\lambda_1}} & \pm \sqrt{\abs{\lambda_2}}}\vec{y} = 0
-%    \end{align} 
-%  from which \eqref{eq:quad_form_pair} is obtained using \eqref{eq:conic_affine}.
-%  % \begin{align} 
-%  %   \label{eq:quad_form_pair}
-%  %   \myvec{\sqrt{\abs{\lambda_1}} & \pm \sqrt{\abs{\lambda_2}}}\vec{P}^T\brak{\vec{x}-\vec{c}} = 0
-%  %   \end{align} 
-%  \item The angle between the asymptotes is then given by using the inner product
-%\begin{align} 
-%\label{eq:quad_form_pair_ang}
-%\cos\theta=\frac{\abs{\lambda_1}-\abs{\lambda_2}}
-%{\abs{\lambda_1}+\abs{\lambda_2}}
-%\end{align} 
-%\solution The normal vectors of the lines in \eqref{eq:quad_form_pair} are 
-%  \begin{align} 
-%  \label{eq:quad_form_pair_normvecs}
-%  \begin{split}
-%  \vec{n}_1 &= \vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}
-%  \\
-%  \vec{n}_2 &= \vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm] - \sqrt{\abs{\lambda_2}}}
-%  \end{split}
-%  \end{align} 
-%  The angle between the asymptotes is given by 
-%\begin{align} 
-%\label{eq:quad_form_pair_ang_exp}
-%\cos\theta=\frac{\vec{n_1}^{\top}\vec{n_2}}{\norm{\vec{n_1}}\norm{\vec{n_2}}}
-%\end{align} 
-%The orthogonal matrix $\vec{P}$ preserves the norm, i.e.
-%\begin{align} 
-%	\norm{\vec{n_1}} &= \norm{\vec{P}\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}}
-%	=\norm{\myvec{\sqrt{\abs{\lambda_1}} \\[2mm]  \sqrt{\abs{\lambda_2}}}}
-%	\\
-%	&=\sqrt{\abs{\lambda_1}+\abs{\lambda_2}} = \norm{\vec{n_2}}
-%\end{align} 
-%It is easy to verify that 
-%\begin{align} 
-%\vec{n_1}^{\top}\vec{n_2} = \abs{\lambda_1}-\abs{\lambda_2}
-%\end{align} 
-%%
-%Thus, the angle between the asymptotes is obtained from \eqref{eq:quad_form_pair_ang_exp} as \eqref{eq:quad_form_pair_ang}.
-%% \begin{align} 
-%% \label{eq:quad_form_pair_ang}
-%% \cos\theta=\frac{\abs{\lambda_1}-\abs{\lambda_2}}
-%% {\abs{\lambda_1}+\abs{\lambda_2}}
-%% \end{align} 
-%\item The {\em conjugate} hyperbola with the same asymptotes as \eqref{eq:quad_form_pair} can be obtained from \eqref{eq:conic_quad_form} and \eqref{eq:asymp_quad_form} as
-%\begin{align}
-%\label{eq:hyper_conj_quad_form}
-%\vec{x}^{\top}\vec{V}\vec{x}+2\vec{u}^{\top}\vec{x}+2\vec{u}^{\top}\vec{V}^{-1}\vec{u}-f=0
-%\end{align}
-%\end{enumerate}
-%\subsection{Latus Rectum}
-%\renewcommand{\theequation}{\theenumi}
-%%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-%\numberwithin{equation}{enumi}
-%  \item  The latus rectum of a conic section is the chord that passes through the focus, is perpendicular to the major axis and has both endpoints on the curve.
-%  \item The latus rectum is parallel to the directrix.
-%  \item The equation of the latus rectum is given by 
-%\begin{align}
-%	 \vec{n}^{\top}\brak{\vec{x}-\vec{F}} = 0
-%	\\
-%	\text{or, }\vec{x} = \vec{F} + \mu\vec{m}
-%\end{align}
-%where $\vec{F}$ is the focus and $\vec{m}$  is the normal to the directrix, i.e.
-%\begin{align}
-%	\vec{m}^{\top} \vec{n} = 0
-%\end{align}
-%\item The affine transform preserves the norm.  This implies that the length of any chord of a conic
-%	is invariant to translation and/or rotation.
-%	\solution Let 
-%%From \eqref{eq:conic_affine}, 
-%\begin{align}
-%\vec{x}_i = \vec{P}\vec{y}_i+\vec{c} 
-%\label{eq:conic_affine_pts}
-%\end{align}
-%be any two points on the conic.  Then the distance between the points is given by 
-%\begin{align}
-%	\norm{\vec{x}_1-\vec{x}_2 } &= \norm{\vec{P}\brak{	\vec{y}_1 -\vec{y}_2 }}
-%\end{align}
-%which can be expressed as 
-%\begin{multline}
-%\norm{\vec{x}_1-\vec{x}_2 }^2 = 		\brak{\vec{y}_1 -\vec{y}_2 }^{\top}\vec{P}^{\top}\vec{P}\brak{\vec{y}_1 -\vec{y}_2 }
-%	\\
-%	= 		\norm{\vec{y}_1 -\vec{y}_2 }^2
-%\label{eq:conic_affine_norm_preserve}
-%\end{multline}
-%since 
-%\begin{align}
-%	\vec{P}^{\top}\vec{P} = \vec{I}
-%\end{align}
-%\item The length of the latus rectum is given by 
-%	{\tiny
-%\begin{multline}
-% \frac{2\sqrt{
-%\sbrak{
-%\vec{m}^T\brak{\vec{V}\vec{F}+\vec{u}}
-%}^2
-%-
-%\brak
-%{
-%\vec{F}^T\vec{V}\vec{F} + 2\vec{u}^T\vec{F} +f
-%}
-%\brak{\vec{m}^T\vec{V}\vec{m}}
-%}
-%}
-%{
-%\vec{m}^T\vec{V}\vec{m}
-%}\norm{\vec{m}}
-%\label{eq:tangent_roots_latus}
-%\end{multline}
-%}
-%	\solution 
-%\\
-%From 
-%\eqref{eq:conic_tangent_pts}
-%and
-%\eqref{eq:tangent_roots}, substituting $\vec{q} = \vec{F}$, the end points of the latus rectum on the conic
-%section can be obtained.  Thus, the distance between these points is given by 
-%\begin{align}
-%	\norm{\vec{x}_1-\vec{x}_2} =  \abs{\mu_1-\mu_2} \norm{\vec{m}}
-%\label{eq:conic_tangent_pts_dist}
-%\end{align}
-%which can be used to obtain the length of the latus rectum as 
-%\eqref{eq:tangent_roots_latus}.
-%
-%\begin{enumerate}
-%\item 
-%From \eqref{eq:conic_affine_norm_preserve}, we may consider the standard ellipse/hyperbola given by 
-%    \eqref{eq:conic_simp_temp_nonparab} as
-%  \begin{multline}
-%    \vec{y}^{\top}\vec{D}\vec{y} = -f,
-%	\vec{V} =     \vec{D} = \myvec{\lambda_1 & 0 \\ 0 &\lambda_2},
-%	  \\
-%	   f = -1, \vec{u} = 0, \vec{p}_1 = \vec{e}_1, \vec{p}_2 = \vec{e}_2
-%	    \label{eq:latus_rectum_ellipse_param}
-%\end{multline}
-%for computing the length of the latus rectum in 
-%	  \eqref{eq:tangent_roots_latus}. Note that $\vec{p}_1, \vec{p}_2$ are the eigenvectors and $\vec{e}_1, \vec{e}_2$ are the standard basis vectors.  Substituting from 
-%	    \eqref{eq:latus_rectum_ellipse_param} in
-%\eqref{eq:conic_quad_form_nc},
-%	     the parameters of the directrix are obtained as 
-%
-%\begin{align}
-%\label{eq:conic_quad_form_nc_latus} 
-%  \vec{n}&= \sqrt{\lambda_2}\vec{e}_1,  
-%  \\
-%	c &=	\pm   \frac{ 1 }{e\sqrt{e^2-1} }
-%\end{align}  
-%and the focus is 
-%\begin{align}
-%  \label{eq:conic_quad_form_e_latus} 
-%  e&= \sqrt{1-\frac{\lambda_1}{\lambda_2}}
-%  \\
-%  \label{eq:conic_quad_form_F_latus} 
-%	\vec{F}  &= \frac{ e  }{\sqrt{\lambda_2}\sqrt{e^2-1}}\vec{e}_1
-%\end{align}  
-%From \eqref{eq:conic_quad_form_nc_latus},  
-%\begin{align}  
-%	\vec{m} = \vec{e}_2
-%\end{align}  
-%Substituting the above in 
-%\eqref{eq:tangent_roots_latus} along with
-%  \eqref{eq:conic_quad_form_e_latus} and  
-%  \eqref{eq:conic_quad_form_F_latus}, 
-%	the length of the latus rectum for an ellipse and hyperbola is obtained from 
-%\eqref{eq:tangent_roots_latus} as 
-%		\begin{align}
-%			2\frac{\sqrt{\lambda_1}}{\lambda_2}
-%		\end{align}
-%%
-%\end{enumerate}
-%\end{enumerate}
-%
-%\subsection{Intersection of Conics}
-%\renewcommand{\theequation}{\theenumi}
-%%\begin{enumerate}[label=\arabic*.,ref=\theenumi]
-%\begin{enumerate}[label=\thesubsection.\arabic*.,ref=\thesubsection.\theenumi]
-%\numberwithin{equation}{enumi}
-%\item Let the intersection of the conics
-%\begin{align}
-%    \label{eq:conic_quad_form_ints}
-%    \vec{x}^{\top}\vec{V}_i\vec{x}+2\vec{u}_i^{\top}\vec{x}+f_i=0, \quad i = 1,2
-%    \end{align}
-%    be 
-%\begin{multline}
-%    \label{eq:conic_quad_form_int}
-%	\vec{x}^{\top}\brak{\vec{V}_1+ \mu \vec{V}_2}\vec{x}+2\brak{\vec{u}_1+\mu \vec{u}_2}^{\top}\vec{x}
-%	\\
-%	+f_1+\mu f_2=0
-%    \end{multline}
-%From \eqref{eq:quad_forms_pair_det}, the above equation will represent a pair of straight lines if and only if 
-%\begin{align}
-%\mydet{
-%\vec{V}_1+ \mu \vec{V}_2&\vec{u}_1+\mu\vec{u}_2
-%\\
-%	\brak{\vec{u}_1+\mu\vec{u}_2}^{\top}&f
-%}
-%	= 0, \mydet{\vec{V}_1+ \mu \vec{V}_2} < 0
-%\end{align}
-%\item Once $\mu$ is obtained, 
-%    \eqref{eq:conic_quad_form_int}
-%can be used to obtain 
-%	the pair of straight lines passing throught the intersection of the conics in 
-%    \eqref{eq:conic_quad_form_ints}.
-%    \item The intersection of 
-%    \eqref{eq:conic_quad_form_int}
-%    with 
-%    \eqref{eq:conic_quad_form_ints} can be obtained  using  
-%\eqref{eq:conic_tangent_pts}
-%to obtain the points of intersection of the conics.
-%\item Note that there could be several cases to be considered, since the conics can intersect in 1 to 4 points.
-%
-%\end{enumerate}
 \end{enumerate}
 \end{document}
-
