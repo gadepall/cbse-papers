@@ -1220,71 +1220,75 @@ See Fig.
 	\label{eq:matrix-10-13-param}
 \end{align}
 %
-The slopes of the tangents from $\vec{P}$ to  the circle are given by 
+The point from which the tangents are to be drawn is given by 
 \begin{align}
-L_P: \quad \vec{x} = \vec{P} + \mu \vec{m} \quad \mu \in \mathbb{R}
-\label{eq:conic_tangent-q}
+	\vec{P} = \myvec{-d \\ 0}
 \end{align}
-where 
-	\begin{align}
-  \label{eq:conic_tangent_dirvec-h}
-		\vec{m} &= \myvec{1 \\ m}
-		\\
-\vec{m}^{\top}\bm{\Sigma}
-		\vec{m} &= 0
-  \label{eq:conic_tangent_qquad-h}
-  \end{align}                    
-\begin{multline}
-		\bm{\Sigma} = 
-	   \brak{\vec{V}\vec{P}+\vec{u}}
-	  \brak{\vec{V}\vec{P}+\vec{u}}^{\top}
-	  \\
-   -\vec{V}
-  \brak
-  {
-  \vec{P}^{\top}\vec{V}\vec{P} + 2\vec{u}^{\top}\vec{P} +f
-  }
-	\label{eq:matrix-10-13-sigma}
-\end{multline}
-  and $\mu$ given by 
-\begin{multline}
-\mu_i = \frac{1}
-{
-\vec{m}^{\top}\vec{V}\vec{m}
-}
-\lbrak{-\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}}
-\\
-\pm
-{\small
-\rbrak{\sqrt{
-\sbrak{
-\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}
-}^2
--
-\brak
-{
-\vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f
-}
-\brak{\vec{m}^{\top}\vec{V}\vec{m}}
-}
-}
-}
-\label{eq:tangent_roots}
-\end{multline}
-Substituting from 
-	\eqref{eq:matrix-10-13-param} in 
-	\eqref{eq:matrix-10-13-sigma},
-\begin{align}
-		\bm{\Sigma} = 
-	   \vec{P}
-	  \vec{P}^{\top}
-   -
-  \brak
-  {
-	  \norm{\vec{P}}^{2}  -r^{2}}\vec{I}
-	\label{eq:matrix-10-13-sigma}
-\end{align}
-
+%The slopes of the tangents from $\vec{P}$ to  the circle are given by 
+%\begin{align}
+%L_P: \quad \vec{x} = \vec{P} + \mu \vec{m} \quad \mu \in \mathbb{R}
+%\label{eq:conic_tangent-q}
+%\end{align}
+%where 
+%	\begin{align}
+%  \label{eq:conic_tangent_dirvec-h}
+%		\vec{m} &= \myvec{1 \\ m}
+%		\\
+%\vec{m}^{\top}\bm{\Sigma}
+%		\vec{m} &= 0
+%  \label{eq:conic_tangent_qquad-h}
+%  \end{align}                    
+%\begin{multline}
+%		\bm{\Sigma} = 
+%	   \brak{\vec{V}\vec{P}+\vec{u}}
+%	  \brak{\vec{V}\vec{P}+\vec{u}}^{\top}
+%	  \\
+%   -\vec{V}
+%  \brak
+%  {
+%  \vec{P}^{\top}\vec{V}\vec{P} + 2\vec{u}^{\top}\vec{P} +f
+%  }
+%	\label{eq:matrix-10-13-sigma}
+%\end{multline}
+%  and $\mu$ given by 
+%\begin{multline}
+%\mu_i = \frac{1}
+%{
+%\vec{m}^{\top}\vec{V}\vec{m}
+%}
+%\lbrak{-\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}}
+%\\
+%\pm
+%{\small
+%\rbrak{\sqrt{
+%\sbrak{
+%\vec{m}^{\top}\brak{\vec{V}\vec{q}+\vec{u}}
+%}^2
+%-
+%\brak
+%{
+%\vec{q}^{\top}\vec{V}\vec{q} + 2\vec{u}^{\top}\vec{q} +f
+%}
+%\brak{\vec{m}^{\top}\vec{V}\vec{m}}
+%}
+%}
+%}
+%\label{eq:tangent_roots}
+%\end{multline}
+%Substituting from 
+%	\eqref{eq:matrix-10-13-param} in 
+%	\eqref{eq:matrix-10-13-sigma},
+%\begin{align}
+%		\bm{\Sigma} = 
+%	   \vec{P}
+%	  \vec{P}^{\top}
+%   -
+%  \brak
+%  {
+%	  \norm{\vec{P}}^{2}  -r^{2}}\vec{I}
+%	\label{eq:matrix-10-13-sigma}
+%\end{align}
+%
 
     \item In Fig. 
 	  \ref{fig:matrix-10-14.pdf},

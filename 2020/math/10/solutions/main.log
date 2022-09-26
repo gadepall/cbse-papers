@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.9.16)  25 SEP 2022 03:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.9.16)  26 SEP 2022 14:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -872,17 +872,14 @@ File: ot1txr.fd 2000/12/15 v3.1
 File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count334
 \l__pdf_internal_box=\box76
-) (./main.aux
-
-LaTeX Warning: Label `eq:matrix-10-13-sigma' multiply defined.
-
-)
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 89.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 89.
- (/usr/share/texmf-dist/tex/latex/txfonts/omltxmi.fd
+
+(/usr/share/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 89.
@@ -1150,147 +1147,136 @@ File: figs/matrix-10-13.pdf Graphic file (type pdf)
 <use figs/matrix-10-13.pdf>
 Package pdftex.def Info: figs/matrix-10-13.pdf  used on input line 1211.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 1273.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 1273.
-
-<figs/matrix-10-14.pdf, id=625, 462.52798pt x 346.89601pt>
+<figs/matrix-10-14.pdf, id=623, 462.52798pt x 346.89601pt>
 File: figs/matrix-10-14.pdf Graphic file (type pdf)
 <use figs/matrix-10-14.pdf>
-Package pdftex.def Info: figs/matrix-10-14.pdf  used on input line 1294.
+Package pdftex.def Info: figs/matrix-10-14.pdf  used on input line 1298.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1304--1305
+Underfull \hbox (badness 10000) in paragraph at lines 1308--1309
 []\OT1/txr/m/n/12 The slope of $\OML/txmi/m/it/12 AB$ \OT1/txr/m/n/12 is $\OML/
 txmi/m/it/12 m[] \OT1/txr/m/n/12 =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1304--1305
+Underfull \hbox (badness 10000) in paragraph at lines 1308--1309
 [] []$\OT1/txr/m/n/12 . This is ob-tained
  []
 
-[10 <./figs/matrix-10-12.pdf> <./figs/matrix-10-13.pdf>]
-(./tables/cbse-2020-table-circ-tang.tex)
-<figs/matrix-10-15.pdf, id=709, 462.52798pt x 346.89601pt>
+[10 <./figs/matrix-10-12.pdf> <./figs/matrix-10-13.pdf> <./figs/matrix-10-14.pd
+f>] (./tables/cbse-2020-table-circ-tang.tex)
+<figs/matrix-10-15.pdf, id=731, 462.52798pt x 346.89601pt>
 File: figs/matrix-10-15.pdf Graphic file (type pdf)
 <use figs/matrix-10-15.pdf>
-Package pdftex.def Info: figs/matrix-10-15.pdf  used on input line 1343.
+Package pdftex.def Info: figs/matrix-10-15.pdf  used on input line 1347.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
  (./tables/matrix-10-16.tex)
-<figs/matrix-10-16.pdf, id=714, 462.52798pt x 346.89601pt>
+<figs/matrix-10-16.pdf, id=736, 462.52798pt x 346.89601pt>
 File: figs/matrix-10-16.pdf Graphic file (type pdf)
 <use figs/matrix-10-16.pdf>
-Package pdftex.def Info: figs/matrix-10-16.pdf  used on input line 1397.
-(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
- [11 <./figs/matrix-10-14.pdf> <./figs/matrix-10-15.pdf>]
-<figs/matrix-10-17.pdf, id=818, 462.52798pt x 346.89601pt>
-File: figs/matrix-10-17.pdf Graphic file (type pdf)
-<use figs/matrix-10-17.pdf>
-Package pdftex.def Info: figs/matrix-10-17.pdf  used on input line 1456.
+Package pdftex.def Info: figs/matrix-10-16.pdf  used on input line 1401.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
-(./tables/cbse-2020-table-pgm.tex)
-Underfull \hbox (badness 1371) in paragraph at lines 1476--1485
+[11 <./figs/matrix-10-15.pdf>]
+<figs/matrix-10-17.pdf, id=810, 462.52798pt x 346.89601pt>
+File: figs/matrix-10-17.pdf Graphic file (type pdf)
+<use figs/matrix-10-17.pdf>
+Package pdftex.def Info: figs/matrix-10-17.pdf  used on input line 1460.
+(pdftex.def)             Requested size: 252.0pt x 189.00429pt.
+ (./tables/cbse-2020-table-pgm.tex)
+Underfull \hbox (badness 1371) in paragraph at lines 1480--1489
 \OT1/txr/m/n/12 For con-struc-tion, the in-put pa-ram-e-ters are
  []
 
-[12 <./figs/matrix-10-16.pdf> <./figs/matrix-10-17.pdf>]
-<figs/matrix-10-18.pdf, id=901, 462.52798pt x 346.89601pt>
+<figs/matrix-10-18.pdf, id=813, 462.52798pt x 346.89601pt>
 File: figs/matrix-10-18.pdf Graphic file (type pdf)
 <use figs/matrix-10-18.pdf>
-Package pdftex.def Info: figs/matrix-10-18.pdf  used on input line 1500.
+Package pdftex.def Info: figs/matrix-10-18.pdf  used on input line 1504.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<figs/matrix-10-19.pdf, id=903, 462.52798pt x 346.89601pt>
+[12 <./figs/matrix-10-16.pdf> <./figs/matrix-10-17.pdf>]
+<figs/matrix-10-19.pdf, id=897, 462.52798pt x 346.89601pt>
 File: figs/matrix-10-19.pdf Graphic file (type pdf)
 <use figs/matrix-10-19.pdf>
-Package pdftex.def Info: figs/matrix-10-19.pdf  used on input line 1529.
+Package pdftex.def Info: figs/matrix-10-19.pdf  used on input line 1533.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
-<figs/matrix-10-20.pdf, id=905, 462.52798pt x 346.89601pt>
+<figs/matrix-10-20.pdf, id=899, 462.52798pt x 346.89601pt>
 File: figs/matrix-10-20.pdf Graphic file (type pdf)
 <use figs/matrix-10-20.pdf>
-Package pdftex.def Info: figs/matrix-10-20.pdf  used on input line 1556.
+Package pdftex.def Info: figs/matrix-10-20.pdf  used on input line 1560.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
- [13 <./figs/matrix-10-18.pdf> <./figs/matrix-10-19.pdf> <./figs/matrix-10-20.p
-df>]
+
 (./tables/matrix-10-20.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1583--1584
+Underfull \hbox (badness 10000) in paragraph at lines 1587--1588
 
  []
 
-<Fig9.png, id=1047, 454.92064pt x 183.33759pt>
+<Fig9.png, id=902, 454.92064pt x 183.33759pt>
 File: Fig9.png Graphic file (type png)
 <use Fig9.png>
-Package pdftex.def Info: Fig9.png  used on input line 1597.
+Package pdftex.def Info: Fig9.png  used on input line 1601.
 (pdftex.def)             Requested size: 126.0pt x 50.77747pt.
-[14 <./Fig9.png>]
-<figs/prob-10-2.pdf, id=1076, 462.52798pt x 346.89601pt>
+[13 <./figs/matrix-10-18.pdf> <./figs/matrix-10-19.pdf> <./figs/matrix-10-20.pd
+f>]
+<figs/prob-10-2.pdf, id=1047, 462.52798pt x 346.89601pt>
 File: figs/prob-10-2.pdf Graphic file (type pdf)
 <use figs/prob-10-2.pdf>
-Package pdftex.def Info: figs/prob-10-2.pdf  used on input line 1688.
+Package pdftex.def Info: figs/prob-10-2.pdf  used on input line 1692.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
  (./tables/prob-10-3.tex.0
 \gnumericColE=\skip79
 \gnumericColF=\skip80
 \gnumericColG=\skip81
 \gnumericColH=\skip82
-)
-<figs/prob-10-3.pdf, id=1079, 462.52798pt x 346.89601pt>
+) [14 <./Fig9.png>]
+<figs/prob-10-3.pdf, id=1073, 462.52798pt x 346.89601pt>
 File: figs/prob-10-3.pdf Graphic file (type pdf)
 <use figs/prob-10-3.pdf>
-Package pdftex.def Info: figs/prob-10-3.pdf  used on input line 1732.
+Package pdftex.def Info: figs/prob-10-3.pdf  used on input line 1736.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
  (./tables/prob-10-4.tex)
-<figs/prob-10-4.pdf, id=1083, 462.52798pt x 346.89601pt>
+<figs/prob-10-4.pdf, id=1077, 462.52798pt x 346.89601pt>
 File: figs/prob-10-4.pdf Graphic file (type pdf)
 <use figs/prob-10-4.pdf>
-Package pdftex.def Info: figs/prob-10-4.pdf  used on input line 1764.
+Package pdftex.def Info: figs/prob-10-4.pdf  used on input line 1768.
 (pdftex.def)             Requested size: 252.0pt x 189.00429pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1768--1769
+Underfull \hbox (badness 10000) in paragraph at lines 1772--1773
 
  []
 
-[15 <./figs/prob-10-2.pdf> <./figs/prob-10-3.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1770--1771
+
+Underfull \hbox (badness 10000) in paragraph at lines 1774--1775
 
  []
 
-[16
+[15 <./figs/prob-10-2.pdf> <./figs/prob-10-3.pdf>] [16
 
- <./figs/prob-10-4.pdf>] (./main.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
+ <./figs/prob-10-4.pdf>]
+(./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 640B00132C91580C8DB83A8F282E8D51;680.
  ) 
 Here is how much of TeX's memory you used:
- 25870 strings out of 478238
- 465361 string characters out of 5850456
- 942911 words of memory out of 5000000
- 43171 multiletter control sequences out of 15000+600000
+ 25860 strings out of 478238
+ 465182 string characters out of 5850456
+ 942912 words of memory out of 5000000
+ 43166 multiletter control sequences out of 15000+600000
  571567 words of font info for 256 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  84i,20n,80p,496b,884s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/txfonts/rtxb.pfb></usr/share/texmf-dist/fonts/type1/public/txfo
-nts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/
-share/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texmf-dist/fo
-nts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txf
-onts/txsy.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr
-/share/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texmf-dist/f
-onts/type1/public/txfonts/txsyc.pfb></usr/share/texmf-dist/fonts/type1/urw/time
-s/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/sha
-re/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/typ
-e1/urw/times/utmri8a.pfb>
-Output written on main.pdf (16 pages, 473167 bytes).
+ts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txf
+onts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr
+/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fo
+nts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/public/txf
+onts/txsya.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></us
+r/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/font
+s/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr
+8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (16 pages, 465889 bytes).
 PDF statistics:
- 1335 PDF objects out of 1440 (max. 8388607)
- 824 compressed objects within 9 object streams
- 389 named destinations out of 1000 (max. 500000)
+ 1316 PDF objects out of 1440 (max. 8388607)
+ 810 compressed objects within 9 object streams
+ 384 named destinations out of 1000 (max. 500000)
  181 words of extra memory for PDF output out of 10000 (max. 10000000)
 

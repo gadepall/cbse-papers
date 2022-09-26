@@ -3,4 +3,4 @@
 \contentsline {section}{\numberline {3}Algebra}{3}{section.3}%
 \contentsline {section}{\numberline {4}Trigonometry}{4}{section.4}%
 \contentsline {section}{\numberline {5}Linear Algebra}{5}{section.5}%
-\contentsline {section}{\numberline {6}Probability and Statistics}{14}{section.6}%
+\contentsline {section}{\numberline {6}Probability and Statistics}{13}{section.6}%
