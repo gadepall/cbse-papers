@@ -1,0 +1,150 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ModuleNotFoundError",
+     "evalue": "No module named 'line'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mModuleNotFoundError\u001b[0m                       Traceback (most recent call last)",
+      "\u001b[0;32m/tmp/ipykernel_23157/3475483222.py\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m      9\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     10\u001b[0m \u001b[0;31m#local imports\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 11\u001b[0;31m \u001b[0;32mfrom\u001b[0m \u001b[0mline\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfuncs\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     12\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mtriangle\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfuncs\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     13\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0mconics\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mfuncs\u001b[0m \u001b[0;32mimport\u001b[0m \u001b[0mcirc_gen\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mModuleNotFoundError\u001b[0m: No module named 'line'"
+     ]
+    }
+   ],
+   "source": [
+    "#Code by GVV Sharma\n",
+    "#December 7, 2019\n",
+    "#released under GNU GPL\n",
+    "#Drawing a triangle given 3 sides\n",
+    "\n",
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt\n",
+    "#import matplotlib\n",
+    "\n",
+    "#local imports\n",
+    "from line.funcs import *\n",
+    "from triangle.funcs import *\n",
+    "from conics.funcs import circ_gen\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "import sys                                          #for path to external scripts\n",
+    "#sys.path.insert(0, '/home/user/txhome/storage/shared/github/training/math/codes/CoordGeo')        #path to my scripts\n",
+    "sys.path.append(\"/home/user/txhome/storage/shared/github/training/math/codes/CoordGeo\")\n",
+    "#if using termux\n",
+    "import subprocess\n",
+    "import shlex\n",
+    "#end if\n",
+    "\n",
+    "\n",
+    "# theta_1=120\n",
+    "# theta_2=230\n",
+    "# theta_3=320\n",
+    "# theta_4=395\n",
+    "\n",
+    "#Triangle sides\n",
+    "a = 6\n",
+    "b = 5\n",
+    "c = 4\n",
+    "\n",
+    "\n",
+    "#Triangle coordinates\n",
+    "[A,B,C] = tri_vert(a,b,c)\n",
+    "\n",
+    "#Generating all lines\n",
+    "x_AB = line_gen(A,B)\n",
+    "x_BC = line_gen(B,C)\n",
+    "x_CA = line_gen(C,A)\n",
+    "\n",
+    "#Generating the circumcircle\n",
+    "[O,R] = ccircle(A,B,C)\n",
+    "x_circ= circ_gen(O,R)\n",
+    "\n",
+    "#Generating the incircle\n",
+    "[I,r] = icircle(A,B,C)\n",
+    "x_icirc= circ_gen(I,r)\n",
+    "\n",
+    "#Plotting all lines\n",
+    "plt.plot(x_AB[0,:],x_AB[1,:],label='$AB$')\n",
+    "plt.plot(x_BC[0,:],x_BC[1,:],label='$BC$')\n",
+    "plt.plot(x_CA[0,:],x_CA[1,:],label='$CA$')\n",
+    "\n",
+    "#Plotting the circumcircle\n",
+    "plt.plot(x_circ[0,:],x_circ[1,:],label='$circumcircle$')\n",
+    "\n",
+    "#Plotting the circumcircle\n",
+    "plt.plot(x_icirc[0,:],x_icirc[1,:],label='$incircle$')\n",
+    "\n",
+    "#Labeling the coordinates\n",
+    "tri_coords = np.vstack((A,B,C,O,I)).T\n",
+    "plt.scatter(tri_coords[0,:], tri_coords[1,:])\n",
+    "vert_labels = ['A','B','C','O','I']\n",
+    "for i, txt in enumerate(vert_labels):\n",
+    "    plt.annotate(txt, # this is the text\n",
+    "                 (tri_coords[0,i], tri_coords[1,i]), # this is the point to label\n",
+    "                 textcoords=\"offset points\", # how to position the text\n",
+    "                 xytext=(0,10), # distance from text to points (x,y)\n",
+    "                 ha='center') # horizontal alignment can be left, right or center\n",
+    "\n",
+    "plt.xlabel('$x$')\n",
+    "plt.ylabel('$y$')\n",
+    "plt.legend(loc='best')\n",
+    "plt.grid() # minor\n",
+    "plt.axis('equal')\n",
+    "\n",
+    "#if using termux\n",
+    "# plt.savefig('./figs/tri_sss.pdf')\n",
+    "plt.savefig('/home/user/txhome/storage/shared/gitlab/res2021/july/conics/figs/tri_sss.png')\n",
+    "# subprocess.run(shlex.split(\"termux-open ./figs/tri_sss.pdf\"))\n",
+    "#else\n",
+    "plt.show()\n",
+    "#matplotlib.pyplot.show()\n",
+    "#print(5)\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3.9.6 64-bit ('arch')",
+   "name": "python396jvsc74a57bd0762b787b49fdc2cda3f76ab6ec1e118b020ade19d66fbfc2492450b914ffb7ae"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.6"
+  },
+  "metadata": {
+   "interpreter": {
+    "hash": "ebc53b9c48b44c9ca5d0838d725e6a513395b7084544e67b6d49cd113e43cca0"
+   }
+  },
+  "orig_nbformat": 3
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

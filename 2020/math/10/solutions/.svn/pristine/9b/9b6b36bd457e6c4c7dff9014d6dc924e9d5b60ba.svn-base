@@ -1,0 +1,95 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[261. -96.]\n",
+      " [-96. 181.]] [[  522.]\n",
+      " [-1167.]] 3968.999999999998\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Code by GVV Sharma\n",
+    "#July 25, 2021\n",
+    "#released under GNU GPL\n",
+    "#Finding the equation of a conic section from the directrix, focus and eccentricity\n",
+    "\n",
+    "\n",
+    "import sys                                          #for path to external scripts\n",
+    "sys.path.insert(0, '/home/user/txhome/storage/shared/github/training/math/codes/CoordGeo')        #path to my scripts\n",
+    "\n",
+    "import numpy as np\n",
+    "import matplotlib.pyplot as plt\n",
+    "from numpy import linalg as LA\n",
+    "#import matplotlib\n",
+    "\n",
+    "#local imports\n",
+    "from line.funcs import *\n",
+    "from triangle.funcs import *\n",
+    "from conics.funcs import circ_gen\n",
+    "\n",
+    "#if using termux\n",
+    "import subprocess\n",
+    "import shlex\n",
+    "#end if\n",
+    "\n",
+    "\n",
+    "I = np.eye(2) #Identity matrix\n",
+    "\n",
+    "#Conic input parameters\n",
+    "\n",
+    "# n = np.array([1,-4]).reshape(2,1) #Directrix normal vector\n",
+    "# c = -3 #Directrix constant\n",
+    "# F = np.array([2,3]).reshape(2,1) #Focus\n",
+    "# e = 1 #Eccentricity\n",
+    "\n",
+    "n = np.array([2,3]).reshape(2,1) #Directrix normal vector\n",
+    "c = -4 #Directrix constant\n",
+    "F = np.array([-2,3]).reshape(2,1) #Focus\n",
+    "e = 4/5 #Eccentricity\n",
+    "\n",
+    "\n",
+    "#Conic equation  parameters\n",
+    "V = LA.norm(n)**2*I-e**2*n@n.T #conic matrix\n",
+    "u = c*e**2*n-LA.norm(n)**2*F   #conic vector\n",
+    "f = (LA.norm(n)*LA.norm(F))**2-(c*e)**2  #conic scalar\n",
+    "\n",
+    "print(5**2*V,5**2*u,5**2*f)\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3.9.6 64-bit ('arch')",
+   "name": "python396jvsc74a57bd0762b787b49fdc2cda3f76ab6ec1e118b020ade19d66fbfc2492450b914ffb7ae"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.6"
+  },
+  "orig_nbformat": 3
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
