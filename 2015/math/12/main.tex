@@ -1,0 +1,305 @@
+\documentclass[12pt,-letter paper]{article}
+\usepackage{siunitx}
+\usepackage{setspace}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{caption}
+%\usepackage{subcaption}
+\doublespacing
+\singlespacing
+\usepackage[none]{hyphenat}
+\usepackage{amssymb}
+\usepackage{relsize}
+\usepackage[cmex10]{amsmath}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{commath}
+\usepackage{amsthm}
+\interdisplaylinepenalty=2500
+%\savesymbol{iint}
+\usepackage{txfonts}
+%\restoresymbol{TXF}{iint}
+\usepackage{wasysym}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\let\vec\mathbf{}
+\usepackage{stfloats}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+%\usepackage{xtab}
+\usepackage{longtable}
+\usepackage{multirow}
+%\usepackage{algorithm}
+\usepackage{amssymb}
+%\usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{mathtools}
+%\usepackage{eenrc}
+%\usepackage[framemethod=tikz]{mdframed}
+\usepackage{listings}
+%\usepackage{listings}
+\usepackage[latin1]{inputenc}
+%%\usepackage{color}{   
+%%\usepackage{lscape}
+\usepackage{textcomp}
+\usepackage{titling}
+\usepackage{hyperref}
+%\usepackage{fulbigskip}   
+\usepackage{tikz}
+\usepackage{graphicx}
+%\usepackage[left=1in, right=2in, top=1in, bottom=1in]{geometry}
+
+\lstset{
+  frame=single,
+  breaklines=true
+}
+\let\vec\mathbf{}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\let\vec\mathbf{}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{tfrupee}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mwe} % for blindtext and example-image-a in example
+\usepackage{wrapfig}
+\graphicspath{{figs/}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\title{2015 12th Set-3}
+
+\begin{document}
+
+\maketitle{Questions}
+
+\begin{enumerate}
+
+\section{Vectors}
+	\item Find a vector of magnitude $\sqrt{171}$ which is  to both of the vectors $\overrightarrow{a} = \myvec{\hat{i}-2\hat{j}-3\hat{k}}$ and $\overrightarrow{b} = \myvec{3\hat{i}-\hat{j}-2\hat{k}}$ .
+	\item In a triangle $OAC$, if $B$ is the mid-point of side $AC$ and
+    $\overrightarrow{OA} = \overrightarrow{a}$, $\overrightarrow{OA} = \overrightarrow{b}$ then what is $\overrightarrow{OC}$ ?
+    \item If $\abs{\overrightarrow{a}} = a$, then find the value of the following:
+    \begin{align*}
+       {\abs{\overrightarrow{a}\times\hat{i}}}^2+{\abs{\overrightarrow{a}\times\hat{j}}}^2+{\abs{\overrightarrow{a}\times\hat{k}}}^2
+    \end{align*}
+    \item The vectors $\overrightarrow{a} = \myvec{3\hat{i}+x\hat{j}}$ and $\overrightarrow{b} = \myvec{2\hat{i}+\hat{j}+y\hat{k}}$ are mutually perpendicular. If  $\abs{\overrightarrow{a}} = \abs{\overrightarrow{b}}$, find the value of y.
+    \item Let $\overrightarrow{a} = \myvec{\hat{i}+4\hat{j}+2\hat{k}}$, $\overrightarrow{b} = \myvec{3\hat{i}-2\hat{j}+7\hat{k}}$ and $\overrightarrow{c} = \myvec{2\hat{i}-\hat{j}+4\hat{k}}$. Find a vector $\overrightarrow{d}$ which is perpendicular to both $\overrightarrow{a}$ and $\overrightarrow{b}$ and $\overrightarrow{c}.\overrightarrow{d} = 27$.
+    \item Find the shortest distance between the following lines:
+    \begin{align*}
+        \overrightarrow{r} &= \myvec{\hat{i}+2\hat{j}+3\hat{k}} + \lambda\myvec{2\hat{i}+3\hat{j}+4\hat{k}}\\
+        \overrightarrow{r} &= \myvec{2\hat{i}+4\hat{j}+5\hat{k}} + \mu\myvec{4\hat{i}+6\hat{j}+8\hat{k}}
+    \end{align*}
+    \item Find a unit vector perpendicular tot he plane of triangle $ABC$ where the coordinates of its vertices are $A(3,-1,2), B(1,-1,3)$ and $C(4,-3,1)$
+\section{Linear Forms}
+    \item Find the angle between the lines
+    $2x= 3y = -z$ and $6x = -y = -4z$.
+    \item Find the angle $\theta$ between the line $\frac{x-2}{3}=\frac{y-3}{5}=\frac{z-4}{4}$ and the plane $2x-2y+z-5=0$
+    \item Find the equation of the plane passing through the line of intersection of the planes $2x + y-z = 3$ and $5x-3y+4z + 9 = 0$ and is parallel to the line $\frac{x-1}{2}=\frac{y-3}{-4}=\frac{5-z}{-5}$
+    \item Find the equation of a plane passing through the point $P(6, 5, 9)$ and parallel to the plane determined by the points $A(3, -1, 2), B(5, 2, 4)$ and $C(-1, -1, 6)$. Also find the distance of this plane from the point $A$.
+    \item Find the equation of a plane passing through the point $P(6, 5, 9)$and parallel to the plane determined by the points $A(3, -1, 2), B(5, 2, 4)$ and $C(-1, -1, 6)$. Also find the distance of this plane from the point A.
+    \item Find the shortest distance between the lines $x+1=2y=-12z$ and
+    $x=y+2=6z-6$.
+    \item From the point $P(a, b, c)$, perpendiculars $PL$ and $PM$ are drawn to $YZ$ and $ZX$ planes respectively. Find the equation of the plane $OLM$.
+    \item Find the coordinates of the point where the line through the points $A(3,4,1)$ and $B(5,1,6)$ crosses the plane determined by the points $P(2,1,2), Q(3,1,0)$ and $R(4,-2,1)$.
+%%This is not my part	
+
+\section{Differential Equations}
+	\item Find the sum of the $order$ and the $degree$ pf the following differential equation:
+    \begin{align*}
+         y = x\brak{\frac{dy}{dx}}^3 + \frac{d^2y}{dx^2}
+    \end{align*}
+	
+    \item If $(ax+b)e^{y/x} = x$, then show that
+    \begin{align*}
+        x^3\brak{\frac{d^2y}{dx^2}} = \brak{x\frac{dx}{dy}-y}^2
+    \end{align*}
+    
+	\item Find the solution of the following differential equation:
+    \begin{align*}
+        x \sqrt{1+y^2} dx +  y \sqrt{1+x^2} dy = 0 
+    \end{align*}
+
+	\item Find the sum of the $order$ and the $degree$ pf the following differential equation:
+    \begin{align*}
+         \frac{d}{dx}\sbrak{\brak{\frac{d^2y}{dx^2}}^4}
+    \end{align*}
+
+	\item Find the integrating factor of the following differential equation:
+    \begin{align*}
+        x \log{x} \frac{dy}{dx} +  y  = 2 \log{x} 
+    \end{align*}
+
+	\item Find the differential equation of the family of curves $\brak{x-h}^2+\brak{y-k}^2 = r^2$, where $h$ and $k$ are arbitrary constants.
+    \item Show that the differential equation $\brak{x-y}\frac{dy}{dx} = x+2y$ is homogeneous and solve it also.
+	\item $\brak{x^2+y^2}dy = \brak{xy}dx$. If $y(x_0) = e$, then find the value of $x_0$.
+    \item Find the particular solution of the differential equation $\frac{dy}{dx}+y.tan(x)=3x^2+x^3tan(x)$, $x\neq \frac{pi}{2}$ ,given that $y=0$ when $x = \frac{\pi}{3}$.
+	\item If $y = \log{\brak{\frac{x}{a+bx}}^x}$, prove that $x^3\frac{d^2y}{dx^2} = \brak{x\frac{dy}{dx}-y}^2$.
+	
+
+\section{Differentiation}
+    \item If $x=a(cos(2t)+2t .sin(2t))$ and $y=a(sin(2t)-2t .cos(2t))$, then find $\frac{d^2y}{dx^2}$.
+    \item Find the derivative of $sec^{-1}\brak{\frac{1}{2x^2-1}}$ w.r.t $\sqrt{1-x^2}$ at $x = \frac{1}{2}$.
+\section{Matrices}
+	\item If $A = \myvec{\cos{\theta}&\sin{\theta}\\\sin{\theta}&cos{\theta}}$ , then for any natural number n, find the value of $Det(A^n)$.
+
+	\item Find the value of $(x+y)$ from the following matrix equation:
+    \begin{align*}
+        2 \myvec{x&5\\7&y-3}+\myvec{3&-4\\1&2} = \myvec{7&6\\15&14}
+    \end{align*}
+
+	\item Using elementary row operations (transformations), find the inverse of the following matrix:
+    \begin{align*}
+        \myvec{0&1&2\\1&2&3\\3&1&0}
+    \end{align*}
+    \item If $A = \myvec{0&6&7\\-6&0&8\\7&-8&0}$,$B =\myvec{0&6&7\\-6&0&8\\7&-8&0}$,$C = \myvec{2\\-2\\3}$, then calculate $AC,BC, (A+B)C$. Also verify that $(A+B)C= AC+BC$.
+
+	\item There are 2 families $A$ and $B$. There are 4 men, 6 women and 2 children in family $A$, and 2 men, 2 women and 4 children in family $B$. The recommended daily amount of calories is 2400 for men, 1900 for women, 1800 for children and 45 grams of proteins for men, 55 grams for women and 33 grams for children. Represent the above information using matrices. Using matrix multiplication, calculate the total requirement of calories and proteins for each of the 2 families. What awareness can you create among people about the balanced diet from this question?
+
+	\item Using the properties of determinants, prove that:
+	\begin{align*}
+		\mydet{a^3 & 2 & a \\
+		b^3 & 2 & b\\
+		c^3 & 2 & c} = 2(a - b) (b-c) (c-a) (a+b+c).
+	\end{align*}
+	
+	\item Using elementary row operations, find the inverse of the following matrix :
+	\begin{align*}
+		A = \myvec{2 & -1 & 3\\
+		-5 & 3 & 1 \\
+		-3 & 2 & 3}
+	\end{align*}
+
+
+
+	\item If $A = \myvec{1&-1&0\\2&5&3\\0&2&1}$, find $A^{-1}$ using elementary row transformations.
+
+	\item If $a+b+c\neq0$ and $\mydet{a&b&c\\b&c&a\\c&a&b}=0$, then using the properties of determinants, prove that $a=b=c$.
+
+	\item A trust caring for handicapped children gets 30,000 every month from its donors. The trust spends half of the funds received for medical and educational care of the children and for that it charges $2\%$ of the spent amount from them, and deposits the balance amount in a private bank to get the money multiplied so that in future the trust goes on functioning regularly. What percent of interest should the trust get from the bank to get a total of \rupee $1800$ every month? Use matrix method, to find the rate of interest. Do you think people should donate to such trusts?
+
+
+\section{Integration}
+	\item Evaluate: 
+    \begin{align*}
+         \int_0^{\pi/2} \frac{\cos^2{x}}{(1 + 3\sin^2 x)} dx
+    \end{align*}
+ 
+
+	\item Evaluate:: 
+    \begin{align*}
+        \int_0^{\pi/4} \frac{\sin{x}+\cos{x}}{3+\sin{2x}} dx
+    \end{align*}
+
+	\item Evaluate :
+    \begin{align*}
+        \int \frac{\sin{x}-x\cos{x}}{x(x+\sin{x})} dx
+    \end{align*}
+
+	\item Evaluate:
+    \begin{align*}
+        \int \frac{x^3}{(x-1)(x^2+1)} dx
+    \end{align*}
+
+	\item Find:
+    \begin{align*}
+         \int \frac{xdx}{1+x\tan{x}}
+    \end{align*}
+
+	\item Find:
+    \begin{align*}
+        \int \frac{x^4}{(x-1)(x^2+1)} dx
+    \end{align*}
+
+	\item Evaluate : 
+    \begin{align*}
+        \int_0^{\pi/2} \brak{\frac{5\sin{x}+3\cos{x}}{\sin{x}+\cos{x}}dx
+    \end{align*}
+	\item Find : 
+    \begin{align*}
+        \int \sbrak{\log{\log{x}} + \frac{1}{(\log{x})^2}} dx
+    \end{align*}
+
+    \item If the area bounded by the parabola $y^2 = 16ax$ and the line $y = 4mx$ is $\frac{a^2}{2}$ sq. units, then using integration, find the value of m.
+	\item  Find the area of the region $\cbrak{(x,y):x^2+y^2\le 4, x+y \ge 2}$, using the method of integration.
+
+
+\section{Function}
+	\item Discuss the continuity and differentiability for he function
+    $f(x) = \abs{x}+\abs{x-1}$ in the region $(-1,2)$.
+	
+	\item Determine whether the relation R defined on the set $\mathbb{R}$ of all real numbers as $\text{R} =\cbrak{ {(a, b) : a, b \in \mathbb{R} \text{ and } a-b+\sqrt{3} \in S, \text{where $S$ is the set all irrational numbers}}}$, is reflexive, symmetric and transitive.
+
+    \item Let $A = \mathbb{R} \times \mathbb{R}$ and "$*$" be the binary operation on $A$ defined by $(a, b) * (c, d) = (a + c, b + d)$. Prove that "$*$" is commutative and associative. Find the identity element for "$*$" on $A$. Also write the inverse element of the element $(3,-5)$ in $A$.
+
+	\item On the set \cbrak{0,1,2,3,4,5,6}, a binary operation "*" is defined as:
+    \begin{align*}
+       a*b = 
+        \begin{cases}
+            a+b & \text{if } a+b <7, \\
+    -       a+b-7  & \text{if } a+b \geq 7.
+        \end{cases}
+    \end{align*}
+    Write the operation table of the operation "*" and prove that zero is the identity for this operation and each element $a\neq0$ of the set is invertible with $7-a$ being the inverse of $a$.
+    \item Let $f(x) = x - \abs{x-x^2}, x\in \sbrak{-1,1}$. Find the point of discontinuity,(if any), of this function on $\sbrak{-1,1}$.
+
+\section{Probability}
+	\item A man takes a step forward with probability 0.4 and backward with probability $0.6$. Find the probability that at the end of $5$ steps, he is one step away from the starting point.
+
+
+	\item Suppose a girl throws a die. If she gets a $1$ or $2$, she tosses a times and notes the number of 'tails'. If she gets $3, 4, 5$ or $6$ coin once more and notes whether a 'head' or 'tail' is obtained. If she obtained exactly one 'tail', what is the probability that she threw $3, 4, 5$ or $6$ with the die.
+
+
+	\item An urn contains $5$ red and $2$ black balls. Two balls are randomly drawn, without replacement. Let $X$ represent the number of black balls drawn. What are the possible values of $X$? Is $X$ a random variable? If yes, find the mean and variance of $X$.
+
+	\item In $3$ trials of a binomial distribution, the probability of exactly $2$ successes is $9$ times the probability of $3$ successes. Find the probability of success in each trial.
+
+	\item An urn contains $3$ red and $5$ black balls. A ball is drawn at random, its colour is noted and returned to the urn. Moreover, $2$ additional balls of the colour noted down, are put in the urn and then two balls are drawn at random (without replacement) from the urn. Find the probability that both the balls drawn are of red colour.
+     \item A man is known to speak truth $3$ out of $5$ times. He throws a die and reports that it is $4$. Find the probability that it is actually $4$.
+
+\section{Optimization}
+	\item Solve the following linear programming problem graphically. Minimise $z = 3x+5y$ subject to constraints
+     \begin{align*}
+         x+2y\ge 10\\
+         x+y\ge 6\\
+         3x+y\ge8\\
+         x,y\ge0
+     \end{align*}
+ 
+ 
+    \item A dealer in a rural area wishes to purchase some sewing machines. He has only  \rupee $57,600$ to invest and has space for at most $20$ items. An electronic machine costs him \rupee $3,600$ and a manually operated machine costs \rupee $2,400$. He can sell an electronic machine at a profit of $220$ and a manually operated machine at a profit of \rupee $180$. Assuming that he can sell all the machines that he buys, how should he invest his money in order to maximize his profit ? Make it as a LPP and solve it graphically.	
+
+\section{Algebra}
+	\item Evaluate:
+    \begin{align*}
+        \tan\cbrak{2\tan^-1{\brak{\frac{1}{5}}}+\frac{\pi}{4}}
+    \end{align*}
+
+	\item Find the value of 'x', if
+ \begin{align*}
+     \sin{\cot^{-1}{x+1}} = \cos{\tan^{-1}{x}}
+ \end{align*}
+ 
+	\item Prove the following
+	\begin{align*}
+		2\sin^{-1}{\frac{3}{5}}-\tan^{-1}{\frac{17}{31}} = \frac{\pi}{4}
+	\end{align*}
+
+\section{Co-ordinate Geometry}
+    \item Tangent to the circle $x^2 + y^2 = 4$ at any point on it in the first quadrant makes intercepts $OA$ and $OB$ on x and y axes respectively, $O$ being the centre of the circle. Find the minimum value of $(OA + OB)$.
+    \item Find the maximum area of an isosceles triangle inscribed in the ellipse $\frac{x^2}{16}+\frac{y^2}{9} = 1$ with its vertex at one end of the major axis.
+\end{enumerate}
+\end{document}
+
